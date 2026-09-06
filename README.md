@@ -253,21 +253,132 @@ blablbalbla
 
 ## Capítulo II: Requirements Elicitation & Analysis
 
-## 2.1. Competidores
+### 2.1. Competidores.
+En esta sección se identifican y describen los principales competidores directos e indirectos que operan en el dominio del problema que PetStock aborda: la gestión de inventarios, control de ventas y digitalización de procesos para pequeñas tiendas y establecimientos del sector retail de mascotas. Las alternativas seleccionadas comparten con PetStock la propuesta de valor orientada a optimizar el funcionamiento de los comercios mediante herramientas digitales y plataformas en la nube.
 
-### 2.1.1. Análisis competitivo
+* **Nubox:** Empresa y plataforma de software en la nube enfocada en la gestión administrativa, contable y facturación electrónica para pequeñas y medianas empresas en Latinoamérica. Si bien su enfoque principal es el cumplimiento tributario y contable, compite en el mercado al ofrecer soluciones automatizadas que buscan digitalizar los procesos de los negocios minoristas.
+* **Loyverse POS:** Sistema de punto de venta (POS) móvil y web de uso internacional, ampliamente adoptado por tiendas de barrio, minimarkets y pequeños comercios minoristas. Ofrece características de control básico de inventario, registro de ventas, gestión de empleados y programas de lealtad, posicionándose como una alternativa accesible para negocios que buscan reemplazar los registros manuales.
+* **Holded:** Software ERP y de gestión empresarial en la nube de origen europeo, diseñado para automatizar la facturación, contabilidad, CRM e inventarios de pymes y comercios en crecimiento. Aunque está dirigido a empresas con mayor madurez tecnológica, representa un competidor en el segmento de soluciones integrales de gestión comercial.
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+### 2.1.1. Análisis competitivo. 
+A continuación se presenta el cuadro *Competitive Analysis Landscape*, en el cual se contrasta el perfil de la startup Nexora y su producto PetStock frente a los tres competidores directos e indirectos identificados, considerando dimensiones de perfil, marketing, producto y análisis FODA (SWOT). 
 
-## 2.2. Entrevistas
+#### Competitive Analysis Landscape 
 
-### 2.2.1. Diseño de entrevistas
+**¿Por qué llevar a cabo este análisis?**
+El objetivo es comprender el posicionamiento real de los competidores en el mercado de software de gestión y control de inventarios, identificar brechas en sus propuestas de valor y validar los espacios de oportunidad que PetStock puede ocupar en el mercado peruano de pequeñas tiendas de mascotas.
 
-### 2.1.2. Estrategias y tácticas frente a competidores
+| Dimensiones | PetStock | Competidor 1: Nubox | Competidor 2: Loyverse POS | Competidor 3: Holded |
+| :--- | :--- | :--- | :--- | :--- |
+| **Logotipo** | ![PetStock](./assets/logos/PetStock.jpeg) | ![Nubox](./assets/logos/Nubox.jpeg) | ![Loyverse](./assets/logos/Loyverse.jpeg) | ![Holded](./assets/logos/Holded.jpeg) |
+| **Perfil: Overview** | Aplicación web SaaS peruana que centraliza la gestión integral de inventarios, control de ventas, compras y alertas automáticas de stock mínimo para pequeñas tiendas de mascotas, adaptándose a las necesidades de los comercios de barrio y boutiques especializadas. | Software de gestión administrativa y contable en la nube enfocado en pequeñas y medianas empresas en Latinoamérica, con fuerte énfasis en el cumplimiento tributario, emisión de comprobantes y automatización de procesos financieros y contables. | Sistema de punto de venta (POS) móvil y web de uso global, enfocado en tiendas de barrio, minimarkets y pequeños comercios minoristas con operaciones comerciales directas. | Software ERP y de gestión empresarial en la nube diseñado para automatizar la facturación, contabilidad, CRM e inventarios de pymes y negocios en crecimiento. |
+| **Perfil: Ventaja competitiva** | Enfoque 100% especializado en el flujo de trabajo de las tiendas de mascotas (control de alimentos de alta rotación, accesorios y alertas inteligentes de stock bajo), eliminando el uso de cuadernos tradicionales con una interfaz sencilla. | Fuerte automatización de procesos contables y cumplimiento tributario para negocios, ofreciendo tranquilidad en el cumplimiento de obligaciones administrativas, cálculo automatizado de impuestos y un respaldo legal sólido. | Interfaz sumamente ágil orientada a cobros rápidos, control básico de inventario y gestión operativa desde dispositivos móviles o tablets, permitiendo una alta velocidad en la atención del cliente. | Sistema modular avanzado y altamente personalizable para empresas en crecimiento, ofreciendo la centralización total de la administración financiera, contable y comercial en una sola plataforma robusta. |
+| **Marketing: Mercado objetivo** | Dueños y administradores de pequeñas tiendas de barrio enfocadas en consumo frecuente (Sectores C/D) y boutiques especializadas en productos premium (Sectores A/B) en el Perú. | Pequeñas y medianas empresas, estudios contables y comerciantes independientes que requieren un estricto control administrativo y tributario. | Minimarkets, tiendas de barrio, cafeterías y pequeños comercios minoristas generales a nivel global que requieren agilidad en sus ventas diarias. | PyMEs, comercios en crecimiento y empresas de servicios que buscan un ERP integral basado en la nube. |
+| **Marketing: Estrategias** | Campañas digitales en redes sociales, alianzas con distribuidores del sector y contacto directo presencial con tenderos locales en zonas comerciales de Lima y provincias. | Marketing de contenidos enfocado en educación de gestión y tributación, pauta publicitaria digital y webinars especializados dirigidos a administradores y contadores. | Posicionamiento orgánico en tiendas de aplicaciones móviles (App Store y Google Play) y estrategias de atracción digital. | Campañas digitales B2B, inbound marketing, pauta en buscadores y asociaciones estratégicas comerciales. |
+| **Producto: Servicios** | Plataforma web (Responsive Web App) con módulo de catálogo centralizado, control de inventario en tiempo real, alertas de stock mínimo, registro de ventas, compras y reportes. | Módulos de facturación electrónica, contabilidad, remuneraciones, gastos y portal de gestión para clientes. | Sistema de punto de venta (POS), control de inventario, programa de lealtad para clientes y gestión de empleados. | Módulos de facturación, inventarios avanzados, CRM, gestión de proyectos, contabilidad y tienda online integrada. |
+| **Producto: Precios y Costos** | Modelo de suscripción mensual SaaS accesible, diseñado y adaptado a la realidad económica de los pequeños comercios en el Perú. | Planes escalables mensuales basados en el volumen de operaciones o emisión de documentos tributarios. | Aplicación base con funciones gratuitas y módulos avanzados de pago mediante suscripción mensual accesible. | Estructura de planes por niveles de servicio según los módulos operativos contratados y número de usuarios. |
+| **Producto: Canales** | Plataforma web responsive accesible desde navegadores de escritorio y dispositivos móviles. Distribución directa vía sitio web corporativo y alianzas sectoriales. | Plataforma web SaaS basada en la nube y aplicación móvil complementaria de soporte operativo. | Aplicación nativa móvil para sistemas iOS/Android y panel web complementario de administración. | Plataforma web SaaS basada en la nube con acceso multiplataforma para la administración del negocio. |
+| **SWOT: Fortalezas** | Enfoque especializado en el sector retail de mascotas de la realidad peruana. Interfaz intuitiva diseñada para usuarios sin perfil técnico. Automatización de alertas de stock mínimo para evitar quiebres. | Plataforma madura y robusta con alta confiabilidad en el cálculo tributario y contable. Soporte técnico establecido en el mercado. | Curva de aprendizaje muy baja y excelente velocidad para procesar ventas rápidas desde dispositivos táctiles. | Alta versatilidad modular y capacidad de personalización para diversos tipos de procesos de negocio. |
+| **SWOT: Debilidades** | Marca de reciente creación sin reconocimiento previo en el mercado. Recursos iniciales limitados para campañas publicitarias masivas. | Enfoque principalmente contable y tributario, lo que limita su personalización operativa para el control detallado del inventario específico de mascotas. | Capacidades de control de inventario limitadas y poco flexibles para la gestión específica de alertas de stock en productos de mascotas. | Curva de adopción compleja y costos elevados para micro y pequeños comerciantes con baja madurez tecnológica. |
+| **SWOT: Oportunidades** | Creciente digitalización de los pequeños comercios en el Perú y aumento sostenido del presupuesto que destinan los hogares al cuidado de mascotas. | Expansión hacia nuevos nichos de mercado minorista que buscan simplificar su administración general. | Crecimiento de la adopción de soluciones de cobro móvil en pequeños negocios latinoamericanos. | Demanda creciente de digitalización y automatización en el sector comercial de la región. |
+| **SWOT: Amenazas** | Posible resistencia inicial de los tenderos tradicionales a abandonar los cuadernos y métodos manuales. Llegada de soluciones genéricas internacionales. | Aparición de competidores locales especializados en nichos específicos que desplacen las soluciones genéricas. | Competencia agresiva de aplicaciones gratuitas de punto de venta en el mercado minorista. | Entrada de plataformas ERP internacionales con estrategias de precios agresivas para pymes. |
 
-## 2.2. Entrevistas
+### 2.1.2. Estrategias y tácticas frente a competidores.
+A partir del análisis competitivo realizado frente a Nubox, Loyverse POS y Holded, hemos definido un conjunto de estrategias y tácticas orientadas a afrontar las fortalezas de dichos competidores, aprovechar sus debilidades y posicionar a PetStock (desarrollado por la startup Nexora) como la solución de referencia para la gestión de tiendas de mascotas en el Perú.
 
-### 2.2.1. Diseño de entrevistas
+* **Estrategia de diferenciación por especialización en el sector retail de mascotas:** Mientras los competidores actuales ofrecen soluciones genéricas orientadas a la contabilidad (Nubox, Holded) o al punto de venta general sin control especializado de insumos veterinarios (Loyverse POS), PetStock se posiciona como la única plataforma diseñada exclusivamente para el flujo operativo de las tiendas de mascotas. La táctica asociada consiste en comunicar de forma directa este diferencial mediante demostraciones comerciales enfocadas en la gestión de alimentos de alta rotación, control por lotes de accesorios y alertas inteligentes de stock mínimo ante los tenderos locales.
+* **Estrategia de penetración local y adopción presencial:** Frente al alcance digital masivo pero despersonalizado de las plataformas internacionales y corporativas, la ventaja competitiva más relevante de Nexora es el conocimiento profundo de la realidad comercial peruana (pequeños negocios de los sectores C/D y boutiques de los sectores A/B). La táctica consiste en realizar visitas comerciales presenciales a zonas de alta concentración de veterinarias y tiendas de mascotas en Lima y provincias, reduciendo la resistencia inicial al cambio frente a los cuadernos tradicionales mediante acompañamiento directo y onboarding guiado.
+* **Estrategia de precios y costos accesibles para MYPEs:** Considerando que el mercado objetivo está compuesto por pequeños comerciantes con restricciones presupuestales y una baja predisposición a pagar tarifas corporativas elevadas (como las de Holded), PetStock aplicará un modelo financiero ajustado a la realidad local. La táctica consiste en ofrecer un esquema de suscripción mensual SaaS flexible y económico, respaldado por un periodo de prueba inicial sin fricciones que demuestre un ahorro de tiempo administrativo inmediato en el negocio.
+* **Estrategia de simplicidad de interfaz frente a la complejidad técnica:** Mientras los sistemas ERP integrales exigen curvas de aprendizaje complejas y personal técnico especializado, PetStock prioriza una experiencia de usuario sumamente intuitiva. La táctica consiste en diseñar una plataforma web responsive ágil, eliminando menús contables confusos y botones innecesarios, permitiendo que el administrador o cajero gestione las ventas y el inventario en pocos clics sin necesidad de conocimientos previos en computación.
+* **Estrategia de mitigación ante la resistencia al registro digital:** Ante la inercia de los tenderos tradicionales acostumbrados al uso de cuadernos y registros manuales, PetStock enfoca su propuesta en la prevención directa de pérdidas económicas por quiebres de stock. La táctica consiste en destacar visualmente en las alertas automáticas el dinero exacto que el comerciante deja de perder al reponer a tiempo sus productos más vendidos, convirtiendo la herramienta digital en un aliado indispensable para la rentabilidad diaria del establecimiento.
+
+### 2.2. Entrevistas. 
+
+#### 2.2.1. Diseño de entrevistas.
+Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de PetStock. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los dueños o administradores de pequeñas tiendas de barrio (Sectores C/D) y los propietarios de boutiques especializadas en productos premium (Sectores A/B). 
+
+**Objetivos Generales del Proceso de Entrevistas**
+* Validar la existencia y criticidad del problema de desabastecimiento, quiebres de stock y errores en el registro manual de ventas en el sector retail de mascotas.
+* Comprender cómo gestionan actualmente sus operaciones comerciales y logísticas los establecimientos, identificando herramientas empíricas utilizadas (como cuadernos o libretas) y puntos de dolor administrativos.
+* Explorar la disposición de los dueños de negocios a adoptar una solución SaaS en la nube y su sensibilidad al costo de suscripción.
+* Identificar funcionalidades prioritarias y posibles fricciones operativas en la adopción del producto desde la perspectiva de ambos perfiles de usuario.
+
+**Segmento 1: Dueños o Administradores de tiendas tradicionales para mascotas (Sectores C/D)**
+* **Perfil del entrevistado:** Propietarios, encargados de caja o administradores de tiendas de mascotas independientes de barrio y minimarkets veterinarios en zonas comerciales de Lima y provincias, caracterizados por un volumen constante de transacciones y una digitalización inicial o moderada.
+* **Preguntas de apertura y contexto**
+  * ¿Podría contarme brevemente cómo inició su tienda de mascotas y qué tipo de productos tienen mayor rotación en su día a día?
+  * ¿Cuántas personas atienden directamente el negocio y cómo se organizan para cubrir la atención al público y la administración?
+* **Preguntas sobre gestión operativa actual e inventario**
+  * ¿Cómo realiza actualmente el control de su inventario y el registro de la mercadería que ingresa y sale de su tienda?
+  * ¿Qué herramientas o métodos utiliza para anotar sus ventas diarias y coordinar los pedidos con sus proveedores?
+  * ¿Con qué frecuencia se queda sin stock de un producto muy vendido sin darse cuenta a tiempo? ¿Cómo afecta eso a sus ingresos?
+* **Preguntas sobre dolores y fricciones administrativas**
+  * Al final del día, ¿qué tan complicado es cuadrar la caja o verificar el dinero físico frente a lo que supuestamente debería haber en el local?
+  * ¿Qué errores o pérdidas económicas ha experimentado debido a registros manuales en papel o cuadernos extraviados?
+* **Preguntas sobre disposición y adopción tecnológica**
+  * Si existiera una plataforma web sencilla que le avise automáticamente cuándo se va a acabar un producto y registre sus ventas al instante, ¿qué tan valiosa sería para usted?
+  * ¿Qué barreras o temores principales le impedirían abandonar sus métodos tradicionales por una solución digital?
+  * ¿Estaría dispuesto a pagar una suscripción mensual accesible por un software así? ¿Qué rango de precios consideraría razonable para su negocio?
+
+**Segmento 2: Propietarios o Administradores de Boutiques Especializadas (Sectores A/B)**
+* **Perfil del entrevistado:** Propietarios o gerentes de boutiques y pet shops especializados en productos premium (alimentos orgánicos, accesorios importados, farmacia veterinaria de alta gama), que operan con un catálogo más diversificado y clientes exigentes.
+* **Preguntas de apertura y contexto**
+  * ¿Podría describir el concepto de su boutique y qué tipo de perfil de cliente atiende habitualmente en el establecimiento?
+  * ¿Cómo manejan la variedad y diversificación de su catálogo, especialmente con productos importados o de marcas exclusivas?
+* **Preguntas sobre gestión operativa y control de lotes**
+  * ¿Qué sistema o método utiliza actualmente para controlar las fechas de caducidad, lotes y niveles de stock de productos especializados?
+  * ¿Cómo gestiona el control de las ventas cruzadas y el seguimiento del historial de compras de sus clientes más frecuentes?
+* **Preguntas sobre dolores de control y rentabilidad**
+  * ¿Qué dificultades encuentra al momento de realizar inventarios generales en su tienda y cuánto tiempo le demanda esa tarea?
+  * ¿Ha tenido mermas o pérdidas por productos vencidos que no se rotaron a tiempo debido a la falta de reportes detallados?
+* **Preguntas sobre expectativas y requerimientos del sistema**
+  * ¿Qué características indispensables exigiría a una plataforma digital para decidir implementarla en su boutique?
+  * ¿Qué tan importante considera contar con reportes analíticos de ventas por categoría para la toma de decisiones comerciales y reposición con proveedores?
+  * ¿Estaría dispuesto a migrar la administración completa de su boutique a un modelo de software en la nube si este le garantiza optimizar su capital de trabajo?
+
+### 2.2. Entrevistas. 
+
+#### 2.2.1. Diseño de entrevistas.
+Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de PetStock. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los dueños o administradores de pequeñas tiendas de barrio (Sectores C/D) y los propietarios de boutiques especializadas en productos premium (Sectores A/B). 
+
+**Objetivos Generales del Proceso de Entrevistas**
+* Validar la existencia y criticidad del problema de desabastecimiento, quiebres de stock y errores en el registro manual de ventas en el sector retail de mascotas.
+* Comprender cómo gestionan actualmente sus operaciones comerciales y logísticas los establecimientos, identificando herramientas empíricas utilizadas (como cuadernos o libretas) y puntos de dolor administrativos.
+* Explorar la disposición de los dueños de negocios a adoptar una solución SaaS en la nube y su sensibilidad al costo de suscripción.
+* Identificar funcionalidades prioritarias y posibles fricciones operativas en la adopción del producto desde la perspectiva de ambos perfiles de usuario.
+
+**Segmento 1: Dueños o Administradores de tiendas tradicionales para mascotas (Sectores C/D)**
+* **Perfil del entrevistado:** Propietarios, encargados de caja o administradores de tiendas de mascotas independientes de barrio y minimarkets veterinarios en zonas comerciales de Lima y provincias, caracterizados por un volumen constante de transacciones y una digitalización inicial o moderada.
+* **Preguntas de apertura y contexto**
+  * ¿Podría contarme brevemente cómo inició su tienda de mascotas y qué tipo de productos tienen mayor rotación en su día a día?
+  * ¿Cuántas personas atienden directamente el negocio y cómo se organizan para cubrir la atención al público y la administración?
+* **Preguntas sobre gestión operativa actual e inventario**
+  * ¿Cómo realiza actualmente el control de su inventario y el registro de la mercadería que ingresa y sale de su tienda?
+  * ¿Qué herramientas o métodos utiliza para anotar sus ventas diarias y coordinar los pedidos con sus proveedores?
+  * ¿Con qué frecuencia se queda sin stock de un producto muy vendido sin darse cuenta a tiempo? ¿Cómo afecta eso a sus ingresos?
+* **Preguntas sobre dolores y fricciones administrativas**
+  * Al final del día, ¿qué tan complicado es cuadrar la caja o verificar el dinero físico frente a lo que supuestamente debería haber en el local?
+  * ¿Qué errores o pérdidas económicas ha experimentado debido a registros manuales en papel o cuadernos extraviados?
+* **Preguntas sobre disposición y adopción tecnológica**
+  * Si existiera una plataforma web sencilla que le avise automáticamente cuándo se va a acabar un producto y registre sus ventas al instante, ¿qué tan valiosa sería para usted?
+  * ¿Qué barreras o temores principales le impedirían abandonar sus métodos tradicionales por una solución digital?
+  * ¿Estaría dispuesto a pagar una suscripción mensual accesible por un software así? ¿Qué rango de precios consideraría razonable para su negocio?
+
+**Segmento 2: Propietarios o Administradores de Boutiques Especializadas (Sectores A/B)**
+* **Perfil del entrevistado:** Propietarios o gerentes de boutiques y pet shops especializados en productos premium (alimentos orgánicos, accesorios importados, farmacia veterinaria de alta gama), que operan con un catálogo más diversificado y clientes exigentes.
+* **Preguntas de apertura y contexto**
+  * ¿Podría describir el concepto de su boutique y qué tipo de perfil de cliente atiende habitualmente en el establecimiento?
+  * ¿Cómo manejan la variedad y diversificación de su catálogo, especialmente con productos importados o de marcas exclusivas?
+* **Preguntas sobre gestión operativa y control de lotes**
+  * ¿Qué sistema o método utiliza actualmente para controlar las fechas de caducidad, lotes y niveles de stock de productos especializados?
+  * ¿Cómo gestiona el control de las ventas cruzadas y el seguimiento del historial de compras de sus clientes más frecuentes?
+* **Preguntas sobre dolores de control y rentabilidad**
+  * ¿Qué dificultades encuentra al momento de realizar inventarios generales en su tienda y cuánto tiempo le demanda esa tarea?
+  * ¿Ha tenido mermas o pérdidas por productos vencidos que no se rotaron a tiempo debido a la falta de reportes detallados?
+* **Preguntas sobre expectativas y requerimientos del sistema**
+  * ¿Qué características indispensables exigiría a una plataforma digital para decidir implementarla en su boutique?
+  * ¿Qué tan importante considera contar con reportes analíticos de ventas por categoría para la toma de decisiones comerciales y reposición con proveedores?
+  * ¿Estaría dispuesto a migrar la administración completa de su boutique a un modelo de software en la nube si este le garantiza optimizar su capital de trabajo?
 
 ### 2.2.2. Registro de entrevistas
 
