@@ -244,6 +244,131 @@ blablbalbla
 #### 1.2.2.1. Lean UX Problem Statements
 
 #### 1.2.2.2. Lean UX Assumptions
+**Assumptions Worksheet**
+
+**Business Assumptions:**
+
+1. **Creemos que nuestros clientes necesitan** una forma sencilla de controlar sus productos, ventas e inventario, ya que actualmente pueden tener dificultades para conocer con precisión cuánto stock tienen disponible y cuándo necesitan reponer productos.
+
+2. **Estas necesidades se pueden resolver con** una aplicación web que centralice la gestión de productos, inventario, ventas, compras, clientes, alertas y reportes en un solo lugar.
+
+3. **Mis clientes iniciales son** dueños o administradores de pequeñas tiendas de mascotas que comercializan alimentos, productos de consumo frecuente, accesorios y productos de cuidado para mascotas.
+
+4. **El valor #1 que un cliente quiere de mi servicio es** tener un mayor control de su inventario para evitar quiebres de stock, exceso de productos y pérdidas por una mala gestión.
+
+5. **El cliente también puede obtener el beneficio adicional de** ahorrar tiempo en tareas administrativas, tener un mejor seguimiento de sus ventas y compras, y contar con información que facilite la toma de decisiones del negocio.
+
+6. **Voy a adquirir la mayoría de mis clientes a través de** campañas de marketing en redes sociales y contacto directo con pequeños negocios del sector.
+
+7. **Haré dinero a través de** una suscripción mensual por el uso de la plataforma, ofreciendo el acceso a las funcionalidades de gestión de PetStock.
+
+8. **Mi competencia principal en el mercado serán** otras aplicaciones y sistemas de gestión de inventario y ventas dirigidos a pequeños comercios, además de métodos tradicionales como hojas de cálculo y registros manuales.
+
+9. **Lo venceremos debido a que** PetStock estará enfocado específicamente en las necesidades de las pequeñas tiendas de mascotas, ofreciendo una solución sencilla, centralizada y fácil de utilizar.
+
+10. **Mi mayor riesgo de producto es que** los dueños o administradores de pequeñas tiendas no consideren necesario utilizar una aplicación de gestión y prefieran continuar con registros manuales o herramientas que ya conocen.
+
+11. **Resolveremos esto a través de** una interfaz sencilla e intuitiva, funcionalidades enfocadas en las tareas más importantes del negocio y una propuesta de valor que demuestre cómo PetStock puede ahorrar tiempo y mejorar el control del inventario.
+
+**Business Outcome Assumptions:**
+
+1. **Creemos que lograremos aumentar la retención de clientes en al menos un 20 %**, al ofrecer una herramienta que facilite las tareas diarias de gestión y permita a las pequeñas tiendas mantener un mejor control de sus operaciones.
+
+2. **Creemos que lograremos reducir en al menos un 20 % la cantidad de quiebres de stock en las tiendas que utilizan PetStock**, al facilitar el seguimiento de las cantidades disponibles y la identificación de productos que necesitan reposición.
+
+3. **Creemos que lograremos reducir en al menos un 30 % el tiempo dedicado a las tareas administrativas** relacionadas con el registro y consulta de productos, ventas, compras e inventario, al centralizar esta información en una sola plataforma.
+
+4. **Creemos que al menos el 70 % de los clientes utilizará PetStock de manera recurrente durante su jornada laboral**, debido a que la plataforma proporcionará información actualizada sobre las ventas, el inventario y las alertas.
+
+5. **Creemos que al menos el 10 % de los usuarios interesados se convertirá en clientes de pago**, al ofrecer una suscripción mensual cuyo valor sea percibido como beneficioso frente al tiempo y los problemas que pueden ahorrar mediante el uso de PetStock.
+
+6. **Creemos que lograremos mantener una tasa de cancelación mensual inferior al 10 %**, ofreciendo una plataforma sencilla y enfocada en las necesidades principales de las pequeñas tiendas de mascotas.
+
+7. **Creemos que lograremos captar al menos 20 nuevos clientes durante los primeros seis meses**, mediante campañas en redes sociales y contacto directo con pequeñas tiendas de mascotas.
+
+**User Assumptions:**
+
+**¿Quién es el usuario?**
+
+Nuestro foco de estudio son los dueños de pequeñas tiendas de mascotas, pertenecientes a dos segmentos:
+
+- Tiendas que comercializan principalmente alimentos y productos de consumo frecuente para mascotas.
+- Tiendas especializadas en productos premium y de cuidado para mascotas.
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?**
+
+PetStock encaja en las actividades diarias de gestión de la tienda, principalmente en el control de productos, inventario, ventas, compras y clientes. El usuario utilizará la aplicación como una herramienta central para organizar y consultar la información del negocio.
+
+**¿Qué problemas tiene nuestro producto y cómo se pueden resolver?**
+
+Los usuarios tienen dificultades para controlar el inventario, registrar las ventas y compras, identificar los productos que necesitan reposición y mantener organizada la información de su negocio.
+
+PetStock resolverá estos problemas centralizando estas tareas en una sola aplicación y proporcionando alertas cuando el stock alcance el mínimo establecido.
+
+**¿Cuándo y cómo es usado nuestro producto?**
+
+PetStock será utilizado principalmente durante la jornada laboral de la tienda, desde una computadora, laptop o dispositivo con acceso a internet.
+
+El usuario podrá consultar el inventario, registrar ventas y compras, actualizar productos y revisar alertas y reportes según las necesidades del negocio.
+
+**¿Qué características son importantes?**
+
+Son importantes las siguientes funcionalidades:
+
+- Registro y gestión de productos.
+- Control de inventario.
+- Alertas de stock mínimo.
+- Gestión de clientes.
+- Registro de ventas y compras.
+- Generación de reportes.
+
+**¿Cómo debe verse nuestro producto y cómo debe comportarse?**
+
+PetStock debe tener una interfaz clara, ordenada y fácil de utilizar, con una navegación sencilla entre sus módulos.
+
+Debe mostrar la información importante de manera comprensible y responder rápidamente a las acciones del usuario, evitando procesos innecesariamente complejos.
+
+**User Outcome and Benefit Assumptions:**
+
+1. **Creemos que los usuarios quieren tener un mayor control sobre el inventario de su tienda**, para conocer en todo momento qué productos tienen disponibles y evitar quedarse sin productos importantes.
+
+2. **Creemos que los usuarios quieren identificar rápidamente los productos que necesitan reposición**, para poder actuar antes de que se agoten y evitar perder ventas.
+
+3. **Creemos que los usuarios quieren reducir el tiempo que dedican a registrar y consultar información del negocio**, para poder concentrarse en la atención de los clientes y en otras actividades de la tienda.
+
+4. **Creemos que los usuarios quieren registrar las ventas de manera rápida y ordenada**, para mantener actualizada la información de sus operaciones y evitar errores en el control del inventario.
+
+5. **Creemos que los usuarios quieren mantener organizados los productos, clientes, ventas y compras en un solo lugar**, para evitar depender de registros manuales, hojas de cálculo o diferentes medios de información.
+
+6. **Creemos que los usuarios quieren conocer el comportamiento de las ventas y del inventario**, para identificar qué productos tienen mayor o menor movimiento y tomar mejores decisiones para el negocio.
+
+7. **Creemos que los usuarios quieren mantener un historial de sus clientes y compras**, para consultar información cuando sea necesario y tener un mejor seguimiento de las operaciones realizadas.
+
+8. **Creemos que los usuarios quieren reducir los errores en el control de las existencias**, para tener información más confiable sobre el stock disponible y evitar diferencias entre el inventario registrado y el inventario real.
+
+9. **Creemos que los usuarios quieren acceder a la información de su negocio de manera sencilla**, para poder consultar y actualizar los datos sin necesidad de conocimientos técnicos avanzados.
+
+10. **Creemos que los usuarios quieren tener una herramienta que se adapte a las actividades habituales de una pequeña tienda de mascotas**, para gestionar alimentos, accesorios, productos de cuidado y otros artículos desde una misma plataforma.
+
+**Feature Assumptions:**
+
+1. **La gestión de productos permitirá** registrar, editar, organizar y consultar los productos que comercializa la tienda, facilitando su organización y control.
+
+2. **El módulo de inventario facilitará** el control de las cantidades disponibles y el registro de entradas y salidas, permitiendo mantener actualizado el stock.
+
+3. **Las alertas de stock mínimo ayudarán a** identificar oportunamente los productos que requieren reposición, reduciendo el riesgo de quiebres de stock.
+
+4. **El módulo de ventas permitirá** registrar los productos vendidos y el cliente, actualizando automáticamente el inventario.
+
+5. **El módulo de clientes permitirá** registrar y consultar información de los compradores y su historial de compras, facilitando el seguimiento de las operaciones.
+
+6. **El módulo de reportes proporcionará** información sobre ventas, compras e inventario, ayudando a los usuarios a analizar el funcionamiento del negocio y tomar decisiones.
+
+7. **El Dashboard ofrecerá** un resumen de las ventas, el estado del inventario y las alertas, permitiendo al usuario conocer rápidamente la situación de la tienda.
+
+8. **Una interfaz sencilla y una navegación organizada** facilitarán el uso de PetStock, permitiendo a los usuarios realizar sus tareas sin necesidad de conocimientos técnicos avanzados.
+
+9. **El módulo de Perfil y Configuración permitirá** actualizar la información personal del usuario y los datos del negocio, manteniendo la información administrativa actualizada.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
