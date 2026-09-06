@@ -22,6 +22,8 @@
 
 Mendoza Moreano, Mariel Lucero  - u20231a418
 
+Quispe Palomino, Tony Jhunior - u20241f714
+
 **Agosto, 2026**
 </div>
 
@@ -42,7 +44,7 @@ Mendoza Moreano, Mariel Lucero  - u20231a418
 <td class="c5" style="border: 1px solid black;">24/04/2025</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
-I2<br><br>
+Tony Jhunior Quispe Palomino<br><br>
 I3<br><br>
 I4<br><br>
 I5
@@ -233,7 +235,15 @@ blablbalbla
 
 ### 1.1.1 Descripción de la Startup
 
-### 1.1.2 Perfiles de integrantes del equipo
+### 1.1.2. Perfiles de integrantes del equipo
+
+| Foto | Integrante |
+| :---: | :--- |
+| <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
+| *(Pendiente)* | *[Nombre del integrante 2 — Código de Estudiante]* |
+| *(Pendiente)* | *[Nombre del integrante 3 — Código de Estudiante]* |
+| *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
+| *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
 
 ## 1.2 Solution Profile
 
@@ -247,7 +257,51 @@ blablbalbla
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-#### 1.2.2.4. Lean UX Canvas
+### 1.2.2.4. Lean UX Canvas.
+
+#### 1. Business Problem
+Los dueños y administradores de pequeñas tiendas de mascotas en el Perú (tanto de consumo frecuente como de productos premium) carecen de herramientas digitales unificadas para gestionar su inventario y ventas. La gran mayoría sigue dependiendo de cuadernos físicos o hojas de Excel desvinculadas, lo que genera desorden operativo, quiebres de stock inadvertidos, errores en el cuadre diario de caja, pérdida de mercadería y una gran pérdida de tiempo en tareas administrativas cotidianas.
+
+#### 2. Business Outcomes
+* Reducir en al menos un 20% los quiebres de stock en las tiendas usuarias.
+* Disminuir en un 30% el tiempo dedicado a tareas administrativas manuales y cuadres de caja.
+* Lograr una tasa de conversión de al menos el 10% de los usuarios de prueba a suscriptores de pago.
+* Mantener una alta recurrencia, logrando que al menos el 70% de los clientes utilicen la plataforma diariamente en su jornada laboral.
+
+#### 3. Users & Customers
+* **Segmento 1:** Dueños, administradores y trabajadores de pequeñas tiendas de barrio enfocadas en la venta de alimentos y productos de consumo frecuente para mascotas (alta rotación).
+* **Segmento 2:** Dueños y administradores de tiendas especializadas en productos premium, accesorios y artículos de cuidado para mascotas.
+
+#### 4. User Outcomes & Benefits
+* Control en tiempo real de las existencias disponibles para evitar quedarse sin productos clave.
+* Identificación oportuna de mercadería próxima a agotarse mediante alertas automáticas de stock mínimo.
+* Registro rápido y ordenado de las ventas y compras diarias, eliminando los cuadernos físicos.
+* Centralización de la información del negocio en una interfaz web intuitiva, accesible sin conocimientos técnicos avanzados y que facilita la toma de decisiones.
+
+#### 5. Solutions
+* **PetStock:**
+  * Módulo de gestión de productos y catálogo centralizado.
+  * Módulo de control de inventario en tiempo real con entradas y salidas automáticas.
+  * Sistema de alertas inteligentes ante niveles de stock mínimo.
+  * Módulos operativos de registro de ventas y gestión de clientes y proveedores.
+  * Panel de control (Dashboard) principal y reportes analíticos de rendimiento del negocio.
+
+#### 6. Hypotheses
+* **Gestión de Productos:** Centralizar la gestión del catálogo permitirá registrar, editar y organizar los productos de manera eficiente, reduciendo el tiempo en tareas administrativas.
+* **Control de Inventario:** Proveer visibilidad actualizada de las cantidades disponibles mediante el módulo de inventario permitirá reducir los quiebres de stock en al menos un 20%.
+* **Alertas de Stock Mínimo:** El sistema de alertas automáticas ante productos próximos a agotarse permitirá a los administradores anticiparse a la escasez de mercancía.
+* **Módulo de Ventas:** Digitalizar el registro de transacciones con el módulo de ventas reducirá en al menos un 30% el tiempo diario dedicado al cuadre y gestión manual.
+* **Módulo de Clientes:** Proveer acceso al historial y datos de los compradores aumentará la retención de clientes en al menos un 20%.
+* **Generación de Reportes:** Ofrecer reportes analíticos sobre ventas e inventario mejorará la toma de decisiones comerciales de los dueños de los negocios.
+* **Dashboard Interactivo:** Brindar una visión general e inmediata del estado del negocio mediante el Dashboard garantizará que el 70% de los usuarios use la plataforma de forma recurrente.
+* **Interfaz Intuitiva:** Una interfaz simple y una navegación organizada permitirán realizar las tareas de gestión sin requerir conocimientos técnicos avanzados.
+* **Perfil y Configuración:** Permitir la actualización de los datos del usuario y del negocio asegurará una alta retención y recurrencia en el uso de PetStock.
+
+#### 7. What's the Most Important Thing We Need to Learn First?
+¿Están realmente dispuestos los dueños de las pequeñas tiendas de mascotas a abandonar sus tradicionales cuadernos y registros en papel para digitalizar su inventario y ventas diarias en una plataforma web durante su ajetreada jornada laboral?
+
+#### 8. What's the Least Amount of Work We Need to Do to Learn the Next Most Important Thing?
+Desarrollar un MVP funcional (Landing Page informativa y prototipos interactivos de alta fidelidad en Figma) para realizar entrevistas de validación presenciales con tenderos reales, midiendo su grado de aceptación frente a la interfaz y su disposición real a cambiar sus métodos manuales.
 
 ## 1.3. Segmentos objetivo
 
