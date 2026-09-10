@@ -24,6 +24,8 @@ Mendoza Moreano, Mariel Lucero  - u20231a418
 
 Quispe Palomino, Tony Jhunior - u20241f714
 
+Valladolid Jiménez, Arturo Fernando - u202420147
+
 **Agosto, 2026**
 </div>
 
@@ -240,7 +242,7 @@ blablbalbla
 | Foto | Integrante |
 | :---: | :--- |
 | <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
-| *(Pendiente)* | *[Nombre del integrante 2 — Código de Estudiante]* |
+| <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | Valladolid Jiménez, Arturo Fernando — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
 | *(Pendiente)* | *[Nombre del integrante 3 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
@@ -249,9 +251,19 @@ blablbalbla
 
 ### 1.2.1 Antecedentes y problemática
 
-### 1.2.2 Lean UX Process
+## 1.2.2 Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statements
+### 1.2.2.1 Lean UX Problem Statements
+
+El estado actual de la gestión comercial en pequeñas tiendas de mascotas se concentra en dueños y administradores que venden alimentos de consumo frecuente o productos de cuidado especial. Muchos aún dependen de cuadernos escritos a mano, notas en papel desconectadas entre sí o tablas genéricas de Excel para controlar las ventas diarias, el inventario y los pedidos a proveedores.
+
+Los productos y servicios actuales no resuelven la necesidad de una plataforma web accesible y ligera, pensada para la operación diaria de una tienda de mascotas. Se requiere un sistema que unifique el control de inventario con alertas de stock mínimo en tiempo real, el registro de ventas y compras, y el seguimiento de clientes, sin exigir capacitaciones técnicas complejas ni configuraciones pesadas.
+
+PetStock buscará cubrir esta brecha mediante una aplicación web intuitiva. La plataforma centralizará en un mismo panel el catálogo de productos, el control de existencias en tiempo real, las notificaciones de stock bajo, el registro de punto de venta, la gestión de proveedores y reportes sencillos para el negocio.
+
+Nuestro enfoque inicial se dirige a dueños y administradores de pequeñas tiendas de mascotas. Incluye tiendas especializadas en alimentos y productos de consumo frecuente, además de negocios enfocados en accesorios y productos premium para el cuidado de mascotas.
+
+Consideraremos que la propuesta funciona si al menos el 70% de los usuarios utiliza PetStock de manera recurrente durante su jornada laboral, las tiendas reducen en al menos 20% sus quiebres de stock y los usuarios disminuyen en al menos 30% el tiempo dedicado a tareas administrativas relacionadas con productos, ventas, compras e inventario.
 
 #### 1.2.2.2. Lean UX Assumptions
 **Assumptions Worksheet**
