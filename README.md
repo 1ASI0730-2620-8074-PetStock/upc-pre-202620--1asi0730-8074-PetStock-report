@@ -251,9 +251,9 @@ blablbalbla
 
 ### 1.2.1 Antecedentes y problemática
 
-## 1.2.2 Lean UX Process
+### 1.2.2 Lean UX Process
 
-### 1.2.2.1 Lean UX Problem Statements
+#### 1.2.2.1. Lean UX Problem Statements
 
 El estado actual de la gestión comercial en pequeñas tiendas de mascotas se concentra en dueños y administradores que venden alimentos de consumo frecuente o productos de cuidado especial. Muchos aún dependen de cuadernos escritos a mano, notas en papel desconectadas entre sí o tablas genéricas de Excel para controlar las ventas diarias, el inventario y los pedidos a proveedores.
 
