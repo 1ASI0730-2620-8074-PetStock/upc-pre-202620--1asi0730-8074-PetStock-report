@@ -567,7 +567,7 @@ El Product Backlog reúne y ordena los User Stories de PetStock según el valor 
 | 14 | US08 | Consultar historial de cliente | Como administrador de tienda, deseo consultar el historial de compras de un cliente, para dar un mejor seguimiento a mis compradores frecuentes. | 3 |
 | 15 | US11 | Actualizar datos del negocio | Como administrador de tienda, deseo actualizar la información de mi perfil y de mi negocio, para mantener los datos administrativos correctos. | 3 |
 
-![Impact Mapping del Business Goal 2: uso recurrente de PetStock](assets/product-backlog/product-backlog-petstock.png)
+![Product Backlog de PetStock en Jira](assets/product-backlog/product-backlog-petstock.png)
 
 El Product Backlog se encuentra gestionado en Jira y puede revisarse en el siguiente enlace:
 
