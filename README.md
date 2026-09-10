@@ -47,7 +47,7 @@ Valladolid Jiménez, Arturo Fernando - u202420147
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
-I3<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
 I4<br><br>
 I5
 </td>
@@ -179,7 +179,7 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 blablablabla.
 <br><br>
-Integrante 2<br>
+Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 blablablabla<br><br>
 Integrante 3<br>
@@ -208,7 +208,7 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 blablabla
 <br><br>
-Integrante 2<br>
+Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 blablablabla<br><br>
 Integrante 3<br>
@@ -242,7 +242,7 @@ blablbalbla
 | Foto | Integrante |
 | :---: | :--- |
 | <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
-| <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | Valladolid Jiménez, Arturo Fernando — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
+| <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
 | *(Pendiente)* | *[Nombre del integrante 3 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
@@ -517,9 +517,61 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ## 3.1. User Stories
 
-## 3.2. Impact Mapping
+## 3.2 Impact Mapping
 
-## 3.3. Product Backlog
+El Impact Mapping permitió relacionar los objetivos de negocio de PetStock con los actores que intervienen en la plataforma, los cambios de comportamiento que se esperan de ellos y las funcionalidades necesarias para alcanzar dichos objetivos. A partir de este análisis, se priorizaron acciones relacionadas con el control de inventario, la adopción recurrente de la aplicación y la reducción de tareas administrativas.
+
+### Business Goal 1
+
+> Reducir en al menos un 20% los quiebres de stock en las tiendas usuarias de PetStock durante los primeros 6 meses de uso de la plataforma.
+
+![Impact Mapping del Business Goal 1: reducción de quiebres de stock](assets/impact-mapping/business-goal-1.png)
+
+Este objetivo se enfoca en que los administradores puedan identificar productos con existencias bajas y tomar decisiones de reposición antes de perder una venta por falta de stock.
+
+### Business Goal 2
+
+> Lograr que al menos el 70% de los usuarios registrados utilice PetStock de manera recurrente, 4 o más días por semana, durante los primeros 3 meses posteriores al despliegue.
+
+![Impact Mapping del Business Goal 2: uso recurrente de PetStock](assets/impact-mapping/business-goal-2.png)
+
+Este objetivo busca que la plataforma forme parte de la operación diaria de la tienda. Para ello, las funcionalidades priorizadas deben ser simples de usar y resolver tareas que el administrador realiza todos los días.
+
+### Business Goal 3
+
+> Reducir en al menos un 30% el tiempo que los administradores dedican a tareas administrativas, como el registro de ventas, compras e inventario, durante los primeros 3 meses de uso.
+
+![Impact Mapping del Business Goal 3: reducción de tiempo administrativo](assets/impact-mapping/business-goal-3.png)
+
+Este objetivo se relaciona con centralizar las operaciones del negocio en una sola plataforma, evitando registros duplicados entre cuadernos, hojas de cálculo y notas separadas.
+
+## 3.3 Product Backlog
+
+El Product Backlog reúne y ordena los User Stories de PetStock según el valor que aportan al negocio y la necesidad de los segmentos objetivo. La priorización inicia con la propuesta de valor y las funcionalidades que permiten administrar productos e inventario, debido a que estas se relacionan directamente con la reducción de quiebres de stock.
+
+| Orden | User Story ID | Título | Descripción | Story Points |
+|---:|---|---|---|---:|
+| 1 | US12 | Conocer la propuesta de valor | Como visitante, deseo conocer la propuesta de valor de PetStock, para evaluar si la plataforma se ajusta a las necesidades de mi tienda. | 2 |
+| 2 | US13 | Conocer beneficios por segmento | Como visitante del segmento de tiendas de alta rotación, deseo conocer los beneficios específicos de PetStock, para comprender cómo se adapta al control de productos de alto movimiento. | 3 |
+| 3 | US01 | Registrar producto | Como administrador de tienda, deseo registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. | 3 |
+| 4 | US03 | Consultar inventario | Como administrador de tienda, deseo consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. | 3 |
+| 5 | US04 | Recibir alerta de stock mínimo | Como administrador de tienda, deseo recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. | 3 |
+| 6 | US14 | Autenticar usuario | Como developer, deseo implementar un endpoint de autenticación, para que los usuarios accedan de forma segura al sistema. | 5 |
+| 7 | US15 | Exponer endpoint de inventario | Como developer, deseo implementar un endpoint que devuelva el estado del inventario, para que la Web Application pueda mostrarlo. | 3 |
+| 8 | US05 | Registrar venta | Como administrador de tienda, deseo registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. | 5 |
+| 9 | US02 | Editar producto | Como administrador de tienda, deseo editar la información de un producto existente, para mantener actualizados sus datos. | 3 |
+| 10 | US06 | Registrar compra a proveedor | Como administrador de tienda, deseo registrar una compra realizada a un proveedor, para actualizar mi inventario con la mercadería reabastecida. | 5 |
+| 11 | US07 | Registrar proveedor | Como administrador de tienda, deseo registrar la información de mis proveedores, para facilitar el proceso de reposición. | 3 |
+| 12 | US10 | Visualizar panel | Como administrador de tienda, deseo ver un resumen general del estado de mi negocio, para conocer rápidamente mi situación diaria. | 5 |
+| 13 | US09 | Consultar reportes | Como administrador de tienda, deseo consultar reportes de ventas, compras e inventario, para tomar mejores decisiones comerciales. | 5 |
+| 14 | US08 | Consultar historial de cliente | Como administrador de tienda, deseo consultar el historial de compras de un cliente, para dar un mejor seguimiento a mis compradores frecuentes. | 3 |
+| 15 | US11 | Actualizar datos del negocio | Como administrador de tienda, deseo actualizar la información de mi perfil y de mi negocio, para mantener los datos administrativos correctos. | 3 |
+
+![Impact Mapping del Business Goal 2: uso recurrente de PetStock](assets/product-backlog/product-backlog-petstock.png)
+
+El Product Backlog se encuentra gestionado en Jira y puede revisarse en el siguiente enlace:
+
+[Ver Product Backlog de PetStock en Jira](https://avalladolid.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&atlOrigin=eyJpIjoiZDZjYmFmN2UyMzgzNDFkM2IyZmQ5NzhhMTkyYTY2ZDMiLCJwIjoiaiJ9)
 
 # Capítulo IV: Product Design
 
