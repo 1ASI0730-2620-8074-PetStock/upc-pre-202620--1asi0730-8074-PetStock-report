@@ -517,7 +517,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ## 3.1. User Stories
 
-## 3.2 Impact Mapping
+## 3.2. Impact Mapping
 
 El Impact Mapping permitió relacionar los objetivos de negocio de PetStock con los actores que intervienen en la plataforma, los cambios de comportamiento que se esperan de ellos y las funcionalidades necesarias para alcanzar dichos objetivos. A partir de este análisis, se priorizaron acciones relacionadas con el control de inventario, la adopción recurrente de la aplicación y la reducción de tareas administrativas.
 
