@@ -26,6 +26,8 @@ Quispe Palomino, Tony Jhunior - u20241f714
 
 Valladolid Jiménez, Arturo Fernando - u202420147
 
+Mendoza Boluarte, Pierre Alessandro - u202320973
+
 **Agosto, 2026**
 </div>
 
@@ -48,7 +50,7 @@ Valladolid Jiménez, Arturo Fernando - u202420147
 Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
 Arturo Fernando Valladolid Jiménez<br><br>
-I4<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
 I5
 </td>
 <td class="c5" style="border: 1px solid black;">blablabla</td>
@@ -182,7 +184,7 @@ blablablabla.
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 blablablabla<br><br>
-Integrante 3<br>
+Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 blablabla
 <br><br>
@@ -235,7 +237,15 @@ blablbalbla
 
 ## 1.1. Startup Profile
 
-### 1.1.1 Descripción de la Startup
+### 1.1.1 Descripción de la Startup (**Startup: Nexora/Producto: PetStock**)
+
+**Nexora** es una startup tecnológica enfocada en el desarrollo de soluciones de software prácticas y accesibles, diseñadas específicamente para optimizar la gestión y digitalización de los pequeños comercios en el Perú. Surge ante la necesidad de ofrecer herramientas eficientes que permitan a los negocios locales superar las limitaciones de los métodos tradicionales de administración, reduciendo errores y ahorrando tiempo en sus operaciones cotidianas.
+Su producto principal, **PetStock**, es una aplicación web intuitiva desarrollada para centralizar la administración de las pequeñas tiendas de mascotas. La plataforma permite a los dueños y administradores registrar y organizar su catálogo de productos, controlar en tiempo real las cantidades disponibles en el inventario, registrar ventas y compras, gestionar información de clientes y proveedores, y recibir alertas automáticas ante un bajo nivel de stock. Mediante una interfaz moderna y adaptada a la realidad del comercio minorista, PetStock ayuda a los negocios a mantener un control preciso de su mercadería y tomar mejores decisiones operativas.
+
+**Misión**: Ayudar a las pequeñas tiendas de mascotas a gestionar de manera eficiente y organizada sus productos, inventario, ventas y compras mediante PetStock, brindándoles una herramienta accesible e intuitiva que simplifique sus operaciones diarias y facilite la toma de decisiones.
+
+**Visión**: Ser una solución tecnológica referente para la gestión de pequeñas tiendas de mascotas en el Perú, contribuyendo a su crecimiento y transformación digital mediante PetStock y futuras soluciones adaptadas a las necesidades del sector. 
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -251,6 +261,21 @@ blablbalbla
 
 ### 1.2.1 Antecedentes y problemática
 
+Para entender el contexto de PetStock, investigamos cómo se está comportando el mercado de mascotas en nuestro país y notamos que está creciendo de manera acelerada. Según los datos de la ENAHO, entre los años 2023 y 2024, el porcentaje de gasto que destinan las familias peruanas a la alimentación de sus mascotas subió del 42,4 % al 49,1 %. Además, revisando la ENAPRES 2024, encontramos que el 51,7 % de los hogares ya cuenta con al menos un perro, resaltando que en los hogares de menores ingresos este número llega hasta el 52,9 %. A la par de esta demanda masiva, hay reportes que indican que el mercado también se ha diversificado, impulsando una mayor oferta de productos premium, artículos de higiene, camas y servicios más especializados. 
+
+A pesar de que el mercado es gigante y sigue en expansión, detectamos que los dueños y administradores de las pequeñas tiendas de mascotas sufren bastantes dolores de cabeza en su operación diaria. El problema central es que tienen muchas dificultades para gestionar de manera eficiente su inventario y sus ventas. Esto pasa porque la mayoría sigue usando métodos manuales, como cuadernos, o herramientas digitales muy genéricas que no están conectadas entre sí. Al no tener un sistema unificado, los dueños se desordenan con la mercadería, no reciben alertas cuando se les está por acabar un producto y terminan sufriendo quiebres de stock. Al final, este desorden administrativo les hace perder ventas directas, reduce sus ganancias y afecta la atención que le dan a sus clientes. 
+
+**Tabla de 5W's y 2H's**
+| Pregunta | Formulación | Respuesta |
+| :--- | :--- | :--- |
+| **Who?** | ¿Quiénes son los afectados? | Dueños y administradores de pequeñas tiendas de mascotas. |
+| **What?** | ¿Cuál es el problema? | Dificultades para gestionar eficientemente su inventario y ventas debido al uso de herramientas digitales genéricas o métodos manuales que no se integran entre sí. |
+| **Where?** | ¿Dónde ocurre? | Principalmente en tiendas ubicadas en zonas urbanas, residenciales y comerciales de Lima y otras ciudades del Perú. |
+| **When?** | ¿Cuándo se hace la evidencia? | Durante la operación diaria, especialmente al atender clientes, registrar ventas o al intentar cuadrar la información del sistema con el almacén físico al final del día. |
+| **Why?** | ¿Por qué ocurre? | Debido a que muchas pequeñas tiendas utilizan registros manuales, hojas de cálculo o herramientas que no están integradas, dificultando la actualización automática del inventario y el seguimiento de las ventas y compras. |
+| **How?** | ¿Cómo se manifiesta? | Mediante dificultades para controlar las ventas, registrar correctamente las entradas y salidas de productos y mantener actualizado el inventario. |
+| **How Much?** | ¿Cuál es la magnitud? | En 2025 se registraron 17,26 millones de mascotas en los hogares peruanos y el 64 % de los hogares tenía al menos una mascota. Además, el mercado de productos y servicios para mascotas se estimó en alrededor de mil millones. |
+
 ### 1.2.2 Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
@@ -264,6 +289,7 @@ PetStock buscará cubrir esta brecha mediante una aplicación web intuitiva. La 
 Nuestro enfoque inicial se dirige a dueños y administradores de pequeñas tiendas de mascotas. Incluye tiendas especializadas en alimentos y productos de consumo frecuente, además de negocios enfocados en accesorios y productos premium para el cuidado de mascotas.
 
 Consideraremos que la propuesta funciona si al menos el 70% de los usuarios utiliza PetStock de manera recurrente durante su jornada laboral, las tiendas reducen en al menos 20% sus quiebres de stock y los usuarios disminuyen en al menos 30% el tiempo dedicado a tareas administrativas relacionadas con productos, ventas, compras e inventario.
+
 
 #### 1.2.2.2. Lean UX Assumptions
 **Assumptions Worksheet**
@@ -507,9 +533,45 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ### 2.3.3. User Journey Mapping
 
+Realizamos los User Journey Maps en la version de AS-IS para los dos segmentos , asi podremos entender de forma estructurada la experiencia del usuario en su interaccion con un producto o servicio.
+
+**User Journey Map del 1er segmento objetivo-Tiendas de alimentos y consumo frecuente para mascotas**
+
+<div align="center">
+  <img src="assets/user-journey-mapping/Customer Journey Map – Segmento 1_ Tienda Tradicional.png" alt="" />   
+</div>
+
+
+**User Journey Map del 2do segmento objetivo-Tiendas especializadas en productos premium y de cuidado**
+
+<div align="center">
+  <img src="assets/user-journey-mapping/Customer Journey Map – Segmento 2_ Tienda Especializada.png" alt=""/>
+</div>
+
 ### 2.3.4. Empathy Mapping
 
+El Empathy Mapping nos ayuda a entender mas sobre la experiencia cognitica y emocional del usuario.Mediante las secciones sobre el pensamientos , sentimientos ,que dice y hace , se trata de entender sus motivaciones y frustaciones
+
+**Empathy Mapping del 1er segmento objetivo-Tiendas de alimentos y consumo frecuente para mascotas**
+
+<div align="center">
+  <img src="assets/empathy-mapping/Empathy Map – Segmento 1_ Tienda Tradicional (1).png" alt=""/>
+</div>
+
+**Empathy Mapping del 2do segmento objetivo-Tiendas especializadas en productos premium y de cuidado**
+
+<div align="center">
+  <img src="assets/empathy-mapping/Empathy Map – Segmento 2_ Tienda Especializada (1).png" alt=""/>
+</div>
+
+
 ### 2.4. Big Picture Event Storming
+
+En esta sección se presenta el Big Picture Event Storming del proyecto PetStock, elaborado como una visión general del dominio comercial del retail minorista de mascotas en el Perú.Esta técnica permitió modelar el dominio de negocio rastreando de manera cronológica los eventos significativos que ocurren en las tiendas en el día a día, desde la configuración inicial del catálogo y el abastecimiento de mercadería, hasta el registro de ventas, el control de inventario y el balance de cierre diario.
+
+<div align="center">
+  <img src="assets/big-picture-event-storming/bigpictureventstorming.jpg" alt=""/>
+</div>
 
 ### 2.5. Ubiquitous Language
 
@@ -581,13 +643,106 @@ El Product Backlog se encuentra gestionado en Jira y puede revisarse en el sigui
 
 ### 4.1.2. Web Style Guidelines
 
+**Responsive Design Principles**
+
+El diseño web responsive orienta el desarrollo a considerar diseños alternos para mejorar la experiencia del usuario desde diferentes plataformas.
+
+* Mobile-First Approach: Se presta atención a las formas en que las personas usan los dispositivos móviles colocando el contenido primero y considerando gestos y movimientos del mundo real.
+
+* Adaptabilidad: La web se adapta a todo tipo de dispositivos de forma sencilla, intuitiva y agradable, optimizando la usabilidad.
+
+**Design Principles**
+
+La interfaz de PetStock se fundamenta en el principio de diseño C.R.A.P
+
+* Alignment : Cada elemento en el diseño está visualmente unido a otro permitiendo consistencia para que nada se sienta fuera de lugar.
+
+* Repetition: Se repiten patrones establecidos como estilos tipográficos o bordes específicos para generar consistencia visual.
+
+**Usability & Component States**
+
+Los componentes y estados de la interfaz se rigen por las heurísticas de usabilidad de para asegurar un alto grado de aceptación
+
+* Libertad y control del usuario: En caso de elegir una opción por error, el usuario dispone de un tipo de salida de emergencia visible para abandonar ese estado lo que le permite deshacer o cancelar acciones
+
+* Consistencia y estándares: Se mantiene un estándar visual para que los elementos interactivos sean lo mismo y consistentes en diferentes pantallas.
+Reconocer antes que recordar: Las acciones y opciones como botones de guardado son siempre visibles para evitar que la persona que atienda tenga que recordar información entre distintas secciones
+
+**Form Elements & Getting Input**
+
+Los elementos de formulario en PetStock aplican patrones de Getting input para agilizar las tareas de gestión de inventario y ventas.
+
+* Prevención de errores: Los formularios integran funcionalidades como el autocomplete para ayudar a que el usuario no tenga que escribir toda la palabra como cuando busque un producto o el cliente y no se equivoque
+
+* Diseño Limpio: Las pantallas de registro no contienen información innecesaria, ya que cada elemento extra compite con la información relevante y disminuye su visibilidad
+
+**Navigation Patterns**
+
+Los patrones de navegación otorgan armonía a la presentación y evitan inconsistencias que malogren la experiencia del usuario.
+
+* Global Navigation: Se emplea la etiqueta semántica HTML `<nav>`para contener y estructurar los enlaces de navegación principales, ya sea en menús horizontales o laterales
+
+* Encabezados: Se utiliza la etiqueta `<header>` para definir los encabezados de las secciones y orientar al usuario dentro del Dashboard o los reportes.
+
+* Footer: Se emplea la etiqueta `<footer>` para contener información secundaria en la parte inferior de la página
+
 ## 4.2. Information Architecture
+
+La Arquitectura de la Información (IA) es todo lo relacionado a la organización de la información de forma clara y lógica.El diseño de PetStock se fundamenta en comprender como las personas estructuran la información de forma mental y evitar someterlas a una sobrecarga cognitiva durante su jornada
 
 ### 4.2.1. Organization Systems
 
+El sistema de organización de PetStock define cómo se dispone el contenido para alinearse con los modelos mentales de los administradores y dueños de tienda, es decir, las suposiciones que tienen en mente antes de interactuar con la aplicación 
+
+* Taxonomy : Es la disposición en partes claramente articuladas y define el método de organización. En PetStock usamos los conceptos para definir las cosas por similitud
+
+* Organización por tópicos: Agrupa las funciones por la naturaleza operativa del negocio como inventario y ventas
+
+* Organización cronológica : Ordena las vistas basadas en el tiempo como el "Historial de compras" de clientes o las métricas de "Ventas por día"
+
+* Clasificación multiple: Asumimos que diferentes personas pueden usar diferentes formas  para encontrar la información. Entonces hacemos que el inventario permita búsquedas alfabéticas, por categorías o filtros directos de stock
+
+* Choreography: Se decide la ubicación de los grupos según la importancia que tiene
+
+* Jerarquía visual : Está directamente conectada a la legibilidad del contenido. Considerando los scanning patterns, los usuarios dan un vistazo rápido para ver si la información les interesa antes de leer toda la página. Por esto,el resumen financiero y las alertas de stock crítico encabezan el Dashboard
+
+* Principios Gestalt : Agrupamos elementos visuales según su similitud, si están cerca o lejos y explorando la percepción visual de los elementos en relación unos con otros
+
+* Patrones de diseño: Las tablas de datos como el catálogo de inventario o el historial de ventas  aplican un Patrón F , mientras que el Landing Page utiliza un Patrón Z para guiar visualmente al usuario hacia los botones de registro
+
 ### 4.2.2. Labeling Systems
 
+Para el ecosistema de PetStock las etiquetas aplican estrictamente las heurísticas de diseño para garantizar la comprensión
+
+* La aplicación utiliza el lenguaje del usuario con expresiones y palabras que le resulten familiares en el entorno del comercio minorista como precio venta o stock mínimo
+
+* Los usuarios no tienen porqué saber que diferentes palabras, situaciones o acciones significan lo mismo, por lo que se mantienen convenciones inmutables en toda la plataforma
+
+* Las acciones y opciones de navegación se hacen completamente visibles para que el usuario no tenga que recordar información entre distintas secciones
+
+* Las etiquetas de los botones son claras,útiles y libres de jerga indicando una acción directa como "Registrar venta"
+
 ### 4.2.3. SEO Tags and Meta Tags
+
+Para garantizar el posicionamiento en buscadores y una estructuración correcta del código se configuran etiquetas HTML especializadas. El elemento HTML `<head>` se utiliza como un contenedor para toda la metainformación no visible del sitio
+
+>Landing Page
+
+* Title (`<title>`): PetStock | Software de Gestión de Inventario y Ventas para Pet Shops
+
+* Autor (`<meta name="author" content="Nexora">`): Identifica formalmente a Nexora como la empresa que desarrolla la plataforma
+
+* Charset (`<meta charset="UTF-8">`): Se usa para especificar que conjunto de caracteres se está usando en este caso los caracteres latinos así garantizamos que la tipografía se vea bien
+
+* Meta Description (`<meta name="description" content="...">`): Define la descripción de la página para los motores de búsqueda ejemplo:"Sistema para tiendas de mascotas en Perú. Administra tu inventario…"
+
+* Meta Keywords (`<meta name="keywords" content="...">`): Especifica las palabras clave para el posicionamiento puede ser "software tienda mascotas, sistema inventario pet shop,gestión de proveedores, PetStock".
+
+>Aplicacion web 
+
+* Title (`<title>`): Dashboard - Mi Negocio | PetStock.
+
+* Para salvaguardar la privacidad de la información importante de las tiendas .En el entorno interno usamos etiquetas meta de tipo robots con los valores noindex, nofollow, evitando que los motores de búsqueda rastreen los datos financieros de los clientes.
 
 ### 4.2.4. Searching Systems
 
