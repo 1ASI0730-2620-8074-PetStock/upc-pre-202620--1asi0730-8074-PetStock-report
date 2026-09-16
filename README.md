@@ -819,6 +819,90 @@ El Product Backlog se encuentra gestionado en Jira y puede revisarse en el sigui
 
 ### 4.1.1. General Style Guidelines
 
+**Branding**
+
+<p align="center">
+  <img src="assets/general-style-guidelines/logo-petstock.png" alt="General Style Guidelines">
+</p>
+
+- **Identidad:**
+
+   PetStock representa la combinación entre el mundo de las mascotas y la gestión tecnológica de pequeños negocios. La marca proyecta cercanía, organización, confianza y eficiencia, dirigida principalmente a propietarios y administradores de pequeñas tiendas de productos para mascotas que buscan mejorar el control de sus productos, ventas e inventario mediante una solución web sencilla y accesible.
+
+- **Paleta de Colores:**
+  
+   - **#ED6B15 (Naranja):** Es el color principal de PetStock. Transmite energía, dinamismo y cercanía, características relacionadas con el mundo de las mascotas y con una herramienta que busca hacer más ágiles las actividades diarias de una tienda.
+   - **#825D38 (Marrón):** Representa confianza, estabilidad y naturalidad. Se relaciona con el cuidado de las mascotas y aporta una sensación cálida y confiable a la identidad de la marca.
+   - **#E5D0B1 (Beige):** Aporta calidez, tranquilidad y cercanía, funcionando como un color complementario que suaviza la identidad visual y permite generar interfaces más amigables.
+   - **#F8F5EF (Crema):** Se utiliza principalmente como fondo, proporcionando limpieza, claridad y neutralidad, facilitando la lectura de la información dentro de la plataforma.
+   - **#2F2019 (Marrón oscuro):** Representa seriedad, profesionalismo y estabilidad. Se emplea para textos y elementos de contraste, reforzando el carácter tecnológico y empresarial de PetStock.
+
+- **Simbolismo:**
+
+   - **Huella de mascota:** Representa directamente el mundo de las mascotas, estableciendo una conexión visual inmediata con el público objetivo de PetStock.
+   - **Cajas de productos:** Representan el inventario y la gestión de productos de las tiendas para mascotas, uno de los principales problemas que busca solucionar la plataforma.
+   - **Combinación de ambos elementos:** La unión de la huella con las cajas representa la integración entre el negocio de productos para mascotas y la gestión tecnológica del inventario, transmitiendo que PetStock permite administrar el negocio de manera más organizada y eficiente.
+
+- **Mensaje de la marca:**
+
+   - **Organización y control:** PetStock comunica una solución que permite centralizar la información de productos, ventas e inventario, facilitando que los propietarios tengan un mayor control sobre las operaciones de su negocio.
+   - **Eficiencia y simplicidad:** La identidad visual busca transmitir que administrar una tienda para mascotas no tiene que ser complicado. PetStock busca reducir el tiempo dedicado a tareas administrativas y facilitar las actividades diarias.
+   - **Confianza y cercanía:** Los tonos marrones y beige transmiten estabilidad y calidez, mientras que el naranja aporta energía y dinamismo. En conjunto, representan una herramienta confiable, accesible y cercana a las necesidades de las pequeñas tiendas.
+   - **Prevención de quiebres de stock:** La representación de las cajas de productos también se relaciona con el propósito de mantener un mejor control de las existencias y detectar productos que necesitan reposición.
+
+- **Aplicación del branding:**
+
+    - **Sitio web y aplicación:** Uso de una interfaz limpia y amigable, empleando el naranja como color de acción y los tonos crema y beige como fondos, acompañados de iconos relacionados con mascotas, productos, ventas e inventario.
+    - **Redes sociales y presentaciones digitales:**
+    Aplicación consistente del logotipo, la paleta de colores y elementos gráficos relacionados con mascotas y gestión empresarial para mantener una identidad reconocible.
+    - **Identidad visual corporativa:** Uso estratégico del logotipo y colores corporativos en tarjetas de presentación, presentaciones empresariales, documentos, material promocional e imágenes de perfil utilizadas para contactar con clientes.
+
+**Tipografía**
+
+La tipografía de PetStock cumple un papel importante en la expresión de la identidad de nuestra marca, transmitiendo una sensación de cercanía, claridad, confianza y modernidad. La marca utiliza una combinación tipográfica que busca representar una plataforma tecnológica amigable y fácil de utilizar, brindando comodidad y una lectura clara tanto en la landing page como en la aplicación web.
+
+- **Tipografía del Logo y Títulos:**
+   Para el logo y los títulos de PetStock se ha elegido la tipografía Poppins, perteneciente a la familia Poppins Font Family. Esta tipografía comunica modernidad, dinamismo y profesionalismo, características que se relacionan con una plataforma digital orientada a facilitar la gestión de las tiendas de mascotas. Sus formas geométricas y equilibradas permiten que el nombre de PetStock tenga una apariencia clara, actual y fácil de reconocer. Además, su estructura permite destacar títulos y elementos importantes de la interfaz sin perder la sensación de cercanía que busca transmitir la marca.
+
+   <p align="center">
+   <img src="assets/general-style-guidelines/poppins.PNG" alt="General Style Guidelines">
+   </p>
+
+- **Tipografía de Texto Regular:**
+   Para los textos de la landing page y de la aplicación se ha elegido la tipografía Roboto, perteneciente a la familia Roboto Font Family, debido a su excelente legibilidad y claridad en interfaces digitales. Esta tipografía permite que la información relacionada con productos, ventas, inventario y proveedores pueda ser visualizada de manera cómoda y ordenada. Asimismo, su diseño sencillo y funcional refuerza los valores de practicidad, accesibilidad y eficiencia que PetStock busca ofrecer a los pequeños negocios de productos para mascotas.
+
+   <p align="center">
+   <img src="assets/general-style-guidelines/roboto.PNG" alt="General Style Guidelines">
+   </p>
+
+**Colores**
+
+Es importante elegir los colores para las plataformas digitales adecuadamente, ya que así se asegura que la experiencia del usuario sea placentera y agradable. Por ello, nos aseguramos de que la paleta de colores seleccionada de PetStock refleje la esencia de la startup, transmitiendo cercanía, confianza, modernidad y dinamismo tanto en la landing page como en nuestra aplicación.
+
+<p align="center">
+   <img src="assets/general-style-guidelines/colores.PNG" alt="General Style Guidelines">
+</p>
+
+**Espaciado**
+
+- Interlineado: 140%-160% para facilitar la lectura de la información en pantallas móviles.
+- Padding en botones: 12px vertical × 20px horizontal como mínimo, permitiendo que los botones sean cómodos de tocar y fáciles de identificar.
+- Margen entre secciones: 24px-32px para mantener una separación visual adecuada sin desperdiciar espacio en la pantalla del celular.
+- Espaciado entre elementos: 8px-16px para mantener una jerarquía visual clara entre títulos, textos, campos y componentes.
+- Grid base: Utilizar un grid de 8px para mantener consistencia y alineación en los diferentes elementos de la aplicación.
+
+Esto transmite un espaciado limpio, ordenado y funcional, facilitando la navegación desde dispositivos móviles. Además, permite que PetStock mantenga una interfaz sencilla y accesible, acorde con su objetivo de simplificar la gestión de productos, ventas e inventario para las tiendas de mascotas
+
+Tono de Comunicación y Lenguaje Aplicado
+
+- El tono de PetStock es cercano, amigable, claro, práctico, moderno y confiable, diseñado para generar confianza en los dueños y administradores de tiendas de mascotas, utilizando un lenguaje sencillo y fácil de comprender.
+- PetStock acompaña a los usuarios en sus actividades diarias de gestión, comunicando de manera clara y directa cómo la tecnología puede facilitar el control de productos, ventas, inventario y proveedores.
+- El lenguaje se mantiene simple y funcional, priorizando la acción y la facilidad de uso. Se evita el exceso de tecnicismos y se apuesta por una comunicación directa que permita a los usuarios comprender rápidamente las funciones de la plataforma.
+- El estilo comunicativo está alineado con los principios de PetStock: simplificar, organizar y facilitar la gestión de las tiendas de mascotas.
+
+
+
+
 ### 4.1.2. Web Style Guidelines
 
 **Responsive Design Principles**
