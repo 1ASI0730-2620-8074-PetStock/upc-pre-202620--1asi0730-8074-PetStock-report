@@ -570,6 +570,52 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ### 2.2.3. Análisis de entrevistas
 
+**Analisis de Entrevista del segmento 1:**
+
+**Puntos de Dolor y Coincidencias Operativas:** Este análisis cuantitativo consolida una necesidad de mercado homogénea: el 100% de los entrevistados comparte el uso del cuaderno, la lentitud en el cierre de caja, la pérdida recurrente de clientes por falta de stock y un alto interés en adoptar una solución digital. La única divergencia radica en la adopción previa de canales digitales de pago (Yape/Plin/WhatsApp), presente en 2 de los 3 casos. Estos hallazgos demuestran que la barrera principal no es el desinterés por la tecnología, sino la falta de un sistema intuitivo, rápido y con soporte para usuarios tradicionales. 
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis 1- s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Frecuencia de Quiebres de Stock / Faltantes a la Semana:** El gráfico pone de manifiesto la vulnerabilidad financiera de los negocios al depender de inspecciones visuales o registros no actualizados al día. Araceli registra hasta 3 quiebres de stock por semana y Mateo al menos 1 quiebre semanal en sus productos de mayor rotación (alimentos balanceados), lo que genera una fuga directa de ingresos y la migración inmediata de clientes hacia la competencia. Este indicador valida que la funcionalidad más crítica y demandada por los usuarios es la actualización del inventario con alertas automáticas.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-2-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Tiempo Diario Invertido en Cuadrar Caja Manualmente:** La comparativa de tiempo refleja la enorme ineficiencia operativa que genera el arqueo manual al cruzar ventas en efectivo, Yape y Plin mediante anotaciones en papel. Mientras Araceli pierde entre 30 y 40 minutos diarios en este proceso, Mateo alcanza un punto crítico de hasta 3 horas (180 minutos) debido al procesamiento diferido de boletos y registros en Excel. Esto demuestra que la fricción en el cierre de caja no solo consume tiempo valioso que podría destinarse a la venta, sino que actúa como el principal catalizador de estrés y errores de cálculo al final de la jornada
+
+<p align="center">
+  <img src="assets/interview-analysis/anlisis-3-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Rango de Disposición a Pagar (Suscripción Mensual):** Este gráfico evidencia que existe una clara apertura comercial hacia un modelo SaaS (Suscripción Mensual), situando la disposición de pago en un rango promedio entre S/ 30 y S/ 70 mensuales. La mayor valoración proviene de Araceli (S/ 50 - 70), impulsada por la urgencia de evitar pérdidas constantes por accidentes en cuadernos, mientras que Mateo busca una tarifa más austera (S/ 30 - 45) acorde a un negocio familiar de productos de bajo margen. En conjunto, estos datos confirman que un plan escalable cerca a los S/ 40 - 50 mensuales se alinea perfectamente con la capacidad financiera y la percepción de valor de las tiendas de barrio. 
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-4-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Analisis de Entrevista del segmento 2:**
+
+**Brecha Digital en Procesos Clave de Boutiques Premium:** Esta representación ilustra la vulnerabilidad del 100% de las boutiques analizadas, las cuales operan sin un software dedicado para la gestión de lotes, la memoria de clientes y el catálogo centralizado. Al depender de la memoria humana (Gabriela), conversaciones dispersas en WhatsApp (Lia) u hojas de cálculo genéricas como Excel (Leonardo y Lia), el negocio incurre en merma financiera directa por productos nicho vencidos al fondo del anaquel y en pérdida de ventas cruzadas. Los datos confirman que existe una disposición total a migrar a una plataforma en la nube limpia y segura siempre que garantice agilidad y un aprendizaje intuitivo sin entrenamientos complejos.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-1-s2.png" alt="Entrevista 01" width="600">
+</p>
+
+**Puntos Críticos de Gestión en Boutiques Especializadas:** El gráfico horizontal evidencia las coincidencias estructurales en el segmento de boutiques de alta gama. El 100% de los entrevistados (Gabriela, Leonardo y Lia) reporta severas dificultades para controlar productos de baja rotación/vencimientos, realizar el seguimiento de clientes frecuentes y administrar la alta densidad de un catálogo multimarca. Asimismo, un 67% (Leonardo y Lia) demanda reportes analíticos para la toma de decisiones sobre reposición. Esto demuestra que la propuesta de valor para este segmento debe enfocarse en un módulo de fidelización (CRM) integrado con gestión de lotes y alertas de caducidad.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-2-s2.png" alt="Entrevista 01" width="600">
+</p>
+
+**Carga Horaria en Auditoría e Inspección Manual de Inventario:** Este gráfico expone el costo operativo oculto que representa la falta de un software especializado para catálogos extensos y variados. En el caso de Leonardo ("Wow Closet"), realizar un inventario general exige hasta 8 horas continuas (un día entero fuera de horario o fines de semana), paralizando las actividades operativas del negocio, mientras que Lia dedica aproximadamente 4 horas en revisiones físicas continuas de anaqueles. Esta sobrecarga de horas operativas valida la necesidad urgente de un sistema en la nube con actualización automática que elimine la auditoría física tradicional para proteger la productividad del personal.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-3-s2.png" alt="Entrevista 01" width="600">
+</p>
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
