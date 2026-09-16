@@ -179,7 +179,7 @@ forma conjunta</th>
 <th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
-blablablabla.
+Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -197,7 +197,7 @@ blablabla
 </th>
 <th>
 av1:<br>
-blablablabla 
+Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
 </th>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ objetivos.</th>
 <th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
-blablabla
+Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -226,7 +226,7 @@ blablabla
 </th>
 <th>
 av1:<br>
-blablbalbla
+Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
 </tr>
 </tbody>
 </table>
