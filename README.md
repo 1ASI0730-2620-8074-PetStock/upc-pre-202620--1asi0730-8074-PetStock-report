@@ -1020,6 +1020,19 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ### 4.4.1. Web Applications Wireframes
 
+<p align="center">
+  <img src="assets/web-applications/wireframe-1.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-2.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-3.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-4.PNG" alt="Wireframe">
+</p>
+
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ### 4.4.3. Web Applications Mock-ups
