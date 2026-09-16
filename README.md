@@ -1035,6 +1035,77 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ### 4.4.2. Web Applications Wireflow Diagrams
 
+**Wireflow 01 - Registro de cuenta en PetStock**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero crear una cuenta en PetStock para gestionar las operaciones de mi negocio desde una sola plataforma.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-01.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Eduardo ingresa a PetStock y visualiza la pantalla de bienvenida. Al no contar con una cuenta, selecciona la opción “Regístrate”, que lo dirige a la pantalla de “Crear cuenta”. En esta pantalla, completa el formulario con sus datos personales y acepta los términos y condiciones. Luego, selecciona el botón “Registrarse” para completar el proceso. Una vez realizado el registro correctamente, Eduardo ingresa a la aplicación y visualiza el dashboard principal de PetStock, desde donde puede acceder a las diferentes funcionalidades de gestión de su negocio.
+
+**Wireflow 02 - Registro de Productos**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero de manera sencilla poder agregar productos para tener una mejor idea de mi inventario disponible, evitar el desabastecimiento mediante alertas de stock mínimo
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-02.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Comienza en el Dashboard donde el usuario identifica la necesidad de actualizar su stock y presiona "+ Añadir producto". Esto lo redirige al formulario para ingresar los datos esenciales del ítem, su precio, existencias y el umbral de stock mínimo. Luego, asigna un proveedor responsable y define si el producto estará activo para la venta directa en caja. Al presionar "Guardar producto", el sistema procesa la información y retorna automáticamente a la pantalla principal. Finalmente, el Dashboard actualiza el indicador de stock total y muestra el nuevo ítem registrado en la sección de actividades recientes.
+
+**Wireflow 03 - Alerta de Stock Bajo** 
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas,quiero identificar rápidamente los productos con bajo stock y solicitar su reposición a un proveedor,para evitar quedarme sin inventario crítico y mantener la atención continua a mis clientes.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-03.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo inicia en el Dashboard, donde el usuario nota la alerta de "3 alertas" en el botón "Ver productos bajo stock" e ingresa para revisar su inventario. En la vista de Stock, identifica los ítems en Alerta Crítica (como el alimento de 15 kg con solo 2 unidades) y presiona el botón "+ Reponer". Esto lo dirige a la pantalla de Seleccionar proveedor, donde el sistema le presenta la lista de distribuidores disponibles y sugiere la cantidad exacta a pedir. Al elegir un proveedor y presionar "Contactar proveedor", la app genera la solicitud para enviársela directamente por WhatsApp o llamada. Finalmente, el proceso asegura un reabastecimiento rápido y manual sin realizar cargos o pedidos automáticos sin supervisión.
+
+**Wireflow 04 - Mi Perfil** 
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero acceder a la configuración de mi cuenta para consultar y editar mis datos personales o de perfil, para mantener mi información de contacto actualizada, garantizar la seguridad de mi acceso y gestionar las credenciales de mi negocio de forma rápida. 
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-04.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo inicia en el Dashboard, donde el usuario presiona la opción "Perfil" ubicada en la esquina superior derecha para gestionar sus datos. En la pantalla Mi perfil, visualiza su información general (nombre, rol y correo) junto a la configuración del sistema, y selecciona el botón "Editar perfil". Esto despliega el formulario de edición, donde puede modificar su foto, nombres, apellidos, correo electrónico o actualizar su contraseña. Finalmente, tras hacer los cambios requeridos, presiona "Guardar cambios" para aplicar las actualizaciones y retornar con su información al día.
+
+**Wireflow 05 - Reportes** 
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas,quiero visualizar reportes detallados sobre el rendimiento semanal de mis ventas, los días con mayores ingresos y los productos con mayor y menor rotación, para saber exactamente qué días vendo más y qué productos valen la pena mantener en stock, optimizando las decisiones de compra de mi catálogo especializado.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-05.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo comienza en el Dashboard, donde la dueña da clic en la tarjeta de "Reportes de la semana". Esto la lleva a la vista detallada de Reportes, donde consulta el gráfico de Ventas por día y detecta rápidamente cuál fue su día con mayor ingreso (ej. Viernes). Más abajo, analiza el top de Productos más vendidos para identificar lo más popular, así como la sección de Menos movimiento para detectar qué artículos estancados no conviene reabastecer. Finalmente, cuenta con métricas generales de su inventario y la opción de "Descargar reporte en PDF" para respaldar la información de su negocio. 
+
+**Wireflow 06 - Ventas**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas,quiero registrar las ventas realizadas en mi tienda física e identificar a los clientes recurrentes asociados a sus compras, para mantener mi inventario actualizado al instante y llevar un historial detallado del comportamiento de compra de mis clientes
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-06.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Selecciona el botón de acción rápida "Registrar venta". Esto la dirige a la pantalla de Venta, donde selecciona el producto (ej. Alimento Premium para Perro), define la cantidad vendida (ej. 2 unidades), ingresa el nombre del cliente (ej. Eduardo Pérez) y valida la fecha de la transacción. Tras revisar el bloque de Resumen y presionar "Registrar venta", la app procesa la transacción y descuenta las unidades del inventario general. Finalmente, mediante el acceso a "Historial de compras", puede revisar el registro cronológico de todas las transacciones recientes, visualizar el total de registros e identificar el detalle de compras de sus clientes habituales.
+
+**Wireflow 07 - Cierre de Sesión**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero cerrar sesión en mi cuenta desde el menú de perfil de manera rápida y segura, para proteger la información comercial y los datos de inventario de mi negocio cuando no esté utilizando la aplicación.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-07.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo se origina en el Dashboard, donde la dueña selecciona la opción "Perfil" situada en el menú superior para acceder a los ajustes del usuario. Al entrar a la vista Mi perfil, se desplaza hasta la parte inferior de la pantalla y presiona el botón principal "Cerrar sesión". El sistema procesa la salida, invalida la sesión activa para garantizar la seguridad de la cuenta y redirige de inmediato a la pantalla de Inicio de Sesión (login), dejando la plataforma lista para que vuelva a ingresar con su correo y contraseña o mediante sus redes sociales cuando lo requiera. 
+
+
 ### 4.4.3. Web Applications Mock-ups
 
 ### 4.4.4. Web Applications User Flow Diagrams
