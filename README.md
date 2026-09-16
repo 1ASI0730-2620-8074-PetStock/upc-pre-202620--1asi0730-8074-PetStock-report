@@ -1105,8 +1105,23 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 **Explicación del flujo:** El flujo se origina en el Dashboard, donde la dueña selecciona la opción "Perfil" situada en el menú superior para acceder a los ajustes del usuario. Al entrar a la vista Mi perfil, se desplaza hasta la parte inferior de la pantalla y presiona el botón principal "Cerrar sesión". El sistema procesa la salida, invalida la sesión activa para garantizar la seguridad de la cuenta y redirige de inmediato a la pantalla de Inicio de Sesión (login), dejando la plataforma lista para que vuelva a ingresar con su correo y contraseña o mediante sus redes sociales cuando lo requiera. 
 
-
 ### 4.4.3. Web Applications Mock-ups
+
+<p align="center">
+  <img src="assets/web-applications/mockup-01.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-02.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-03.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-04.PNG" alt="Mock-ups">
+</p>
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
