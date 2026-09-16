@@ -1502,6 +1502,19 @@ A continuación, se presenta el resumen de la reunión de Sprint Planning del Sp
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
+Durante el **Sprint 1**, el equipo identificó cinco aspectos principales relacionados con el desarrollo de la **Landing Page de PetStock**. Cada aspecto reúne un conjunto de tareas y elementos relacionados, representando una unidad de trabajo dentro de la iteración. La asignación de responsables y colaboradores se realizó considerando las fortalezas de cada integrante y se encuentra alineada con las actividades definidas en el Sprint Backlog.
+
+Los aspectos considerados para este sprint son: Navbar & Hero, Benefits Section, How It Works & Pricing, System Preview, y FAQ & Footer.
+
+| Team Member (Last Name, First Name) | GitHub Username<br>Leader (L) / Collaborator (C) | Navbar & Hero<br>Leader (L) / Collaborator (C) | Benefits Section<br>Leader (L) / Collaborator (C) | How It Works & Pricing<br>Leader (L) / Collaborator (C) | System Preview<br>Leader (L) / Collaborator (C) | FAQ & Footer<br>Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | C | L | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | L | C | C | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | L | C |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | C | L |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | C | L | C | C |
+
+
 
 #### 5.2.1.3. Sprint Backlog 1
 
