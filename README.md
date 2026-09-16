@@ -1125,6 +1125,86 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+**User Flow 01 - Registro de cuenta en PetStock**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero crear una cuenta en PetStock para gestionar las operaciones de mi negocio desde una sola plataforma.
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-01.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Eduardo inicia la aplicación y presiona "Regístrate" desde la pantalla de bienvenida. Completa el formulario de registro con sus datos personales y credenciales, marca la casilla de "Acepto términos y condiciones" y presiona el botón "Registrarse". Al cumplir los requisitos, el sistema valida la cuenta y lo redirige automáticamente al Dashboard principal para empezar a operar. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-01.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Eduardo completa el formulario pero no acepta los términos y condiciones, el sistema lo dirige a la pantalla de Registro con error, donde despliega un mensaje de advertencia visual y mantiene al usuario en el formulario hasta que corrija la omisión y pueda reintentar el envío. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-01.PNG" alt="User flow">
+</p>
+
+**User flow 02 - Registro de Productos**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero de manera sencilla poder agregar productos para tener una mejor idea de mi inventario disponible, evitar el desabastecimiento mediante alertas de stock mínimo
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-02.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Eduardo ingresa al Dashboard y presiona el botón + Añadir producto. Completa los campos obligatorios del formulario (Nombre del producto, Categoría, Precio venta, Stock disponible y Stock mínimo para la alerta). Al presionar Guardar producto, el sistema valida la información, procesa el registro y lo redirige de nuevo al Dashboard, donde se actualiza el contador de Total stock y aparece la confirmación en la sección de Actividades recientes. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-02.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Eduardo presiona Guardar producto dejando vacíos campos con asterisco (*) como el Nombre, Precio o Stock, la condicional detiene el proceso (¿Campos obligatorios válidos? = No). Se muestra la pantalla de Registro con errores resaltando en rojo las alertas de "Campo requerido", manteniendo al usuario en la misma vista hasta que los complete correctamente. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-02.PNG" alt="User flow">
+</p>
+
+**User flow 03 - Alerta de Stock Bajo** 
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas,quiero identificar rápidamente los productos con bajo stock y solicitar su reposición a un proveedor,para evitar quedarme sin inventario crítico y mantener la atención continua a mis clientes. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-03.PNG" alt="User flow">
+</p>
+
+**Happy Paths:**Eduardo revisa el Dashboard y nota el botón Ver productos bajo stock marcado con alertas. Al hacer clic, accede a la lista de Productos con bajo stock, identifica el ítem en Alerta Crítica y presiona + Reponer. En la pantalla Seleccionar proveedor, elige la distribuidora sugerida de la lista y presiona Contactar proveedor
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-03.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si presiona Contactar proveedor sin haber marcado ninguna de las opciones de la lista, el sistema detiene el avance, mantiene el botón inactivo o muestra una alerta roja solicitando seleccionar un proveedor válido.
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-03.PNG" alt="User flow">
+</p>
+
+**User Flow 04 - Mi Perfil**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero acceder a la configuración de mi cuenta para consultar y editar mis datos personales o de perfil, para mantener mi información de contacto actualizada, garantizar la seguridad de mi acceso y gestionar las credenciales de mi negocio de forma rápida. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-04.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Ximena ingresa al Dashboard y hace clic en la opción Perfil ubicada en la esquina superior derecha. En la vista Mi perfil, presiona el botón Editar perfil para desplegar el formulario. Modifica sus datos (nombre, apellidos o correo electrónico) con la información requerida y presiona Guardar cambios. El sistema procesa la solicitud, muestra una notificación emergente confirmando "Perfil actualizado con éxito" 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-04.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Ximena intenta guardar los cambios dejando campos obligatorios en blanco o ingresa un formato de correo o contraseña no válido, el nodo de decisión detiene la operación . El sistema despliega la pantalla de Editar perfil con error, marcando las cajas de texto en rojo con mensajes como "El nombre no puede estar vacío" o "Correo electrónico inválido", impidiendo el guardado hasta que complete correctamente todos los campos. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-04.PNG" alt="User flow">
+</p>
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
