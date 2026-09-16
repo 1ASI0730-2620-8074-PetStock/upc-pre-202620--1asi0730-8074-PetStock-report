@@ -620,6 +620,20 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ### 2.3.1. User Personas
 
+En esta sección se presentan las fichas de User Persona elaboradas a partir del análisis de los segmentos, las entrevistas y la competencia. Estos perfiles representan a los usuarios objetivo de PetStock, considerando sus principales características, necesidades, objetivos y dificultades. Se desarrollaron dos User Personas: Eduardo Salazar, representante de las tiendas de alimentos y productos de consumo frecuente, y Ximena Díaz, representante de las tiendas especializadas en productos premium y de cuidado para mascotas.
+
+**User Persona del segmento #1: Dueños o Administradores de tiendas tradicionales para mascotas (Sectores C/D)**
+
+<p align="center">
+  <img src="assets/user-persona/Eduardo Salazar.png" alt="User Persona">
+</p>
+
+**User Persona del segmento #2: Dueños o administradores de tiendas especializadas en productos premium y de cuidado para mascotas (Sectores A/B)**
+
+<p align="center">
+  <img src="assets/user-persona/Ximena Diaz.png" alt="User Persona">
+</p>
+
 ### 2.3.2. User Task Matrix
 
 ### 2.3.3. User Journey Mapping
