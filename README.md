@@ -68,9 +68,18 @@ Gutierrez Tume Stanley Jeremy
 
 # Project Report Collaboration Insights
 
+Para realizar el informe de este proyecto, utilizaremos un repositorio llamado “upc-pre-202620--1asi0730-8074-PetStock-report
+” el cual está colocado en nuestra organización llamada “
+1ASI0730-2620-8074-PetStock” en GitHub. Se puede observar en el siguiente enlace:
+[Repositorio del Proyecto PetStock](https://github.com/1ASI0730-2620-8074-PetStock/upc-pre-202620--1asi0730-8074-PetStock-report.git)
+
 A continuación, capturas del procesos, commits  y elaboración de nuestro proyecto en cada entrega.
 
 **Entrega Nº1: TB1**
+
+Para la elaboración de este informe, primero utilizamos un documento de google donde podíamos ver los avances en simultáneo. Posteriormente, una vez terminado, realizamos commits en el repositorio del project report en GitHub. A continuación, mostraremos analíticas de participación:
+
+
 
 <div style="page-break-before: always;"></div>
 
@@ -1556,8 +1565,18 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 
 # Conclusiones
 
+- El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
+
 # Recomendaciones
 
+- Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
+
 # Bibliografia
+
+Instituto Nacional de Estadística e Informática. (2025, 2 de julio). *INEI incluirá la tenencia de mascotas en hogares en sus mediciones a partir de julio*. Gobierno del Perú. https://www.gob.pe/institucion/inei/noticias/1193475-inei-incluira-la-tenencia-de-mascotas-en-hogares-en-sus-mediciones-a-partir-de-julio
+
+Salazar Herrada, E. (2026, 29 de junio). *Perú ejecuta su primer censo nacional de mascotas: ¿Cómo evoluciona el portafolio de alimentos para animales de compañía?* Infobae. https://www.infobae.com/peru/2026/06/29/peru-ejecuta-su-primer-censo-nacional-de-mascotas-como-evoluciona-el-portafolio-de-alimentos-para-animales-de-compania/
+
+
 
 # Anexo
