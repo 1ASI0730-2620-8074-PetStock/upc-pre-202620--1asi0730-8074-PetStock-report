@@ -436,6 +436,51 @@ Debe mostrar la información importante de manera comprensible y responder rápi
 
 ## 1.3. Segmentos objetivo
 
+A partir del análisis del dominio del problema —la falta de sistemas de gestión y control unificados en las pequeñas tiendas de mascotas del Perú— se han identificado dos segmentos objetivo claramente diferenciados a los que PetStock dirige su propuesta de valor. El primero corresponde a los dueños y administradores de tiendas de alimentos y consumo frecuente que requieren control de alta rotación; el segundo corresponde a los comercios especializados en productos premium y de cuidado. A continuación se describen ambos segmentos junto con sus características demográficas y la información estadística que sustenta su relevancia.
+
+**Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Descripción:**
+
+Negocios minoristas formalmente constituidos o comercios de barrio orientados a la comercialización masiva de alimento balanceado, comida húmeda, snacks, premios y productos de alta rotación para perros y gatos. Al tratarse de artículos de consumo diario, su inventario experimenta un flujo constante de entradas y salidas, lo que exige un control estricto para evitar desabastecimientos repentinos. Estos establecimientos operan principalmente con métodos manuales (cuadernos o hojas de cálculo desvinculadas), enfrentando dificultades operativas para supervisar su stock real y registrar sus ventas de forma rápida.
+
+**Características demográficas y de negocio**
+
+- Tipo de negocio: Micro y pequeñas empresas (MYPEs) de carácter familiar o minorista, con entre 1 y 5 colaboradores.
+- Ubicación geográfica: Zonas urbanas, residenciales y comerciales de Lima Metropolitana y principales ciudades del Perú, con mayor concentración en pequeños comercios de barrio.
+- Rango de edad: 30 a 55 años.
+- Género: Hombres y mujeres.
+- Formación educativa y perfil tecnológico: Principalmente secundaria completa o formación técnica, priorizando la experiencia comercial práctica. Adopción digital baja a media, con uso predominante de métodos manuales o herramientas genéricas.
+- Poder adquisitivo y clase social: Nivel socioeconómico medio y medio-bajo (Sectores C y D).
+
+**Información estadística de sustento**
+
+- Según la Encuesta Nacional de Hogares (ENAHO), entre los años 2023 y 2024, el porcentaje de gasto que destinan los hogares peruanos a la alimentación de sus mascotas aumentó del 42,4% al 49,1%.
+- Por su parte, la Encuesta Nacional de Programas Estratégicos (ENAPRES) señala que el 51,7% de los hogares peruanos cuenta con al menos un perro, destacando que en los hogares de menores ingresos este indicador llega hasta el 52,9%, lo que evidencia una demanda masiva y constante de alimentos en sectores populares y tradicionales.
+- **Fuente:** [INEI – Tenencia de mascotas en hogares](https://www.gob.pe/institucion/inei/noticias/1193475-inei-incluira-la-tenencia-de-mascotas-en-hogares-en-sus-mediciones-a-partir-de-julio)
+
+**Segmento 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Descripción:**
+
+Comercios minoristas dirigidos a un público que busca una mayor especialización y diferenciación en el cuidado de sus animales de compañía. Su oferta incluye artículos de higiene premium, colonias, juguetes, camas, ropa, accesorios y productos de bienestar. A diferencia del primer segmento, manejan productos de menor frecuencia de rotación pero con un mayor margen de ganancia por unidad, requiriendo un control detallado de catálogos variados y clientes recurrentes.
+
+**Características demográficas y de negocio**
+
+- Tipo de negocio: Pequeños comercios especializados o boutiques de mascotas enfocadas en la experiencia y el bienestar animal.
+- Ubicación geográfica: Zonas residenciales y comerciales de nivel socioeconómico medio-alto y alto, ubicadas principalmente en distritos urbanos consolidados de Lima.
+- Rango de edad: 25 a 45 años.
+- Género: Hombres y mujeres.
+- Formación educativa y perfil tecnológico: Formación técnica o universitaria. Perfil con mayor apertura hacia la adopción de herramientas tecnológicas de gestión para optimizar sus procesos comerciales.
+- Poder adquisitivo y clase social: Nivel socioeconómico medio-alto y alto (Sectores A y B).
+
+**Información estadística de sustento**
+
+- De acuerdo con un reporte especializado de Infobae, el mercado peruano de mascotas ha diversificado considerablemente su oferta hacia nichos de mayor valor agregado, impulsando una demanda creciente por productos de higiene avanzada, juguetes especializados, accesorios y artículos orientados al bienestar integral de los animales de compañía.
+- **Fuente:** [Infobae – Evolución del portafolio de alimentos para animales de compañía](https://www.infobae.com/peru/2026/06/29/peru-ejecuta-su-primer-censo-nacional-de-mascotas-como-evoluciona-el-portafolio-de-alimentos-para-animales-de-compania/)
+
+
+
 ## Capítulo II: Requirements Elicitation & Analysis
 
 ### 2.1. Competidores.
