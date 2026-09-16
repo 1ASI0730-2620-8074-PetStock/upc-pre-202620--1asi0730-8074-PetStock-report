@@ -636,6 +636,23 @@ En esta sección se presentan las fichas de User Persona elaboradas a partir del
 
 ### 2.3.2. User Task Matrix
 
+En esta sección se presenta el User Task Matrix, que concentra las principales tareas que realizan los User Personas que representan a los dos segmentos definidos para PetStock. El primer segmento está conformado por pequeñas tiendas de mascotas especializadas principalmente en alimentos y productos de consumo frecuente, mientras que el segundo está conformado por tiendas especializadas o boutiques que comercializan accesorios, productos premium, de higiene y bienestar para mascotas. Las tareas identificadas corresponden a actividades que ambos User Personas realizan para cumplir sus objetivos dentro de la gestión cotidiana de sus negocios, independientemente de la existencia de PetStock. 
+
+Para cada User Persona se evalúan dos dimensiones por tarea. La frecuencia indica con qué regularidad realiza la tarea, expresada en una escala cualitativa de Muy Alta, Alta, Media y Baja. La importancia indica el grado en que la tarea es crítica para el cumplimiento de los objetivos del User Persona, expresada en la misma escala. 
+
+<p align="center">
+  <img src="assets/user-task-matrix/task-matrix.PNG" alt="User Persona">
+</p>
+
+En el caso de Eduardo Salazar, las tareas con mayor frecuencia e importancia son registrar las ventas realizadas, revisar las existencias de productos e identificar los productos que necesita reponer. Esto se relaciona con las características de su negocio, debido a que comercializa principalmente alimentos y productos de consumo frecuente, los cuales presentan una alta rotación. Por ello, necesita revisar constantemente sus existencias para evitar que los productos se agoten y afecten sus ventas. 
+
+Por otro lado, Ximena Díaz presenta una mayor frecuencia e importancia en la tarea de revisar qué productos tienen mayor o menor movimiento. Esto se debe a que su tienda maneja un catálogo más variado de productos premium, accesorios y artículos de cuidado, que generalmente presentan una menor rotación pero un mayor margen por producto. Por ello, necesita prestar mayor atención al comportamiento de los productos para tomar decisiones sobre cuáles mantener o priorizar. 
+
+También existe una diferencia en la tarea de registrar los datos de clientes frecuentes y sus compras. Para Eduardo esta actividad presenta una frecuencia menor, debido a que su negocio está más orientado a la venta frecuente de productos de consumo. En cambio, para Ximena tiene una frecuencia e importancia mayores, ya que el seguimiento de clientes frecuentes puede contribuir a brindar una atención más personalizada y conocer mejor sus hábitos de compra. 
+
+En conclusión, ambos User Personas realizan tareas similares relacionadas con la gestión de sus tiendas, pero sus prioridades son diferentes. Eduardo está principalmente orientado al control operativo, la disponibilidad de productos y la reposición debido a la alta rotación, mientras que Ximena está más orientada al análisis del movimiento de productos y al seguimiento de sus clientes debido a la variedad y especialización de su catálogo. Estas diferencias permiten identificar necesidades específicas dentro de los dos segmentos que serán consideradas en el diseño de PetStock. 
+
+
 ### 2.3.3. User Journey Mapping
 
 Realizamos los User Journey Maps en la version de AS-IS para los dos segmentos , asi podremos entender de forma estructurada la experiencia del usuario en su interaccion con un producto o servicio.
