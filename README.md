@@ -1482,7 +1482,26 @@ En esta sección registramos y explicamos el avance del equipo durante el Sprint
 
 #### 5.2.1.1. Sprint Planning 1
 
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 1, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-10 |
+| **Time** | 8:00 PM - 9:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | No hubo sprint anterior |
+| **Sprint n – 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Create the landing page:<br>Our goal is to develop a clear, responsive, and functional landing page that effectively presents the main benefits of our platform. We expect the page to provide a professional first impression and increase trust among potential customers and visitors, while encouraging them to register or request a demo. This will be validated once the landing page is deployed through GitHub Pages and visited by users. |
+| **Sprint n Velocity** | 10 |
+| **Sum of Story Points** | 10 |
+
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
+
 
 #### 5.2.1.3. Sprint Backlog 1
 
