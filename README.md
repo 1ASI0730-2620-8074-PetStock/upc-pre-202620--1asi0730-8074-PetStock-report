@@ -53,7 +53,14 @@ Arturo Fernando Valladolid Jiménez<br><br>
 Pierre Alessandro Mendoza Boluarte<br><br>
 I5
 </td>
-<td class="c5" style="border: 1px solid black;">blablabla</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Capítulo I: Introducción
+- Capítulo II: Requirements Elicitation & Analysis
+- Capítulo III: Requirements Specification
+- Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
 </table>
 
@@ -253,7 +260,7 @@ Su producto principal, **PetStock**, es una aplicación web intuitiva desarrolla
 | :---: | :--- |
 | <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
 | <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
-| *(Pendiente)* | *[Nombre del integrante 3 — Código de Estudiante]* |
+| <img src="./assets/team/Mariel-Mendoza.jpeg" width="120" alt="Mariel Mendoza"> | **Mariel Lucero Mendoza Moreano - U20231A418**. Estudiante de Ingeniería de Software con interés en el análisis de problemas, diseño de soluciones centradas en el usuario y arquitectura de software. Me caracterizo por mantener una actitud responsable, organizada y orientada al aprendizaje continuo. En este proyecto, busco aportar en la definición de las necesidades de los usuarios, el diseño de la solución y la estructuración de los principales componentes de PetStock. |
 | *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
 
