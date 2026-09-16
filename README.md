@@ -776,9 +776,58 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-## 4.7. Software Object-Oriented Design
+## 4.7. The Software Object-Oriented Design
+
+En esta sección se detalla el diseño orientado a objetos de la aplicación web PetStock, estructurado mediante diagramas de clases por capas (*Presentation*, *Application*, *Domain* e *Infrastructure*) para cada uno de los Bounded Contexts definidos en la arquitectura orientada a dominios (DDD).
 
 ### 4.7.1. Class Diagrams
+
+Los diagramas de clases representan la estructura interna, los atributos, los métodos y las relaciones de las entidades, stores, componentes y servicios de la API que sustentan la lógica de negocio de PetStock.
+
+#### Bounded Context 1: Identity & Access Management
+Agrupa los componentes, stores, entidades y servicios encargados de la autenticación, el registro de cuentas y la gestión de sesiones de los usuarios en la plataforma.
+
+![Identity & Access Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context1.png)
+
+#### Bounded Context 2: Catalog & Supplier Management
+Administra el catálogo general de productos, la clasificación por categorías y el registro de los proveedores encargados de abastecer la tienda.
+
+![Catalog & Supplier Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context2.png)
+
+#### Bounded Context 3: Inventory & Stock Monitoring
+Controla el estado actual de las existencias, supervisa los niveles de inventario en tiempo real y gestiona las alertas automáticas ante umbrales de stock mínimo.
+
+![Inventory & Stock Monitoring Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context3.png)
+
+#### Bounded Context 4: Sales & Checkout Management
+Gestiona el flujo transaccional del punto de venta (POS), permitiendo procesar el carrito de compras, calcular totales y actualizar automáticamente el inventario.
+
+![Sales & Checkout Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context4.png)
+
+#### Bounded Context 5: Customer Management (CRM)
+Administra la información de los compradores y el registro detallado del historial de compras para ofrecer un seguimiento personalizado a los clientes frecuentes.
+
+![Customer Management Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context5.png)
+
+#### Bounded Context 6: Purchasing & Receiving Management
+Controla la creación de órdenes de compra para reabastecimiento y la recepción física de mercancía para actualizar las entradas en el almacén.
+
+![Purchasing & Receiving Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context6.png)
+
+#### Bounded Context 7: Cash Shift Management
+Gestiona los procesos de apertura y cierre de turnos de caja, así como el cuadre y conciliación del efectivo frente a los montos registrados en el sistema.
+
+![Cash Management Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context7.png)
+
+#### Bounded Context 8: Business Analytics & Reporting
+Se encarga de procesar los datos históricos para generar reportes analíticos de ventas, identificar los productos de mayor y menor rotación y permitir su exportación a PDF.
+
+![Business Analytics & Reporting Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context8.png)
+
+#### Bounded Context 9: Profile & Configuration Management
+Administra los datos personales del perfil del usuario, las preferencias del sistema y la configuración general de los datos del negocio.
+
+![Profile & Configuration Bounded Context](../upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded%20Context9.png)
 
 ## 4.8. Database Design
 
