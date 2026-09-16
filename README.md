@@ -1518,6 +1518,32 @@ Los aspectos considerados para este sprint son: Navbar & Hero, Benefits Section,
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El objetivo principal del Sprint 1 fue desarrollar la Landing Page de PetStock, incluyendo las principales secciones informativas orientadas a los segmentos de clientes definidos para la plataforma. 
+
+A continuación, se presenta una captura del board de seguimiento utilizado durante el sprint, junto con el URL público. 
+
+**Board**
+
+[PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+![Sprint 1](assets/sprint/sprint%201.PNG)
+
+| Sprint # | Sprint 1 | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / InProcess / ToReview / Done)** |
+| US24 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US24 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US25 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
+| US26 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US27 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US28 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US29 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US30 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
