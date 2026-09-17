@@ -671,11 +671,37 @@ El Product Backlog se encuentra gestionado en Jira y puede revisarse en el sigui
 
 ### 4.6.1. Design-Level Event Storming
 
+El equipo realizó una sesión de Design-Level EventStorming, partiendo de los hallazgos obtenidos en el Big Picture EventStorming . El objetivo de la sesión fue profundizar el modelado del dominio del problema, identificando con mayor nivel de detalle los Commands, Domain Events y Aggregates asociados a cada proceso de negocio de PetStock.
+Como resultado de la sesión, se identificaron 8 Bounded Contexts de negocio a partir de los dominios pivotales detectados: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. A estos se sumó un noveno Bounded Context de soporte técnico, Identity & Access Management, necesario para el control de acceso al sistema.
+
+
+<img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
+
+
+<img width="940" height="519" alt="image" src="https://github.com/user-attachments/assets/48fb82e6-844f-4282-86f6-24f18d0bf7a5" />
+
+Durante el refinamiento, se identificaron además policies de integración entre contextos: cuando ocurre el evento MinimumStockThresholdReached en el contexto de Inventory, se habilita el comando PlacePurchaseOrder en Purchasing; cuando ocurre SaleCompleted en Sales & Checkout, se disparan los eventos StockAdjusted en Inventory y SaleLinkedToCustomerProfile en Customer Relationship Management; y cuando ocurre SalesShiftConcluded en Cash Management, se genera el evento CashBalanceSummaryGenerated. 
+
+
 ### 4.6.2. Software Architecture Context Diagram
+
+<img width="940" height="344" alt="image" src="https://github.com/user-attachments/assets/3f188a2f-0449-4cb4-a422-de044b54c1f2" />
+
+El diagrama muestra a PetStock como sistema central, rodeado por sus dos actores: el Administrador de tienda, quien gestiona las operaciones diarias del negocio, y el Visitante, quien consulta información a través del Landing Page. Adicionalmente, se identifica la integración con WhatsApp Business API como sistema externo de terceros, utilizado para el envío de solicitudes de reposición a proveedores.
+
 
 ### 4.6.3. Software Architecture Container Diagrams
 
+<img width="940" height="365" alt="image" src="https://github.com/user-attachments/assets/761317b2-5c24-4826-84a0-560003642652" />
+
+El diagrama descompone a PetStock en 4 containers independientes, cada uno constituyendo una unidad de despliegue autónoma: el Landing Page, la Web Application, el RESTful API y la Base de Datos. La Web Application se comunica con el API mediante peticiones JSON sobre HTTPS, mientras que el API es responsable de la persistencia de datos y de la integración con el servicio externo de WhatsApp Business API. 
+
 ### 4.6.4. Software Architecture Components Diagrams
+
+<img width="938" height="1164" alt="image" src="https://github.com/user-attachments/assets/dc6ac10b-8008-47ac-8cf8-c58c7c697eb7" />
+
+
+El diagrama presenta la descomposición interna del container RESTful API en 9 Controllers, cada uno alineado con un Bounded Context identificado en el Design-Level EventStorming (Identity & Access, Catalog & Supplier, Purchasing & Receiving, Inventory & Stock, Sales & Checkout, Cash Management, Customer, Business Analytics y Profile & Configuration). Adicionalmente, se identifican 2 Services de aplicación: el Auth Service, encargado de la validación de credenciales y generación de tokens JWT, y el Notification Service, responsable de la comunicación con WhatsApp Business API. La capa de Repositories, implementada con Entity Framework Core, centraliza el acceso a la Base de Datos para todos los Controllers. 
 
 ## 4.7. Software Object-Oriented Design
 
