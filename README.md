@@ -1419,6 +1419,12 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ## 4.5. Web Applications Prototyping
 
+<p align="center">
+  <img src="assets/web-applications/image.png" alt="Prototyping">
+</p>
+
+**Link:** [Ver Web Applications Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQATnjuRokKCTJJs3lWyE2zZAW5hQlqcLaL2sl79xHvx9Gg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RYg5y9)
+
 ## 4.6. Domain-Driven Software Architecture
 
 ### 4.6.1. Design-Level Event Storming
