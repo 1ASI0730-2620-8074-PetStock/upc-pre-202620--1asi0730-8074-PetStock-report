@@ -1871,9 +1871,29 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
+Durante el Sprint 1, el equipo concentró el desarrollo en la implementación de la Landing Page de PetStock. El alcance de esta iteración incluyó las secciones Navbar, Hero, Benefits, How It Works, Pricing, System Preview, FAQ y Footer, además de la adaptación responsive para distintos tamaños de pantalla.
+
+Debido a que el incremento desarrollado corresponde a una página informativa estática, en este sprint no se implementaron Web Services, endpoints REST ni mecanismos de persistencia de datos.
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Como resultado del Sprint 1, se realizó el despliegue de la Landing Page de PetStock mediante GitHub Pages. La publicación permite acceder al incremento desarrollado desde un navegador, sin requerir una instalación local ni configuración adicional por parte del visitante.
+
+**Landing Page desplegada:** https://1asi0730-2620-8074-petstock.github.io/LandingPage/
+
+La versión publicada incluye las secciones desarrolladas durante el sprint: presentación de la propuesta de valor, beneficios de PetStock, explicación del flujo de uso, plan de suscripción, vistas previas de la plataforma, preguntas frecuentes y pie de página. También incorpora estilos responsive para que el contenido pueda visualizarse en diferentes tamaños de pantalla.
+
+La siguiente evidencia muestra la Landing Page publicada en GitHub Pages:
+
+![Landing Page de PetStock desplegada en GitHub Pages](assets/LandingPage/LandingPage-Deployed.png)
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, organizamos el trabajo de la Landing Page de PetStock por secciones funcionales. Esta división nos permitió avanzar de forma paralela sin que todos modificáramos el mismo bloque de código al mismo tiempo. La planificación se realizó de forma virtual. En esa reunión definimos como prioridad publicar una primera versión funcional de la Landing Page y organizamos las tareas en el tablero de seguimiento del equipo. El tablero permitió visualizar el estado de cada tarea y confirmar que los elementos del Sprint Backlog llegaran a `Done` antes del cierre de la iteración.
+
+Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión ayudó a separar los cambios de cada integrante y a mantener un historial de commits asociado a las secciones implementadas. Por ejemplo, se registraron avances independientes para beneficios, vistas previas, precios, funcionamiento de la plataforma y FAQ/Footer.
+
+Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
 
 # Conclusiones
 
