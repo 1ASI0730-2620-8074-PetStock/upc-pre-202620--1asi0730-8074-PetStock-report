@@ -587,11 +587,48 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
   * ¿Qué tan importante considera contar con reportes analíticos de ventas por categoría para la toma de decisiones comerciales y reposición con proveedores?
   * ¿Estaría dispuesto a migrar la administración completa de su boutique a un modelo de software en la nube si este le garantiza optimizar su capital de trabajo?c
 
-### 2.2.2. Registro de entrevistas
+## 2.2.2. Registro de entrevistas
 
 **Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
 
-**Entrevista N°3**
+**Entrevista N° 2**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/Entrevista-2.jpeg" alt="Entrevista 2" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Mateo Piero Escudero Sánchez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>20 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Callao</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>6:51</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBNWv2B8S8OTZJPggxgAslPAarxSqgp5bYKIKIhboc4k9c?e=6F0Lb0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista 2-Seg 1</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Mateo Escudero, de 20 años y estudiante de administración, apoya en la gestión de la tienda familiar de mascotas fundada hace más de 12 años. Nos comenta que los productos de mayor rotación son los alimentos balanceados (especialmente de marcas económicas). El negocio es atendido por él y sus padres; sus padres se encargan de las ventas y él gestiona los pedidos y el inventario. Actualmente, controlan la mercadería mediante un cuaderno donde anotan manualmente las entradas y salidas, pasando esos datos a un Excel básico una vez por semana (o cada 2 o 3 días cuando se acumula). Esto les genera dolores de cabeza importantes: se quedan sin stock de productos muy vendidos al menos una vez por semana porque el Excel no está actualizado al día, lo que provoca que los clientes se vayan a la competencia. Además, cuadrar la caja al final del día es un proceso tedioso que le toma hasta 3 horas y a veces comete errores de cálculo con los boletos y anotaciones. También mencionó que una vez perdió una hoja del cuaderno y tuvo que dejar un "hueco" en las cuentas del Excel. Finalmente, muestra un gran interés en una plataforma web automatizada accesible desde el celular, señalando que le cambiaría la vida y que consideraría un rango de precio razonable de 30 a 45 soles mensuales por una solución así. Como principal barrera, destaca que a sus padres les cuesta más confiar en la tecnología digital y prefieren ver todo escrito en papel.</td>
+  </tr>
+</table>
+
+**Entrevista N° 3**
 <table>
   <tr>
     <td colspan="2" align="center">
@@ -624,14 +661,14 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
   </tr>
   <tr>
     <td><b>Resumen</b></td>
-    <td>Dayan es una joven emprendedora de 27 años que administra de forma independiente la tienda de mascotas heredada de sus padres. En su día a día enfrenta un considerable nivel de estrés y desgaste causado por la dependencia de procesos manuales,aunque utiliza hábilmente su celular para procesar pagos con Yape y Plin o para coordinar con proveedores mediante WhatsApp, sigue controlando su inventario a través de inspecciones visuales y registra sus ventas a lápiz en un cuaderno.Esta desconexión operativa le ocasiona ansiedad y el temor constante de omitir registros durante las horas donde tiene más clientes, alcanzando su punto más estresante para ella  al final del día cuando invierte tiempo de más intentando cuadrar la caja. A nivel emocional y comercial, manifiesta una fuerte frustración al perder clientes recurrentes frente a la competencia debido a falta de stock que no detecta a tiempo. Ante este escenario, Dayan se muestra muy dispuesta a invertir en una suscripción mensual accesible para adoptar una plataforma web que automatice sus alertas de inventario y elimine el uso de papel. Su principal motivación es tener mayor control sobre el negocio, estableciendo como única barrera técnica que el nuevo sistema garantice rapidez y estabilidad para no generar demoras en la atención directa.</td>
+    <td>Dayan es una joven emprendedora de 27 años que administra de forma independiente la tienda de mascotas heredada de sus padres. En su día a día enfrenta un considerable nivel de estrés y desgaste causado por la dependencia de procesos manuales, aunque utiliza hábilmente su celular para procesar pagos con Yape y Plin o para coordinar con proveedores mediante WhatsApp, sigue controlando su inventario a través de inspecciones visuales y registra sus ventas a lápiz en un cuaderno. Esta desconexión operativa le ocasiona ansiedad y el temor constante de omitir registros durante las horas donde tiene más clientes, alcanzando su punto más estresante para ella al final del día cuando invierte tiempo de más intentando cuadrar la caja. A nivel emocional y comercial, manifiesta una fuerte frustración al perder clientes recurrentes frente a la competencia debido a falta de stock que no detecta a tiempo. Ante este escenario, Dayan se muestra muy dispuesta a invertir en una suscripción mensual accesible para adoptar una plataforma web que automatice sus alertas de inventario y elimine el uso de papel. Su principal motivación es tener mayor control sobre el negocio, estableciendo como única barrera técnica que el nuevo sistema garantice rapidez y estabilidad para no generar demoras en la atención directa.</td>
   </tr>
 </table>
 
 
 **Segmento 2: Tiendas especializadas en productos premium y de cuidado**
 
-<h3>Entrevista N° 4</h3>
+**Entrevista N° 4**
 <table>
   <tr>
     <td colspan="2" align="center">
@@ -660,7 +697,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
   </tr>
   <tr>
     <td><b>Enlace</b></td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQBerKr8n0VUSaM7mqun9LyRAc-Ffctf_B-YrBnHggct83I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6a6yIn">Entrevista - Segmento 2</a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQBerKr8n0VUSaM7mqun9LyRAc-Ffctf_B-YrBnHggct83I?nav=eyJyZWZlcnJhbEluZm8iOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6a6yIn">Entrevista - Segmento 2</a></td>
   </tr>
   <tr>
     <td><b>Resumen</b></td>
@@ -668,8 +705,44 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
   </tr>
 </table>
 
-**Entrevista N° 6:**
+**Entrevista N° 5**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/Entrevista-5.jpeg" alt="Entrevista 5" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Leonardo Castilla Ruiz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>5:51</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBdCYPW_kzGR6SmaSAEX7eXAVf6hgWV6JKt2k18xJmRAIE?e=O2wXFK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista 5-Seg 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Leonardo Castilla Ruiz es el administrador de la boutique especializada "Wow Closet", orientada a la experiencia y el bienestar integral de mascotas con un perfil de clientes exigente de nivel socioeconómico medio y alto que buscan nutrición de alta gama, cosmética, farmacia especializada y accesorios importados. Nos comenta que manejan un catálogo muy variado con una alta densidad de ítems exclusivos, lo que genera márgenes unitarios más altos pero también una alta complejidad para gestionar la variedad de productos sin un sistema especializado. Actualmente, dependen de revisiones manuales en hojas de cálculo genéricas (como Excel) para controlar fechas de caducidad, lotes y niveles de stock, lo que ocasiona que a veces se pasen por alto productos de nicho o baja rotación que terminan venciendo en el fondo de los anaqueles, generando pérdidas económicas directas. Realizar un inventario general les demanda un día entero de trabajo fuera de horario o varias horas del fin de semana, interrumpiendo las operaciones. Además, no cuentan con un historial de compras digital centralizado que les permita sugerir productos complementarios a sus clientes frecuentes según las preferencias de sus mascotas. Finalmente, Leonardo destaca como características indispensables para una solución digital: control de inventario en tiempo real con alertas automáticas de stock mínimo, un módulo de gestión de catálogos centralizado y fácil de usar, un historial de compras por cliente y una interfaz limpia que no requiera entrenamientos complejos. Afirma estar totalmente dispuesto a migrar y pagar una suscripción mensual si el software garantiza evitar quiebres de stock, simplifica las operaciones diarias y protege la rentabilidad del negocio.</td>
+  </tr>
+</table>
 
+**Entrevista N° 6**
 <table>
   <tr>
     <td colspan="2" align="center">
@@ -702,8 +775,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
   </tr>
   <tr>
     <td><b>Resumen</b></td>
-    <td> Lia es propietaria de una boutique especializada en productos premium para mascotas, como accesorios importados, juguetes, productos de higiene, camas y alimentos de mayor calidad, atendiendo principalmente a clientes que buscan productos especializados y de buena calidad. Actualmente, gestiona la variedad de su catálogo y el control del inventario mediante Excel y revisiones físicas, lo que puede dificultar el seguimiento de productos de baja rotación, fechas de vencimiento y niveles de stock. Asimismo, el historial de compras de sus clientes frecuentes se encuentra distribuido entre anotaciones y conversaciones por WhatsApp, por lo que considera importante contar con información más organizada. Lia también destaca la necesidad de disponer de reportes de ventas por categoría que le permitan conocer qué productos tienen mayor o menor movimiento y tomar mejores decisiones sobre su catálogo y reposición. Finalmente, estaría dispuesta a utilizar una plataforma digital en la nube si esta es sencilla, segura y le permite ahorrar tiempo, organizar la información de su boutique y optimizar el uso de su capital.
-</td>
+    <td>Lia es propietaria de una boutique especializada en productos premium para mascotas, como accesorios importados, juguetes, productos de higiene, camas y alimentos de mayor calidad, atendiendo principalmente a clientes que buscan productos especializados y de buena calidad. Actualmente, gestiona la variedad de su catálogo y el control del inventario mediante Excel y revisiones físicas, lo que puede dificultar el seguimiento de productos de baja rotación, fechas de vencimiento y niveles de stock. Asimismo, el historial de compras de sus clientes frecuentes se encuentra distribuido entre anotaciones y conversaciones por WhatsApp, por lo que considera importante contar con información más organizada. Lia también destaca la necesidad de disponer de reportes de ventas por categoría que le permitan conocer qué productos tienen mayor o menor movimiento y tomar mejores decisiones sobre su catálogo y reposición. Finalmente, estaría dispuesta a utilizar una plataforma digital en la nube si esta es sencilla, segura y le permite ahorrar tiempo, organizar la información de su boutique y optimizar el uso de su capital.</td>
   </tr>
 </table>
 
