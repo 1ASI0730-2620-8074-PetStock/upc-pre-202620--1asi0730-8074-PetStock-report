@@ -591,7 +591,7 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 **Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
 
-**Entrevista N° [COMPLETAR]**
+**Entrevista N° 1**
 
 <table>
   <tr>
