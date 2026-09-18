@@ -1382,11 +1382,9 @@ Gestiona los procesos de apertura y cierre de turnos de caja, así como el cuadr
 #### Bounded Context 8: Business Analytics & Reporting
 Se encarga de procesar los datos históricos para generar reportes analíticos de ventas, identificar los productos de mayor y menor rotación y permitir su exportación a PDF.
 
-<<<<<<< HEAD
-![Business Analytics & Reporting Bounded Context](/upc-pre-202620--1asi0730-8074-PetStock-report/assets/ClassDiagrams/Bounded-Context8.png)
-=======
+
+
 ![Business Analytics & Reporting Bounded Context](assets/ClassDiagrams/Bounded-Context8.png)
->>>>>>> feature/chapter-4-changes
 
 #### Bounded Context 9: Profile & Configuration Management
 Administra los datos personales del perfil del usuario, las preferencias del sistema y la configuración general de los datos del negocio.
