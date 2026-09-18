@@ -1864,10 +1864,66 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 | US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
 
 
-
 #### 5.2.1.4. Development Evidence for Sprint Review
 
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| LandingPage | feature/Beneficios-MarielMendoza | e365f94 | chore: add HTML base structure for team layout | Mendoza Moreano, Mariel Lucero | 15/09/2026 |
+| LandingPage | feature/Beneficios-MarielMendoza | 8c7472a | chore: add general CSS stylesheet with global variables and utilities | Mendoza Moreano, Mariel Lucero | 16/09/2026 |
+| LandingPage | feature/Beneficios-MarielMendoza | e958c56 | feat: implement benefits section layout and styling | Mendoza Moreano, Mariel Lucero | 16/09/2026 |
+| LandingPage | feature/seccionVistasPrevias-ArturoValladolid | 2a63643 | feat: Add a previews section with screenshots of the app | Valladolid Jiménez, Arturo Fernando | 16/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 1f7713b | feat: agrega estructura html de como funciona y precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 2c2b07c | feat: agrega estilos de como funciona | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | b006fa4 | feat: agrega estilos de precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | f93cde1 | fix: mejora copys de como funciona y precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 5c61137 | style: agrega animacion hover a tarjetas | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 642e565 | chore: elimina estilo no utilizado en precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | FAQ-and-footer-PierreMendoza | c3613bf | feat(landing): add FAQ and footer sections | Mendoza Boluarte, Pierre Alessandro | 17/09/2026 |
+| LandingPage | feature/landing-changes | a3e7d75 | feat: fix navbar layout and modularize styles for landing page | Quispe Palomino, Tony Jhunior | 18/09/2026 |
+
 #### 5.2.1.5. Execution Evidence for Sprint Review
+
+
+A continuación se presenta la evidencia de ejecución del Sprint 1, correspondiente a las secciones del Landing Page implementadas hasta el cierre del sprint.
+
+**Navbar y Hero**
+
+Sección de navegación principal y presentación inicial del Landing Page.
+
+<img width="1894" height="506" alt="image" src="https://github.com/user-attachments/assets/670b36c3-0b0f-44d9-b66b-52df52548de8" />
+
+**Beneficios**
+
+Sección que muestra las principales ventajas de usar PetStock para la gestión de tiendas de mascotas.
+
+<img width="1880" height="759" alt="image" src="https://github.com/user-attachments/assets/50bf7e94-7aa9-499e-997e-f632193b7766" />
+
+**Cómo Funciona**
+
+Sección que explica en 5 pasos el proceso de uso de la plataforma, con interacción hover en cada tarjeta.
+
+<img width="1894" height="440" alt="image" src="https://github.com/user-attachments/assets/d85faa4a-9f88-4a01-8d32-60a4b82ba794" />
+
+**Precios**
+
+Sección que presenta el plan único de suscripción (S/ 39.90/mes) con 14 días de prueba gratuita.
+
+<img width="1897" height="663" alt="image" src="https://github.com/user-attachments/assets/ee268202-4a18-4411-b858-32cbfa9a66b1" />
+
+**Vistas Previas**
+
+Sección que muestra mockups de la aplicación (Dashboard, Alertas, Selección de proveedor).
+
+<img width="1885" height="621" alt="image" src="https://github.com/user-attachments/assets/2e6e0776-db2a-41dd-a0f9-9cffc425b56c" />
+
+**FAQ y Footer**
+
+Sección de preguntas frecuentes y pie de página con información de contacto.
+
+<img width="1887" height="754" alt="image" src="https://github.com/user-attachments/assets/7f3b5b99-48e4-47d5-8671-433d788517ee" />
+
+**Video de navegación del Landing Page:**
+[Ver video de navegación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQDhAJi2ld7hR4rfZ5NP2ElMAbzhDNbnNYwEhgfHKSyapgI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aTMgUv)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
