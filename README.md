@@ -1432,7 +1432,16 @@ Administra los datos personales del perfil del usuario, las preferencias del sis
 
 ## 4.8. Database Design
 
-### 4.8.1. Database Diagram
+### 4.8.1. Database Diagrams
+El diseño de la base de datos de PetStock se ha estructurado de forma relacional y normalizada, reflejando de manera directa las entidades, atributos y relaciones definidos en el modelado por dominios (DDD) y los diagramas de clases del sistema. La arquitectura relacional integra 19 tablas principales que permiten gestionar de forma centralizada la seguridad, el catálogo de productos, el inventario en tiempo real, el punto de venta (POS), la gestión de clientes (CRM), las órdenes de compra a proveedores, las operaciones de caja y los reportes analíticos del negocio.
+
+A continuación, se presenta el diagrama completo de la base de datos dividido en tres secciones para una mejor visualización y detalle de todas sus tablas y llaves foráneas:
+
+![Database Diagram Parte 1](assets/Database-Diagrams/DataBase1.png)
+
+![Database Diagram Parte 2](assets/Database-Diagrams/DataBase2.png)
+
+![Database Diagram Parte 3](assets/Database-Diagrams/DataBase3.png)
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
