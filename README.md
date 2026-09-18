@@ -1220,13 +1220,206 @@ Para garantizar el posicionamiento en buscadores y una estructuración correcta 
 
 ### 4.2.4. Searching Systems
 
+### Landing Page
+
+La Landing Page de PetStock no incorpora una búsqueda textual. La página comunica la propuesta de valor de la plataforma y dirige al visitante hacia el registro, por lo que su contenido se organizará mediante secciones y enlaces ancla. Incluir un buscador en esta etapa añadiría una acción innecesaria para un visitante que todavía está conociendo el producto.
+
+### Web Application
+
+La Web Application incorpora búsquedas dentro de los módulos donde el administrador necesita localizar información operativa. Cada búsqueda se mantiene dentro de su contexto para evitar resultados confusos. Por ejemplo, un término ingresado en Stock busca productos, mientras que el mismo término en Historial de compras busca clientes.
+
+### Búsqueda de productos con bajo stock
+
+**Dónde:** módulo Stock.
+
+**Tipo:** búsqueda textual por nombre de producto.
+
+**Resultado:** la pantalla filtra los productos mostrados en las secciones "Alerta crítica" y "Stock bajo". Cada resultado presenta el nombre del producto, categoría, stock actual, stock mínimo requerido y acción de reposición.
+
+**Comportamiento:** los resultados se actualizan al ingresar el nombre del producto. El administrador puede identificar rápidamente un alimento, accesorio o artículo de cuidado que necesita reposición.
+
+**Estado sin resultados:** "No encontramos productos con ese nombre." Se muestra la acción "Limpiar búsqueda" para recuperar la lista completa.
+
+**Estado vacío:** "No tienes productos con bajo stock." Este mensaje comunica que los productos registrados se encuentran por encima de su mínimo configurado.
+
+La búsqueda responde a la necesidad de los administradores de detectar productos faltantes sin revisar anaqueles, cuadernos o archivos de Excel. Para las tiendas de alta rotación, permite ubicar rápidamente alimentos y productos de venta frecuente. Para las boutiques especializadas, permite revisar artículos con menor movimiento que requieren atención.
+
+### Búsqueda de clientes e historial de compras
+
+**Dónde:** módulo Historial de compras.
+
+**Tipo:** búsqueda textual por nombre del cliente.
+
+**Resultado:** se filtran los registros de compra asociados al cliente ingresado. Cada registro muestra el nombre del cliente, fecha u hora de compra, productos adquiridos y cantidad registrada. El botón "Ver detalle" permite revisar la información completa de la operación.
+
+**Comportamiento:** el usuario puede consultar compras recientes de un cliente sin revisar anotaciones físicas ni depender de la memoria. Esta función resulta útil para las boutiques especializadas, donde el historial permite conocer compras previas y brindar una atención más personalizada.
+
+**Estado sin resultados:** "No encontramos compras para este cliente." El sistema muestra el botón "Limpiar búsqueda".
+
+**Estado vacío:** "Todavía no se registran compras de clientes."
+
+### Selección de proveedor
+
+**Dónde:** pantalla Seleccionar proveedor, accesible desde una alerta de stock crítico.
+
+**Tipo:** selección contextual, sin búsqueda textual en la primera versión del MVP.
+
+**Resultado:** el sistema muestra proveedores disponibles para el producto que requiere reposición. Cada tarjeta presenta el nombre del proveedor, categorías que abastece, número de contacto y una etiqueta de frecuencia cuando corresponde.
+
+**Comportamiento:** el administrador selecciona un proveedor y presiona "Contactar proveedor". PetStock genera una solicitud con el producto y la cantidad sugerida, de acuerdo con el flujo de reposición mostrado en el mock-up.
+
+No se incorpora una búsqueda de proveedores en esta primera versión porque la pantalla presenta una lista breve y relacionada directamente con el producto crítico seleccionado. Si el número de proveedores registrados aumenta en futuras iteraciones, se podrá añadir una barra de búsqueda por nombre comercial o categoría de productos.
+
+### Filtros de reportes
+
+**Dónde:** módulo Reportes.
+
+**Tipo:** consulta visual mediante indicadores y agrupaciones predefinidas. La pantalla no requiere búsqueda textual como elemento principal.
+
+**Información mostrada:** ventas por día, total semanal, productos más vendidos, productos con menor movimiento, cantidad de productos disponibles y categorías registradas.
+
+La vista prioriza información resumida para que el administrador identifique tendencias sin revisar manualmente cada venta. El listado de productos con menor movimiento responde especialmente a las necesidades del segmento de tiendas premium, que requiere detectar productos que permanecen demasiado tiempo en inventario.
+
+### Principios del sistema de búsqueda
+
+**Búsqueda por contexto:** cada módulo busca únicamente la información relacionada con su función. Stock busca productos y el Historial de compras busca clientes.
+
+**Filtros no destructivos:** las búsquedas modifican solamente la información mostrada en pantalla. No eliminan ni editan registros de productos, clientes, proveedores o ventas.
+
+**Feedback claro:** PetStock diferencia entre una lista sin registros y una búsqueda sin coincidencias. De esta manera, el administrador entiende si debe registrar información o cambiar el criterio ingresado.
+
+**Acciones cercanas al resultado:** los resultados permiten continuar con la tarea principal. Desde una alerta de stock, el usuario puede reponer; desde el historial, puede revisar el detalle de una compra.
+
+**Diseño adaptable a móvil:** las barras de búsqueda utilizan un placeholder directo, como "Buscar producto..." y "Buscar cliente...", para que el usuario entienda qué información puede localizar.
+
 ### 4.2.5. Navigation Systems
+
+### Landing Page
+
+La Landing Page utilizará navegación de una sola página mediante enlaces ancla. El encabezado permitirá desplazarse hacia las secciones principales de la página, como propuesta de valor, beneficios, funcionamiento de PetStock y registro. El logo llevará al inicio de la Landing Page y el call-to-action principal dirigirá al visitante a la pantalla de creación de cuenta.
+
+Esta estructura permite que un dueño o administrador conozca primero cómo PetStock puede ayudarle a controlar su tienda antes de iniciar el registro.
+
+### Web Application
+
+La Web Application está diseñada principalmente para dispositivos móviles. Por este motivo, la navegación debe permitir que el administrador llegue a las funciones frecuentes con pocos pasos, especialmente durante una venta o cuando necesita revisar una alerta de stock.
+
+El Dashboard funciona como pantalla principal después del inicio de sesión. Desde esta vista, el usuario revisa el estado general de su tienda y accede a acciones rápidas, como añadir un producto, registrar una venta o ver productos con bajo stock.
+
+### Navegación global
+
+La navegación principal se ubicará en una barra inferior persistente con los siguientes accesos:
+
+- Dashboard
+- Stock
+- Ventas
+- Historial
+- Perfil
+
+El módulo de Reportes se podrá acceder desde Dashboard mediante la tarjeta de reportes semanales y desde la opción correspondiente dentro del menú de Perfil o una sección adicional de navegación. Esta decisión evita saturar la barra inferior y mantiene visibles las tareas que se realizan con mayor frecuencia.
+
+La opción activa se distinguirá mediante color, icono y etiqueta visible. En la versión final se utilizará el naranja de PetStock para resaltar la opción seleccionada y los botones de acción principales.
+
+### Navegación desde Dashboard
+
+El Dashboard presenta un resumen del negocio y funciona como punto de acceso a las tareas operativas:
+
+- "Añadir producto" dirige al formulario Registrar producto.
+- "Registrar venta" dirige al formulario de venta.
+- "Ver productos bajo stock" dirige al módulo Stock.
+- La tarjeta de reportes semanales dirige al módulo Reportes.
+- El acceso de perfil dirige a Mi perfil y configuración.
+
+Las acciones rápidas reducen pasos para actividades que forman parte de la rutina diaria de una tienda de mascotas.
+
+### Navegación jerárquica
+
+Las pantallas secundarias incluyen una flecha de retorno en la parte superior izquierda. Esta acción devuelve al usuario a la vista anterior sin perder el contexto de la tarea.
+
+El flujo de reposición mantiene una secuencia directa:
+
+**Stock → Producto con alerta crítica → Reponer → Seleccionar proveedor → Contactar proveedor**
+
+En este recorrido, el administrador puede revisar el producto crítico, elegir un proveedor relacionado y generar el contacto de reposición. La pantalla muestra el producto y la cantidad sugerida para evitar que el usuario pierda el contexto durante la selección.
+
+### Navegación de perfil
+
+El módulo Mi perfil reúne acciones de cuenta y configuración:
+
+- Editar perfil
+- Idioma
+- Notificaciones
+- Datos del negocio
+- Centro de ayuda
+- Cerrar sesión
+
+La pantalla Editar perfil permite modificar nombres, apellidos, correo electrónico, contraseña y fotografía. Al guardar cambios, el sistema confirma la actualización; al cancelar, el usuario vuelve a Mi perfil sin aplicar modificaciones.
+
+### Criterios de navegación
+
+**Punto de inicio claro:** después de iniciar sesión o registrarse, el sistema lleva al Dashboard. Desde esta vista, el administrador identifica el estado de su negocio y las tareas pendientes.
+
+**Rutas cortas para tareas frecuentes:** registrar una venta, añadir un producto y revisar alertas de stock se encuentran a pocos toques desde el Dashboard.
+
+**Ubicación visible:** cada pantalla presenta un título claro, como "Registrar producto", "Reportes", "Historial de compras" o "Productos con bajo stock". La opción activa de la barra inferior refuerza dónde se encuentra el usuario.
+
+**Consistencia visual:** las acciones principales usan el mismo estilo de botón y mantienen la misma ubicación cuando es posible. Por ejemplo, los botones "Guardar producto", "Registrar venta" y "Contactar proveedor" aparecen en la parte inferior de la pantalla para facilitar su uso en dispositivos móviles.
+
+**Prevención de pérdida de información:** los formularios de registro de producto, venta y edición de perfil incluyen una acción de cancelar. Antes de abandonar una pantalla con cambios no guardados, la implementación deberá solicitar confirmación al usuario.
 
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
 
+<p align="center">
+  <img src="assets/wireframes/landscape-wireframe-landing.png" alt="Landing Page Wireframe - Landscape">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/header-wireframe-mobile.png" alt="Header Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section1-wireframe-mobile.png" alt="Section 1 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section2-wireframe-mobile.png" alt="Section 2 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section3-wireframe-mobile.png" alt="Section 3 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section4-wireframe-mobile.png" alt="Section 4 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section5-wireframe-mobile.png" alt="Section 5 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section6-wireframe-mobile.png" alt="Section 6 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section7-wireframe-mobile.png" alt="Section 7 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section8-wireframe-mobile.png" alt="Section 8 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section9-wireframe-mobile.png" alt="Section 9 Wireframe - Mobile">
+</p>
+
 ### 4.3.2. Landing Page Mock-up.
+
+<p align="center">
+  <img src="assets/landing-mockup/landing-mockup.png" alt="Landing Page Mock-up">
+</p>
 
 ## 4.4. Web Applications UX/UI Design
 
