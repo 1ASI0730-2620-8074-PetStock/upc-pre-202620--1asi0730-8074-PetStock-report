@@ -1452,13 +1452,45 @@ A continuación, se presenta el diagrama completo de la base de datos dividido e
 
 ![Database Diagram Parte 3](assets/Database-Diagrams/DataBase3.png)
 
-# Capítulo V: Product Implementation, Validation & Deployment
+## Capítulo V: Product Implementation, Validation & Deployment
 
-## 5.1. Software Configuration Management
+### 5.1. Software Configuration Management
 
-### 5.1.1. Software Development Environment Configuration
+#### 5.1.1. Software Development Environment Configuration
+Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente entre todos los miembros del equipo, se ha definido el siguiente entorno de desarrollo para el ecosistema PetStock:
 
-### 5.1.2. Source Code Management
+| Actividad | Producto | Propósito / Uso |
+| :--- | :--- | :--- |
+| **Project Management** | Trello | Gestión del Product Backlog, planificación de Sprints y seguimiento de tareas. |
+| **Requirements Management** | UXPressia | Elaboración de artefactos de descubrimiento (User Personas, Empathy Maps, Journey Maps) para la definición de requisitos. |
+| **UX/UI Design** | Figma | Diseño de la guía de estilo, prototipos de baja fidelidad (wireframes) y alta fidelidad (mockups). |
+| **Class Diagrams & Database Design** | VS Code (erd-editor) | Elaboración de diagramas de clases y diseño de la base de datos relacional de PetStock. |
+| **Software Development (Backend)** | JetBrains Rider / Visual Studio | IDE para el desarrollo de Web Services bajo estilo RESTful utilizando ASP.NET Core y C#. |
+| **Software Development (Frontend)** | JetBrains WebStorm / VS Code | IDE para el desarrollo de la Web Application con Vue.js Framework y JavaScript/TypeScript. |
+| **Software Development (Landing Page)** | Visual Studio Code | IDE para el desarrollo de la Landing Page estática con HTML5, CSS y JavaScript. |
+| **Version Control** | GitHub | Alojamiento de repositorios y gestión de versiones aplicando GitFlow y Conventional Commits. |
+| **Documentation** | Markdown | Documentación técnica del reporte del proyecto. |
+
+#### 5.1.2. Source Code Management
+El código fuente del proyecto se gestionará utilizando **Git** como sistema de control de versiones y **GitHub** como plataforma de alojamiento, bajo una organización colaborativa. Se adoptará un enfoque estructurado que favorezca la modularidad y el despliegue continuo mediante repositorios y ramas organizadas.
+
+**Estrategia de Ramas (GitFlow)**
+Se implementará un flujo de trabajo basado en GitFlow con el objetivo de garantizar la estabilidad y trazabilidad del desarrollo:
+* **`main`**: Rama principal que contiene únicamente código estable, probado y desplegado en producción. Cada versión liberada deberá estar debidamente etiquetada.
+* **`develop`**: Rama de integración continua donde se consolidan los avances del desarrollo antes de su liberación a producción.
+* **`feature/[nombre]`**: Ramas temporales creadas a partir de `develop` para el desarrollo de nuevas funcionalidades o User Stories (ej. `feature/chapter-5-changes`). Una vez finalizadas, se integran nuevamente a `develop` mediante un Pull Request (PR).
+* **`hotfix/[nombre]`**: Ramas destinadas a la corrección de errores críticos detectados en producción (`main`), que requieren una solución inmediata.
+
+**Convención de Commits (Conventional Commits)**
+Para mantener un historial claro, consistente y facilitar la generación automática de *changelogs*, todos los commits deberán seguir el estándar de **Conventional Commits**:
+
+* **`feat`**: Nueva funcionalidad 
+  *(ej. `feat(inventory): add low stock alert notification policy`)*
+* **`fix`**: Corrección de errores 
+  *(ej. `fix(auth): resolve token expiration on client devices`)*
+* **`docs`**: Cambios en documentación 
+  *(ej. `docs(chapter5): add software configuration management sections`)*
+* **`style`**: Cambios de formato que no afectan la lógica del código (espacios, indentación, etc.)
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
