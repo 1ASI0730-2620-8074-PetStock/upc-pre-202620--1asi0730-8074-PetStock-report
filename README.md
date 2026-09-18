@@ -197,9 +197,10 @@ Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 blablabla
 <br><br>
-Integrante 4<br>
+Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
-blablablabla<br><br>
+Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
+<br><br>
 Integrante 5<br>
 av1:<br>
 blablabla
@@ -226,9 +227,10 @@ Integrante 3<br>
 av1:<br>
 blablabla
 <br><br>
-Integrante 4<br>
+Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
-blablablabla<br><br>
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.
+    
 Integrante 5<br>
 av1:<br>
 blablabla
@@ -1328,11 +1330,9 @@ El diagrama descompone a PetStock en 4 containers independientes, cada uno const
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-<<<<<<< HEAD
-## 4.7. The Software Object-Oriented Design
 
 En esta sección se detalla el diseño orientado a objetos de la aplicación web PetStock, estructurado mediante diagramas de clases por capas (*Presentation*, *Application*, *Domain* e *Infrastructure*) para cada uno de los Bounded Contexts definidos en la arquitectura orientada a dominios (DDD).
-=======
+
 <img width="938" height="1164" alt="image" src="https://github.com/user-attachments/assets/dc6ac10b-8008-47ac-8cf8-c58c7c697eb7" />
 
 
