@@ -53,7 +53,14 @@ Arturo Fernando Valladolid Jiménez<br><br>
 Pierre Alessandro Mendoza Boluarte<br><br>
 I5
 </td>
-<td class="c5" style="border: 1px solid black;">blablabla</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Capítulo I: Introducción
+- Capítulo II: Requirements Elicitation & Analysis
+- Capítulo III: Requirements Specification
+- Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
 </table>
 
@@ -179,7 +186,7 @@ forma conjunta</th>
 <th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
-blablablabla.
+Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -197,7 +204,7 @@ blablabla
 </th>
 <th>
 av1:<br>
-blablablabla 
+Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
 </th>
 </tr>
 <tr>
@@ -208,7 +215,7 @@ objetivos.</th>
 <th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
-blablabla
+Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -226,7 +233,7 @@ blablabla
 </th>
 <th>
 av1:<br>
-blablbalbla
+Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
 </tr>
 </tbody>
 </table>
@@ -253,7 +260,7 @@ Su producto principal, **PetStock**, es una aplicación web intuitiva desarrolla
 | :---: | :--- |
 | <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
 | <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
-| *(Pendiente)* | *[Nombre del integrante 3 — Código de Estudiante]* |
+| <img src="./assets/team/Mariel-Mendoza.jpeg" width="120" alt="Mariel Mendoza"> | **Mariel Lucero Mendoza Moreano - U20231A418**. Estudiante de Ingeniería de Software con interés en el análisis de problemas, diseño de soluciones centradas en el usuario y arquitectura de software. Me caracterizo por mantener una actitud responsable, organizada y orientada al aprendizaje continuo. En este proyecto, busco aportar en la definición de las necesidades de los usuarios, el diseño de la solución y la estructuración de los principales componentes de PetStock. |
 | *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
 | *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
 
