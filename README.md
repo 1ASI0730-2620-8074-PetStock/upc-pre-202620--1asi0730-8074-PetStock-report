@@ -568,6 +568,50 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 
 ### 2.2.2. Registro de entrevistas
 
+**Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Segmento 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Entrevista N° 6:**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/registro-lia.PNG" alt="Lia" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Lia</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>25 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>6:21</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQBINbY1ZEyeTbutnS2rjB-oAdP4yUP7D8xXluayVuyJ4sY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ZLYUoV">Entrevista - Segmento 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td> Lia es propietaria de una boutique especializada en productos premium para mascotas, como accesorios importados, juguetes, productos de higiene, camas y alimentos de mayor calidad, atendiendo principalmente a clientes que buscan productos especializados y de buena calidad. Actualmente, gestiona la variedad de su catálogo y el control del inventario mediante Excel y revisiones físicas, lo que puede dificultar el seguimiento de productos de baja rotación, fechas de vencimiento y niveles de stock. Asimismo, el historial de compras de sus clientes frecuentes se encuentra distribuido entre anotaciones y conversaciones por WhatsApp, por lo que considera importante contar con información más organizada. Lia también destaca la necesidad de disponer de reportes de ventas por categoría que le permitan conocer qué productos tienen mayor o menor movimiento y tomar mejores decisiones sobre su catálogo y reposición. Finalmente, estaría dispuesta a utilizar una plataforma digital en la nube si esta es sencilla, segura y le permite ahorrar tiempo, organizar la información de su boutique y optimizar el uso de su capital.
+</td>
+  </tr>
+</table>
+
+
 ### 2.2.3. Análisis de entrevistas
 
 **Analisis de Entrevista del segmento 1:**
