@@ -195,7 +195,8 @@ av1:<br>
 blablablabla<br><br>
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-blablabla
+Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
+
 <br><br>
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
@@ -223,9 +224,9 @@ Contribuí a mantener una comunicación constante con mi equipo para organizar l
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 blablablabla<br><br>
-Integrante 3<br>
+Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-blablabla
+Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
 <br><br>
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
@@ -266,7 +267,7 @@ Su producto principal, **PetStock**, es una aplicación web intuitiva desarrolla
 | <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
 | <img src="./assets/team/Mariel-Mendoza.jpeg" width="120" alt="Mariel Mendoza"> | **Mariel Lucero Mendoza Moreano - U20231A418**. Estudiante de Ingeniería de Software con interés en el análisis de problemas, diseño de soluciones centradas en el usuario y arquitectura de software. Me caracterizo por mantener una actitud responsable, organizada y orientada al aprendizaje continuo. En este proyecto, busco aportar en la definición de las necesidades de los usuarios, el diseño de la solución y la estructuración de los principales componentes de PetStock. |
 |<img width="145" height="179" alt="image" src="https://github.com/user-attachments/assets/4279cf66-87fc-42c8-8757-8da29a1745a7" /> | *Gutierrez Tume Stanley Jeremy - U20211812*.Soy estudiante de la carrera de Ingenieria de Software dentro de la Universidad Peruana de Ciencias Aplicadas. Tengo experiencia con proyectos que incluyen C++, Python, HTML, CSS, ; con algunos conocimiento en javascript, typescript y java. Me considero una persona responsable y comprometida, que da su mayor esfuerzo para el proyecto, con una comunicación para el trabajo en equipo. |
-| *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
+| <img src="./assets/team/Pierre_perfil.jpeg" width="120" alt="Pierre Mendoza"> | **Mendoza Boluarte,Pierre** — u202320973. Soy estudiante de la carrera de Ingeniería de Software,a la fecha estoy cursando el quinto ciclo.Me Considero una persona que le gusta cumplir a tiempo con las tareas aisgnadas,empatica y comprometida.Tengo conocimientos en Python , C++ y HTML, en este proyecto aportare en todo lo que pueda con mis conocimientos y comunicacion para tener un mejor trabajo en equipo . |
 
 ## 1.2 Solution Profile
 
@@ -580,6 +581,44 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 ### 2.2.2. Registro de entrevistas
 
 **Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Entrevista N°3**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/registro-entrevista-3.jpeg" alt="Lia" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Dayan Ramos</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>27 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>5:38</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320973_upc_edu_pe/IQDvCktCq8-URLafDlwBs26oAYpdnUR4UepT7AdoGbaSqR4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xC5cRN">Entrevista - Segmento 1</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Dayan es una joven emprendedora de 27 años que administra de forma independiente la tienda de mascotas heredada de sus padres. En su día a día enfrenta un considerable nivel de estrés y desgaste causado por la dependencia de procesos manuales,aunque utiliza hábilmente su celular para procesar pagos con Yape y Plin o para coordinar con proveedores mediante WhatsApp, sigue controlando su inventario a través de inspecciones visuales y registra sus ventas a lápiz en un cuaderno.Esta desconexión operativa le ocasiona ansiedad y el temor constante de omitir registros durante las horas donde tiene más clientes, alcanzando su punto más estresante para ella  al final del día cuando invierte tiempo de más intentando cuadrar la caja. A nivel emocional y comercial, manifiesta una fuerte frustración al perder clientes recurrentes frente a la competencia debido a falta de stock que no detecta a tiempo. Ante este escenario, Dayan se muestra muy dispuesta a invertir en una suscripción mensual accesible para adoptar una plataforma web que automatice sus alertas de inventario y elimine el uso de papel. Su principal motivación es tener mayor control sobre el negocio, estableciendo como única barrera técnica que el nuevo sistema garantice rapidez y estabilidad para no generar demoras en la atención directa.</td>
+  </tr>
+</table>
+
 
 **Segmento 2: Tiendas especializadas en productos premium y de cuidado**
 
@@ -1405,11 +1444,41 @@ Administra los datos personales del perfil del usuario, las preferencias del sis
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Para el desarrollo de la solución, el equipo adopta estrictamente el idioma inglés para toda la nomenclatura del código fuente como variables, clases, métodos, archivos y comentarios en los lenguajes utilizados: HTML, CSS, JavaScript y C#. Además, se adoptan las siguientes convenciones estándar de la industria para asegurar la calidad y mantenibilidad del software:
+* HTML y CSS: Se aplican las directrices de la "HTML Style Guide and Coding Conventions" y la "Google HTML/CSS Style Guide" para garantizar una estructura semántica, selectores eficientes y un código visualmente estructurado.
+
+* JavaScript: Se siguen las mejores prácticas establecidas en la "Google JavaScript Style Guide", las "MDN JavaScript guidelines" y la "W3C JavaScript Style Guide" para mantener la consistencia en la lógica y la manipulación del DOM.
+* Frontend Framework: Para el desarrollo de las aplicaciones web se adopta la "Vue Style Guide"priorizando las reglas esenciales y fuertemente recomendadas para la estructuración de componentes.
+* Web Services: La construcción de la API RESTful se rige por las "C# Coding Conventions" y las "Microsoft ASP.NET Core Coding Guidelines", estandarizando el uso de PascalCase para clases/métodos y camelCase para variables.
+* Especificaciones de Requisitos: La redacción de los criterios de aceptación y escenarios se estandariza utilizando las "Gherkin Conventions for Readable Specifications" en el formato Given-When-Then.
+
 ### 5.1.4. Software Deployment Configuration
+
+El proceso de despliegue de la solución está diseñado para asegurar que, a partir de los repositorios de código fuente, se logre la publicación satisfactoria de cada uno de los productos digitales que componen la arquitectura.
+
+**1.Landing Page**
+
+* Entorno de destino: GitHub Pages
+
+* Proceso de despliegue: Los cambios aprobados (HTML, CSS e imágenes) se integran en la rama principal del repositorio. GitHub detecta automáticamente el push o merge y ejecuta su flujo interno para publicar los archivos estáticos en los servidores globales. La verificación final se realiza accediendo directamente al enlace público generado
+
+**2.Frontend Web Applications**
+
+* Entorno de destino: Plataforma de alojamiento en la nube optimizada para Single Page Applications
+
+* Proceso de despliegue: Al registrarse un merge en la rama principal del repositorio del Frontend, se activa un webhook que inicia el pipeline de integración continua. La plataforma instala las dependencias mediante el gestor de paquetes de Node.js, ejecuta el comando de compilación del proyecto Vue y publica los artefactos optimizados de la carpeta /dist. Se configuran reescrituras de URL para redirigir todo el tráfico al index.html y permitir la correcta funcionalidad del enrutador
+
+**3.Web Services** 
+
+* Entorno de destino: Plataforma como Servicio (PaaS) compatible con .NET conectada a un gestor de base de datos relacional
+
+* Proceso de despliegue: Tras la validación e integración de código en la rama principal del repositorio de Web Services, se dispara un flujo de automatización como en Github Actions. Este pipeline restaura las dependencias ,compila la solución C# ejecuta las pruebas y publica los binarios generados . Los artefactos se inyectan en el servidor de producción, donde Entity Framework Core aplica automáticamente las migraciones pendientes en la base de datos
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
 ### 5.2.1. Sprint 1
+
+En esta sección registramos y explicamos el avance del equipo durante el Sprint 1, tanto en términos del desarrollo del producto en este caso el Landing Page,como en el trabajo colaborativo. El objetivo central de esta iteración fue la construcción y despliegue del sitio web estático que presenta el modelo de negocio de PetStock
 
 #### 5.2.1.1. Sprint Planning 1
 
