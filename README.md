@@ -201,7 +201,7 @@ Durante el desarrollo de PetStock, participé activamente en las actividades del
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
-blablablabla<br><br>
+Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
@@ -232,7 +232,7 @@ Contribuí a mantener una comunicación constante con mi equipo para organizar l
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
-blablablabla<br><br>
+Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
@@ -590,6 +590,44 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 ## 2.2.2. Registro de entrevistas
 
 **Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Entrevista N° [COMPLETAR]**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/entrevista-1.png" alt="Entrevista a Aracelli Peña" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Aracelli Peña</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>30 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Rímac</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>7:38</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQDJcxjnwJXOQaJ6xC-EBJlMAfoJcxbU46v8T7pHDUbS3Ew?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hesQ1Q">Entrevista 1 - Seg1 Aracelli.mp4</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Aracelli trabaja en una tienda de mascotas en el Rímac con 5 años de trayectoria. Durante la entrevista, comentó que tiene dificultades para manejar la rotación de productos y el inventario, ya que controla el stock, registra las ventas y realiza los pedidos a proveedores de forma manual mediante cuadernos y WhatsApp. Esta forma de trabajo ocasiona pérdidas de información por accidentes y quiebres de stock entre dos y tres veces por semana. Además, invierte entre 30 y 40 minutos diarios en cuadrar la caja manualmente, cruzando los pagos en efectivo con los pagos digitales realizados por Yape y Plin. Aracelli mostró interés en una plataforma digital intuitiva y rápida que descuente el stock en tiempo real y emita alertas. También indicó que estaría dispuesta a pagar una suscripción mensual de entre 50 y 70 soles.</td>
+  </tr>
+</table>
 
 **Entrevista N° 2**
 <table>
