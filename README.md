@@ -1482,9 +1482,67 @@ En esta sección registramos y explicamos el avance del equipo durante el Sprint
 
 #### 5.2.1.1. Sprint Planning 1
 
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 1, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-10 |
+| **Time** | 8:00 PM - 9:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | No hubo sprint anterior |
+| **Sprint n – 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Create the landing page:<br>Our goal is to develop a clear, responsive, and functional landing page that effectively presents the main benefits of our platform. We expect the page to provide a professional first impression and increase trust among potential customers and visitors, while encouraging them to register or request a demo. This will be validated once the landing page is deployed through GitHub Pages and visited by users. |
+| **Sprint n Velocity** | 10 |
+| **Sum of Story Points** | 10 |
+
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
+Durante el **Sprint 1**, el equipo identificó cinco aspectos principales relacionados con el desarrollo de la **Landing Page de PetStock**. Cada aspecto reúne un conjunto de tareas y elementos relacionados, representando una unidad de trabajo dentro de la iteración. La asignación de responsables y colaboradores se realizó considerando las fortalezas de cada integrante y se encuentra alineada con las actividades definidas en el Sprint Backlog.
+
+Los aspectos considerados para este sprint son: Navbar & Hero, Benefits Section, How It Works & Pricing, System Preview, y FAQ & Footer.
+
+| Team Member (Last Name, First Name) | GitHub Username<br>Leader (L) / Collaborator (C) | Navbar & Hero<br>Leader (L) / Collaborator (C) | Benefits Section<br>Leader (L) / Collaborator (C) | How It Works & Pricing<br>Leader (L) / Collaborator (C) | System Preview<br>Leader (L) / Collaborator (C) | FAQ & Footer<br>Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | C | L | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | L | C | C | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | L | C |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | C | L |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | C | L | C | C |
+
+
+
 #### 5.2.1.3. Sprint Backlog 1
+
+El objetivo principal del Sprint 1 fue desarrollar la Landing Page de PetStock, incluyendo las principales secciones informativas orientadas a los segmentos de clientes definidos para la plataforma. 
+
+A continuación, se presenta una captura del board de seguimiento utilizado durante el sprint, junto con el URL público. 
+
+**Board**
+
+[PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+![Sprint 1](assets/sprint/sprint%201.PNG)
+
+| Sprint # | Sprint 1 | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / InProcess / ToReview / Done)** |
+| US24 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US24 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US25 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
+| US26 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US27 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US28 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US29 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US30 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+
+
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
