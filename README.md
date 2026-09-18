@@ -28,6 +28,8 @@ Valladolid Jiménez, Arturo Fernando - u202420147
 
 Mendoza Boluarte, Pierre Alessandro - u202320973
 
+Gutierrez Tume Stanley Jeremy - U202118152
+
 **Agosto, 2026**
 </div>
 
@@ -51,7 +53,7 @@ Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
 Arturo Fernando Valladolid Jiménez<br><br>
 Pierre Alessandro Mendoza Boluarte<br><br>
-I5
+Gutierrez Tume Stanley Jeremy
 </td>
 <td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
 
@@ -261,7 +263,7 @@ Su producto principal, **PetStock**, es una aplicación web intuitiva desarrolla
 | <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
 | <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
 | <img src="./assets/team/Mariel-Mendoza.jpeg" width="120" alt="Mariel Mendoza"> | **Mariel Lucero Mendoza Moreano - U20231A418**. Estudiante de Ingeniería de Software con interés en el análisis de problemas, diseño de soluciones centradas en el usuario y arquitectura de software. Me caracterizo por mantener una actitud responsable, organizada y orientada al aprendizaje continuo. En este proyecto, busco aportar en la definición de las necesidades de los usuarios, el diseño de la solución y la estructuración de los principales componentes de PetStock. |
-| *(Pendiente)* | *[Nombre del integrante 4 — Código de Estudiante]* |
+|<img width="145" height="179" alt="image" src="https://github.com/user-attachments/assets/4279cf66-87fc-42c8-8757-8da29a1745a7" /> | *Gutierrez Tume Stanley Jeremy - U20211812*.Soy estudiante de la carrera de Ingenieria de Software dentro de la Universidad Peruana de Ciencias Aplicadas. Tengo experiencia con proyectos que incluyen C++, Python, HTML, CSS, ; con algunos conocimiento en javascript, typescript y java. Me considero una persona responsable y comprometida, que da su mayor esfuerzo para el proyecto, con una comunicación para el trabajo en equipo. |
 | *(Pendiente)* | *[Nombre del integrante 5 — Código de Estudiante]* |
 
 ## 1.2 Solution Profile
@@ -578,6 +580,43 @@ Las entrevistas constituyen la principal técnica de investigación cualitativa 
 **Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
 
 **Segmento 2: Tiendas especializadas en productos premium y de cuidado**
+
+<h3>Entrevista N° 4</h3>
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img width="588" height="167" alt="image" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Gabriela Diaz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>3:56</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQBerKr8n0VUSaM7mqun9LyRAc-Ffctf_B-YrBnHggct83I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6a6yIn">Entrevista - Segmento 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Gabriela Díaz, administradora de boutiques especializadas en Miraflores, comenta que maneja con dificultad la variedad y diversificación de su catálogo al trabajar con múltiples marcas. No utiliza un sistema para controlar lotes, stock ni fechas de caducidad, y gestiona el seguimiento de clientes frecuentes de memoria por falta de herramientas adecuadas.</td>
+  </tr>
+</table>
 
 **Entrevista N° 6:**
 
