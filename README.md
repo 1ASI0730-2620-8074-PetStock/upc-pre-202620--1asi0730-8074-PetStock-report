@@ -1,2 +1,2012 @@
-# upc-pre-202620--1asi0730-8074-PetStock-report
-Informe del proyecto de Aplicaciones Web
+<div align="center">
+
+![Upc Logo](./assets/cover/upc-logo.png)
+
+**Carrera**: Ingeniería de Software
+
+**Periodo**: 2026-20
+
+**Curso**: Aplicaciones Web
+
+**NRC**: 8074
+
+**Profesor**: Alex Humberto Sánchez Ponce
+
+**Informe deL Trabajo Final**
+
+**Startup**: Nexora
+
+**Producto**: PetStock
+
+**Integrantes**:
+
+Mendoza Moreano, Mariel Lucero  - u20231a418
+
+Quispe Palomino, Tony Jhunior - u20241f714
+
+Valladolid Jiménez, Arturo Fernando - u202420147
+
+Mendoza Boluarte, Pierre Alessandro - u202320973
+
+Gutierrez Tume Stanley Jeremy - U202118152
+
+**Agosto, 2026**
+</div>
+
+<div style="page-break-before: always;"></div>
+
+# Registro de Versiones del Informe
+
+<table class="c0" style="border-collapse: collapse; width: 100%;">
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">Versión</td>
+<td class="c5" style="border: 1px solid black;">Fecha</td>
+<td class="c5" style="border: 1px solid black;">Autor</td>
+<td class="c5" style="border: 1px solid black;">Descripción de modificación</td>
+</tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">TB1</td>
+<td class="c5" style="border: 1px solid black;">24/04/2025</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Capítulo I: Introducción
+- Capítulo II: Requirements Elicitation & Analysis
+- Capítulo III: Requirements Specification
+- Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+</table>
+
+# Project Report Collaboration Insights
+
+Para realizar el informe de este proyecto, utilizaremos un repositorio llamado “upc-pre-202620--1asi0730-8074-PetStock-report
+” el cual está colocado en nuestra organización llamada “
+1ASI0730-2620-8074-PetStock” en GitHub. Se puede observar en el siguiente enlace:
+[Repositorio del Proyecto PetStock](https://github.com/1ASI0730-2620-8074-PetStock/upc-pre-202620--1asi0730-8074-PetStock-report.git)
+
+A continuación, capturas del procesos, commits  y elaboración de nuestro proyecto en cada entrega.
+
+**Entrega Nº1: TB1**
+
+Para la elaboración de este informe, primero utilizamos un documento de google donde podíamos ver los avances en simultáneo. Posteriormente, una vez terminado, realizamos commits en el repositorio del project report en GitHub. A continuación, mostraremos analíticas de participación:
+
+
+
+<div style="page-break-before: always;"></div>
+
+# Contenido
+
+## Tabla de contenido
+
+### [Capítulo I: Introducción](#capítulo-i-introducción)
+- [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1 Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+- [1.2 Solution Profile](#12-solution-profile)
+    - [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2 Lean UX Process](#122-lean-ux-process)
+        - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+        - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+        - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+        - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+- [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+
+### [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+- [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+- [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#211-análisis-competitivo)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+- [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+- [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
+- [2.5. Ubiquitous Language](#25-ubiquitous-language)
+
+### [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+- [3.1. User Stories](#31-user-stories)
+- [3.2. Impact Mapping](#32-impact-mapping)
+- [3.3. Product Backlog](#33-product-backlog)
+
+### [Capítulo IV: Product Design](#capítulo-iv-product-design)
+- [4.1. Style Guidelines](#41-style-guidelines)
+    - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+    - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+- [4.2. Information Architecture](#42-information-architecture)
+    - [4.2.1. Organization Systems](#421-organization-systems)
+    - [4.2.2. Labeling Systems](#422-labeling-systems)
+    - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+    - [4.2.4. Searching Systems](#424-searching-systems)
+    - [4.2.5. Navigation Systems](#425-navigation-systems)
+- [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+    - [4.3.1. Landing Page Wireframe](#431-landing-page-wireframe)
+    - [4.3.2. Landing Page Mock-up](#432-landing-page-mock-up)
+- [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
+    - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+    - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
+    - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
+    - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
+- [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
+- [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+    - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
+    - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
+    - [4.6.3. Software Architecture Container Diagrams](#463-software-architecture-container-diagrams)
+    - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+- [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+    - [4.7.1. Class Diagrams](#471-class-diagrams)
+- [4.8. Database Design](#48-database-design)
+    - [4.8.1. Database Diagram](#481-database-diagram)
+
+### [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
+- [5.1. Software Configuration Management](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
+    - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+        - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+        - [5.2.1.2. Aspect_Leaders_and_Collaborators](#5212-aspect-leaders-and-collaborators)
+        - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+        - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+        - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+        - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+        - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+        - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+
+### [Conclusion](#conclusiones)
+
+### [Recomendacion](#recomendaciones)
+
+### [Bibliografía](#bibliografia)
+
+### [Anexos](#anexo)
+
+<div style="page-break-before: always;"></div>
+
+# Student Outcome
+
+Student Outcome ABET: **ABET – EAC - Student Outcome 5** <br> Criterio: _La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos._
+
+<table border="1" style="border-collapse: collapse;">
+<thead>
+<tr>
+<th style="width: 20%">Criterio específico</th>
+<th style="width: 50%">Acciones realizadas</th>
+<th style="width: 30%">Conclusiones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Trabaja en equipo para
+proporcionar liderazgo en
+forma conjunta</th>
+<th>
+Mendoza Moreano, Mariel Lucero<br>
+av1:<br>
+Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
+<br><br>
+Arturo Fernando Valladolid Jiménez<br>
+av1:<br>
+Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
+Mendoza Boluarte , Pierre Alessandro<br>
+av1:<br>
+Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
+
+<br><br>
+Gutierrez Tume,Stanley Jeremy<br>
+av1:<br>
+Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
+<br><br>
+Quispe Palomino, Tony Jhunior<br>
+av1:<br>
+Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema, los segmentos objetivo, las hipótesis y los resultados que esperábamos validar con el proyecto. También participé en el análisis competitivo, comparando las características y propuestas de otras alternativas relacionadas con la gestión de tiendas de mascotas. A partir de este análisis, aporté en la definición de estrategias y tácticas para orientar la propuesta del equipo y diferenciar la solución frente a las opciones existentes. Asimismo, colaboré en el diseño de las entrevistas, organizando las preguntas y criterios necesarios para obtener información relevante de los usuarios. Finalmente, desarrollé los puntos 4.7.1 y 4.8.1, además de participar en la elaboración de la Navbar y el Hero de la Landing Page, procurando que estos elementos mantuvieran relación con los objetivos del producto y la propuesta definida por el equipo.
+</th>
+<th>
+av1:<br>
+Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
+</th>
+</tr>
+<tr>
+<th>Crea un entorno colaborativo e
+inclusivo, establece metas,
+planifica tareas y cumple
+objetivos.</th>
+<th>
+Mendoza Moreano, Mariel Lucero<br>
+av1:<br>
+Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
+<br><br>
+Arturo Fernando Valladolid Jiménez<br>
+av1:<br>
+Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
+Mendoza Boluarte , Pierre Alessandro<br>
+av1:<br>
+Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
+<br><br>
+Gutierrez Tume,Stanley Jeremy<br>
+av1:<br>
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.
+    
+Quispe Palomino, Tony Jhunior<br>
+av1:<br>
+Participé en la planificación y desarrollo de actividades relacionadas con la investigación del usuario, el análisis competitivo y la construcción de la Landing Page. El Lean UX Canvas y el diseño de entrevistas ayudaron al equipo a establecer objetivos comunes y organizar la información que debíamos validar. También contribuí con los puntos de análisis competitivo, estrategias y tácticas, así como con los apartados 4.7.1 y 4.8.1, siguiendo la distribución de tareas acordada. En la parte visual, apoyé en la elaboración de la Navbar y el Hero, revisando con el equipo que estos elementos fueran coherentes con la estructura y el mensaje principal de la Landing Page. Cumplí con las actividades asignadas y coordiné la integración de mis aportes con los demás entregables del proyecto.
+</th>
+<th>
+av1:<br>
+Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
+</tr>
+</tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+# Capítulo I: Introducción
+
+## 1.1. Startup Profile
+
+### 1.1.1 Descripción de la Startup (**Startup: Nexora/Producto: PetStock**)
+
+**Nexora** es una startup tecnológica enfocada en el desarrollo de soluciones de software prácticas y accesibles, diseñadas específicamente para optimizar la gestión y digitalización de los pequeños comercios en el Perú. Surge ante la necesidad de ofrecer herramientas eficientes que permitan a los negocios locales superar las limitaciones de los métodos tradicionales de administración, reduciendo errores y ahorrando tiempo en sus operaciones cotidianas.
+Su producto principal, **PetStock**, es una aplicación web intuitiva desarrollada para centralizar la administración de las pequeñas tiendas de mascotas. La plataforma permite a los dueños y administradores registrar y organizar su catálogo de productos, controlar en tiempo real las cantidades disponibles en el inventario, registrar ventas y compras, gestionar información de clientes y proveedores, y recibir alertas automáticas ante un bajo nivel de stock. Mediante una interfaz moderna y adaptada a la realidad del comercio minorista, PetStock ayuda a los negocios a mantener un control preciso de su mercadería y tomar mejores decisiones operativas.
+
+**Misión**: Ayudar a las pequeñas tiendas de mascotas a gestionar de manera eficiente y organizada sus productos, inventario, ventas y compras mediante PetStock, brindándoles una herramienta accesible e intuitiva que simplifique sus operaciones diarias y facilite la toma de decisiones.
+
+**Visión**: Ser una solución tecnológica referente para la gestión de pequeñas tiendas de mascotas en el Perú, contribuyendo a su crecimiento y transformación digital mediante PetStock y futuras soluciones adaptadas a las necesidades del sector. 
+
+
+### 1.1.2. Perfiles de integrantes del equipo
+
+| Foto | Integrante |
+| :---: | :--- |
+| <img src="./assets/team/Tony-Quispe.jpeg" width="120" alt="Tony Quispe"> | **Quispe Palomino, Tony Jhunior** — Código de Estudiante: u20241f714. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Tengo 20 años y me considero una persona amable, empática, perseverante y capaz de adaptarme a los cambios. En cuanto a mis conocimientos de programación, tengo una base sólida en C++, Python y conceptos básicos en HTML, CSS y un poco de JavaScript. En este proyecto, espero poder contribuir con mis conocimientos y habilidades, al mismo tiempo que fortalezco mis competencias en trabajo en equipo y en la creación de aplicaciones web. |
+| <img src="./assets/team/Arturo-Valladolid.jpeg" width="120" alt="Arturo Valladolid"> | **Valladolid Jiménez, Arturo Fernando** — Código de Estudiante: u202420147. Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el quinto ciclo. Me considero una persona organizada, responsable, comunicativa y enfocada en el trabajo colaborativo. Cuento con conocimientos en HTML, CSS y C++, además de bases sólidas para el análisis, diseño de software y gestión de bases de datos. Mis experiencias previas me han ayudado a desarrollar habilidades comunicativas y de organización, lo cual facilita la coordinación del equipo.  |
+| <img src="./assets/team/Mariel-Mendoza.jpeg" width="120" alt="Mariel Mendoza"> | **Mariel Lucero Mendoza Moreano - U20231A418**. Estudiante de Ingeniería de Software con interés en el análisis de problemas, diseño de soluciones centradas en el usuario y arquitectura de software. Me caracterizo por mantener una actitud responsable, organizada y orientada al aprendizaje continuo. En este proyecto, busco aportar en la definición de las necesidades de los usuarios, el diseño de la solución y la estructuración de los principales componentes de PetStock. |
+|<img width="145" height="179" alt="image" src="https://github.com/user-attachments/assets/4279cf66-87fc-42c8-8757-8da29a1745a7" /> | *Gutierrez Tume Stanley Jeremy - U20211812*.Soy estudiante de la carrera de Ingenieria de Software dentro de la Universidad Peruana de Ciencias Aplicadas. Tengo experiencia con proyectos que incluyen C++, Python, HTML, CSS, ; con algunos conocimiento en javascript, typescript y java. Me considero una persona responsable y comprometida, que da su mayor esfuerzo para el proyecto, con una comunicación para el trabajo en equipo. |
+| <img src="./assets/team/Pierre_perfil.jpeg" width="120" alt="Pierre Mendoza"> | **Mendoza Boluarte,Pierre** — u202320973. Soy estudiante de la carrera de Ingeniería de Software,a la fecha estoy cursando el quinto ciclo.Me Considero una persona que le gusta cumplir a tiempo con las tareas aisgnadas,empatica y comprometida.Tengo conocimientos en Python , C++ y HTML, en este proyecto aportare en todo lo que pueda con mis conocimientos y comunicacion para tener un mejor trabajo en equipo . |
+
+## 1.2 Solution Profile
+
+### 1.2.1 Antecedentes y problemática
+
+Para entender el contexto de PetStock, investigamos cómo se está comportando el mercado de mascotas en nuestro país y notamos que está creciendo de manera acelerada. Según los datos de la ENAHO, entre los años 2023 y 2024, el porcentaje de gasto que destinan las familias peruanas a la alimentación de sus mascotas subió del 42,4 % al 49,1 %. Además, revisando la ENAPRES 2024, encontramos que el 51,7 % de los hogares ya cuenta con al menos un perro, resaltando que en los hogares de menores ingresos este número llega hasta el 52,9 %. A la par de esta demanda masiva, hay reportes que indican que el mercado también se ha diversificado, impulsando una mayor oferta de productos premium, artículos de higiene, camas y servicios más especializados. 
+
+A pesar de que el mercado es gigante y sigue en expansión, detectamos que los dueños y administradores de las pequeñas tiendas de mascotas sufren bastantes dolores de cabeza en su operación diaria. El problema central es que tienen muchas dificultades para gestionar de manera eficiente su inventario y sus ventas. Esto pasa porque la mayoría sigue usando métodos manuales, como cuadernos, o herramientas digitales muy genéricas que no están conectadas entre sí. Al no tener un sistema unificado, los dueños se desordenan con la mercadería, no reciben alertas cuando se les está por acabar un producto y terminan sufriendo quiebres de stock. Al final, este desorden administrativo les hace perder ventas directas, reduce sus ganancias y afecta la atención que le dan a sus clientes. 
+
+**Tabla de 5W's y 2H's**
+| Pregunta | Formulación | Respuesta |
+| :--- | :--- | :--- |
+| **Who?** | ¿Quiénes son los afectados? | Dueños y administradores de pequeñas tiendas de mascotas. |
+| **What?** | ¿Cuál es el problema? | Dificultades para gestionar eficientemente su inventario y ventas debido al uso de herramientas digitales genéricas o métodos manuales que no se integran entre sí. |
+| **Where?** | ¿Dónde ocurre? | Principalmente en tiendas ubicadas en zonas urbanas, residenciales y comerciales de Lima y otras ciudades del Perú. |
+| **When?** | ¿Cuándo se hace la evidencia? | Durante la operación diaria, especialmente al atender clientes, registrar ventas o al intentar cuadrar la información del sistema con el almacén físico al final del día. |
+| **Why?** | ¿Por qué ocurre? | Debido a que muchas pequeñas tiendas utilizan registros manuales, hojas de cálculo o herramientas que no están integradas, dificultando la actualización automática del inventario y el seguimiento de las ventas y compras. |
+| **How?** | ¿Cómo se manifiesta? | Mediante dificultades para controlar las ventas, registrar correctamente las entradas y salidas de productos y mantener actualizado el inventario. |
+| **How Much?** | ¿Cuál es la magnitud? | En 2025 se registraron 17,26 millones de mascotas en los hogares peruanos y el 64 % de los hogares tenía al menos una mascota. Además, el mercado de productos y servicios para mascotas se estimó en alrededor de mil millones. |
+
+### 1.2.2 Lean UX Process
+
+#### 1.2.2.1. Lean UX Problem Statements
+
+El estado actual de la gestión comercial en pequeñas tiendas de mascotas se concentra en dueños y administradores que venden alimentos de consumo frecuente o productos de cuidado especial. Muchos aún dependen de cuadernos escritos a mano, notas en papel desconectadas entre sí o tablas genéricas de Excel para controlar las ventas diarias, el inventario y los pedidos a proveedores.
+
+Los productos y servicios actuales no resuelven la necesidad de una plataforma web accesible y ligera, pensada para la operación diaria de una tienda de mascotas. Se requiere un sistema que unifique el control de inventario con alertas de stock mínimo en tiempo real, el registro de ventas y compras, y el seguimiento de clientes, sin exigir capacitaciones técnicas complejas ni configuraciones pesadas.
+
+PetStock buscará cubrir esta brecha mediante una aplicación web intuitiva. La plataforma centralizará en un mismo panel el catálogo de productos, el control de existencias en tiempo real, las notificaciones de stock bajo, el registro de punto de venta, la gestión de proveedores y reportes sencillos para el negocio.
+
+Nuestro enfoque inicial se dirige a dueños y administradores de pequeñas tiendas de mascotas. Incluye tiendas especializadas en alimentos y productos de consumo frecuente, además de negocios enfocados en accesorios y productos premium para el cuidado de mascotas.
+
+Consideraremos que la propuesta funciona si al menos el 70% de los usuarios utiliza PetStock de manera recurrente durante su jornada laboral, las tiendas reducen en al menos 20% sus quiebres de stock y los usuarios disminuyen en al menos 30% el tiempo dedicado a tareas administrativas relacionadas con productos, ventas, compras e inventario.
+
+
+#### 1.2.2.2. Lean UX Assumptions
+**Assumptions Worksheet**
+
+**Business Assumptions:**
+
+1. **Creemos que nuestros clientes necesitan** una forma sencilla de controlar sus productos, ventas e inventario, ya que actualmente pueden tener dificultades para conocer con precisión cuánto stock tienen disponible y cuándo necesitan reponer productos.
+
+2. **Estas necesidades se pueden resolver con** una aplicación web que centralice la gestión de productos, inventario, ventas, compras, clientes, alertas y reportes en un solo lugar.
+
+3. **Mis clientes iniciales son** dueños o administradores de pequeñas tiendas de mascotas que comercializan alimentos, productos de consumo frecuente, accesorios y productos de cuidado para mascotas.
+
+4. **El valor #1 que un cliente quiere de mi servicio es** tener un mayor control de su inventario para evitar quiebres de stock, exceso de productos y pérdidas por una mala gestión.
+
+5. **El cliente también puede obtener el beneficio adicional de** ahorrar tiempo en tareas administrativas, tener un mejor seguimiento de sus ventas y compras, y contar con información que facilite la toma de decisiones del negocio.
+
+6. **Voy a adquirir la mayoría de mis clientes a través de** campañas de marketing en redes sociales y contacto directo con pequeños negocios del sector.
+
+7. **Haré dinero a través de** una suscripción mensual por el uso de la plataforma, ofreciendo el acceso a las funcionalidades de gestión de PetStock.
+
+8. **Mi competencia principal en el mercado serán** otras aplicaciones y sistemas de gestión de inventario y ventas dirigidos a pequeños comercios, además de métodos tradicionales como hojas de cálculo y registros manuales.
+
+9. **Lo venceremos debido a que** PetStock estará enfocado específicamente en las necesidades de las pequeñas tiendas de mascotas, ofreciendo una solución sencilla, centralizada y fácil de utilizar.
+
+10. **Mi mayor riesgo de producto es que** los dueños o administradores de pequeñas tiendas no consideren necesario utilizar una aplicación de gestión y prefieran continuar con registros manuales o herramientas que ya conocen.
+
+11. **Resolveremos esto a través de** una interfaz sencilla e intuitiva, funcionalidades enfocadas en las tareas más importantes del negocio y una propuesta de valor que demuestre cómo PetStock puede ahorrar tiempo y mejorar el control del inventario.
+
+**Business Outcome Assumptions:**
+
+1. **Creemos que lograremos aumentar la retención de clientes en al menos un 20 %**, al ofrecer una herramienta que facilite las tareas diarias de gestión y permita a las pequeñas tiendas mantener un mejor control de sus operaciones.
+
+2. **Creemos que lograremos reducir en al menos un 20 % la cantidad de quiebres de stock en las tiendas que utilizan PetStock**, al facilitar el seguimiento de las cantidades disponibles y la identificación de productos que necesitan reposición.
+
+3. **Creemos que lograremos reducir en al menos un 30 % el tiempo dedicado a las tareas administrativas** relacionadas con el registro y consulta de productos, ventas, compras e inventario, al centralizar esta información en una sola plataforma.
+
+4. **Creemos que al menos el 70 % de los clientes utilizará PetStock de manera recurrente durante su jornada laboral**, debido a que la plataforma proporcionará información actualizada sobre las ventas, el inventario y las alertas.
+
+5. **Creemos que al menos el 10 % de los usuarios interesados se convertirá en clientes de pago**, al ofrecer una suscripción mensual cuyo valor sea percibido como beneficioso frente al tiempo y los problemas que pueden ahorrar mediante el uso de PetStock.
+
+6. **Creemos que lograremos mantener una tasa de cancelación mensual inferior al 10 %**, ofreciendo una plataforma sencilla y enfocada en las necesidades principales de las pequeñas tiendas de mascotas.
+
+7. **Creemos que lograremos captar al menos 20 nuevos clientes durante los primeros seis meses**, mediante campañas en redes sociales y contacto directo con pequeñas tiendas de mascotas.
+
+**User Assumptions:**
+
+**¿Quién es el usuario?**
+
+Nuestro foco de estudio son los dueños de pequeñas tiendas de mascotas, pertenecientes a dos segmentos:
+
+- Tiendas que comercializan principalmente alimentos y productos de consumo frecuente para mascotas.
+- Tiendas especializadas en productos premium y de cuidado para mascotas.
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?**
+
+PetStock encaja en las actividades diarias de gestión de la tienda, principalmente en el control de productos, inventario, ventas, compras y clientes. El usuario utilizará la aplicación como una herramienta central para organizar y consultar la información del negocio.
+
+**¿Qué problemas tiene nuestro producto y cómo se pueden resolver?**
+
+Los usuarios tienen dificultades para controlar el inventario, registrar las ventas y compras, identificar los productos que necesitan reposición y mantener organizada la información de su negocio.
+
+PetStock resolverá estos problemas centralizando estas tareas en una sola aplicación y proporcionando alertas cuando el stock alcance el mínimo establecido.
+
+**¿Cuándo y cómo es usado nuestro producto?**
+
+PetStock será utilizado principalmente durante la jornada laboral de la tienda, desde una computadora, laptop o dispositivo con acceso a internet.
+
+El usuario podrá consultar el inventario, registrar ventas y compras, actualizar productos y revisar alertas y reportes según las necesidades del negocio.
+
+**¿Qué características son importantes?**
+
+Son importantes las siguientes funcionalidades:
+
+- Registro y gestión de productos.
+- Control de inventario.
+- Alertas de stock mínimo.
+- Gestión de clientes.
+- Registro de ventas y compras.
+- Generación de reportes.
+
+**¿Cómo debe verse nuestro producto y cómo debe comportarse?**
+
+PetStock debe tener una interfaz clara, ordenada y fácil de utilizar, con una navegación sencilla entre sus módulos.
+
+Debe mostrar la información importante de manera comprensible y responder rápidamente a las acciones del usuario, evitando procesos innecesariamente complejos.
+
+**User Outcome and Benefit Assumptions:**
+
+1. **Creemos que los usuarios quieren tener un mayor control sobre el inventario de su tienda**, para conocer en todo momento qué productos tienen disponibles y evitar quedarse sin productos importantes.
+
+2. **Creemos que los usuarios quieren identificar rápidamente los productos que necesitan reposición**, para poder actuar antes de que se agoten y evitar perder ventas.
+
+3. **Creemos que los usuarios quieren reducir el tiempo que dedican a registrar y consultar información del negocio**, para poder concentrarse en la atención de los clientes y en otras actividades de la tienda.
+
+4. **Creemos que los usuarios quieren registrar las ventas de manera rápida y ordenada**, para mantener actualizada la información de sus operaciones y evitar errores en el control del inventario.
+
+5. **Creemos que los usuarios quieren mantener organizados los productos, clientes, ventas y compras en un solo lugar**, para evitar depender de registros manuales, hojas de cálculo o diferentes medios de información.
+
+6. **Creemos que los usuarios quieren conocer el comportamiento de las ventas y del inventario**, para identificar qué productos tienen mayor o menor movimiento y tomar mejores decisiones para el negocio.
+
+7. **Creemos que los usuarios quieren mantener un historial de sus clientes y compras**, para consultar información cuando sea necesario y tener un mejor seguimiento de las operaciones realizadas.
+
+8. **Creemos que los usuarios quieren reducir los errores en el control de las existencias**, para tener información más confiable sobre el stock disponible y evitar diferencias entre el inventario registrado y el inventario real.
+
+9. **Creemos que los usuarios quieren acceder a la información de su negocio de manera sencilla**, para poder consultar y actualizar los datos sin necesidad de conocimientos técnicos avanzados.
+
+10. **Creemos que los usuarios quieren tener una herramienta que se adapte a las actividades habituales de una pequeña tienda de mascotas**, para gestionar alimentos, accesorios, productos de cuidado y otros artículos desde una misma plataforma.
+
+**Feature Assumptions:**
+
+1. **La gestión de productos permitirá** registrar, editar, organizar y consultar los productos que comercializa la tienda, facilitando su organización y control.
+
+2. **El módulo de inventario facilitará** el control de las cantidades disponibles y el registro de entradas y salidas, permitiendo mantener actualizado el stock.
+
+3. **Las alertas de stock mínimo ayudarán a** identificar oportunamente los productos que requieren reposición, reduciendo el riesgo de quiebres de stock.
+
+4. **El módulo de ventas permitirá** registrar los productos vendidos y el cliente, actualizando automáticamente el inventario.
+
+5. **El módulo de clientes permitirá** registrar y consultar información de los compradores y su historial de compras, facilitando el seguimiento de las operaciones.
+
+6. **El módulo de reportes proporcionará** información sobre ventas, compras e inventario, ayudando a los usuarios a analizar el funcionamiento del negocio y tomar decisiones.
+
+7. **El Dashboard ofrecerá** un resumen de las ventas, el estado del inventario y las alertas, permitiendo al usuario conocer rápidamente la situación de la tienda.
+
+8. **Una interfaz sencilla y una navegación organizada** facilitarán el uso de PetStock, permitiendo a los usuarios realizar sus tareas sin necesidad de conocimientos técnicos avanzados.
+
+9. **El módulo de Perfil y Configuración permitirá** actualizar la información personal del usuario y los datos del negocio, manteniendo la información administrativa actualizada.
+
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+### 1.2.2.4. Lean UX Canvas.
+
+| 1. Business Problem | 5. Solutions | 2. Business Outcomes |
+| :--- | :--- | :--- |
+| Los dueños y administradores de pequeñas tiendas de mascotas en el Perú (tanto de consumo frecuente como de productos premium) carecen de herramientas digitales unificadas para gestionar su inventario y ventas. La gran mayoría sigue dependiendo de cuadernos físicos o hojas de Excel desvinculadas, lo que genera desorden operativo, quiebres de stock inadvertidos, errores en el cuadre diario de caja, pérdida de mercadería y una gran pérdida de tiempo en tareas administrativas cotidianas. | • **PetStock:**<br>- Módulo de gestión de productos y catálogo centralizado.<br>- Módulo de control de inventario en tiempo real con entradas y salidas automáticas.<br>- Sistema de alertas inteligentes ante niveles de stock mínimo.<br>- Módulos operativos de registro de ventas y gestión de clientes y proveedores.<br>- Panel de control (Dashboard) principal y reportes analíticos de rendimiento del negocio. | • Reducir en al menos un 20% los quiebres de stock en las tiendas usuarias.<br>• Disminuir en un 30% el tiempo dedicado a tareas administrativas manuales y cuadres de caja.<br>• Lograr una tasa de conversión de al menos el 10% de los usuarios de prueba a suscriptores de pago.<br>• Mantener una alta recurrencia, logrando que al menos el 70% de los clientes utilicen la plataforma diariamente en su jornada laboral. |
+
+| 3. Users & Customers | 4. User Outcomes & Benefits |
+| :--- | :--- |
+| • **Segmento 1:** Dueños, administradores y trabajadores de pequeñas tiendas de barrio enfocadas en la venta de alimentos y productos de consumo frecuente para mascotas (alta rotación).<br>• **Segmento 2:** Dueños y administradores de tiendas especializadas en productos premium, accesorios y artículos de cuidado para mascotas. | • Control en tiempo real de las existencias disponibles para evitar quedarse sin productos clave.<br>• Identificación oportuna de mercadería próxima a agotarse mediante alertas automáticas de stock mínimo.<br>• Registro rápido y ordenado de las ventas y compras diarias, eliminando los cuadernos físicos.<br>• Centralización de la información del negocio en una interfaz web intuitiva, accesible sin conocimientos técnicos avanzados y que facilita la toma de decisiones. |
+
+| 6. Hypotheses | 7. What's the Most Important Thing We Need to Learn First? | 8. What's the Least Amount of Work We Need to Do to Learn the Next Most Important Thing? |
+| :--- | :--- | :--- |
+| • **Gestión de Productos:** Centralizar la gestión del catálogo permitirá registrar, editar y organizar los productos de manera eficiente.<br>• **Control de Inventario:** Proveer visibilidad actualizada de existencias reducirá los quiebres de stock en al menos un 20%.<br>• **Alertas de Stock Mínimo:** Permitirá a los administradores anticiparse a la escasez de mercancía.<br>• **Módulo de Ventas:** Digitalizar transacciones reducirá en un 30% el tiempo diario dedicado al cuadre manual.<br>• **Módulo de Clientes:** Proveer acceso al historial aumentará la retención en un 20%.<br>• **Dashboard y Reportes:** Brindar visión general y analítica garantizará que el 70% de los usuarios use la plataforma recurrentemente. | ¿Están realmente dispuestos los dueños de las pequeñas tiendas de mascotas a abandonar sus tradicionales cuadernos y registros en papel para digitalizar su inventario y ventas diarias en una plataforma web durante su ajetreada jornada laboral? | Desarrollar un MVP funcional (Landing Page informativa y prototipos interactivos de alta fidelidad en Figma) para realizar entrevistas de validación presenciales con tenderos reales, midiendo su grado de aceptación frente a la interfaz y su disposición real a cambiar sus métodos manuales. |
+
+## 1.3. Segmentos objetivo
+
+A partir del análisis del dominio del problema —la falta de sistemas de gestión y control unificados en las pequeñas tiendas de mascotas del Perú— se han identificado dos segmentos objetivo claramente diferenciados a los que PetStock dirige su propuesta de valor. El primero corresponde a los dueños y administradores de tiendas de alimentos y consumo frecuente que requieren control de alta rotación; el segundo corresponde a los comercios especializados en productos premium y de cuidado. A continuación se describen ambos segmentos junto con sus características demográficas y la información estadística que sustenta su relevancia.
+
+**Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Descripción:**
+
+Negocios minoristas formalmente constituidos o comercios de barrio orientados a la comercialización masiva de alimento balanceado, comida húmeda, snacks, premios y productos de alta rotación para perros y gatos. Al tratarse de artículos de consumo diario, su inventario experimenta un flujo constante de entradas y salidas, lo que exige un control estricto para evitar desabastecimientos repentinos. Estos establecimientos operan principalmente con métodos manuales (cuadernos o hojas de cálculo desvinculadas), enfrentando dificultades operativas para supervisar su stock real y registrar sus ventas de forma rápida.
+
+**Características demográficas y de negocio**
+
+- Tipo de negocio: Micro y pequeñas empresas (MYPEs) de carácter familiar o minorista, con entre 1 y 5 colaboradores.
+- Ubicación geográfica: Zonas urbanas, residenciales y comerciales de Lima Metropolitana y principales ciudades del Perú, con mayor concentración en pequeños comercios de barrio.
+- Rango de edad: 30 a 55 años.
+- Género: Hombres y mujeres.
+- Formación educativa y perfil tecnológico: Principalmente secundaria completa o formación técnica, priorizando la experiencia comercial práctica. Adopción digital baja a media, con uso predominante de métodos manuales o herramientas genéricas.
+- Poder adquisitivo y clase social: Nivel socioeconómico medio y medio-bajo (Sectores C y D).
+
+**Información estadística de sustento**
+
+- Según la Encuesta Nacional de Hogares (ENAHO), entre los años 2023 y 2024, el porcentaje de gasto que destinan los hogares peruanos a la alimentación de sus mascotas aumentó del 42,4% al 49,1%.
+- Por su parte, la Encuesta Nacional de Programas Estratégicos (ENAPRES) señala que el 51,7% de los hogares peruanos cuenta con al menos un perro, destacando que en los hogares de menores ingresos este indicador llega hasta el 52,9%, lo que evidencia una demanda masiva y constante de alimentos en sectores populares y tradicionales.
+- **Fuente:** [INEI – Tenencia de mascotas en hogares](https://www.gob.pe/institucion/inei/noticias/1193475-inei-incluira-la-tenencia-de-mascotas-en-hogares-en-sus-mediciones-a-partir-de-julio)
+
+**Segmento 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Descripción:**
+
+Comercios minoristas dirigidos a un público que busca una mayor especialización y diferenciación en el cuidado de sus animales de compañía. Su oferta incluye artículos de higiene premium, colonias, juguetes, camas, ropa, accesorios y productos de bienestar. A diferencia del primer segmento, manejan productos de menor frecuencia de rotación pero con un mayor margen de ganancia por unidad, requiriendo un control detallado de catálogos variados y clientes recurrentes.
+
+**Características demográficas y de negocio**
+
+- Tipo de negocio: Pequeños comercios especializados o boutiques de mascotas enfocadas en la experiencia y el bienestar animal.
+- Ubicación geográfica: Zonas residenciales y comerciales de nivel socioeconómico medio-alto y alto, ubicadas principalmente en distritos urbanos consolidados de Lima.
+- Rango de edad: 25 a 45 años.
+- Género: Hombres y mujeres.
+- Formación educativa y perfil tecnológico: Formación técnica o universitaria. Perfil con mayor apertura hacia la adopción de herramientas tecnológicas de gestión para optimizar sus procesos comerciales.
+- Poder adquisitivo y clase social: Nivel socioeconómico medio-alto y alto (Sectores A y B).
+
+**Información estadística de sustento**
+
+- De acuerdo con un reporte especializado de Infobae, el mercado peruano de mascotas ha diversificado considerablemente su oferta hacia nichos de mayor valor agregado, impulsando una demanda creciente por productos de higiene avanzada, juguetes especializados, accesorios y artículos orientados al bienestar integral de los animales de compañía.
+- **Fuente:** [Infobae – Evolución del portafolio de alimentos para animales de compañía](https://www.infobae.com/peru/2026/06/29/peru-ejecuta-su-primer-censo-nacional-de-mascotas-como-evoluciona-el-portafolio-de-alimentos-para-animales-de-compania/)
+
+
+
+## Capítulo II: Requirements Elicitation & Analysis
+
+### 2.1. Competidores.
+En esta sección se identifican y describen los principales competidores directos e indirectos que operan en el dominio del problema que PetStock aborda: la gestión de inventarios, control de ventas y digitalización de procesos para pequeñas tiendas y establecimientos del sector retail de mascotas. Las alternativas seleccionadas comparten con PetStock la propuesta de valor orientada a optimizar el funcionamiento de los comercios mediante herramientas digitales y plataformas en la nube.
+
+* **Nubox:** Empresa y plataforma de software en la nube enfocada en la gestión administrativa, contable y facturación electrónica para pequeñas y medianas empresas en Latinoamérica. Si bien su enfoque principal es el cumplimiento tributario y contable, compite en el mercado al ofrecer soluciones automatizadas que buscan digitalizar los procesos de los negocios minoristas.
+* **Loyverse POS:** Sistema de punto de venta (POS) móvil y web de uso internacional, ampliamente adoptado por tiendas de barrio, minimarkets y pequeños comercios minoristas. Ofrece características de control básico de inventario, registro de ventas, gestión de empleados y programas de lealtad, posicionándose como una alternativa accesible para negocios que buscan reemplazar los registros manuales.
+* **Holded:** Software ERP y de gestión empresarial en la nube de origen europeo, diseñado para automatizar la facturación, contabilidad, CRM e inventarios de pymes y comercios en crecimiento. Aunque está dirigido a empresas con mayor madurez tecnológica, representa un competidor en el segmento de soluciones integrales de gestión comercial.
+
+### 2.1.1. Análisis competitivo. 
+A continuación se presenta el cuadro *Competitive Analysis Landscape*, en el cual se contrasta el perfil de la startup Nexora y su producto PetStock frente a los tres competidores directos e indirectos identificados, considerando dimensiones de perfil, marketing, producto y análisis FODA (SWOT). 
+
+#### Competitive Analysis Landscape 
+
+**¿Por qué llevar a cabo este análisis?**
+El objetivo es comprender el posicionamiento real de los competidores en el mercado de software de gestión y control de inventarios, identificar brechas en sus propuestas de valor y validar los espacios de oportunidad que PetStock puede ocupar en el mercado peruano de pequeñas tiendas de mascotas.
+
+| Dimensiones | PetStock | Competidor 1: Nubox | Competidor 2: Loyverse POS | Competidor 3: Holded |
+| :--- | :--- | :--- | :--- | :--- |
+| **Logotipo** | ![PetStock](./assets/logos/PetStock.jpeg) | ![Nubox](./assets/logos/Nubox.jpeg) | ![Loyverse](./assets/logos/Loyverse.jpeg) | ![Holded](./assets/logos/Holded.jpeg) |
+| **Perfil: Overview** | Aplicación web SaaS peruana que centraliza la gestión integral de inventarios, control de ventas, compras y alertas automáticas de stock mínimo para pequeñas tiendas de mascotas, adaptándose a las necesidades de los comercios de barrio y boutiques especializadas. | Software de gestión administrativa y contable en la nube enfocado en pequeñas y medianas empresas en Latinoamérica, con fuerte énfasis en el cumplimiento tributario, emisión de comprobantes y automatización de procesos financieros y contables. | Sistema de punto de venta (POS) móvil y web de uso global, enfocado en tiendas de barrio, minimarkets y pequeños comercios minoristas con operaciones comerciales directas. | Software ERP y de gestión empresarial en la nube diseñado para automatizar la facturación, contabilidad, CRM e inventarios de pymes y negocios en crecimiento. |
+| **Perfil: Ventaja competitiva** | Enfoque 100% especializado en el flujo de trabajo de las tiendas de mascotas (control de alimentos de alta rotación, accesorios y alertas inteligentes de stock bajo), eliminando el uso de cuadernos tradicionales con una interfaz sencilla. | Fuerte automatización de procesos contables y cumplimiento tributario para negocios, ofreciendo tranquilidad en el cumplimiento de obligaciones administrativas, cálculo automatizado de impuestos y un respaldo legal sólido. | Interfaz sumamente ágil orientada a cobros rápidos, control básico de inventario y gestión operativa desde dispositivos móviles o tablets, permitiendo una alta velocidad en la atención del cliente. | Sistema modular avanzado y altamente personalizable para empresas en crecimiento, ofreciendo la centralización total de la administración financiera, contable y comercial en una sola plataforma robusta. |
+| **Marketing: Mercado objetivo** | Dueños y administradores de pequeñas tiendas de barrio enfocadas en consumo frecuente (Sectores C/D) y boutiques especializadas en productos premium (Sectores A/B) en el Perú. | Pequeñas y medianas empresas, estudios contables y comerciantes independientes que requieren un estricto control administrativo y tributario. | Minimarkets, tiendas de barrio, cafeterías y pequeños comercios minoristas generales a nivel global que requieren agilidad en sus ventas diarias. | PyMEs, comercios en crecimiento y empresas de servicios que buscan un ERP integral basado en la nube. |
+| **Marketing: Estrategias** | Campañas digitales en redes sociales, alianzas con distribuidores del sector y contacto directo presencial con tenderos locales en zonas comerciales de Lima y provincias. | Marketing de contenidos enfocado en educación de gestión y tributación, pauta publicitaria digital y webinars especializados dirigidos a administradores y contadores. | Posicionamiento orgánico en tiendas de aplicaciones móviles (App Store y Google Play) y estrategias de atracción digital. | Campañas digitales B2B, inbound marketing, pauta en buscadores y asociaciones estratégicas comerciales. |
+| **Producto: Servicios** | Plataforma web (Responsive Web App) con módulo de catálogo centralizado, control de inventario en tiempo real, alertas de stock mínimo, registro de ventas, compras y reportes. | Módulos de facturación electrónica, contabilidad, remuneraciones, gastos y portal de gestión para clientes. | Sistema de punto de venta (POS), control de inventario, programa de lealtad para clientes y gestión de empleados. | Módulos de facturación, inventarios avanzados, CRM, gestión de proyectos, contabilidad y tienda online integrada. |
+| **Producto: Precios y Costos** | Modelo de suscripción mensual SaaS accesible, diseñado y adaptado a la realidad económica de los pequeños comercios en el Perú. | Planes escalables mensuales basados en el volumen de operaciones o emisión de documentos tributarios. | Aplicación base con funciones gratuitas y módulos avanzados de pago mediante suscripción mensual accesible. | Estructura de planes por niveles de servicio según los módulos operativos contratados y número de usuarios. |
+| **Producto: Canales** | Plataforma web responsive accesible desde navegadores de escritorio y dispositivos móviles. Distribución directa vía sitio web corporativo y alianzas sectoriales. | Plataforma web SaaS basada en la nube y aplicación móvil complementaria de soporte operativo. | Aplicación nativa móvil para sistemas iOS/Android y panel web complementario de administración. | Plataforma web SaaS basada en la nube con acceso multiplataforma para la administración del negocio. |
+| **SWOT: Fortalezas** | Enfoque especializado en el sector retail de mascotas de la realidad peruana. Interfaz intuitiva diseñada para usuarios sin perfil técnico. Automatización de alertas de stock mínimo para evitar quiebres. | Plataforma madura y robusta con alta confiabilidad en el cálculo tributario y contable. Soporte técnico establecido en el mercado. | Curva de aprendizaje muy baja y excelente velocidad para procesar ventas rápidas desde dispositivos táctiles. | Alta versatilidad modular y capacidad de personalización para diversos tipos de procesos de negocio. |
+| **SWOT: Debilidades** | Marca de reciente creación sin reconocimiento previo en el mercado. Recursos iniciales limitados para campañas publicitarias masivas. | Enfoque principalmente contable y tributario, lo que limita su personalización operativa para el control detallado del inventario específico de mascotas. | Capacidades de control de inventario limitadas y poco flexibles para la gestión específica de alertas de stock en productos de mascotas. | Curva de adopción compleja y costos elevados para micro y pequeños comerciantes con baja madurez tecnológica. |
+| **SWOT: Oportunidades** | Creciente digitalización de los pequeños comercios en el Perú y aumento sostenido del presupuesto que destinan los hogares al cuidado de mascotas. | Expansión hacia nuevos nichos de mercado minorista que buscan simplificar su administración general. | Crecimiento de la adopción de soluciones de cobro móvil en pequeños negocios latinoamericanos. | Demanda creciente de digitalización y automatización en el sector comercial de la región. |
+| **SWOT: Amenazas** | Posible resistencia inicial de los tenderos tradicionales a abandonar los cuadernos y métodos manuales. Llegada de soluciones genéricas internacionales. | Aparición de competidores locales especializados en nichos específicos que desplacen las soluciones genéricas. | Competencia agresiva de aplicaciones gratuitas de punto de venta en el mercado minorista. | Entrada de plataformas ERP internacionales con estrategias de precios agresivas para pymes. |
+
+### 2.1.2. Estrategias y tácticas frente a competidores.
+A partir del análisis competitivo realizado frente a Nubox, Loyverse POS y Holded, hemos definido un conjunto de estrategias y tácticas orientadas a afrontar las fortalezas de dichos competidores, aprovechar sus debilidades y posicionar a PetStock (desarrollado por la startup Nexora) como la solución de referencia para la gestión de tiendas de mascotas en el Perú.
+
+* **Estrategia de diferenciación por especialización en el sector retail de mascotas:** Mientras los competidores actuales ofrecen soluciones genéricas orientadas a la contabilidad (Nubox, Holded) o al punto de venta general sin control especializado de insumos veterinarios (Loyverse POS), PetStock se posiciona como la única plataforma diseñada exclusivamente para el flujo operativo de las tiendas de mascotas. La táctica asociada consiste en comunicar de forma directa este diferencial mediante demostraciones comerciales enfocadas en la gestión de alimentos de alta rotación, control por lotes de accesorios y alertas inteligentes de stock mínimo ante los tenderos locales.
+* **Estrategia de penetración local y adopción presencial:** Frente al alcance digital masivo pero despersonalizado de las plataformas internacionales y corporativas, la ventaja competitiva más relevante de Nexora es el conocimiento profundo de la realidad comercial peruana (pequeños negocios de los sectores C/D y boutiques de los sectores A/B). La táctica consiste en realizar visitas comerciales presenciales a zonas de alta concentración de veterinarias y tiendas de mascotas en Lima y provincias, reduciendo la resistencia inicial al cambio frente a los cuadernos tradicionales mediante acompañamiento directo y onboarding guiado.
+* **Estrategia de precios y costos accesibles para MYPEs:** Considerando que el mercado objetivo está compuesto por pequeños comerciantes con restricciones presupuestales y una baja predisposición a pagar tarifas corporativas elevadas (como las de Holded), PetStock aplicará un modelo financiero ajustado a la realidad local. La táctica consiste en ofrecer un esquema de suscripción mensual SaaS flexible y económico, respaldado por un periodo de prueba inicial sin fricciones que demuestre un ahorro de tiempo administrativo inmediato en el negocio.
+* **Estrategia de simplicidad de interfaz frente a la complejidad técnica:** Mientras los sistemas ERP integrales exigen curvas de aprendizaje complejas y personal técnico especializado, PetStock prioriza una experiencia de usuario sumamente intuitiva. La táctica consiste en diseñar una plataforma web responsive ágil, eliminando menús contables confusos y botones innecesarios, permitiendo que el administrador o cajero gestione las ventas y el inventario en pocos clics sin necesidad de conocimientos previos en computación.
+* **Estrategia de mitigación ante la resistencia al registro digital:** Ante la inercia de los tenderos tradicionales acostumbrados al uso de cuadernos y registros manuales, PetStock enfoca su propuesta en la prevención directa de pérdidas económicas por quiebres de stock. La táctica consiste en destacar visualmente en las alertas automáticas el dinero exacto que el comerciante deja de perder al reponer a tiempo sus productos más vendidos, convirtiendo la herramienta digital en un aliado indispensable para la rentabilidad diaria del establecimiento.
+
+### 2.2. Entrevistas. 
+
+#### 2.2.1. Diseño de entrevistas.
+Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de PetStock. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los dueños o administradores de pequeñas tiendas de barrio (Sectores C/D) y los propietarios de boutiques especializadas en productos premium (Sectores A/B). 
+
+**Objetivos Generales del Proceso de Entrevistas**
+* Validar la existencia y criticidad del problema de desabastecimiento, quiebres de stock y errores en el registro manual de ventas en el sector retail de mascotas.
+* Comprender cómo gestionan actualmente sus operaciones comerciales y logísticas los establecimientos, identificando herramientas empíricas utilizadas (como cuadernos o libretas) y puntos de dolor administrativos.
+* Explorar la disposición de los dueños de negocios a adoptar una solución SaaS en la nube y su sensibilidad al costo de suscripción.
+* Identificar funcionalidades prioritarias y posibles fricciones operativas en la adopción del producto desde la perspectiva de ambos perfiles de usuario.
+
+**Segmento 1: Dueños o Administradores de tiendas tradicionales para mascotas (Sectores C/D)**
+* **Perfil del entrevistado:** Propietarios, encargados de caja o administradores de tiendas de mascotas independientes de barrio y minimarkets veterinarios en zonas comerciales de Lima y provincias, caracterizados por un volumen constante de transacciones y una digitalización inicial o moderada.
+* **Preguntas de apertura y contexto**
+  * ¿Podría contarme brevemente cómo inició su tienda de mascotas y qué tipo de productos tienen mayor rotación en su día a día?
+  * ¿Cuántas personas atienden directamente el negocio y cómo se organizan para cubrir la atención al público y la administración?
+* **Preguntas sobre gestión operativa actual e inventario**
+  * ¿Cómo realiza actualmente el control de su inventario y el registro de la mercadería que ingresa y sale de su tienda?
+  * ¿Qué herramientas o métodos utiliza para anotar sus ventas diarias y coordinar los pedidos con sus proveedores?
+  * ¿Con qué frecuencia se queda sin stock de un producto muy vendido sin darse cuenta a tiempo? ¿Cómo afecta eso a sus ingresos?
+* **Preguntas sobre dolores y fricciones administrativas**
+  * Al final del día, ¿qué tan complicado es cuadrar la caja o verificar el dinero físico frente a lo que supuestamente debería haber en el local?
+  * ¿Qué errores o pérdidas económicas ha experimentado debido a registros manuales en papel o cuadernos extraviados?
+* **Preguntas sobre disposición y adopción tecnológica**
+  * Si existiera una plataforma web sencilla que le avise automáticamente cuándo se va a acabar un producto y registre sus ventas al instante, ¿qué tan valiosa sería para usted?
+  * ¿Qué barreras o temores principales le impedirían abandonar sus métodos tradicionales por una solución digital?
+  * ¿Estaría dispuesto a pagar una suscripción mensual accesible por un software así? ¿Qué rango de precios consideraría razonable para su negocio?
+
+**Segmento 2: Propietarios o Administradores de Boutiques Especializadas (Sectores A/B)**
+* **Perfil del entrevistado:** Propietarios o gerentes de boutiques y pet shops especializados en productos premium (alimentos orgánicos, accesorios importados, farmacia veterinaria de alta gama), que operan con un catálogo más diversificado y clientes exigentes.
+* **Preguntas de apertura y contexto**
+  * ¿Podría describir el concepto de su boutique y qué tipo de perfil de cliente atiende habitualmente en el establecimiento?
+  * ¿Cómo manejan la variedad y diversificación de su catálogo, especialmente con productos importados o de marcas exclusivas?
+* **Preguntas sobre gestión operativa y control de lotes**
+  * ¿Qué sistema o método utiliza actualmente para controlar las fechas de caducidad, lotes y niveles de stock de productos especializados?
+  * ¿Cómo gestiona el control de las ventas cruzadas y el seguimiento del historial de compras de sus clientes más frecuentes?
+* **Preguntas sobre dolores de control y rentabilidad**
+  * ¿Qué dificultades encuentra al momento de realizar inventarios generales en su tienda y cuánto tiempo le demanda esa tarea?
+  * ¿Ha tenido mermas o pérdidas por productos vencidos que no se rotaron a tiempo debido a la falta de reportes detallados?
+* **Preguntas sobre expectativas y requerimientos del sistema**
+  * ¿Qué características indispensables exigiría a una plataforma digital para decidir implementarla en su boutique?
+  * ¿Qué tan importante considera contar con reportes analíticos de ventas por categoría para la toma de decisiones comerciales y reposición con proveedores?
+  * ¿Estaría dispuesto a migrar la administración completa de su boutique a un modelo de software en la nube si este le garantiza optimizar su capital de trabajo?c
+
+## 2.2.2. Registro de entrevistas
+
+**Segmento 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Entrevista N° 1**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/entrevista-1.png" alt="Entrevista a Aracelli Peña" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Aracelli Peña</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>30 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Rímac</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>7:38</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQDJcxjnwJXOQaJ6xC-EBJlMAfoJcxbU46v8T7pHDUbS3Ew?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hesQ1Q">Entrevista 1 - Seg1 Aracelli.mp4</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Aracelli trabaja en una tienda de mascotas en el Rímac con 5 años de trayectoria. Durante la entrevista, comentó que tiene dificultades para manejar la rotación de productos y el inventario, ya que controla el stock, registra las ventas y realiza los pedidos a proveedores de forma manual mediante cuadernos y WhatsApp. Esta forma de trabajo ocasiona pérdidas de información por accidentes y quiebres de stock entre dos y tres veces por semana. Además, invierte entre 30 y 40 minutos diarios en cuadrar la caja manualmente, cruzando los pagos en efectivo con los pagos digitales realizados por Yape y Plin. Aracelli mostró interés en una plataforma digital intuitiva y rápida que descuente el stock en tiempo real y emita alertas. También indicó que estaría dispuesta a pagar una suscripción mensual de entre 50 y 70 soles.</td>
+  </tr>
+</table>
+
+**Entrevista N° 2**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/Entrevista-2.jpeg" alt="Entrevista 2" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Mateo Piero Escudero Sánchez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>20 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Callao</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>6:51</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBNWv2B8S8OTZJPggxgAslPAarxSqgp5bYKIKIhboc4k9c?e=6F0Lb0&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista 2-Seg 1</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Mateo Escudero, de 20 años y estudiante de administración, apoya en la gestión de la tienda familiar de mascotas fundada hace más de 12 años. Nos comenta que los productos de mayor rotación son los alimentos balanceados (especialmente de marcas económicas). El negocio es atendido por él y sus padres; sus padres se encargan de las ventas y él gestiona los pedidos y el inventario. Actualmente, controlan la mercadería mediante un cuaderno donde anotan manualmente las entradas y salidas, pasando esos datos a un Excel básico una vez por semana (o cada 2 o 3 días cuando se acumula). Esto les genera dolores de cabeza importantes: se quedan sin stock de productos muy vendidos al menos una vez por semana porque el Excel no está actualizado al día, lo que provoca que los clientes se vayan a la competencia. Además, cuadrar la caja al final del día es un proceso tedioso que le toma hasta 3 horas y a veces comete errores de cálculo con los boletos y anotaciones. También mencionó que una vez perdió una hoja del cuaderno y tuvo que dejar un "hueco" en las cuentas del Excel. Finalmente, muestra un gran interés en una plataforma web automatizada accesible desde el celular, señalando que le cambiaría la vida y que consideraría un rango de precio razonable de 30 a 45 soles mensuales por una solución así. Como principal barrera, destaca que a sus padres les cuesta más confiar en la tecnología digital y prefieren ver todo escrito en papel.</td>
+  </tr>
+</table>
+
+**Entrevista N° 3**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/registro-entrevista-3.jpeg" alt="Lia" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Dayan Ramos</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>27 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>5:38</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320973_upc_edu_pe/IQDvCktCq8-URLafDlwBs26oAYpdnUR4UepT7AdoGbaSqR4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=xC5cRN">Entrevista - Segmento 1</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Dayan es una joven emprendedora de 27 años que administra de forma independiente la tienda de mascotas heredada de sus padres. En su día a día enfrenta un considerable nivel de estrés y desgaste causado por la dependencia de procesos manuales, aunque utiliza hábilmente su celular para procesar pagos con Yape y Plin o para coordinar con proveedores mediante WhatsApp, sigue controlando su inventario a través de inspecciones visuales y registra sus ventas a lápiz en un cuaderno. Esta desconexión operativa le ocasiona ansiedad y el temor constante de omitir registros durante las horas donde tiene más clientes, alcanzando su punto más estresante para ella al final del día cuando invierte tiempo de más intentando cuadrar la caja. A nivel emocional y comercial, manifiesta una fuerte frustración al perder clientes recurrentes frente a la competencia debido a falta de stock que no detecta a tiempo. Ante este escenario, Dayan se muestra muy dispuesta a invertir en una suscripción mensual accesible para adoptar una plataforma web que automatice sus alertas de inventario y elimine el uso de papel. Su principal motivación es tener mayor control sobre el negocio, estableciendo como única barrera técnica que el nuevo sistema garantice rapidez y estabilidad para no generar demoras en la atención directa.</td>
+  </tr>
+</table>
+
+
+**Segmento 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Entrevista N° 4**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img width="588" height="167" alt="image" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Gabriela Diaz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>3:56</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQBerKr8n0VUSaM7mqun9LyRAc-Ffctf_B-YrBnHggct83I?nav=eyJyZWZlcnJhbEluZm8iOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6a6yIn">Entrevista - Segmento 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Gabriela Díaz, administradora de boutiques especializadas en Miraflores, comenta que maneja con dificultad la variedad y diversificación de su catálogo al trabajar con múltiples marcas. No utiliza un sistema para controlar lotes, stock ni fechas de caducidad, y gestiona el seguimiento de clientes frecuentes de memoria por falta de herramientas adecuadas.</td>
+  </tr>
+</table>
+
+**Entrevista N° 5**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/Entrevista-5.jpeg" alt="Entrevista 5" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Leonardo Castilla Ruiz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>5:51</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241f714_upc_edu_pe/IQBdCYPW_kzGR6SmaSAEX7eXAVf6hgWV6JKt2k18xJmRAIE?e=O2wXFK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista 5-Seg 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Leonardo Castilla Ruiz es el administrador de la boutique especializada "Wow Closet", orientada a la experiencia y el bienestar integral de mascotas con un perfil de clientes exigente de nivel socioeconómico medio y alto que buscan nutrición de alta gama, cosmética, farmacia especializada y accesorios importados. Nos comenta que manejan un catálogo muy variado con una alta densidad de ítems exclusivos, lo que genera márgenes unitarios más altos pero también una alta complejidad para gestionar la variedad de productos sin un sistema especializado. Actualmente, dependen de revisiones manuales en hojas de cálculo genéricas (como Excel) para controlar fechas de caducidad, lotes y niveles de stock, lo que ocasiona que a veces se pasen por alto productos de nicho o baja rotación que terminan venciendo en el fondo de los anaqueles, generando pérdidas económicas directas. Realizar un inventario general les demanda un día entero de trabajo fuera de horario o varias horas del fin de semana, interrumpiendo las operaciones. Además, no cuentan con un historial de compras digital centralizado que les permita sugerir productos complementarios a sus clientes frecuentes según las preferencias de sus mascotas. Finalmente, Leonardo destaca como características indispensables para una solución digital: control de inventario en tiempo real con alertas automáticas de stock mínimo, un módulo de gestión de catálogos centralizado y fácil de usar, un historial de compras por cliente y una interfaz limpia que no requiera entrenamientos complejos. Afirma estar totalmente dispuesto a migrar y pagar una suscripción mensual si el software garantiza evitar quiebres de stock, simplifica las operaciones diarias y protege la rentabilidad del negocio.</td>
+  </tr>
+</table>
+
+**Entrevista N° 6**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/registro-lia.PNG" alt="Lia" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Lia</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>25 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>6:21</td>
+  </tr>
+  <tr>
+    <td><b>Enlace (Anexo n.º –)</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQBINbY1ZEyeTbutnS2rjB-oAdP4yUP7D8xXluayVuyJ4sY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=ZLYUoV">Entrevista - Segmento 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>Lia es propietaria de una boutique especializada en productos premium para mascotas, como accesorios importados, juguetes, productos de higiene, camas y alimentos de mayor calidad, atendiendo principalmente a clientes que buscan productos especializados y de buena calidad. Actualmente, gestiona la variedad de su catálogo y el control del inventario mediante Excel y revisiones físicas, lo que puede dificultar el seguimiento de productos de baja rotación, fechas de vencimiento y niveles de stock. Asimismo, el historial de compras de sus clientes frecuentes se encuentra distribuido entre anotaciones y conversaciones por WhatsApp, por lo que considera importante contar con información más organizada. Lia también destaca la necesidad de disponer de reportes de ventas por categoría que le permitan conocer qué productos tienen mayor o menor movimiento y tomar mejores decisiones sobre su catálogo y reposición. Finalmente, estaría dispuesta a utilizar una plataforma digital en la nube si esta es sencilla, segura y le permite ahorrar tiempo, organizar la información de su boutique y optimizar el uso de su capital.</td>
+  </tr>
+</table>
+
+
+### 2.2.3. Análisis de entrevistas
+
+**Analisis de Entrevista del segmento 1:**
+
+**Puntos de Dolor y Coincidencias Operativas:** Este análisis cuantitativo consolida una necesidad de mercado homogénea: el 100% de los entrevistados comparte el uso del cuaderno, la lentitud en el cierre de caja, la pérdida recurrente de clientes por falta de stock y un alto interés en adoptar una solución digital. La única divergencia radica en la adopción previa de canales digitales de pago (Yape/Plin/WhatsApp), presente en 2 de los 3 casos. Estos hallazgos demuestran que la barrera principal no es el desinterés por la tecnología, sino la falta de un sistema intuitivo, rápido y con soporte para usuarios tradicionales. 
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis 1- s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Frecuencia de Quiebres de Stock / Faltantes a la Semana:** El gráfico pone de manifiesto la vulnerabilidad financiera de los negocios al depender de inspecciones visuales o registros no actualizados al día. Araceli registra hasta 3 quiebres de stock por semana y Mateo al menos 1 quiebre semanal en sus productos de mayor rotación (alimentos balanceados), lo que genera una fuga directa de ingresos y la migración inmediata de clientes hacia la competencia. Este indicador valida que la funcionalidad más crítica y demandada por los usuarios es la actualización del inventario con alertas automáticas.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-2-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Tiempo Diario Invertido en Cuadrar Caja Manualmente:** La comparativa de tiempo refleja la enorme ineficiencia operativa que genera el arqueo manual al cruzar ventas en efectivo, Yape y Plin mediante anotaciones en papel. Mientras Araceli pierde entre 30 y 40 minutos diarios en este proceso, Mateo alcanza un punto crítico de hasta 3 horas (180 minutos) debido al procesamiento diferido de boletos y registros en Excel. Esto demuestra que la fricción en el cierre de caja no solo consume tiempo valioso que podría destinarse a la venta, sino que actúa como el principal catalizador de estrés y errores de cálculo al final de la jornada
+
+<p align="center">
+  <img src="assets/interview-analysis/anlisis-3-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Rango de Disposición a Pagar (Suscripción Mensual):** Este gráfico evidencia que existe una clara apertura comercial hacia un modelo SaaS (Suscripción Mensual), situando la disposición de pago en un rango promedio entre S/ 30 y S/ 70 mensuales. La mayor valoración proviene de Araceli (S/ 50 - 70), impulsada por la urgencia de evitar pérdidas constantes por accidentes en cuadernos, mientras que Mateo busca una tarifa más austera (S/ 30 - 45) acorde a un negocio familiar de productos de bajo margen. En conjunto, estos datos confirman que un plan escalable cerca a los S/ 40 - 50 mensuales se alinea perfectamente con la capacidad financiera y la percepción de valor de las tiendas de barrio. 
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-4-s1.png" alt="Entrevista 01" width="600">
+</p>
+
+**Analisis de Entrevista del segmento 2:**
+
+**Brecha Digital en Procesos Clave de Boutiques Premium:** Esta representación ilustra la vulnerabilidad del 100% de las boutiques analizadas, las cuales operan sin un software dedicado para la gestión de lotes, la memoria de clientes y el catálogo centralizado. Al depender de la memoria humana (Gabriela), conversaciones dispersas en WhatsApp (Lia) u hojas de cálculo genéricas como Excel (Leonardo y Lia), el negocio incurre en merma financiera directa por productos nicho vencidos al fondo del anaquel y en pérdida de ventas cruzadas. Los datos confirman que existe una disposición total a migrar a una plataforma en la nube limpia y segura siempre que garantice agilidad y un aprendizaje intuitivo sin entrenamientos complejos.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-1-s2.png" alt="Entrevista 01" width="600">
+</p>
+
+**Puntos Críticos de Gestión en Boutiques Especializadas:** El gráfico horizontal evidencia las coincidencias estructurales en el segmento de boutiques de alta gama. El 100% de los entrevistados (Gabriela, Leonardo y Lia) reporta severas dificultades para controlar productos de baja rotación/vencimientos, realizar el seguimiento de clientes frecuentes y administrar la alta densidad de un catálogo multimarca. Asimismo, un 67% (Leonardo y Lia) demanda reportes analíticos para la toma de decisiones sobre reposición. Esto demuestra que la propuesta de valor para este segmento debe enfocarse en un módulo de fidelización (CRM) integrado con gestión de lotes y alertas de caducidad.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-2-s2.png" alt="Entrevista 01" width="600">
+</p>
+
+**Carga Horaria en Auditoría e Inspección Manual de Inventario:** Este gráfico expone el costo operativo oculto que representa la falta de un software especializado para catálogos extensos y variados. En el caso de Leonardo ("Wow Closet"), realizar un inventario general exige hasta 8 horas continuas (un día entero fuera de horario o fines de semana), paralizando las actividades operativas del negocio, mientras que Lia dedica aproximadamente 4 horas en revisiones físicas continuas de anaqueles. Esta sobrecarga de horas operativas valida la necesidad urgente de un sistema en la nube con actualización automática que elimine la auditoría física tradicional para proteger la productividad del personal.
+
+<p align="center">
+  <img src="assets/interview-analysis/analisis-3-s2.png" alt="Entrevista 01" width="600">
+</p>
+
+## 2.3. Needfinding
+
+### 2.3.1. User Personas
+
+En esta sección se presentan las fichas de User Persona elaboradas a partir del análisis de los segmentos, las entrevistas y la competencia. Estos perfiles representan a los usuarios objetivo de PetStock, considerando sus principales características, necesidades, objetivos y dificultades. Se desarrollaron dos User Personas: Eduardo Salazar, representante de las tiendas de alimentos y productos de consumo frecuente, y Ximena Díaz, representante de las tiendas especializadas en productos premium y de cuidado para mascotas.
+
+**User Persona del segmento #1: Dueños o Administradores de tiendas tradicionales para mascotas (Sectores C/D)**
+
+<p align="center">
+  <img src="assets/user-persona/Eduardo Salazar.png" alt="User Persona">
+</p>
+
+**User Persona del segmento #2: Dueños o administradores de tiendas especializadas en productos premium y de cuidado para mascotas (Sectores A/B)**
+
+<p align="center">
+  <img src="assets/user-persona/Ximena Diaz.png" alt="User Persona">
+</p>
+
+### 2.3.2. User Task Matrix
+
+En esta sección se presenta el User Task Matrix, que concentra las principales tareas que realizan los User Personas que representan a los dos segmentos definidos para PetStock. El primer segmento está conformado por pequeñas tiendas de mascotas especializadas principalmente en alimentos y productos de consumo frecuente, mientras que el segundo está conformado por tiendas especializadas o boutiques que comercializan accesorios, productos premium, de higiene y bienestar para mascotas. Las tareas identificadas corresponden a actividades que ambos User Personas realizan para cumplir sus objetivos dentro de la gestión cotidiana de sus negocios, independientemente de la existencia de PetStock. 
+
+Para cada User Persona se evalúan dos dimensiones por tarea. La frecuencia indica con qué regularidad realiza la tarea, expresada en una escala cualitativa de Muy Alta, Alta, Media y Baja. La importancia indica el grado en que la tarea es crítica para el cumplimiento de los objetivos del User Persona, expresada en la misma escala. 
+
+<p align="center">
+  <img src="assets/user-task-matrix/task-matrix.PNG" alt="User Persona">
+</p>
+
+En el caso de Eduardo Salazar, las tareas con mayor frecuencia e importancia son registrar las ventas realizadas, revisar las existencias de productos e identificar los productos que necesita reponer. Esto se relaciona con las características de su negocio, debido a que comercializa principalmente alimentos y productos de consumo frecuente, los cuales presentan una alta rotación. Por ello, necesita revisar constantemente sus existencias para evitar que los productos se agoten y afecten sus ventas. 
+
+Por otro lado, Ximena Díaz presenta una mayor frecuencia e importancia en la tarea de revisar qué productos tienen mayor o menor movimiento. Esto se debe a que su tienda maneja un catálogo más variado de productos premium, accesorios y artículos de cuidado, que generalmente presentan una menor rotación pero un mayor margen por producto. Por ello, necesita prestar mayor atención al comportamiento de los productos para tomar decisiones sobre cuáles mantener o priorizar. 
+
+También existe una diferencia en la tarea de registrar los datos de clientes frecuentes y sus compras. Para Eduardo esta actividad presenta una frecuencia menor, debido a que su negocio está más orientado a la venta frecuente de productos de consumo. En cambio, para Ximena tiene una frecuencia e importancia mayores, ya que el seguimiento de clientes frecuentes puede contribuir a brindar una atención más personalizada y conocer mejor sus hábitos de compra. 
+
+En conclusión, ambos User Personas realizan tareas similares relacionadas con la gestión de sus tiendas, pero sus prioridades son diferentes. Eduardo está principalmente orientado al control operativo, la disponibilidad de productos y la reposición debido a la alta rotación, mientras que Ximena está más orientada al análisis del movimiento de productos y al seguimiento de sus clientes debido a la variedad y especialización de su catálogo. Estas diferencias permiten identificar necesidades específicas dentro de los dos segmentos que serán consideradas en el diseño de PetStock. 
+
+
+### 2.3.3. User Journey Mapping
+
+Realizamos los User Journey Maps en la version de AS-IS para los dos segmentos , asi podremos entender de forma estructurada la experiencia del usuario en su interaccion con un producto o servicio.
+
+**User Journey Map del 1er segmento objetivo-Tiendas de alimentos y consumo frecuente para mascotas**
+
+<div align="center">
+  <img src="assets/user-journey-mapping/Customer Journey Map – Segmento 1_ Tienda Tradicional.png" alt="" />   
+</div>
+
+
+**User Journey Map del 2do segmento objetivo-Tiendas especializadas en productos premium y de cuidado**
+
+<div align="center">
+  <img src="assets/user-journey-mapping/Customer Journey Map – Segmento 2_ Tienda Especializada.png" alt=""/>
+</div>
+
+### 2.3.4. Empathy Mapping
+
+El Empathy Mapping nos ayuda a entender mas sobre la experiencia cognitica y emocional del usuario.Mediante las secciones sobre el pensamientos , sentimientos ,que dice y hace , se trata de entender sus motivaciones y frustaciones
+
+**Empathy Mapping del 1er segmento objetivo-Tiendas de alimentos y consumo frecuente para mascotas**
+
+<div align="center">
+  <img src="assets/empathy-mapping/Empathy Map – Segmento 1_ Tienda Tradicional (1).png" alt=""/>
+</div>
+
+**Empathy Mapping del 2do segmento objetivo-Tiendas especializadas en productos premium y de cuidado**
+
+<div align="center">
+  <img src="assets/empathy-mapping/Empathy Map – Segmento 2_ Tienda Especializada (1).png" alt=""/>
+</div>
+
+
+### 2.4. Big Picture Event Storming
+
+En esta sección se presenta el Big Picture Event Storming del proyecto PetStock, elaborado como una visión general del dominio comercial del retail minorista de mascotas en el Perú.Esta técnica permitió modelar el dominio de negocio rastreando de manera cronológica los eventos significativos que ocurren en las tiendas en el día a día, desde la configuración inicial del catálogo y el abastecimiento de mercadería, hasta el registro de ventas, el control de inventario y el balance de cierre diario.
+
+<div align="center">
+  <img src="assets/big-picture-event-storming/bigpictureventstorming.jpg" alt=""/>
+</div>
+
+### 2.5. Ubiquitous Language
+
+El siguiente glosario define los términos clave del dominio de gestión comercial de tiendas de mascotas. Su propósito es establecer un lenguaje común entre todos los integrantes del equipo y los stakeholders del proyecto, evitando ambigüedades en la comunicación durante el desarrollo de PetStock.
+
+* High-Rotation Product (Producto de alta rotación): Producto de consumo diario que requiere control constante de reposición para evitar desabastecimiento.
+
+* Premium Product (Producto premium): Producto especializado de cuidado y bienestar animal, caracterizado por menor rotación y mayor margen de ganancia.
+
+* Stock (Existencias): Cantidad disponible de un producto en el inventario de la tienda en un momento dado.
+
+* Minimum Stock Threshold (Stock mínimo): Cantidad límite establecida para un producto, por debajo de la cual se genera una alerta de reposición.
+
+* Stock Alert (Alerta de stock): Notificación generada cuando un producto alcanza o baja del stock mínimo.
+
+* Stock Turnover (Rotación de stock): Frecuencia con la que un producto se vende y repone en un periodo determinado.
+
+* Supplier (Proveedor): Persona o empresa que abastece de productos a la tienda de mascotas.
+
+* Purchase History (Historial de compras): Registro de las compras anteriores realizadas por un cliente, utilizado para dar seguimiento a compradores recurrentes.
+
+* Store Administrator (Administrador de tienda): Persona encargada de gestionar las operaciones diarias de la tienda dentro del sistema.
+
+# Capítulo III: Requirements Specification
+
+## 3.1. User Stories
+
+
+| ID | Título | Descripción | Criterios de Aceptación | Epic |
+|---|---|---|---|---|
+| EP01 | Identity & Access | Agrupa las funcionalidades de creación de cuenta, inicio y cierre de sesión de los usuarios de la Web Application. | — | — |
+| US01 | Crear cuenta | Como administrador de tienda, quiero crear una cuenta en PetStock, para gestionar las operaciones de mi negocio desde la plataforma. | Escenario 1: Registro exitoso; Dado que el usuario completa el formulario con datos válidos y acepta los términos y condiciones; Cuando presiona "Registrarse"; Entonces el sistema crea la cuenta y lo redirige al Dashboard principal. Escenario 2: Correo ya registrado; Dado que el correo ingresado ya existe en el sistema; Cuando el usuario envía el formulario; Entonces el sistema retorna un error indicando que el correo ya está registrado. | EP01 |
+| US02 | Iniciar sesión | Como administrador de tienda, quiero iniciar sesión en mi cuenta, para acceder a las funcionalidades de gestión de mi negocio. | Escenario 1: Credenciales válidas; Dado que el usuario ingresa correo y contraseña correctos; Cuando presiona "Iniciar sesión"; Entonces el sistema valida las credenciales y lo redirige al Dashboard. Escenario 2: Credenciales inválidas; Dado que el usuario ingresa credenciales incorrectas; Cuando presiona "Iniciar sesión"; Entonces el sistema retorna un error sin especificar el campo incorrecto. | EP01 |
+| US03 | Cerrar sesión | Como administrador de tienda, quiero cerrar sesión en mi cuenta desde el menú de perfil, para proteger la información de mi negocio cuando no esté utilizando la aplicación. | Escenario 1: Cierre exitoso; Dado que el usuario está autenticado; Cuando presiona "Cerrar sesión" en la vista de Mi Perfil; Entonces el sistema invalida la sesión activa y lo redirige a la pantalla de inicio de sesión. | EP01 |
+| EP02 | Product & Inventory Management | Agrupa las funcionalidades de registro, edición, consulta de productos y control de existencias en el inventario. | — | — |
+| US04 | Registrar producto | Como administrador de tienda, quiero registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. | Escenario 1: Registro exitoso; Dado que el administrador proporciona datos válidos del producto, incluyendo proveedor y stock mínimo; Cuando presiona "Guardar producto"; Entonces el sistema agrega el producto al catálogo y actualiza el Dashboard. Escenario 2: Datos incompletos; Dado que el administrador omite campos obligatorios; Cuando envía la solicitud; Entonces el sistema retorna un error indicando los campos faltantes. | EP02 |
+| US05 | Editar producto | Como administrador de tienda, quiero editar la información de un producto existente, para mantener actualizados sus datos. | Escenario 1: Edición exitosa; Dado que el administrador modifica datos válidos de un producto existente; Cuando confirma los cambios; Entonces el sistema actualiza la información y confirma la operación. Escenario 2: Producto no encontrado; Dado que el administrador intenta editar un producto inexistente; Cuando envía la solicitud; Entonces el sistema retorna un error indicando que el recurso no existe. | EP02 |
+| US06 | Consultar inventario | Como administrador de tienda, quiero consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. | Escenario 1: Consulta con resultados; Dado que existen productos registrados con stock; Cuando el administrador solicita la consulta; Entonces el sistema retorna la cantidad disponible de cada producto. Escenario 2: Inventario vacío; Dado que la tienda no tiene productos registrados; Cuando el administrador solicita la consulta; Entonces el sistema retorna una respuesta vacía. | EP02 |
+| US07 | Recibir alerta de stock mínimo | Como administrador de tienda, quiero recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. | Escenario 1: Umbral alcanzado; Dado que la cantidad disponible de un producto es igual o menor al stock mínimo configurado; Cuando el sistema actualiza el inventario; Entonces el sistema genera una alerta visible en el Dashboard. Escenario 2: Stock repuesto; Dado que un producto en alerta recibe una nueva entrada de stock que supera el umbral; Cuando el sistema actualiza el inventario; Entonces el sistema retira la alerta. | EP02 |
+| EP03 | Sales & Purchases | Agrupa las funcionalidades de registro de ventas, compras y solicitud de reposición a proveedores. | — | — |
+| US08 | Registrar venta | Como administrador de tienda, quiero registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. | Escenario 1: Venta exitosa; Dado que el administrador selecciona productos con stock disponible e ingresa el nombre del cliente; Cuando confirma la venta; Entonces el sistema descuenta las cantidades del inventario y la registra en el historial. Escenario 2: Stock insuficiente; Dado que la cantidad solicitada supera el stock disponible; Cuando el administrador intenta confirmar la venta; Entonces el sistema retorna un error indicando stock insuficiente. | EP03 |
+| US09 | Registrar compra a proveedor | Como administrador de tienda, quiero registrar una compra realizada a un proveedor, para actualizar mi inventario con la mercadería reabastecida. | Escenario 1: Compra exitosa; Dado que el administrador registra una compra con productos y cantidades válidas; Cuando confirma la operación; Entonces el sistema incrementa las cantidades correspondientes en el inventario. Escenario 2: Proveedor no registrado; Dado que el proveedor indicado no existe en el sistema; Cuando el administrador envía la solicitud; Entonces el sistema retorna un error indicando que el proveedor no está registrado. | EP03 |
+| US10 | Solicitar reposición a proveedor | Como administrador de tienda, quiero solicitar la reposición de un producto en alerta directamente a un proveedor sugerido por el sistema, para asegurar un reabastecimiento oportuno sin buscar manualmente su información de contacto. | Escenario 1: Solicitud generada; Dado que el administrador selecciona un producto en alerta crítica y un proveedor de la lista sugerida; Cuando presiona "Contactar proveedor"; Entonces el sistema genera la solicitud con la cantidad sugerida y la envía por el canal de contacto configurado. Escenario 2: Sin proveedor asociado; Dado que el producto en alerta no tiene un proveedor asignado; Cuando el administrador intenta solicitar reposición; Entonces el sistema retorna un mensaje indicando que debe asignar un proveedor primero. | EP03 |
+| EP04 | Customer & Supplier Management | Agrupa las funcionalidades de registro y consulta de clientes y proveedores de la tienda. | — | — |
+| US11 | Registrar proveedor | Como administrador de tienda, quiero registrar la información de mis proveedores, para facilitar el proceso de reposición. | Escenario 1: Registro exitoso; Dado que el administrador proporciona datos válidos del proveedor; Cuando envía la solicitud; Entonces el sistema registra al proveedor y confirma la operación. | EP04 |
+| US12 | Consultar historial de cliente | Como administrador de tienda, quiero consultar el historial de compras de un cliente, para dar un mejor seguimiento a mis compradores frecuentes. | Escenario 1: Historial disponible; Dado que el cliente seleccionado tiene compras registradas; Cuando el administrador consulta su perfil; Entonces el sistema retorna el historial de compras asociado. Escenario 2: Cliente sin historial; Dado que el cliente no tiene compras registradas; Cuando el administrador consulta su perfil; Entonces el sistema retorna una respuesta vacía. | EP04 |
+| EP05 | Reporting & Dashboard | Agrupa las funcionalidades de generación, consulta y exportación de reportes, y visualización general del negocio. | — | — |
+| US13 | Visualizar panel de control | Como administrador de tienda, quiero ver un resumen general del estado de mi negocio al ingresar al sistema, para conocer rápidamente mi situación diaria. | Escenario 1: Panel disponible; Dado que el administrador inicia sesión en el sistema; Cuando accede al Dashboard; Entonces el sistema muestra un resumen de ventas, inventario y alertas activas. | EP05 |
+| US14 | Consultar reportes | Como administrador de tienda, quiero consultar reportes de ventas por día, productos con mayor y menor rotación, para tomar mejores decisiones comerciales. | Escenario 1: Reporte generado; Dado que existen datos registrados en el periodo solicitado; Cuando el administrador solicita el reporte; Entonces el sistema retorna la información correspondiente al periodo indicado. Escenario 2: Sin datos en el periodo; Dado que no existen registros en el periodo solicitado; Cuando el administrador solicita el reporte; Entonces el sistema retorna una respuesta vacía. | EP05 |
+| US15 | Descargar reporte en PDF | Como administrador de tienda, quiero descargar mis reportes en formato PDF, para respaldar la información de mi negocio. | Escenario 1: Descarga exitosa; Dado que el administrador visualiza un reporte generado; Cuando presiona "Descargar reporte en PDF"; Entonces el sistema genera el archivo y lo descarga correctamente. Escenario 2: Error en la generación; Dado que ocurre un fallo al generar el archivo; Cuando el administrador solicita la descarga; Entonces el sistema retorna un mensaje indicando que la operación no pudo completarse. | EP05 |
+| EP06 | Profile & Configuration | Agrupa las funcionalidades de gestión del perfil del usuario y los datos del negocio. | — | — |
+| US16 | Actualizar datos del negocio | Como administrador de tienda, quiero editar mi nombre, apellido, correo y contraseña, para mantener actualizada la información de mi perfil y la seguridad de mi cuenta. | Escenario 1: Actualización exitosa; Dado que el administrador proporciona datos válidos; Cuando presiona "Guardar cambios"; Entonces el sistema aplica los cambios y confirma la operación. Escenario 2: Datos inválidos; Dado que el administrador ingresa información con formato incorrecto; Cuando envía la solicitud; Entonces el sistema retorna un error indicando los campos con formato inválido. | EP06 |
+| EP07 | Landing Page | Agrupa las funcionalidades del sitio web estático que comunica la propuesta de valor de PetStock a los visitantes de cada segmento objetivo. | — | — |
+| US17 | Conocer la propuesta de valor | Como visitante, quiero conocer la propuesta de valor de PetStock, para evaluar si la plataforma se ajusta a las necesidades de mi tienda. | Escenario 1: Contenido disponible; Dado que el visitante accede al Landing Page; Cuando el sistema entrega el contenido principal; Entonces el sistema muestra la información del propósito y beneficio central de la plataforma. | EP07 |
+| US18 | Conocer beneficios por segmento | Como visitante del segmento de tiendas de alta rotación, quiero conocer los beneficios específicos de PetStock, para comprender cómo se adapta al control de productos de alto movimiento. | Escenario 1: Contenido por segmento; Dado que el visitante solicita el contenido dirigido a su segmento; Cuando el sistema procesa la solicitud; Entonces el sistema retorna información orientada al control de inventario de alta rotación. | EP07 |
+| US19 | Acceder al registro desde el Landing Page | Como visitante, quiero acceder directamente a la Web Application desde el Landing Page, para comenzar a usar PetStock. | Escenario 1: Redirección exitosa; Dado que el visitante hace clic en el call-to-action correspondiente; Cuando el sistema procesa la solicitud; Entonces el sistema redirige al visitante a la vista de creación de cuenta de la Web Application. | EP07 |
+| EP08 | Technical Stories | Agrupa los requerimientos técnicos del RESTful API que sustentan la operación del sistema. | — | — |
+| US20 | Autenticar usuario | Como developer, quiero implementar un endpoint de autenticación, para que los usuarios accedan de forma segura al sistema. | Escenario 1: Credenciales válidas; Dado que se envía una solicitud POST con credenciales válidas; Cuando el servidor valida los datos; Entonces responde con un token de acceso y código 200. Escenario 2: Credenciales inválidas; Dado que las credenciales enviadas son incorrectas; Cuando el servidor procesa la solicitud; Entonces responde con código 401. | EP08 |
+| US21 | Exponer endpoint de inventario | Como developer, quiero implementar un endpoint que devuelva el estado del inventario, para que la Web Application pueda mostrarlo. | Escenario 1: Consulta exitosa; Dado que se envía una solicitud GET con un token válido; Cuando el servidor procesa la solicitud; Entonces responde con la lista de productos y cantidades en formato JSON y código 200. Escenario 2: Token inválido; Dado que el token enviado no es válido; Cuando el servidor procesa la solicitud; Entonces responde con código 401. | EP08 |
+| EP09 | Cash Management | Agrupa las funcionalidades de cierre de turno y cuadre de caja diario, permitiendo verificar que el efectivo disponible coincida con el total de ventas registradas durante la jornada. | — | — |
+| US22 | Cerrar turno de caja | Como administrador de tienda, quiero cerrar mi turno de caja al final del día, para cuadrar el efectivo con las ventas registradas. | Escenario 1: Cierre exitoso; Dado que el administrador confirma el cierre del turno; Cuando presiona "Cerrar caja"; Entonces el sistema calcula el total esperado en base a las ventas registradas y registra el cierre. | EP09 |
+| US23 | Consultar resumen de cuadre | Como administrador de tienda, quiero ver un resumen del cuadre de caja diario, para verificar que el efectivo coincida con las ventas del día. | Escenario 1: Cuadre correcto; Dado que el efectivo contado coincide con el monto calculado por el sistema; Cuando el administrador confirma el cuadre; Entonces el sistema registra el cierre como conforme. Escenario 2: Diferencia detectada; Dado que el efectivo contado no coincide con el monto calculado; Cuando el administrador confirma el cuadre; Entonces el sistema registra la diferencia y la marca para revisión. | EP09 |
+
+## 3.2. Impact Mapping
+
+El Impact Mapping permitió relacionar los objetivos de negocio de PetStock con los actores que intervienen en la plataforma, los cambios de comportamiento que se esperan de ellos y las funcionalidades necesarias para alcanzar dichos objetivos. A partir de este análisis, se priorizaron acciones relacionadas con el control de inventario, la adopción recurrente de la aplicación y la reducción de tareas administrativas.
+
+### Business Goal 1
+
+> Reducir en al menos un 20% los quiebres de stock en las tiendas usuarias de PetStock durante los primeros 6 meses de uso de la plataforma.
+
+![Impact Mapping del Business Goal 1: reducción de quiebres de stock](assets/impact-mapping/business-goal-1.png)
+
+Este objetivo se enfoca en que los administradores puedan identificar productos con existencias bajas y tomar decisiones de reposición antes de perder una venta por falta de stock.
+
+### Business Goal 2
+
+> Lograr que al menos el 70% de los usuarios registrados utilice PetStock de manera recurrente, 4 o más días por semana, durante los primeros 3 meses posteriores al despliegue.
+
+![Impact Mapping del Business Goal 2: uso recurrente de PetStock](assets/impact-mapping/business-goal-2.png)
+
+Este objetivo busca que la plataforma forme parte de la operación diaria de la tienda. Para ello, las funcionalidades priorizadas deben ser simples de usar y resolver tareas que el administrador realiza todos los días.
+
+### Business Goal 3
+
+> Reducir en al menos un 30% el tiempo que los administradores dedican a tareas administrativas, como el registro de ventas, compras e inventario, durante los primeros 3 meses de uso.
+
+![Impact Mapping del Business Goal 3: reducción de tiempo administrativo](assets/impact-mapping/business-goal-3.png)
+
+Este objetivo se relaciona con centralizar las operaciones del negocio en una sola plataforma, evitando registros duplicados entre cuadernos, hojas de cálculo y notas separadas.
+
+## 3.3 Product Backlog
+
+El Product Backlog reúne y ordena los User Stories de PetStock según el valor que aportan al negocio y la necesidad de los segmentos objetivo. La priorización inicia con la propuesta de valor y las funcionalidades que permiten administrar productos e inventario, debido a que estas se relacionan directamente con la reducción de quiebres de stock.
+
+| **# Orden** | **ID** | **Epic** | **Título de la User Story** | **Descripción de la User Story** |
+|---:|---|---|---|---|
+| 1 | US24 | EP07 Landing Page | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. |
+| 2 | US25 | EP07 Landing Page | Conocer los beneficios de PetStock | Como visitante de una tienda de mascotas, quiero conocer los beneficios principales de PetStock, para comprender cómo puede mejorar el control de productos, ventas e inventario de mi negocio. |
+| 3 | US26 | EP07 Landing Page | Conocer cómo funciona PetStock | Como visitante, quiero conocer los pasos principales para usar PetStock, para entender cómo podría incorporar la plataforma en la gestión diaria de mi tienda. |
+| 4 | US27 | EP07 Landing Page | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer el precio y las características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. |
+| 5 | US28 | EP07 Landing Page | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar vistas previas de PetStock, para conocer de forma concreta cómo se verán el Dashboard y los módulos principales antes de registrarme. |
+| 6 | US29 | EP07 Landing Page | Consultar preguntas frecuentes | Como visitante con dudas sobre PetStock, quiero consultar preguntas frecuentes, para resolver inquietudes antes de decidir si deseo registrarme o probar la plataforma. |
+| 7 | US30 | EP07 Landing Page | Acceder a información adicional | Como visitante, quiero visualizar el pie de página con información complementaria y enlaces de navegación, para identificar datos adicionales de PetStock y moverme fácilmente por el sitio. |
+| 8 | US31 | EP07 Landing Page | Visualizar la Landing Page en diferentes dispositivos | Como visitante que navega desde una computadora, tablet o celular, quiero visualizar correctamente el Landing Page de PetStock, para acceder a su contenido y call-to-action sin dificultades según mi dispositivo. |
+| 9 | US01 | EP01 Identity & Access | Crear cuenta | Como administrador de tienda, quiero crear una cuenta en PetStock, para gestionar las operaciones de mi negocio desde la plataforma. |
+| 10 | US02 | EP01 Identity & Access | Iniciar sesión | Como administrador de tienda, quiero iniciar sesión en mi cuenta, para acceder a las funcionalidades de gestión de mi negocio. |
+| 11 | US04 | EP02 Product & Inventory Management | Registrar producto | Como administrador de tienda, quiero registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. |
+| 12 | US06 | EP02 Product & Inventory Management | Consultar inventario | Como administrador de tienda, quiero consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. |
+| 13 | US07 | EP02 Product & Inventory Management | Recibir alerta de stock mínimo | Como administrador de tienda, quiero recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. |
+| 14 | US08 | EP03 Sales & Purchases | Registrar venta | Como administrador de tienda, quiero registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. |
+| 15 | US11 | EP04 Customer & Supplier Management | Registrar proveedor | Como administrador de tienda, quiero registrar la información de mis proveedores, para facilitar el proceso de reposición. |
+
+![Product Backlog de PetStock en Jira](assets/product-backlog/product-backlog-petstock.png)
+
+El Product Backlog se encuentra gestionado en Jira y puede revisarse en el siguiente enlace:
+
+[Ver Product Backlog de PetStock en Jira](https://avalladolid.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&atlOrigin=eyJpIjoiZDZjYmFmN2UyMzgzNDFkM2IyZmQ5NzhhMTkyYTY2ZDMiLCJwIjoiaiJ9)
+
+# Capítulo IV: Product Design
+
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style Guidelines
+
+**Branding**
+
+<p align="center">
+  <img src="assets/general-style-guidelines/logo-petstock.png" alt="General Style Guidelines">
+</p>
+
+- **Identidad:**
+
+   PetStock representa la combinación entre el mundo de las mascotas y la gestión tecnológica de pequeños negocios. La marca proyecta cercanía, organización, confianza y eficiencia, dirigida principalmente a propietarios y administradores de pequeñas tiendas de productos para mascotas que buscan mejorar el control de sus productos, ventas e inventario mediante una solución web sencilla y accesible.
+
+- **Paleta de Colores:**
+  
+   - **#ED6B15 (Naranja):** Es el color principal de PetStock. Transmite energía, dinamismo y cercanía, características relacionadas con el mundo de las mascotas y con una herramienta que busca hacer más ágiles las actividades diarias de una tienda.
+   - **#825D38 (Marrón):** Representa confianza, estabilidad y naturalidad. Se relaciona con el cuidado de las mascotas y aporta una sensación cálida y confiable a la identidad de la marca.
+   - **#E5D0B1 (Beige):** Aporta calidez, tranquilidad y cercanía, funcionando como un color complementario que suaviza la identidad visual y permite generar interfaces más amigables.
+   - **#F8F5EF (Crema):** Se utiliza principalmente como fondo, proporcionando limpieza, claridad y neutralidad, facilitando la lectura de la información dentro de la plataforma.
+   - **#2F2019 (Marrón oscuro):** Representa seriedad, profesionalismo y estabilidad. Se emplea para textos y elementos de contraste, reforzando el carácter tecnológico y empresarial de PetStock.
+
+- **Simbolismo:**
+
+   - **Huella de mascota:** Representa directamente el mundo de las mascotas, estableciendo una conexión visual inmediata con el público objetivo de PetStock.
+   - **Cajas de productos:** Representan el inventario y la gestión de productos de las tiendas para mascotas, uno de los principales problemas que busca solucionar la plataforma.
+   - **Combinación de ambos elementos:** La unión de la huella con las cajas representa la integración entre el negocio de productos para mascotas y la gestión tecnológica del inventario, transmitiendo que PetStock permite administrar el negocio de manera más organizada y eficiente.
+
+- **Mensaje de la marca:**
+
+   - **Organización y control:** PetStock comunica una solución que permite centralizar la información de productos, ventas e inventario, facilitando que los propietarios tengan un mayor control sobre las operaciones de su negocio.
+   - **Eficiencia y simplicidad:** La identidad visual busca transmitir que administrar una tienda para mascotas no tiene que ser complicado. PetStock busca reducir el tiempo dedicado a tareas administrativas y facilitar las actividades diarias.
+   - **Confianza y cercanía:** Los tonos marrones y beige transmiten estabilidad y calidez, mientras que el naranja aporta energía y dinamismo. En conjunto, representan una herramienta confiable, accesible y cercana a las necesidades de las pequeñas tiendas.
+   - **Prevención de quiebres de stock:** La representación de las cajas de productos también se relaciona con el propósito de mantener un mejor control de las existencias y detectar productos que necesitan reposición.
+
+- **Aplicación del branding:**
+
+    - **Sitio web y aplicación:** Uso de una interfaz limpia y amigable, empleando el naranja como color de acción y los tonos crema y beige como fondos, acompañados de iconos relacionados con mascotas, productos, ventas e inventario.
+    - **Redes sociales y presentaciones digitales:**
+    Aplicación consistente del logotipo, la paleta de colores y elementos gráficos relacionados con mascotas y gestión empresarial para mantener una identidad reconocible.
+    - **Identidad visual corporativa:** Uso estratégico del logotipo y colores corporativos en tarjetas de presentación, presentaciones empresariales, documentos, material promocional e imágenes de perfil utilizadas para contactar con clientes.
+
+**Tipografía**
+
+La tipografía de PetStock cumple un papel importante en la expresión de la identidad de nuestra marca, transmitiendo una sensación de cercanía, claridad, confianza y modernidad. La marca utiliza una combinación tipográfica que busca representar una plataforma tecnológica amigable y fácil de utilizar, brindando comodidad y una lectura clara tanto en la landing page como en la aplicación web.
+
+- **Tipografía del Logo y Títulos:**
+   Para el logo y los títulos de PetStock se ha elegido la tipografía Poppins, perteneciente a la familia Poppins Font Family. Esta tipografía comunica modernidad, dinamismo y profesionalismo, características que se relacionan con una plataforma digital orientada a facilitar la gestión de las tiendas de mascotas. Sus formas geométricas y equilibradas permiten que el nombre de PetStock tenga una apariencia clara, actual y fácil de reconocer. Además, su estructura permite destacar títulos y elementos importantes de la interfaz sin perder la sensación de cercanía que busca transmitir la marca.
+
+   <p align="center">
+   <img src="assets/general-style-guidelines/poppins.PNG" alt="General Style Guidelines">
+   </p>
+
+- **Tipografía de Texto Regular:**
+   Para los textos de la landing page y de la aplicación se ha elegido la tipografía Roboto, perteneciente a la familia Roboto Font Family, debido a su excelente legibilidad y claridad en interfaces digitales. Esta tipografía permite que la información relacionada con productos, ventas, inventario y proveedores pueda ser visualizada de manera cómoda y ordenada. Asimismo, su diseño sencillo y funcional refuerza los valores de practicidad, accesibilidad y eficiencia que PetStock busca ofrecer a los pequeños negocios de productos para mascotas.
+
+   <p align="center">
+   <img src="assets/general-style-guidelines/roboto.PNG" alt="General Style Guidelines">
+   </p>
+
+**Colores**
+
+Es importante elegir los colores para las plataformas digitales adecuadamente, ya que así se asegura que la experiencia del usuario sea placentera y agradable. Por ello, nos aseguramos de que la paleta de colores seleccionada de PetStock refleje la esencia de la startup, transmitiendo cercanía, confianza, modernidad y dinamismo tanto en la landing page como en nuestra aplicación.
+
+<p align="center">
+   <img src="assets/general-style-guidelines/colores.PNG" alt="General Style Guidelines">
+</p>
+
+**Espaciado**
+
+- Interlineado: 140%-160% para facilitar la lectura de la información en pantallas móviles.
+- Padding en botones: 12px vertical × 20px horizontal como mínimo, permitiendo que los botones sean cómodos de tocar y fáciles de identificar.
+- Margen entre secciones: 24px-32px para mantener una separación visual adecuada sin desperdiciar espacio en la pantalla del celular.
+- Espaciado entre elementos: 8px-16px para mantener una jerarquía visual clara entre títulos, textos, campos y componentes.
+- Grid base: Utilizar un grid de 8px para mantener consistencia y alineación en los diferentes elementos de la aplicación.
+
+Esto transmite un espaciado limpio, ordenado y funcional, facilitando la navegación desde dispositivos móviles. Además, permite que PetStock mantenga una interfaz sencilla y accesible, acorde con su objetivo de simplificar la gestión de productos, ventas e inventario para las tiendas de mascotas
+
+Tono de Comunicación y Lenguaje Aplicado
+
+- El tono de PetStock es cercano, amigable, claro, práctico, moderno y confiable, diseñado para generar confianza en los dueños y administradores de tiendas de mascotas, utilizando un lenguaje sencillo y fácil de comprender.
+- PetStock acompaña a los usuarios en sus actividades diarias de gestión, comunicando de manera clara y directa cómo la tecnología puede facilitar el control de productos, ventas, inventario y proveedores.
+- El lenguaje se mantiene simple y funcional, priorizando la acción y la facilidad de uso. Se evita el exceso de tecnicismos y se apuesta por una comunicación directa que permita a los usuarios comprender rápidamente las funciones de la plataforma.
+- El estilo comunicativo está alineado con los principios de PetStock: simplificar, organizar y facilitar la gestión de las tiendas de mascotas.
+
+
+
+
+### 4.1.2. Web Style Guidelines
+
+**Responsive Design Principles**
+
+El diseño web responsive orienta el desarrollo a considerar diseños alternos para mejorar la experiencia del usuario desde diferentes plataformas.
+
+* Mobile-First Approach: Se presta atención a las formas en que las personas usan los dispositivos móviles colocando el contenido primero y considerando gestos y movimientos del mundo real.
+
+* Adaptabilidad: La web se adapta a todo tipo de dispositivos de forma sencilla, intuitiva y agradable, optimizando la usabilidad.
+
+**Design Principles**
+
+La interfaz de PetStock se fundamenta en el principio de diseño C.R.A.P
+
+* Alignment : Cada elemento en el diseño está visualmente unido a otro permitiendo consistencia para que nada se sienta fuera de lugar.
+
+* Repetition: Se repiten patrones establecidos como estilos tipográficos o bordes específicos para generar consistencia visual.
+
+**Usability & Component States**
+
+Los componentes y estados de la interfaz se rigen por las heurísticas de usabilidad de para asegurar un alto grado de aceptación
+
+* Libertad y control del usuario: En caso de elegir una opción por error, el usuario dispone de un tipo de salida de emergencia visible para abandonar ese estado lo que le permite deshacer o cancelar acciones
+
+* Consistencia y estándares: Se mantiene un estándar visual para que los elementos interactivos sean lo mismo y consistentes en diferentes pantallas.
+Reconocer antes que recordar: Las acciones y opciones como botones de guardado son siempre visibles para evitar que la persona que atienda tenga que recordar información entre distintas secciones
+
+**Form Elements & Getting Input**
+
+Los elementos de formulario en PetStock aplican patrones de Getting input para agilizar las tareas de gestión de inventario y ventas.
+
+* Prevención de errores: Los formularios integran funcionalidades como el autocomplete para ayudar a que el usuario no tenga que escribir toda la palabra como cuando busque un producto o el cliente y no se equivoque
+
+* Diseño Limpio: Las pantallas de registro no contienen información innecesaria, ya que cada elemento extra compite con la información relevante y disminuye su visibilidad
+
+**Navigation Patterns**
+
+Los patrones de navegación otorgan armonía a la presentación y evitan inconsistencias que malogren la experiencia del usuario.
+
+* Global Navigation: Se emplea la etiqueta semántica HTML `<nav>`para contener y estructurar los enlaces de navegación principales, ya sea en menús horizontales o laterales
+
+* Encabezados: Se utiliza la etiqueta `<header>` para definir los encabezados de las secciones y orientar al usuario dentro del Dashboard o los reportes.
+
+* Footer: Se emplea la etiqueta `<footer>` para contener información secundaria en la parte inferior de la página
+
+## 4.2. Information Architecture
+
+La Arquitectura de la Información (IA) es todo lo relacionado a la organización de la información de forma clara y lógica.El diseño de PetStock se fundamenta en comprender como las personas estructuran la información de forma mental y evitar someterlas a una sobrecarga cognitiva durante su jornada
+
+### 4.2.1. Organization Systems
+
+El sistema de organización de PetStock define cómo se dispone el contenido para alinearse con los modelos mentales de los administradores y dueños de tienda, es decir, las suposiciones que tienen en mente antes de interactuar con la aplicación 
+
+* Taxonomy : Es la disposición en partes claramente articuladas y define el método de organización. En PetStock usamos los conceptos para definir las cosas por similitud
+
+* Organización por tópicos: Agrupa las funciones por la naturaleza operativa del negocio como inventario y ventas
+
+* Organización cronológica : Ordena las vistas basadas en el tiempo como el "Historial de compras" de clientes o las métricas de "Ventas por día"
+
+* Clasificación multiple: Asumimos que diferentes personas pueden usar diferentes formas  para encontrar la información. Entonces hacemos que el inventario permita búsquedas alfabéticas, por categorías o filtros directos de stock
+
+* Choreography: Se decide la ubicación de los grupos según la importancia que tiene
+
+* Jerarquía visual : Está directamente conectada a la legibilidad del contenido. Considerando los scanning patterns, los usuarios dan un vistazo rápido para ver si la información les interesa antes de leer toda la página. Por esto,el resumen financiero y las alertas de stock crítico encabezan el Dashboard
+
+* Principios Gestalt : Agrupamos elementos visuales según su similitud, si están cerca o lejos y explorando la percepción visual de los elementos en relación unos con otros
+
+* Patrones de diseño: Las tablas de datos como el catálogo de inventario o el historial de ventas  aplican un Patrón F , mientras que el Landing Page utiliza un Patrón Z para guiar visualmente al usuario hacia los botones de registro
+
+### 4.2.2. Labeling Systems
+
+Para el ecosistema de PetStock las etiquetas aplican estrictamente las heurísticas de diseño para garantizar la comprensión
+
+* La aplicación utiliza el lenguaje del usuario con expresiones y palabras que le resulten familiares en el entorno del comercio minorista como precio venta o stock mínimo
+
+* Los usuarios no tienen porqué saber que diferentes palabras, situaciones o acciones significan lo mismo, por lo que se mantienen convenciones inmutables en toda la plataforma
+
+* Las acciones y opciones de navegación se hacen completamente visibles para que el usuario no tenga que recordar información entre distintas secciones
+
+* Las etiquetas de los botones son claras,útiles y libres de jerga indicando una acción directa como "Registrar venta"
+
+### 4.2.3. SEO Tags and Meta Tags
+
+Para garantizar el posicionamiento en buscadores y una estructuración correcta del código se configuran etiquetas HTML especializadas. El elemento HTML `<head>` se utiliza como un contenedor para toda la metainformación no visible del sitio
+
+>Landing Page
+
+* Title (`<title>`): PetStock | Software de Gestión de Inventario y Ventas para Pet Shops
+
+* Autor (`<meta name="author" content="Nexora">`): Identifica formalmente a Nexora como la empresa que desarrolla la plataforma
+
+* Charset (`<meta charset="UTF-8">`): Se usa para especificar que conjunto de caracteres se está usando en este caso los caracteres latinos así garantizamos que la tipografía se vea bien
+
+* Meta Description (`<meta name="description" content="...">`): Define la descripción de la página para los motores de búsqueda ejemplo:"Sistema para tiendas de mascotas en Perú. Administra tu inventario…"
+
+* Meta Keywords (`<meta name="keywords" content="...">`): Especifica las palabras clave para el posicionamiento puede ser "software tienda mascotas, sistema inventario pet shop,gestión de proveedores, PetStock".
+
+>Aplicacion web 
+
+* Title (`<title>`): Dashboard - Mi Negocio | PetStock.
+
+* Para salvaguardar la privacidad de la información importante de las tiendas .En el entorno interno usamos etiquetas meta de tipo robots con los valores noindex, nofollow, evitando que los motores de búsqueda rastreen los datos financieros de los clientes.
+
+### 4.2.4. Searching Systems
+
+### Landing Page
+
+La Landing Page de PetStock no incorpora una búsqueda textual. La página comunica la propuesta de valor de la plataforma y dirige al visitante hacia el registro, por lo que su contenido se organizará mediante secciones y enlaces ancla. Incluir un buscador en esta etapa añadiría una acción innecesaria para un visitante que todavía está conociendo el producto.
+
+### Web Application
+
+La Web Application incorpora búsquedas dentro de los módulos donde el administrador necesita localizar información operativa. Cada búsqueda se mantiene dentro de su contexto para evitar resultados confusos. Por ejemplo, un término ingresado en Stock busca productos, mientras que el mismo término en Historial de compras busca clientes.
+
+### Búsqueda de productos con bajo stock
+
+**Dónde:** módulo Stock.
+
+**Tipo:** búsqueda textual por nombre de producto.
+
+**Resultado:** la pantalla filtra los productos mostrados en las secciones "Alerta crítica" y "Stock bajo". Cada resultado presenta el nombre del producto, categoría, stock actual, stock mínimo requerido y acción de reposición.
+
+**Comportamiento:** los resultados se actualizan al ingresar el nombre del producto. El administrador puede identificar rápidamente un alimento, accesorio o artículo de cuidado que necesita reposición.
+
+**Estado sin resultados:** "No encontramos productos con ese nombre." Se muestra la acción "Limpiar búsqueda" para recuperar la lista completa.
+
+**Estado vacío:** "No tienes productos con bajo stock." Este mensaje comunica que los productos registrados se encuentran por encima de su mínimo configurado.
+
+La búsqueda responde a la necesidad de los administradores de detectar productos faltantes sin revisar anaqueles, cuadernos o archivos de Excel. Para las tiendas de alta rotación, permite ubicar rápidamente alimentos y productos de venta frecuente. Para las boutiques especializadas, permite revisar artículos con menor movimiento que requieren atención.
+
+### Búsqueda de clientes e historial de compras
+
+**Dónde:** módulo Historial de compras.
+
+**Tipo:** búsqueda textual por nombre del cliente.
+
+**Resultado:** se filtran los registros de compra asociados al cliente ingresado. Cada registro muestra el nombre del cliente, fecha u hora de compra, productos adquiridos y cantidad registrada. El botón "Ver detalle" permite revisar la información completa de la operación.
+
+**Comportamiento:** el usuario puede consultar compras recientes de un cliente sin revisar anotaciones físicas ni depender de la memoria. Esta función resulta útil para las boutiques especializadas, donde el historial permite conocer compras previas y brindar una atención más personalizada.
+
+**Estado sin resultados:** "No encontramos compras para este cliente." El sistema muestra el botón "Limpiar búsqueda".
+
+**Estado vacío:** "Todavía no se registran compras de clientes."
+
+### Selección de proveedor
+
+**Dónde:** pantalla Seleccionar proveedor, accesible desde una alerta de stock crítico.
+
+**Tipo:** selección contextual, sin búsqueda textual en la primera versión del MVP.
+
+**Resultado:** el sistema muestra proveedores disponibles para el producto que requiere reposición. Cada tarjeta presenta el nombre del proveedor, categorías que abastece, número de contacto y una etiqueta de frecuencia cuando corresponde.
+
+**Comportamiento:** el administrador selecciona un proveedor y presiona "Contactar proveedor". PetStock genera una solicitud con el producto y la cantidad sugerida, de acuerdo con el flujo de reposición mostrado en el mock-up.
+
+No se incorpora una búsqueda de proveedores en esta primera versión porque la pantalla presenta una lista breve y relacionada directamente con el producto crítico seleccionado. Si el número de proveedores registrados aumenta en futuras iteraciones, se podrá añadir una barra de búsqueda por nombre comercial o categoría de productos.
+
+### Filtros de reportes
+
+**Dónde:** módulo Reportes.
+
+**Tipo:** consulta visual mediante indicadores y agrupaciones predefinidas. La pantalla no requiere búsqueda textual como elemento principal.
+
+**Información mostrada:** ventas por día, total semanal, productos más vendidos, productos con menor movimiento, cantidad de productos disponibles y categorías registradas.
+
+La vista prioriza información resumida para que el administrador identifique tendencias sin revisar manualmente cada venta. El listado de productos con menor movimiento responde especialmente a las necesidades del segmento de tiendas premium, que requiere detectar productos que permanecen demasiado tiempo en inventario.
+
+### Principios del sistema de búsqueda
+
+**Búsqueda por contexto:** cada módulo busca únicamente la información relacionada con su función. Stock busca productos y el Historial de compras busca clientes.
+
+**Filtros no destructivos:** las búsquedas modifican solamente la información mostrada en pantalla. No eliminan ni editan registros de productos, clientes, proveedores o ventas.
+
+**Feedback claro:** PetStock diferencia entre una lista sin registros y una búsqueda sin coincidencias. De esta manera, el administrador entiende si debe registrar información o cambiar el criterio ingresado.
+
+**Acciones cercanas al resultado:** los resultados permiten continuar con la tarea principal. Desde una alerta de stock, el usuario puede reponer; desde el historial, puede revisar el detalle de una compra.
+
+**Diseño adaptable a móvil:** las barras de búsqueda utilizan un placeholder directo, como "Buscar producto..." y "Buscar cliente...", para que el usuario entienda qué información puede localizar.
+
+### 4.2.5. Navigation Systems
+
+### Landing Page
+
+La Landing Page utilizará navegación de una sola página mediante enlaces ancla. El encabezado permitirá desplazarse hacia las secciones principales de la página, como propuesta de valor, beneficios, funcionamiento de PetStock y registro. El logo llevará al inicio de la Landing Page y el call-to-action principal dirigirá al visitante a la pantalla de creación de cuenta.
+
+Esta estructura permite que un dueño o administrador conozca primero cómo PetStock puede ayudarle a controlar su tienda antes de iniciar el registro.
+
+### Web Application
+
+La Web Application está diseñada principalmente para dispositivos móviles. Por este motivo, la navegación debe permitir que el administrador llegue a las funciones frecuentes con pocos pasos, especialmente durante una venta o cuando necesita revisar una alerta de stock.
+
+El Dashboard funciona como pantalla principal después del inicio de sesión. Desde esta vista, el usuario revisa el estado general de su tienda y accede a acciones rápidas, como añadir un producto, registrar una venta o ver productos con bajo stock.
+
+### Navegación global
+
+La navegación principal se ubicará en una barra inferior persistente con los siguientes accesos:
+
+- Dashboard
+- Stock
+- Ventas
+- Historial
+- Perfil
+
+El módulo de Reportes se podrá acceder desde Dashboard mediante la tarjeta de reportes semanales y desde la opción correspondiente dentro del menú de Perfil o una sección adicional de navegación. Esta decisión evita saturar la barra inferior y mantiene visibles las tareas que se realizan con mayor frecuencia.
+
+La opción activa se distinguirá mediante color, icono y etiqueta visible. En la versión final se utilizará el naranja de PetStock para resaltar la opción seleccionada y los botones de acción principales.
+
+### Navegación desde Dashboard
+
+El Dashboard presenta un resumen del negocio y funciona como punto de acceso a las tareas operativas:
+
+- "Añadir producto" dirige al formulario Registrar producto.
+- "Registrar venta" dirige al formulario de venta.
+- "Ver productos bajo stock" dirige al módulo Stock.
+- La tarjeta de reportes semanales dirige al módulo Reportes.
+- El acceso de perfil dirige a Mi perfil y configuración.
+
+Las acciones rápidas reducen pasos para actividades que forman parte de la rutina diaria de una tienda de mascotas.
+
+### Navegación jerárquica
+
+Las pantallas secundarias incluyen una flecha de retorno en la parte superior izquierda. Esta acción devuelve al usuario a la vista anterior sin perder el contexto de la tarea.
+
+El flujo de reposición mantiene una secuencia directa:
+
+**Stock → Producto con alerta crítica → Reponer → Seleccionar proveedor → Contactar proveedor**
+
+En este recorrido, el administrador puede revisar el producto crítico, elegir un proveedor relacionado y generar el contacto de reposición. La pantalla muestra el producto y la cantidad sugerida para evitar que el usuario pierda el contexto durante la selección.
+
+### Navegación de perfil
+
+El módulo Mi perfil reúne acciones de cuenta y configuración:
+
+- Editar perfil
+- Idioma
+- Notificaciones
+- Datos del negocio
+- Centro de ayuda
+- Cerrar sesión
+
+La pantalla Editar perfil permite modificar nombres, apellidos, correo electrónico, contraseña y fotografía. Al guardar cambios, el sistema confirma la actualización; al cancelar, el usuario vuelve a Mi perfil sin aplicar modificaciones.
+
+### Criterios de navegación
+
+**Punto de inicio claro:** después de iniciar sesión o registrarse, el sistema lleva al Dashboard. Desde esta vista, el administrador identifica el estado de su negocio y las tareas pendientes.
+
+**Rutas cortas para tareas frecuentes:** registrar una venta, añadir un producto y revisar alertas de stock se encuentran a pocos toques desde el Dashboard.
+
+**Ubicación visible:** cada pantalla presenta un título claro, como "Registrar producto", "Reportes", "Historial de compras" o "Productos con bajo stock". La opción activa de la barra inferior refuerza dónde se encuentra el usuario.
+
+**Consistencia visual:** las acciones principales usan el mismo estilo de botón y mantienen la misma ubicación cuando es posible. Por ejemplo, los botones "Guardar producto", "Registrar venta" y "Contactar proveedor" aparecen en la parte inferior de la pantalla para facilitar su uso en dispositivos móviles.
+
+**Prevención de pérdida de información:** los formularios de registro de producto, venta y edición de perfil incluyen una acción de cancelar. Antes de abandonar una pantalla con cambios no guardados, la implementación deberá solicitar confirmación al usuario.
+
+## 4.3. Landing Page UI Design
+
+### 4.3.1. Landing Page Wireframe
+
+<p align="center">
+  <img src="assets/wireframes/landscape-wireframe-landing.png" alt="Landing Page Wireframe - Landscape">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/header-wireframe-mobile.png" alt="Header Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section1-wireframe-mobile.png" alt="Section 1 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section2-wireframe-mobile.png" alt="Section 2 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section3-wireframe-mobile.png" alt="Section 3 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section4-wireframe-mobile.png" alt="Section 4 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section5-wireframe-mobile.png" alt="Section 5 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section6-wireframe-mobile.png" alt="Section 6 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section7-wireframe-mobile.png" alt="Section 7 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section8-wireframe-mobile.png" alt="Section 8 Wireframe - Mobile">
+</p>
+
+<p align="center">
+  <img src="assets/wireframes/section9-wireframe-mobile.png" alt="Section 9 Wireframe - Mobile">
+</p>
+
+### 4.3.2. Landing Page Mock-up.
+
+<p align="center">
+  <img src="assets/landing-mockup/landing-mockup.png" alt="Landing Page Mock-up">
+</p>
+
+## 4.4. Web Applications UX/UI Design
+
+### 4.4.1. Web Applications Wireframes
+
+<p align="center">
+  <img src="assets/web-applications/wireframe-1.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-2.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-3.PNG" alt="Wireframe">
+</p>
+<p align="center">
+  <img src="assets/web-applications/wireframe-4.PNG" alt="Wireframe">
+</p>
+
+### 4.4.2. Web Applications Wireflow Diagrams
+
+**Wireflow 01 - Registro de cuenta en PetStock**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero crear una cuenta en PetStock para gestionar las operaciones de mi negocio desde una sola plataforma.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-01.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Eduardo ingresa a PetStock y visualiza la pantalla de bienvenida. Al no contar con una cuenta, selecciona la opción “Regístrate”, que lo dirige a la pantalla de “Crear cuenta”. En esta pantalla, completa el formulario con sus datos personales y acepta los términos y condiciones. Luego, selecciona el botón “Registrarse” para completar el proceso. Una vez realizado el registro correctamente, Eduardo ingresa a la aplicación y visualiza el dashboard principal de PetStock, desde donde puede acceder a las diferentes funcionalidades de gestión de su negocio.
+
+**Wireflow 02 - Registro de Productos**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero de manera sencilla poder agregar productos para tener una mejor idea de mi inventario disponible, evitar el desabastecimiento mediante alertas de stock mínimo
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-02.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Comienza en el Dashboard donde el usuario identifica la necesidad de actualizar su stock y presiona "+ Añadir producto". Esto lo redirige al formulario para ingresar los datos esenciales del ítem, su precio, existencias y el umbral de stock mínimo. Luego, asigna un proveedor responsable y define si el producto estará activo para la venta directa en caja. Al presionar "Guardar producto", el sistema procesa la información y retorna automáticamente a la pantalla principal. Finalmente, el Dashboard actualiza el indicador de stock total y muestra el nuevo ítem registrado en la sección de actividades recientes.
+
+**Wireflow 03 - Alerta de Stock Bajo** 
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas,quiero identificar rápidamente los productos con bajo stock y solicitar su reposición a un proveedor,para evitar quedarme sin inventario crítico y mantener la atención continua a mis clientes.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-03.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo inicia en el Dashboard, donde el usuario nota la alerta de "3 alertas" en el botón "Ver productos bajo stock" e ingresa para revisar su inventario. En la vista de Stock, identifica los ítems en Alerta Crítica (como el alimento de 15 kg con solo 2 unidades) y presiona el botón "+ Reponer". Esto lo dirige a la pantalla de Seleccionar proveedor, donde el sistema le presenta la lista de distribuidores disponibles y sugiere la cantidad exacta a pedir. Al elegir un proveedor y presionar "Contactar proveedor", la app genera la solicitud para enviársela directamente por WhatsApp o llamada. Finalmente, el proceso asegura un reabastecimiento rápido y manual sin realizar cargos o pedidos automáticos sin supervisión.
+
+**Wireflow 04 - Mi Perfil** 
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero acceder a la configuración de mi cuenta para consultar y editar mis datos personales o de perfil, para mantener mi información de contacto actualizada, garantizar la seguridad de mi acceso y gestionar las credenciales de mi negocio de forma rápida. 
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-04.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo inicia en el Dashboard, donde el usuario presiona la opción "Perfil" ubicada en la esquina superior derecha para gestionar sus datos. En la pantalla Mi perfil, visualiza su información general (nombre, rol y correo) junto a la configuración del sistema, y selecciona el botón "Editar perfil". Esto despliega el formulario de edición, donde puede modificar su foto, nombres, apellidos, correo electrónico o actualizar su contraseña. Finalmente, tras hacer los cambios requeridos, presiona "Guardar cambios" para aplicar las actualizaciones y retornar con su información al día.
+
+**Wireflow 05 - Reportes** 
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas,quiero visualizar reportes detallados sobre el rendimiento semanal de mis ventas, los días con mayores ingresos y los productos con mayor y menor rotación, para saber exactamente qué días vendo más y qué productos valen la pena mantener en stock, optimizando las decisiones de compra de mi catálogo especializado.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-05.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo comienza en el Dashboard, donde la dueña da clic en la tarjeta de "Reportes de la semana". Esto la lleva a la vista detallada de Reportes, donde consulta el gráfico de Ventas por día y detecta rápidamente cuál fue su día con mayor ingreso (ej. Viernes). Más abajo, analiza el top de Productos más vendidos para identificar lo más popular, así como la sección de Menos movimiento para detectar qué artículos estancados no conviene reabastecer. Finalmente, cuenta con métricas generales de su inventario y la opción de "Descargar reporte en PDF" para respaldar la información de su negocio. 
+
+**Wireflow 06 - Ventas**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas,quiero registrar las ventas realizadas en mi tienda física e identificar a los clientes recurrentes asociados a sus compras, para mantener mi inventario actualizado al instante y llevar un historial detallado del comportamiento de compra de mis clientes
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-06.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** Selecciona el botón de acción rápida "Registrar venta". Esto la dirige a la pantalla de Venta, donde selecciona el producto (ej. Alimento Premium para Perro), define la cantidad vendida (ej. 2 unidades), ingresa el nombre del cliente (ej. Eduardo Pérez) y valida la fecha de la transacción. Tras revisar el bloque de Resumen y presionar "Registrar venta", la app procesa la transacción y descuenta las unidades del inventario general. Finalmente, mediante el acceso a "Historial de compras", puede revisar el registro cronológico de todas las transacciones recientes, visualizar el total de registros e identificar el detalle de compras de sus clientes habituales.
+
+**Wireflow 07 - Cierre de Sesión**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero cerrar sesión en mi cuenta desde el menú de perfil de manera rápida y segura, para proteger la información comercial y los datos de inventario de mi negocio cuando no esté utilizando la aplicación.
+
+<p align="center">
+  <img src="assets/web-applications/wireflow-07.PNG" alt="Wireflow">
+</p>
+
+**Explicación del flujo:** El flujo se origina en el Dashboard, donde la dueña selecciona la opción "Perfil" situada en el menú superior para acceder a los ajustes del usuario. Al entrar a la vista Mi perfil, se desplaza hasta la parte inferior de la pantalla y presiona el botón principal "Cerrar sesión". El sistema procesa la salida, invalida la sesión activa para garantizar la seguridad de la cuenta y redirige de inmediato a la pantalla de Inicio de Sesión (login), dejando la plataforma lista para que vuelva a ingresar con su correo y contraseña o mediante sus redes sociales cuando lo requiera. 
+
+### 4.4.3. Web Applications Mock-ups
+
+<p align="center">
+  <img src="assets/web-applications/mockup-01.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-02.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-03.PNG" alt="Mock-ups">
+</p>
+
+<p align="center">
+  <img src="assets/web-applications/mockup-04.PNG" alt="Mock-ups">
+</p>
+
+### 4.4.4. Web Applications User Flow Diagrams
+
+**User Flow 01 - Registro de cuenta en PetStock**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero crear una cuenta en PetStock para gestionar las operaciones de mi negocio desde una sola plataforma.
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-01.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Eduardo inicia la aplicación y presiona "Regístrate" desde la pantalla de bienvenida. Completa el formulario de registro con sus datos personales y credenciales, marca la casilla de "Acepto términos y condiciones" y presiona el botón "Registrarse". Al cumplir los requisitos, el sistema valida la cuenta y lo redirige automáticamente al Dashboard principal para empezar a operar. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-01.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Eduardo completa el formulario pero no acepta los términos y condiciones, el sistema lo dirige a la pantalla de Registro con error, donde despliega un mensaje de advertencia visual y mantiene al usuario en el formulario hasta que corrija la omisión y pueda reintentar el envío. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-01.PNG" alt="User flow">
+</p>
+
+**User flow 02 - Registro de Productos**
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas, quiero de manera sencilla poder agregar productos para tener una mejor idea de mi inventario disponible, evitar el desabastecimiento mediante alertas de stock mínimo
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-02.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Eduardo ingresa al Dashboard y presiona el botón + Añadir producto. Completa los campos obligatorios del formulario (Nombre del producto, Categoría, Precio venta, Stock disponible y Stock mínimo para la alerta). Al presionar Guardar producto, el sistema valida la información, procesa el registro y lo redirige de nuevo al Dashboard, donde se actualiza el contador de Total stock y aparece la confirmación en la sección de Actividades recientes. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-02.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Eduardo presiona Guardar producto dejando vacíos campos con asterisco (*) como el Nombre, Precio o Stock, la condicional detiene el proceso (¿Campos obligatorios válidos? = No). Se muestra la pantalla de Registro con errores resaltando en rojo las alertas de "Campo requerido", manteniendo al usuario en la misma vista hasta que los complete correctamente. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-02.PNG" alt="User flow">
+</p>
+
+**User flow 03 - Alerta de Stock Bajo** 
+**User Persona:** Eduardo Salazar 
+**User Goal:** Como dueño de una tienda especializada en alimentos para mascotas,quiero identificar rápidamente los productos con bajo stock y solicitar su reposición a un proveedor,para evitar quedarme sin inventario crítico y mantener la atención continua a mis clientes. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-03.PNG" alt="User flow">
+</p>
+
+**Happy Paths:**Eduardo revisa el Dashboard y nota el botón Ver productos bajo stock marcado con alertas. Al hacer clic, accede a la lista de Productos con bajo stock, identifica el ítem en Alerta Crítica y presiona + Reponer. En la pantalla Seleccionar proveedor, elige la distribuidora sugerida de la lista y presiona Contactar proveedor
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-03.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si presiona Contactar proveedor sin haber marcado ninguna de las opciones de la lista, el sistema detiene el avance, mantiene el botón inactivo o muestra una alerta roja solicitando seleccionar un proveedor válido.
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-03.PNG" alt="User flow">
+</p>
+
+**User Flow 04 - Mi Perfil**
+**User Persona:** Ximena Diaz 
+**User Goal:** Como dueña de una tienda boutique para mascotas, quiero acceder a la configuración de mi cuenta para consultar y editar mis datos personales o de perfil, para mantener mi información de contacto actualizada, garantizar la seguridad de mi acceso y gestionar las credenciales de mi negocio de forma rápida. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-dg-04.PNG" alt="User flow">
+</p>
+
+**Happy Paths:** Ximena ingresa al Dashboard y hace clic en la opción Perfil ubicada en la esquina superior derecha. En la vista Mi perfil, presiona el botón Editar perfil para desplegar el formulario. Modifica sus datos (nombre, apellidos o correo electrónico) con la información requerida y presiona Guardar cambios. El sistema procesa la solicitud, muestra una notificación emergente confirmando "Perfil actualizado con éxito" 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-happ-04.PNG" alt="User flow">
+</p>
+
+**Unhappy Paths:** Si Ximena intenta guardar los cambios dejando campos obligatorios en blanco o ingresa un formato de correo o contraseña no válido, el nodo de decisión detiene la operación . El sistema despliega la pantalla de Editar perfil con error, marcando las cajas de texto en rojo con mensajes como "El nombre no puede estar vacío" o "Correo electrónico inválido", impidiendo el guardado hasta que complete correctamente todos los campos. 
+
+<p align="center">
+  <img src="assets/web-applications/userflow-unha-04.PNG" alt="User flow">
+</p>
+
+## 4.5. Web Applications Prototyping
+
+<p align="center">
+  <img src="assets/web-applications/image.png" alt="Prototyping">
+</p>
+
+**Link:** [Ver Web Applications Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQATnjuRokKCTJJs3lWyE2zZAW5hQlqcLaL2sl79xHvx9Gg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RYg5y9)
+
+## 4.6. Domain-Driven Software Architecture
+
+### 4.6.1. Design-Level Event Storming
+
+El equipo realizó una sesión de Design-Level EventStorming, partiendo de los hallazgos obtenidos en el Big Picture EventStorming . El objetivo de la sesión fue profundizar el modelado del dominio del problema, identificando con mayor nivel de detalle los Commands, Domain Events y Aggregates asociados a cada proceso de negocio de PetStock.
+Como resultado de la sesión, se identificaron 8 Bounded Contexts de negocio a partir de los dominios pivotales detectados: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. A estos se sumó un noveno Bounded Context de soporte técnico, Identity & Access Management, necesario para el control de acceso al sistema.
+
+
+<img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
+
+
+<img width="940" height="519" alt="image" src="https://github.com/user-attachments/assets/48fb82e6-844f-4282-86f6-24f18d0bf7a5" />
+
+Durante el refinamiento, se identificaron además policies de integración entre contextos: cuando ocurre el evento MinimumStockThresholdReached en el contexto de Inventory, se habilita el comando PlacePurchaseOrder en Purchasing; cuando ocurre SaleCompleted en Sales & Checkout, se disparan los eventos StockAdjusted en Inventory y SaleLinkedToCustomerProfile en Customer Relationship Management; y cuando ocurre SalesShiftConcluded en Cash Management, se genera el evento CashBalanceSummaryGenerated. 
+
+
+### 4.6.2. Software Architecture Context Diagram
+
+<img width="940" height="344" alt="image" src="https://github.com/user-attachments/assets/3f188a2f-0449-4cb4-a422-de044b54c1f2" />
+
+El diagrama muestra a PetStock como sistema central, rodeado por sus dos actores: el Administrador de tienda, quien gestiona las operaciones diarias del negocio, y el Visitante, quien consulta información a través del Landing Page. Adicionalmente, se identifica la integración con WhatsApp Business API como sistema externo de terceros, utilizado para el envío de solicitudes de reposición a proveedores.
+
+
+### 4.6.3. Software Architecture Container Diagrams
+
+<img width="940" height="365" alt="image" src="https://github.com/user-attachments/assets/761317b2-5c24-4826-84a0-560003642652" />
+
+El diagrama descompone a PetStock en 4 containers independientes, cada uno constituyendo una unidad de despliegue autónoma: el Landing Page, la Web Application, el RESTful API y la Base de Datos. La Web Application se comunica con el API mediante peticiones JSON sobre HTTPS, mientras que el API es responsable de la persistencia de datos y de la integración con el servicio externo de WhatsApp Business API. 
+
+### 4.6.4. Software Architecture Components Diagrams
+
+
+En esta sección se detalla el diseño orientado a objetos de la aplicación web PetStock, estructurado mediante diagramas de clases por capas (*Presentation*, *Application*, *Domain* e *Infrastructure*) para cada uno de los Bounded Contexts definidos en la arquitectura orientada a dominios (DDD).
+
+<img width="938" height="1164" alt="image" src="https://github.com/user-attachments/assets/dc6ac10b-8008-47ac-8cf8-c58c7c697eb7" />
+
+
+El diagrama presenta la descomposición interna del container RESTful API en 9 Controllers, cada uno alineado con un Bounded Context identificado en el Design-Level EventStorming (Identity & Access, Catalog & Supplier, Purchasing & Receiving, Inventory & Stock, Sales & Checkout, Cash Management, Customer, Business Analytics y Profile & Configuration). Adicionalmente, se identifican 2 Services de aplicación: el Auth Service, encargado de la validación de credenciales y generación de tokens JWT, y el Notification Service, responsable de la comunicación con WhatsApp Business API. La capa de Repositories, implementada con Entity Framework Core, centraliza el acceso a la Base de Datos para todos los Controllers. 
+
+## 4.7. Software Object-Oriented Design
+
+### 4.7.1. Class Diagrams
+
+Los diagramas de clases representan la estructura interna, los atributos, los métodos y las relaciones de las entidades, stores, componentes y servicios de la API que sustentan la lógica de negocio de PetStock.
+
+#### Bounded Context 1: Identity & Access Management
+Agrupa los componentes, stores, entidades y servicios encargados de la autenticación, el registro de cuentas y la gestión de sesiones de los usuarios en la plataforma.
+
+![Identity & Access Bounded Context](assets/ClassDiagrams/Bounded-Context1.png)
+
+#### Bounded Context 2: Catalog & Supplier Management
+Administra el catálogo general de productos, la clasificación por categorías y el registro de los proveedores encargados de abastecer la tienda.
+
+![Catalog & Supplier Bounded Context](assets/ClassDiagrams/Bounded-Context2.png)
+
+#### Bounded Context 3: Inventory & Stock Monitoring
+Controla el estado actual de las existencias, supervisa los niveles de inventario en tiempo real y gestiona las alertas automáticas ante umbrales de stock mínimo.
+
+![Inventory & Stock Monitoring Bounded Context](assets/ClassDiagrams/Bounded-Context3.png)
+
+#### Bounded Context 4: Sales & Checkout Management
+Gestiona el flujo transaccional del punto de venta (POS), permitiendo procesar el carrito de compras, calcular totales y actualizar automáticamente el inventario.
+
+![Sales & Checkout Bounded Context](assets/ClassDiagrams/Bounded-Context4.png)
+
+#### Bounded Context 5: Customer Management (CRM)
+Administra la información de los compradores y el registro detallado del historial de compras para ofrecer un seguimiento personalizado a los clientes frecuentes.
+
+![Customer Management Bounded Context](assets/ClassDiagrams/Bounded-Context5.png)
+
+#### Bounded Context 6: Purchasing & Receiving Management
+Controla la creación de órdenes de compra para reabastecimiento y la recepción física de mercancía para actualizar las entradas en el almacén.
+
+![Purchasing & Receiving Bounded Context](assets/ClassDiagrams/Bounded-Context6.png)
+
+#### Bounded Context 7: Cash Shift Management
+Gestiona los procesos de apertura y cierre de turnos de caja, así como el cuadre y conciliación del efectivo frente a los montos registrados en el sistema.
+
+![Cash Management Bounded Context](assets/ClassDiagrams/Bounded-Context7.png)
+
+#### Bounded Context 8: Business Analytics & Reporting
+Se encarga de procesar los datos históricos para generar reportes analíticos de ventas, identificar los productos de mayor y menor rotación y permitir su exportación a PDF.
+
+
+
+![Business Analytics & Reporting Bounded Context](assets/ClassDiagrams/Bounded-Context8.png)
+
+#### Bounded Context 9: Profile & Configuration Management
+Administra los datos personales del perfil del usuario, las preferencias del sistema y la configuración general de los datos del negocio.
+
+![Profile & Configuration Bounded Context](assets/ClassDiagrams/Bounded-Context9.png)
+
+## 4.8. Database Design
+
+### 4.8.1. Database Diagrams
+El diseño de la base de datos de PetStock se ha estructurado de forma relacional y normalizada, reflejando de manera directa las entidades, atributos y relaciones definidos en el modelado por dominios (DDD) y los diagramas de clases del sistema. La arquitectura relacional integra 19 tablas principales que permiten gestionar de forma centralizada la seguridad, el catálogo de productos, el inventario en tiempo real, el punto de venta (POS), la gestión de clientes (CRM), las órdenes de compra a proveedores, las operaciones de caja y los reportes analíticos del negocio.
+
+A continuación, se presenta el diagrama completo de la base de datos dividido en tres secciones para una mejor visualización y detalle de todas sus tablas y llaves foráneas:
+
+![Database Diagram Parte 1](assets/Database-Diagrams/DataBase1.png)
+
+![Database Diagram Parte 2](assets/Database-Diagrams/DataBase2.png)
+
+![Database Diagram Parte 3](assets/Database-Diagrams/DataBase3.png)
+
+## Capítulo V: Product Implementation, Validation & Deployment
+
+### 5.1. Software Configuration Management
+
+#### 5.1.1. Software Development Environment Configuration
+Con el objetivo de garantizar un desarrollo fluido, estandarizado y consistente entre todos los miembros del equipo, se ha definido el siguiente entorno de desarrollo para el ecosistema PetStock:
+
+| Actividad | Producto | Propósito / Uso |
+| :--- | :--- | :--- |
+| **Project Management** | Trello | Gestión del Product Backlog, planificación de Sprints y seguimiento de tareas. |
+| **Requirements Management** | UXPressia | Elaboración de artefactos de descubrimiento (User Personas, Empathy Maps, Journey Maps) para la definición de requisitos. |
+| **UX/UI Design** | Figma | Diseño de la guía de estilo, prototipos de baja fidelidad (wireframes) y alta fidelidad (mockups). |
+| **Class Diagrams & Database Design** | VS Code (erd-editor) | Elaboración de diagramas de clases y diseño de la base de datos relacional de PetStock. |
+| **Software Development (Backend)** | JetBrains Rider / Visual Studio | IDE para el desarrollo de Web Services bajo estilo RESTful utilizando ASP.NET Core y C#. |
+| **Software Development (Frontend)** | JetBrains WebStorm / VS Code | IDE para el desarrollo de la Web Application con Vue.js Framework y JavaScript/TypeScript. |
+| **Software Development (Landing Page)** | Visual Studio Code | IDE para el desarrollo de la Landing Page estática con HTML5, CSS y JavaScript. |
+| **Version Control** | GitHub | Alojamiento de repositorios y gestión de versiones aplicando GitFlow y Conventional Commits. |
+| **Documentation** | Markdown | Documentación técnica del reporte del proyecto. |
+
+#### 5.1.2. Source Code Management
+El código fuente del proyecto se gestionará utilizando **Git** como sistema de control de versiones y **GitHub** como plataforma de alojamiento, bajo una organización colaborativa. Se adoptará un enfoque estructurado que favorezca la modularidad y el despliegue continuo mediante repositorios y ramas organizadas.
+
+**Estrategia de Ramas (GitFlow)**
+Se implementará un flujo de trabajo basado en GitFlow con el objetivo de garantizar la estabilidad y trazabilidad del desarrollo:
+* **`main`**: Rama principal que contiene únicamente código estable, probado y desplegado en producción. Cada versión liberada deberá estar debidamente etiquetada.
+* **`develop`**: Rama de integración continua donde se consolidan los avances del desarrollo antes de su liberación a producción.
+* **`feature/[nombre]`**: Ramas temporales creadas a partir de `develop` para el desarrollo de nuevas funcionalidades o User Stories (ej. `feature/chapter-5-changes`). Una vez finalizadas, se integran nuevamente a `develop` mediante un Pull Request (PR).
+* **`hotfix/[nombre]`**: Ramas destinadas a la corrección de errores críticos detectados en producción (`main`), que requieren una solución inmediata.
+
+**Convención de Commits (Conventional Commits)**
+Para mantener un historial claro, consistente y facilitar la generación automática de *changelogs*, todos los commits deberán seguir el estándar de **Conventional Commits**:
+
+* **`feat`**: Nueva funcionalidad 
+  *(ej. `feat(inventory): add low stock alert notification policy`)*
+* **`fix`**: Corrección de errores 
+  *(ej. `fix(auth): resolve token expiration on client devices`)*
+* **`docs`**: Cambios en documentación 
+  *(ej. `docs(chapter5): add software configuration management sections`)*
+* **`style`**: Cambios de formato que no afectan la lógica del código (espacios, indentación, etc.)
+
+### 5.1.3. Source Code Style Guide & Conventions
+
+Para el desarrollo de la solución, el equipo adopta estrictamente el idioma inglés para toda la nomenclatura del código fuente como variables, clases, métodos, archivos y comentarios en los lenguajes utilizados: HTML, CSS, JavaScript y C#. Además, se adoptan las siguientes convenciones estándar de la industria para asegurar la calidad y mantenibilidad del software:
+* HTML y CSS: Se aplican las directrices de la "HTML Style Guide and Coding Conventions" y la "Google HTML/CSS Style Guide" para garantizar una estructura semántica, selectores eficientes y un código visualmente estructurado.
+
+* JavaScript: Se siguen las mejores prácticas establecidas en la "Google JavaScript Style Guide", las "MDN JavaScript guidelines" y la "W3C JavaScript Style Guide" para mantener la consistencia en la lógica y la manipulación del DOM.
+* Frontend Framework: Para el desarrollo de las aplicaciones web se adopta la "Vue Style Guide"priorizando las reglas esenciales y fuertemente recomendadas para la estructuración de componentes.
+* Web Services: La construcción de la API RESTful se rige por las "C# Coding Conventions" y las "Microsoft ASP.NET Core Coding Guidelines", estandarizando el uso de PascalCase para clases/métodos y camelCase para variables.
+* Especificaciones de Requisitos: La redacción de los criterios de aceptación y escenarios se estandariza utilizando las "Gherkin Conventions for Readable Specifications" en el formato Given-When-Then.
+
+### 5.1.4. Software Deployment Configuration
+
+El proceso de despliegue de la solución está diseñado para asegurar que, a partir de los repositorios de código fuente, se logre la publicación satisfactoria de cada uno de los productos digitales que componen la arquitectura.
+
+**1.Landing Page**
+
+* Entorno de destino: GitHub Pages
+
+* Proceso de despliegue: Los cambios aprobados (HTML, CSS e imágenes) se integran en la rama principal del repositorio. GitHub detecta automáticamente el push o merge y ejecuta su flujo interno para publicar los archivos estáticos en los servidores globales. La verificación final se realiza accediendo directamente al enlace público generado
+
+**2.Frontend Web Applications**
+
+* Entorno de destino: Plataforma de alojamiento en la nube optimizada para Single Page Applications
+
+* Proceso de despliegue: Al registrarse un merge en la rama principal del repositorio del Frontend, se activa un webhook que inicia el pipeline de integración continua. La plataforma instala las dependencias mediante el gestor de paquetes de Node.js, ejecuta el comando de compilación del proyecto Vue y publica los artefactos optimizados de la carpeta /dist. Se configuran reescrituras de URL para redirigir todo el tráfico al index.html y permitir la correcta funcionalidad del enrutador
+
+**3.Web Services** 
+
+* Entorno de destino: Plataforma como Servicio (PaaS) compatible con .NET conectada a un gestor de base de datos relacional
+
+* Proceso de despliegue: Tras la validación e integración de código en la rama principal del repositorio de Web Services, se dispara un flujo de automatización como en Github Actions. Este pipeline restaura las dependencias ,compila la solución C# ejecuta las pruebas y publica los binarios generados . Los artefactos se inyectan en el servidor de producción, donde Entity Framework Core aplica automáticamente las migraciones pendientes en la base de datos
+
+## 5.2. Landing Page, Services & Applications Implementation
+
+### 5.2.1. Sprint 1
+
+En esta sección registramos y explicamos el avance del equipo durante el Sprint 1, tanto en términos del desarrollo del producto en este caso el Landing Page,como en el trabajo colaborativo. El objetivo central de esta iteración fue la construcción y despliegue del sitio web estático que presenta el modelo de negocio de PetStock
+
+#### 5.2.1.1. Sprint Planning 1
+
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 1, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 1 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-10 |
+| **Time** | 8:00 PM - 9:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | No hubo sprint anterior |
+| **Sprint n – 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Create the landing page:<br>Our goal is to develop a clear, responsive, and functional landing page that effectively presents the main benefits of our platform. We expect the page to provide a professional first impression and increase trust among potential customers and visitors, while encouraging them to register or request a demo. This will be validated once the landing page is deployed through GitHub Pages and visited by users. |
+| **Sprint n Velocity** | 10 |
+| **Sum of Story Points** | 10 |
+
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+Durante el **Sprint 1**, el equipo identificó cinco aspectos principales relacionados con el desarrollo de la **Landing Page de PetStock**. Cada aspecto reúne un conjunto de tareas y elementos relacionados, representando una unidad de trabajo dentro de la iteración. La asignación de responsables y colaboradores se realizó considerando las fortalezas de cada integrante y se encuentra alineada con las actividades definidas en el Sprint Backlog.
+
+Los aspectos considerados para este sprint son: Navbar & Hero, Benefits Section, How It Works & Pricing, System Preview, y FAQ & Footer.
+
+| Team Member (Last Name, First Name) | GitHub Username<br>Leader (L) / Collaborator (C) | Navbar & Hero<br>Leader (L) / Collaborator (C) | Benefits Section<br>Leader (L) / Collaborator (C) | How It Works & Pricing<br>Leader (L) / Collaborator (C) | System Preview<br>Leader (L) / Collaborator (C) | FAQ & Footer<br>Leader (L) / Collaborator (C) |
+|---|---|---|---|---|---|---|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | C | L | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | L | C | C | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | L | C |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | C | L |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | C | L | C | C |
+
+
+
+#### 5.2.1.3. Sprint Backlog 1
+
+El objetivo principal del Sprint 1 fue desarrollar la Landing Page de PetStock, incluyendo las principales secciones informativas orientadas a los segmentos de clientes definidos para la plataforma. 
+
+A continuación, se presenta una captura del board de seguimiento utilizado durante el sprint, junto con el URL público. 
+
+**Board**
+
+[PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+![Sprint 1](assets/sprint/sprint%201.PNG)
+
+| Sprint # | Sprint 1 | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / InProcess / ToReview / Done)** |
+| US24 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US24 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US25 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
+| US26 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US27 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US28 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US29 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US30 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| LandingPage | feature/Beneficios-MarielMendoza | e365f94 | chore: add HTML base structure for team layout | Mendoza Moreano, Mariel Lucero | 15/09/2026 |
+| LandingPage | feature/Beneficios-MarielMendoza | 8c7472a | chore: add general CSS stylesheet with global variables and utilities | Mendoza Moreano, Mariel Lucero | 16/09/2026 |
+| LandingPage | feature/Beneficios-MarielMendoza | e958c56 | feat: implement benefits section layout and styling | Mendoza Moreano, Mariel Lucero | 16/09/2026 |
+| LandingPage | feature/seccionVistasPrevias-ArturoValladolid | 2a63643 | feat: Add a previews section with screenshots of the app | Valladolid Jiménez, Arturo Fernando | 16/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 1f7713b | feat: agrega estructura html de como funciona y precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 2c2b07c | feat: agrega estilos de como funciona | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | b006fa4 | feat: agrega estilos de precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | f93cde1 | fix: mejora copys de como funciona y precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 5c61137 | style: agrega animacion hover a tarjetas | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | feature/ComoFunciona-y-precios-Stanley-Gutierrez | 642e565 | chore: elimina estilo no utilizado en precios | Gutierrez Tume, Stanley Jeremy | 17/09/2026 |
+| LandingPage | FAQ-and-footer-PierreMendoza | c3613bf | feat(landing): add FAQ and footer sections | Mendoza Boluarte, Pierre Alessandro | 17/09/2026 |
+| LandingPage | feature/landing-changes | a3e7d75 | feat: fix navbar layout and modularize styles for landing page | Quispe Palomino, Tony Jhunior | 18/09/2026 |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+
+A continuación se presenta la evidencia de ejecución del Sprint 1, correspondiente a las secciones del Landing Page implementadas hasta el cierre del sprint.
+
+**Navbar y Hero**
+
+Sección de navegación principal y presentación inicial del Landing Page.
+
+<img width="1894" height="506" alt="image" src="https://github.com/user-attachments/assets/670b36c3-0b0f-44d9-b66b-52df52548de8" />
+
+**Beneficios**
+
+Sección que muestra las principales ventajas de usar PetStock para la gestión de tiendas de mascotas.
+
+<img width="1880" height="759" alt="image" src="https://github.com/user-attachments/assets/50bf7e94-7aa9-499e-997e-f632193b7766" />
+
+**Cómo Funciona**
+
+Sección que explica en 5 pasos el proceso de uso de la plataforma, con interacción hover en cada tarjeta.
+
+<img width="1894" height="440" alt="image" src="https://github.com/user-attachments/assets/d85faa4a-9f88-4a01-8d32-60a4b82ba794" />
+
+**Precios**
+
+Sección que presenta el plan único de suscripción (S/ 39.90/mes) con 14 días de prueba gratuita.
+
+<img width="1897" height="663" alt="image" src="https://github.com/user-attachments/assets/ee268202-4a18-4411-b858-32cbfa9a66b1" />
+
+**Vistas Previas**
+
+Sección que muestra mockups de la aplicación (Dashboard, Alertas, Selección de proveedor).
+
+<img width="1885" height="621" alt="image" src="https://github.com/user-attachments/assets/2e6e0776-db2a-41dd-a0f9-9cffc425b56c" />
+
+**FAQ y Footer**
+
+Sección de preguntas frecuentes y pie de página con información de contacto.
+
+<img width="1887" height="754" alt="image" src="https://github.com/user-attachments/assets/7f3b5b99-48e4-47d5-8671-433d788517ee" />
+
+**Video de navegación del Landing Page:**
+[Ver video de navegación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQDhAJi2ld7hR4rfZ5NP2ElMAbzhDNbnNYwEhgfHKSyapgI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aTMgUv)
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo concentró el desarrollo en la implementación de la Landing Page de PetStock. El alcance de esta iteración incluyó las secciones Navbar, Hero, Benefits, How It Works, Pricing, System Preview, FAQ y Footer, además de la adaptación responsive para distintos tamaños de pantalla.
+
+Debido a que el incremento desarrollado corresponde a una página informativa estática, en este sprint no se implementaron Web Services, endpoints REST ni mecanismos de persistencia de datos.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Como resultado del Sprint 1, se realizó el despliegue de la Landing Page de PetStock mediante GitHub Pages. La publicación permite acceder al incremento desarrollado desde un navegador, sin requerir una instalación local ni configuración adicional por parte del visitante.
+
+**Landing Page desplegada:** https://1asi0730-2620-8074-petstock.github.io/LandingPage/
+
+La versión publicada incluye las secciones desarrolladas durante el sprint: presentación de la propuesta de valor, beneficios de PetStock, explicación del flujo de uso, plan de suscripción, vistas previas de la plataforma, preguntas frecuentes y pie de página. También incorpora estilos responsive para que el contenido pueda visualizarse en diferentes tamaños de pantalla.
+
+La siguiente evidencia muestra la Landing Page publicada en GitHub Pages:
+
+![Landing Page de PetStock desplegada en GitHub Pages](assets/LandingPage/LandingPage-Deployed.png)
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, organizamos el trabajo de la Landing Page de PetStock por secciones funcionales. Esta división nos permitió avanzar de forma paralela sin que todos modificáramos el mismo bloque de código al mismo tiempo. La planificación se realizó de forma virtual. En esa reunión definimos como prioridad publicar una primera versión funcional de la Landing Page y organizamos las tareas en el tablero de seguimiento del equipo. El tablero permitió visualizar el estado de cada tarea y confirmar que los elementos del Sprint Backlog llegaran a `Done` antes del cierre de la iteración.
+
+Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión ayudó a separar los cambios de cada integrante y a mantener un historial de commits asociado a las secciones implementadas. Por ejemplo, se registraron avances independientes para beneficios, vistas previas, precios, funcionamiento de la plataforma y FAQ/Footer.
+
+Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
+
+# Conclusiones
+
+- El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
+
+# Recomendaciones
+
+- Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
+
+# Bibliografia
+
+Instituto Nacional de Estadística e Informática. (2025, 2 de julio). *INEI incluirá la tenencia de mascotas en hogares en sus mediciones a partir de julio*. Gobierno del Perú. https://www.gob.pe/institucion/inei/noticias/1193475-inei-incluira-la-tenencia-de-mascotas-en-hogares-en-sus-mediciones-a-partir-de-julio
+
+Salazar Herrada, E. (2026, 29 de junio). *Perú ejecuta su primer censo nacional de mascotas: ¿Cómo evoluciona el portafolio de alimentos para animales de compañía?* Infobae. https://www.infobae.com/peru/2026/06/29/peru-ejecuta-su-primer-censo-nacional-de-mascotas-como-evoluciona-el-portafolio-de-alimentos-para-animales-de-compania/
+
+
+
+# Anexo
+
+**Link :** [Video de exposición AV 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQDfy8O8fQcXT7tPTdZ9Q7MVAaYAWVEP2djFOZJK5r0Y_54?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6Ik1yRmlsZXNMaW5rQ29weSJ9fQ&e=QssXfS)
+
+**Link:** [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8074-PetStock/LandingPage.git)
