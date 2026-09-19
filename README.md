@@ -211,9 +211,9 @@ Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
 <br><br>
-Integrante 5<br>
+Quispe Palomino, Tony Jhunior<br>
 av1:<br>
-blablabla
+Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema, los segmentos objetivo, las hipótesis y los resultados que esperábamos validar con el proyecto. También participé en el análisis competitivo, comparando las características y propuestas de otras alternativas relacionadas con la gestión de tiendas de mascotas. A partir de este análisis, aporté en la definición de estrategias y tácticas para orientar la propuesta del equipo y diferenciar la solución frente a las opciones existentes. Asimismo, colaboré en el diseño de las entrevistas, organizando las preguntas y criterios necesarios para obtener información relevante de los usuarios. Finalmente, desarrollé los puntos 4.7.1 y 4.8.1, además de participar en la elaboración de la Navbar y el Hero de la Landing Page, procurando que estos elementos mantuvieran relación con los objetivos del producto y la propuesta definida por el equipo.
 </th>
 <th>
 av1:<br>
@@ -241,9 +241,9 @@ Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.
     
-Integrante 5<br>
+Quispe Palomino, Tony Jhunior<br>
 av1:<br>
-blablabla
+Participé en la planificación y desarrollo de actividades relacionadas con la investigación del usuario, el análisis competitivo y la construcción de la Landing Page. El Lean UX Canvas y el diseño de entrevistas ayudaron al equipo a establecer objetivos comunes y organizar la información que debíamos validar. También contribuí con los puntos de análisis competitivo, estrategias y tácticas, así como con los apartados 4.7.1 y 4.8.1, siguiendo la distribución de tareas acordada. En la parte visual, apoyé en la elaboración de la Navbar y el Hero, revisando con el equipo que estos elementos fueran coherentes con la estructura y el mensaje principal de la Landing Page. Cumplí con las actividades asignadas y coordiné la integración de mis aportes con los demás entregables del proyecto.
 </th>
 <th>
 av1:<br>
