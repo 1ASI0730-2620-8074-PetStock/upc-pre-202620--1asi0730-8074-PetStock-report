@@ -1052,23 +1052,30 @@ Este objetivo se relaciona con centralizar las operaciones del negocio en una so
 
 El Product Backlog reúne y ordena los User Stories de PetStock según el valor que aportan al negocio y la necesidad de los segmentos objetivo. La priorización inicia con la propuesta de valor y las funcionalidades que permiten administrar productos e inventario, debido a que estas se relacionan directamente con la reducción de quiebres de stock.
 
-| **# Orden** | **ID** | **Epic** | **Título de la User Story** | **Descripción de la User Story** |
-|---:|---|---|---|---|
-| 1 | US24 | EP07 Landing Page | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. |
-| 2 | US25 | EP07 Landing Page | Conocer los beneficios de PetStock | Como visitante de una tienda de mascotas, quiero conocer los beneficios principales de PetStock, para comprender cómo puede mejorar el control de productos, ventas e inventario de mi negocio. |
-| 3 | US26 | EP07 Landing Page | Conocer cómo funciona PetStock | Como visitante, quiero conocer los pasos principales para usar PetStock, para entender cómo podría incorporar la plataforma en la gestión diaria de mi tienda. |
-| 4 | US27 | EP07 Landing Page | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer el precio y las características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. |
-| 5 | US28 | EP07 Landing Page | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar vistas previas de PetStock, para conocer de forma concreta cómo se verán el Dashboard y los módulos principales antes de registrarme. |
-| 6 | US29 | EP07 Landing Page | Consultar preguntas frecuentes | Como visitante con dudas sobre PetStock, quiero consultar preguntas frecuentes, para resolver inquietudes antes de decidir si deseo registrarme o probar la plataforma. |
-| 7 | US30 | EP07 Landing Page | Acceder a información adicional | Como visitante, quiero visualizar el pie de página con información complementaria y enlaces de navegación, para identificar datos adicionales de PetStock y moverme fácilmente por el sitio. |
-| 8 | US31 | EP07 Landing Page | Visualizar la Landing Page en diferentes dispositivos | Como visitante que navega desde una computadora, tablet o celular, quiero visualizar correctamente el Landing Page de PetStock, para acceder a su contenido y call-to-action sin dificultades según mi dispositivo. |
-| 9 | US01 | EP01 Identity & Access | Crear cuenta | Como administrador de tienda, quiero crear una cuenta en PetStock, para gestionar las operaciones de mi negocio desde la plataforma. |
-| 10 | US02 | EP01 Identity & Access | Iniciar sesión | Como administrador de tienda, quiero iniciar sesión en mi cuenta, para acceder a las funcionalidades de gestión de mi negocio. |
-| 11 | US04 | EP02 Product & Inventory Management | Registrar producto | Como administrador de tienda, quiero registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. |
-| 12 | US06 | EP02 Product & Inventory Management | Consultar inventario | Como administrador de tienda, quiero consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. |
-| 13 | US07 | EP02 Product & Inventory Management | Recibir alerta de stock mínimo | Como administrador de tienda, quiero recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. |
-| 14 | US08 | EP03 Sales & Purchases | Registrar venta | Como administrador de tienda, quiero registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. |
-| 15 | US11 | EP04 Customer & Supplier Management | Registrar proveedor | Como administrador de tienda, quiero registrar la información de mis proveedores, para facilitar el proceso de reposición. |
+| Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| **1** | **US01** | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. | **1** |
+| **2** | **US02** | Conocer los beneficios de PetStock | Como visitante del segmento de alimentos para mascotas, quiero conocer los beneficios de la plataforma, para comprender cómo optimiza el control de productos de alta rotación. | **1** |
+| **3** | **US03** | Conocer cómo funciona PetStock | Como visitante, quiero conocer el paso a paso del uso de la plataforma, para entender cómo incorporar el registro de productos y ventas en mi rutina diaria. | **1** |
+| **4** | **US04** | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer los precios y características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. | **2** |
+| **5** | **US05** | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar demostraciones del sistema, para conocer de forma concreta el Dashboard y los módulos de gestión antes de registrarme. | **1** |
+| **6** | **US06** | Consultar preguntas frecuentes | Como visitante con dudas sobre la plataforma, quiero consultar preguntas frecuentes, para resolver inquietudes técnicas y operativas antes de crear una cuenta. | **1** |
+| **7** | **US07** | Acceder a información adicional y pie de página | Como visitante, quiero disponer de enlaces institucionales en el pie de página, para identificar datos de contacto y términos legales de PetStock. | **1** |
+| **8** | **US08** | Navegar en diferentes dispositivos | Como visitante que navega desde dispositivo móvil o escritorio, quiero una experiencia adaptable, para consultar el contenido y llamados a la acción sin restricciones de formato. | **2** |
+| **9** | **US09** | Registro de cuenta con términos y condiciones | Como dueño de negocio, quiero registrar una cuenta con mis datos personales e identificación del negocio, para acceder al entorno de gestión de PetStock. | **3** |
+| **10** | **US10** | Iniciar sesión | Como dueño de negocio, quiero ingresar mis credenciales de acceso, para autenticarme e ingresar a la plataforma de administración. | **2** |
+| **11** | **US11** | Modificar perfil de negocio | Como dueña de tienda boutique, quiero actualizar mis datos de contacto o contraseña desde la configuración, para mantener mi información comercial actualizada y segura. | **2** |
+| **12** | **US12** | Cerrar sesión de forma segura | Como dueño de negocio, quiero cerrar sesión desde el menú de perfil, para proteger la información del negocio al finalizar la jornada. | **1** |
+| **13** | **US13** | Registrar nuevo producto en inventario | Como dueño de tienda de alimentos, quiero registrar un producto especificando nombre, categoría, precio, stock inicial y stock mínimo, para controlar las existencias disponibles. | **3** |
+| **14** | **US14** | Editar datos de producto | Como dueño de negocio, quiero modificar el precio o existencias de un producto existente, para mantener actualizado el catálogo ante variaciones del mercado. | **2** |
+| **15** | **US15** | Desactivar producto del catálogo | Como dueño de negocio, quiero cambiar el estado de un producto a inactivo, para impedir que se comercialice temporalmente sin eliminar su historial. | **2** |
+| **16** | **US16** | Identificación de productos con stock bajo | Como dueño de tienda de alimentos, quiero ver el contador de alertas en el Dashboard y la lista de ítems en estado crítico, para identificar desabastecimientos antes de quedar sin stock. | **5** |
+| **17** | **US17** | Contactar proveedor para reposición | Como dueño de negocio, quiero seleccionar un proveedor de la lista sugerida y la cantidad de reabastecimiento, para iniciar la solicitud por llamada o WhatsApp. | **3** |
+| **18** | **US18** | Registrar venta directa | Como dueña de tienda boutique, quiero registrar los productos y la cantidad vendida en mostrador, para descontar automáticamente las existencias del inventario general. | **5** |
+| **19** | **US19** | Asignar cliente recurrente a la venta | Como dueña de tienda boutique, quiero ingresar el nombre del cliente durante el registro de la venta, para vincular la transacción a su historial de consumo. | **2** |
+| **20** | **US20** | Consultar historial de transacciones de clientes | Como dueña de negocio, quiero consultar la lista cronológica de ventas pasadas por cliente, para conocer sus hábitos de compra y recomendar productos. | **3** |
+| **21** | **US21** | Visualizar gráfico de rendimiento semanal | Como dueña de tienda boutique, quiero revisar el gráfico de ingresos por día y los rankings de rotación, para conocer qué días vendo más y qué productos debo mantener. | **5** |
+| **22** | **US22** | Descargar reporte operativo en PDF | Como dueño de negocio, quiero descargar un documento PDF con los indicadores del periodo, para guardar un archivo físico o digital del estado de mi tienda. | **2** |
 
 ![Product Backlog de PetStock en Jira](assets/product-backlog/product-backlog-petstock.png)
 
