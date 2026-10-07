@@ -2071,8 +2071,16 @@ A continuación, se presenta el resumen de la reunión de Sprint Planning del Sp
 | **Sprint n Velocity** | 32 |
 | **Sum of Story Points** | 32 |
 
-
 #### 5.2.2.2. Aspect Leaders and Collaborators
+A lo largo del Sprint 2, el equipo estableció las funcionalidades que formarían parte de la primera versión de la Web Application de PetStock, definiendo los procesos principales que serían desarrollados para atender las necesidades de gestión de las tiendas de mascotas. 
+
+| Team Member (Last Name, First Name) | GitHub Username | Login & Register | Catalog & Inventory | Profile | Analytics | Sales & Customer |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Mendoza Moreano, Mariel Lucero** | MarielLucero | **L** | C | C | C | C |
+| **Quispe Palomino, Tony Jhunior** | GonzJunior18p | C | C | C | C | **L** |
+| **Valladolid Jiménez, Arturo Fernando** | artuvall | C | C | **L** | C | C |
+| **Mendoza Boluarte, Pierre Alessandro** | pierreale2302 | C | C | C | **L** | C |
+| **Gutierrez Tume, Stanley Jeremy** | Stan-gt213891 | C | **L** | C | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2
 
