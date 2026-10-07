@@ -232,6 +232,8 @@ Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
+tp:<br>
+Asumí el desarrollo del aspecto profile en la Web Application, encargándome de las vistas Mi perfil, Editar perfil y Cerrar sesión, con un formulario validado y una salida segura de la sesión hacia el login. Conecté mi módulo con la sesión de IAM y, integré el frontend en un layout compartido con rutas protegidas. Documenté la evidencia de ejecución del Sprint 2 (punto 5.2.2.5) con capturas de las vistas implementadas y el video de navegación.<br><br>
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
@@ -269,6 +271,8 @@ Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitand
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
+tp:<br>
+Planifiqué mis tareas del Sprint 2 según el Sprint Backlog y las completé dentro del sprint (US11 y US12). Trabajé con ramas feature, pull requests hacia develop y commits convencionales, lo que permitió integrar mi módulo con los de mis compañeros sin perder su trabajo. Para facilitar el trabajo del equipo, dejé el frontend ejecutable con un solo comando (npm start) junto con la Fake API, y registré la evidencia del sprint para que todos pudieran revisarla.<br><br>
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
 Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
@@ -2058,7 +2062,78 @@ Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones fa
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-#### 5.2.2.5. Execution Evidence for Sprint Review
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2 se implementó la primera versión de la Web Application de PetStock, desarrollada con Vue 3, PrimeVue, Pinia y Vue Router. La aplicación está organizada por bounded contexts (IAM, Profile, Catalog, Inventory, Sales, Customer y Analytics) y consume los datos desde una Fake API (json-server) mediante Axios.
+
+Además de las vistas de cada módulo, se integró un layout compartido con barra lateral, rutas protegidas por sesión y soporte de idiomas español e inglés. Las vistas son responsive y, en dispositivos móviles, el menú lateral se convierte en un menú hamburguesa.
+
+
+##### Inicio de sesión
+
+Pantalla de acceso con correo y contraseña, y selector de idioma. Al autenticarse, el usuario es redirigido al dashboard. Las rutas internas están protegidas: si no hay sesión activa, la aplicación devuelve al usuario al login.
+
+![Vista de inicio de sesión](./assets/sprint-2/execution/01-login.png)
+
+##### Registro de cuenta
+
+Formulario de registro con validaciones visuales y casilla de aceptación de términos y condiciones.
+
+![Vista de registro de cuenta](./assets/sprint-2/execution/02-register.png)
+
+##### Dashboard
+
+Resumen operativo del negocio con el stock total, las ventas del día, el ingreso mensual, un gráfico semanal, los productos con stock bajo y la actividad reciente. Desde la barra lateral se accede a los demás módulos.
+
+![Vista del dashboard](./assets/sprint-2/execution/03-dashboard.png)
+
+##### Registro de producto
+
+Formulario para registrar un producto con nombre, categoría, descripción, precio, stock disponible, stock mínimo y proveedor, además del interruptor "Disponible para venta en caja". Valida los campos obligatorios antes de guardar.
+
+![Vista de registro de producto](./assets/sprint-2/execution/04-catalog.png)
+
+##### Productos con stock bajo
+
+Listado de alertas de los productos cuyo stock actual es igual o menor al mínimo. Cada tarjeta indica el nivel de alerta, el stock actual, el stock mínimo requerido y el porcentaje de cobertura. Incluye un buscador para filtrar los productos.
+
+![Vista de productos con stock bajo](./assets/sprint-2/execution/05-inventory.png)
+
+##### Registro de venta e historial
+
+Formulario de venta con selección de producto y cantidad (mostrando el stock disponible), cliente, fecha y método de pago (Efectivo, Tarjeta o Yape). El panel de resumen se actualiza con el total de la venta. Al registrarla, el stock del producto se descuenta automáticamente. La pestaña "Historial" lista las ventas realizadas y permite ver el detalle de cada una.
+
+![Vista de registro de venta](./assets/sprint-2/execution/06-sales.png)
+
+##### Reportes
+
+Vista de análisis con el gráfico de ventas por día, los productos más vendidos, los productos de baja rotación y el resumen del inventario general. Permite descargar el reporte en PDF.
+
+![Vista de reportes](./assets/sprint-2/execution/07-analytics.png)
+
+##### Mi perfil y edición de perfil
+
+Vista del perfil del usuario con sus datos y el menú de configuración. Desde esta vista se accede al formulario de edición, que valida los campos obligatorios y el formato del correo, y a la opción de cerrar sesión, que invalida la sesión activa y redirige al login.
+
+![Vista de mi perfil](./assets/sprint-2/execution/08-profile.png)
+
+![Vista de edición de perfil](./assets/sprint-2/execution/09-profile-edit.png)
+
+##### Versión responsive
+
+En dispositivos móviles, el menú lateral se oculta y se muestra mediante un botón de menú (hamburguesa).
+
+![Vista móvil del dashboard](./assets/sprint-2/execution/10-mobile-dashboard.png)
+
+##### Video de navegación
+
+El siguiente video muestra el recorrido por la aplicación: inicio de sesión, dashboard, registro de producto, registro de venta e historial, stock bajo, reportes, perfil y cierre de sesión.
+
+| Dato | Detalle |
+|---|---|
+| Archivo | `upc-pre-202620-1asi0730-8074-nexora-product-navigation-sprint-2.mp4` |
+| Duración | `<04:11>` |
+| Enlace | `<https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQD4ZczoQfgYRbbHXJ8M_tKzATJ_onSKkXU2CktineGGYIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=XAD2ga>` |
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
