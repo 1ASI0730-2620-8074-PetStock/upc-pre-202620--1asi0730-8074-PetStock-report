@@ -47,7 +47,7 @@ Gutierrez Tume Stanley Jeremy - U202118152
 
 <tr class="c7">
 <td class="c5" style="border: 1px solid black;">TB1</td>
-<td class="c5" style="border: 1px solid black;">24/04/2025</td>
+<td class="c5" style="border: 1px solid black;">24/09/2026</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
@@ -61,6 +61,24 @@ Gutierrez Tume Stanley Jeremy
 - Capítulo II: Requirements Elicitation & Analysis
 - Capítulo III: Requirements Specification
 - Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.2.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+<tr class="c7">
+
+</tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">TP</td>
+<td class="c5" style="border: 1px solid black;">7/10/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
