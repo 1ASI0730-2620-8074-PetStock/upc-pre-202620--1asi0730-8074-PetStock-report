@@ -199,6 +199,9 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
+tp:<br>
+Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
+<br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
@@ -218,6 +221,9 @@ Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema,
 <th>
 av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
+
+tp:<br>
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
 </th>
 </tr>
 <tr>
@@ -229,6 +235,9 @@ objetivos.</th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
+<br><br>
+tp:<br>
+Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -248,6 +257,9 @@ Participé en la planificación y desarrollo de actividades relacionadas con la 
 <th>
 av1:<br>
 Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
+
+tp:<br>
+Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
 </tr>
 </tbody>
 </table>
