@@ -2070,10 +2070,12 @@ Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones fa
 # Conclusiones
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
+- El desarrollo del Frontend para el sistema PetStock logró consolidar un ecosistema visual integral, moderno e intuitivo, orientado a optimizar la gestión operativa de tiendas de mascotas. A través de la maquetación y dinamización de sus pantallas principales, se construyó un flujo de usuario homogéneo y fluido que abarca todo el ciclo de negocio
 
 # Recomendaciones
 
 - Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
+- Se recomienda continuar con la evolución del sistema PetStock implementando un plan de pruebas de integración continua (CI/CD) para garantizar la estabilidad de las comunicaciones entre las pantallas del Frontend y la API del Backend. Asimismo, se aconseja optimizar el módulo de almacenamiento de imágenes e inventarios mediante servicios en la nube (como AWS S3 o Cloudinary) para acelerar la carga de los catálogos de productos y reportes, escalando la infraestructura hacia una PWA (Progressive Web App) que permita al personal operar el sistema de ventas desde dispositivos móviles en el punto de venta.
 
 # Bibliografia
 
