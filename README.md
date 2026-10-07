@@ -46,7 +46,7 @@ Gutierrez Tume Stanley Jeremy - U202118152
 </tr>
 
 <tr class="c7">
-<td class="c5" style="border: 1px solid black;">TB1</td>
+<td class="c5" style="border: 1px solid black;">AV1</td>
 <td class="c5" style="border: 1px solid black;">24/09/2026</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
@@ -69,7 +69,7 @@ Gutierrez Tume Stanley Jeremy
 </tr>
 
 <tr class="c7">
-<td class="c5" style="border: 1px solid black;">TP</td>
+<td class="c5" style="border: 1px solid black;">TB1</td>
 <td class="c5" style="border: 1px solid black;">7/10/2026</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
@@ -226,24 +226,28 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
-tp:<br>
+tb1:<br>
 Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
-tp:<br>
+tb1:<br>
 Asumí el desarrollo del aspecto profile en la Web Application, encargándome de las vistas Mi perfil, Editar perfil y Cerrar sesión, con un formulario validado y una salida segura de la sesión hacia el login. Conecté mi módulo con la sesión de IAM y, integré el frontend en un layout compartido con rutas protegidas. Documenté la evidencia de ejecución del Sprint 2 (punto 5.2.2.5) con capturas de las vistas implementadas y el video de navegación.<br><br>
+
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
+Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br><br>
 
-<br><br>
+tb1:<br>
+Realice el desarrollo del bounded context de Analytics para el Web Application-Frontend,la creacion del reporte para PetStock con grafico de barras e informacion que se actualiza gracias a otros modulos, luego conecte este a la parte principal de la aplicacion,tambien documente el historial de commits para el Frontend.<br><br>
+
+
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
 
-tp:<br>
+tb1:<br>
 Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, implementando el formulario de registro de productos con sus validaciones y la vista de alertas de stock bajo. Verifiqué de forma integral el funcionamiento de la Web Application junto con la Fake API embebida por el equipo, identificando y corrigiendo inconsistencias en el mapeo de datos entre los endpoints y las entidades del dominio (catálogo, inventario y proveedores). Coordiné con mis compañeros la integración de mis módulos con el dashboard y el resto de la aplicación, asegurando que la navegación y el diseño fueran consistentes con lo desarrollado por el equipo.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
@@ -268,18 +272,23 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
 <br><br>
-tp:<br>
+tb1:<br>
 Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
-tp:<br>
+tb1:<br>
 Planifiqué mis tareas del Sprint 2 según el Sprint Backlog y las completé dentro del sprint (US11 y US12). Trabajé con ramas feature, pull requests hacia develop y commits convencionales, lo que permitió integrar mi módulo con los de mis compañeros sin perder su trabajo. Para facilitar el trabajo del equipo, dejé el frontend ejecutable con un solo comando (npm start) junto con la Fake API, y registré la evidencia del sprint para que todos pudieran revisarla.<br><br>
+
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
-<br><br>
+Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto<br><br>
+
+tb1:<br>
+Trabaje de acuerdo a las tareas que se nos asignaron en el Sprint 2 , asi mismo segui el flujo de trabajo de branches para tener mayor control sobre el proyeto, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
+
+
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
@@ -294,7 +303,7 @@ Participé en la planificación y desarrollo de actividades relacionadas con la 
 av1:<br>
 Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
 
-tp:<br>
+tb1:<br>
 Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
 </tr>
 </tbody>
@@ -2137,6 +2146,59 @@ El Sprint 2 tuvo como propósito desarrollar una primera versión operativa de l
 | US22 | Descargar reporte operativo en PDF | T02 | Visualización previa | Validar la visualización y maquetación correcta de los gráficos de ventas por día y las tarjetas de "Productos más vendidos" y "Menos movimiento" en la vista previa de impresión del navegador. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Frontend | fix/login-session-storage | 36627bf | fix(iam): use sessionStorage so the app starts on the login screen | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | 2626ffc | feat(dashboard): display dynamic weekly sales chart | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 5bf4c56 | fix: corrige endpoints y mapeo de campos en catalogo e inventario, agrega wrapper de layout | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 5136390 | feat: conectar botones Registrar Producto y Bajo Stock a sus rutas | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 9c37a18 | feat(profile): adapt profile views to shared layout and update session name | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 2111d78 | feat(sales): decrease inventory stock when a sale is registered | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | cb424b6 | fix(catalog): connect catalog and inventory to english api collections | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 0cfbc69 | refactor: move module views into shared layout and translate remaining texts | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 3a20dea | feat(shared): add shared layout with sidebar and protected nested routes | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 60d187a | feat(i18n): add layout and dashboard translations and remember selected language | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | cccf034 | fix(iam): use users collection for login and register | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 4dc8e19 | fix(fake-api): unify users collection and set Eduardo Salazar as main account | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | b057ef9 | fix: adaptar catalog/inventory a nueva estructura del db.json y reubicar selector de idioma | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/sales-customer-tony-quispe | c038ac8 | feat: modulo de ventas final con css separado y metodos de pago | Quispe Palomino, Tony Jhunior | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | b9433b6 | feat(frontend):add missing components | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 768e1c7 | feat: enhance responsive design, mobile hamburger menu, and i18n support in sales module | Quispe Palomino, Tony Jhunior | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | 93bed64 | feat(analytics): implement analytics bounded context to the frontend | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/dashboard-mendoza | 03c4c19 | feat: add dashboard interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | develop | a837c14 | feat: run fake api inside frontend with a single npm start | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | c391200 | chore: add development environment variables | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 0f34077 | chore: add npm scripts to run fake api and web app together | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 1fc3233 | chore: add npm scripts to run fake api and web app together | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 2fad644 | feat: add fake api database inside frontend project | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 4a18d6e | chore: add json-server and concurrently as dev dependencies | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | a0c9be2 | feat: integrate catalog and inventory modules with i18n and merge develop changes | Gutierrez Tume, Stanley Jeremy | 06/10/2026 |
+| Frontend | feature/registro-mendoza | 5944144 | feat: add registration interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 9b62bc8 | chore: add primeicons and petstock orange theme preset | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 9a03ddb | feat(profile): connect profile with iam session and add responsive petstock layout | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/iam-mariel-mendoza | 3e55f2b | feat: add form interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b9d094c | feat(profile): add sign out option to profile view | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | e20ea38 | feat(profile): add profile nested routes | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b7dabfb | feat(profile): add my profile and edit profile views | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 90a1cc8 | feat(profile): add edit profile form with validation | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | a3e3679 | feat(profile): add english and spanish translations | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b5bd8f6 | feat(profile): add profile store | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | ee2b10d | feat(profile): add profile api and assembler | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 99bd5af | feat(profile): add profile entity | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 2678a40 | feat: polish product form and stock dashboard UI with provider creation, matching Figma mockups | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 97bcbf0 | feat: match product registration form and stock alerts view to approved wireframes | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | e733711 | feat: implement inventory module (entities, api, store, view) connected to FakeApi | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 4005672 | feat: implement catalog module (entities, api, store, view) connected to FakeApi | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/iam-mariel-mendoza | 20563fa | feat: add BaseEndpoint service and setup Axios configuration | Mendoza Moreano, Mariel Lucero | 05/10/2026 |
+| Frontend | develop | 52ffe99 | fix: resolve broken base setup (App.vue import, PrimeVue component names, missing vue-router) | Gutierrez Tume, Stanley Jeremy | 04/10/2026 |
+| Frontend | develop | e3e08f8 | Initial commit | Mendoza Moreano, Mariel Lucero | 02/10/2026 |
+| Frontend | develop | a4b8059 | refactor: remove purchasing context | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 13f0637 | feat: add shared domain utilities | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 3d59297 | feat: configure components and Vite setup | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 8a1030f | feat: configure vue-i18n | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | b38340c | chore: add PrimeVue and i18n dependencies | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | c53f3be | chore: add project structure by bounded contexts | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
