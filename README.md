@@ -184,6 +184,15 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
         - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
         - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
         - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.1. Sprint 2](#522-sprint-2)
+        - [5.2.2.1. Sprint Planning 2](#5218-sprint-planning-2)
+        - [5.2.2.2. Aspect_Leaders_and_Collaborators](#5219-aspect-leaders-and-collaborators)
+        - [5.2.2.3. Sprint Backlog 2](#5220-sprint-backlog-2)
+        - [5.2.2.4. Development Evidence for Sprint Review](#5221-development-evidence-for-sprint-review)
+        - [5.2.2.5. Execution Evidence for Sprint Review](#5222-execution-evidence-for-sprint-review)
+        - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5223-services-documentation-evidence-for-sprint-review)
+        - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5224-software-deployment-evidence-for-sprint-review)
+        - [5.2.2.8. Team Collaboration Insights during Sprint](#5225-team-collaboration-insights-during-sprint)
 
 ### [Conclusion](#conclusiones)
 
@@ -2038,6 +2047,25 @@ Durante el Sprint 1, organizamos el trabajo de la Landing Page de PetStock por s
 Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión ayudó a separar los cambios de cada integrante y a mantener un historial de commits asociado a las secciones implementadas. Por ejemplo, se registraron avances independientes para beneficios, vistas previas, precios, funcionamiento de la plataforma y FAQ/Footer.
 
 Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+#### 5.2.2.3. Sprint Backlog 2
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
 
 # Conclusiones
 
