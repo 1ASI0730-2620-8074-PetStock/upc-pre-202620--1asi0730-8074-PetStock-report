@@ -2275,6 +2275,79 @@ El siguiente video muestra el recorrido por la aplicación: inicio de sesión, d
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
+En el Sprint 2 aún no se desarrolló el backend de PetStock. Para poder probar la Web Application completa, el equipo levantó una Fake API con json-server (`server/db.json`) que simula los endpoints REST que la aplicación consume. Cada endpoint se definió con el nombre y la estructura que tendrá en el backend real, de modo que luego solo cambie la URL base.
+
+La Fake API se ejecuta junto con la aplicación con `npm start` y responde en `http://localhost:3000`.
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+|---|---|---|---|---|
+| `/users` | Listar usuarios (login) | `GET /users` | — | 200, lista de usuarios |
+| `/users` | Registrar usuario | `POST /users` | Body: `firstName`, `lastName`, `email`, `password`, `role`, `status` | 201, usuario creado con su `id` |
+| `/users/{id}` | Obtener perfil | `GET /users/1` | `id` en la ruta | 200, usuario |
+| `/users/{id}` | Editar perfil | `PATCH /users/1` | `id` en la ruta. Body: campos a cambiar | 200, usuario actualizado |
+| `/products` | Listar / registrar producto | `GET /products` · `POST /products` | Body: `name`, `description`, `price`, `categoryId`, `supplierId`, `active` | 200 lista · 201 producto creado |
+| `/categories` | Listar categorías | `GET /categories` | — | 200, lista de categorías |
+| `/suppliers` | Listar / registrar proveedor | `GET /suppliers` · `POST /suppliers` | Body: `companyName`, `contactName`, `phone`, `email` | 200 lista · 201 proveedor creado |
+| `/inventories` | Listar / registrar stock | `GET /inventories` · `POST /inventories` | Body: `productId`, `currentStock`, `minimumStock`, `lastUpdated` | 200 lista · 201 inventario creado |
+| `/inventories/{id}` | Descontar stock tras una venta | `PATCH /inventories/2` | `id` en la ruta. Body: `currentStock` | 200, inventario actualizado |
+| `/customers` | Listar / registrar cliente | `GET /customers` · `POST /customers` | Body: `name`, `email`, `phone`, `address` | 200 lista · 201 cliente creado |
+| `/sales` | Listar / registrar venta | `GET /sales` · `POST /sales` | Body: `userId`, `customerId`, `customerName`, `items`, `total`, `paymentMethod`, `date` | 200 lista · 201 venta creada |
+
+El reporte semanal se calcula en la aplicación a partir de `/sales`, `/products`, `/categories` e `/inventories`. Si un `id` no existe, la Fake API responde 404.
+
+**Ejemplos de response**
+
+`GET /products/102` → 200
+```json
+{
+  "id": "102",
+  "name": "RicoCat Salmón 10kg",
+  "description": "Alimento completo para gatos adultos",
+  "price": 95,
+  "categoryId": 2,
+  "supplierId": 1,
+  "active": true
+}
+```
+
+`POST /sales` → 201. Registra la venta y devuelve el recurso con el `id` generado.
+```json
+{
+  "id": "VNdebtTpgo0",
+  "userId": 2,
+  "customerId": "1",
+  "customerName": "Ana Torres",
+  "items": [{ "productId": "103", "quantity": 5, "unitPrice": 45 }],
+  "total": 225,
+  "paymentMethod": "yape",
+  "date": "2026-10-07"
+}
+```
+
+**Evidencia de interacción**
+
+![GET /products desde el navegador o Postman](assets/sprint-2/services/get-products.png)
+
+![POST /sales desde Postman](assets/sprint-2/services/post-sales.png)
+
+![PATCH /users/1 desde Postman](assets/sprint-2/services/patch-users.png)
+
+**Repositorio:** https://github.com/1ASI0730-2620-8074-PetStock/Frontend (carpeta `server/`)
+
+**Commits relacionados con la Fake API en este sprint**
+
+| Commit | Mensaje | Fecha |
+|---|---|---|
+| `4a18d6e` | chore: add json-server and concurrently as dev dependencies | 2026-10-06 |
+| `2fad644` | feat: add fake api database inside frontend project | 2026-10-06 |
+| `0f34077` | chore: add npm scripts to run fake api and web app together | 2026-10-06 |
+| `1fc3233` | chore: add npm scripts to run fake api and web app together | 2026-10-06 |
+| `c391200` | chore: add development environment variables | 2026-10-06 |
+| `a837c14` | feat: run fake api inside frontend with a single npm start | 2026-10-06 |
+| `4dc8e19` | fix(fake-api): unify users collection and set Eduardo Salazar as main account | 2026-10-07 |
+
+Los endpoints `/api/v1/...` mencionados en el Sprint Backlog 2 corresponden a los endpoints simulados con esta Fake API. El backend real se desarrollará en un sprint posterior.*
+
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
