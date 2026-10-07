@@ -2215,6 +2215,13 @@ El siguiente video muestra el recorrido por la aplicación: inicio de sesión, d
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 2, el equipo avanzó con el despliegue de los productos desarrollados hasta el momento. Se creó una cuenta en **Render** como cloud provider para alojar la aplicación web (Web Application), y se configuró un Web Service conectado directamente al repositorio de GitHub del frontend, de modo que cada actualización en la rama principal del proyecto se refleje automáticamente en el entorno desplegado.
+
+- **Landing Page:** desplegada previamente durante el Sprint 1 (ver evidencia en el informe AV1).
+- **Web Application (Frontend):** desplegada en Render durante este sprint, integrando los módulos de Catálogo, Inventario y Ventas desarrollados hasta la fecha
+
+**Link de acceso (Web Application):** [https://petstock-frontend.onrender.com](https://petstock-frontend.onrender.com)
+
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 Durante el Sprint 2, el equipo organizó el trabajo por bounded context, para cada funcionalidad de la Web Application: Login & Register, Catalog & Inventory, Profile, Analytics y Sales & Customer. Esta distribución, definida en conjunto durante el Sprint Planning, permitió que cada integrante liderara un área específica mientras colaboraba activamente en el resto de los módulos, aportando revisiones y apoyo técnico a sus compañeros.
 
