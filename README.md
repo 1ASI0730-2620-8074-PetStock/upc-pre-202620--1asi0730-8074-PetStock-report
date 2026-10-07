@@ -46,8 +46,8 @@ Gutierrez Tume Stanley Jeremy - U202118152
 </tr>
 
 <tr class="c7">
-<td class="c5" style="border: 1px solid black;">TB1</td>
-<td class="c5" style="border: 1px solid black;">24/04/2025</td>
+<td class="c5" style="border: 1px solid black;">AV1</td>
+<td class="c5" style="border: 1px solid black;">24/09/2026</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
@@ -61,6 +61,24 @@ Gutierrez Tume Stanley Jeremy
 - Capítulo II: Requirements Elicitation & Analysis
 - Capítulo III: Requirements Specification
 - Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.2.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+<tr class="c7">
+
+</tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">TB1</td>
+<td class="c5" style="border: 1px solid black;">7/10/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
@@ -159,13 +177,22 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
 - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
         - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-        - [5.2.1.2. Aspect_Leaders_and_Collaborators](#5212-aspect-leaders-and-collaborators)
+        - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
         - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
         - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
         - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
         - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
         - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
         - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+        - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+        - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+        - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+        - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+        - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+        - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+        - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+        - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 
 ### [Conclusion](#conclusiones)
 
@@ -199,25 +226,43 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
+tb1:<br>
+Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
+<br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
+tb1:<br>
+Asumí el desarrollo del aspecto profile en la Web Application, encargándome de las vistas Mi perfil, Editar perfil y Cerrar sesión, con un formulario validado y una salida segura de la sesión hacia el login. Conecté mi módulo con la sesión de IAM y, integré el frontend en un layout compartido con rutas protegidas. Documenté la evidencia de ejecución del Sprint 2 (punto 5.2.2.5) con capturas de las vistas implementadas y el video de navegación.<br><br>
+
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br>
+Apoye en la definicion de los User persona para entender mejor los segmentos objetivos , realizando los diferentes mapas (User journey map,empathy maps) tambien con definiciones para la aplicacion web<br><br>
 
-<br><br>
+tb1:<br>
+Realice el desarrollo del bounded context de Analytics para el Web Application-Frontend,la creacion del reporte para PetStock con grafico de barras e informacion que se actualiza gracias a otros modulos, luego conecte este a la parte principal de la aplicacion,tambien documente el historial de commits para el Frontend.<br><br>
+
+
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
+
+tb1:<br>
+Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, implementando el formulario de registro de productos con sus validaciones y la vista de alertas de stock bajo. Verifiqué de forma integral el funcionamiento de la Web Application junto con la Fake API embebida por el equipo, identificando y corrigiendo inconsistencias en el mapeo de datos entre los endpoints y las entidades del dominio (catálogo, inventario y proveedores). Coordiné con mis compañeros la integración de mis módulos con el dashboard y el resto de la aplicación, asegurando que la navegación y el diseño fueran consistentes con lo desarrollado por el equipo.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema, los segmentos objetivo, las hipótesis y los resultados que esperábamos validar con el proyecto. También participé en el análisis competitivo, comparando las características y propuestas de otras alternativas relacionadas con la gestión de tiendas de mascotas. A partir de este análisis, aporté en la definición de estrategias y tácticas para orientar la propuesta del equipo y diferenciar la solución frente a las opciones existentes. Asimismo, colaboré en el diseño de las entrevistas, organizando las preguntas y criterios necesarios para obtener información relevante de los usuarios. Finalmente, desarrollé los puntos 4.7.1 y 4.8.1, además de participar en la elaboración de la Navbar y el Hero de la Landing Page, procurando que estos elementos mantuvieran relación con los objetivos del producto y la propuesta definida por el equipo.
+<br>
+tb1:<br>
+Lidere la revisión y corrección del modelo de base de datos orientado al módulo de ventas, dirigiendo técnicamente la implementación de las funcionalidades clave del Sprint 2, las cuales abarcan el registro de ventas directas (US18), la asignación de clientes recurrentes al proceso de compra (US19) y la consulta detallada del historial transaccional (US20).
 </th>
 <th>
 av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
+
+tp:<br>
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
 </th>
 </tr>
 <tr>
@@ -230,24 +275,42 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
 <br><br>
+tb1:<br>
+Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
+<br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
+tb1:<br>
+Planifiqué mis tareas del Sprint 2 según el Sprint Backlog y las completé dentro del sprint (US11 y US12). Trabajé con ramas feature, pull requests hacia develop y commits convencionales, lo que permitió integrar mi módulo con los de mis compañeros sin perder su trabajo. Para facilitar el trabajo del equipo, dejé el frontend ejecutable con un solo comando (npm start) junto con la Fake API, y registré la evidencia del sprint para que todos pudieran revisarla.<br><br>
+
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
-Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto
-<br><br>
+Participé activamente en la planificación de las actividades para el informe y la Landing Page.Asimismo, gestione mi tiempo de forma eficiente para desarrollar y subir mis aportes al repositorio dentro de los plazos acordados, contribuyendo al avance constante y ordenado del proyecto<br><br>
+
+tb1:<br>
+Trabaje de acuerdo a las tareas que se nos asignaron en el Sprint 2 , asi mismo segui el flujo de trabajo de branches para tener mayor control sobre el proyeto, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
+
+
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
-Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.
-    
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
+tb1:<br>
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas por feature, Pull Requests y Conventional Commits) para integrar mis correcciones al catálogo e inventario, cumpliendo con los entregables asignados dentro del plazo establecido para esta entrega. Validé exhaustivamente el funcionamiento end-to-end de mi módulo (registro de productos, proveedores, alertas de stock) antes de integrarlo, y documenté los hallazgos para mantener informado al equipo sobre el estado real de la aplicación. 
+<br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Participé en la planificación y desarrollo de actividades relacionadas con la investigación del usuario, el análisis competitivo y la construcción de la Landing Page. El Lean UX Canvas y el diseño de entrevistas ayudaron al equipo a establecer objetivos comunes y organizar la información que debíamos validar. También contribuí con los puntos de análisis competitivo, estrategias y tácticas, así como con los apartados 4.7.1 y 4.8.1, siguiendo la distribución de tareas acordada. En la parte visual, apoyé en la elaboración de la Navbar y el Hero, revisando con el equipo que estos elementos fueran coherentes con la estructura y el mensaje principal de la Landing Page. Cumplí con las actividades asignadas y coordiné la integración de mis aportes con los demás entregables del proyecto.
+
+tb1:<br>
+Fomente un entorno colaborativo al planificar y coordinar con el equipo la corrección de la base de datos y la división de tareas para el módulo de ventas, asegurando el cumplimiento de las entregas de interfaz de venta, asignación de clientes e historial transaccional.
 </th>
 <th>
 av1:<br>
 Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
+
+tb1:<br>
+Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
 </tr>
 </tbody>
 </table>
@@ -971,41 +1034,54 @@ El siguiente glosario define los términos clave del dominio de gestión comerci
 
 ## 3.1. User Stories
 
+| ID Epic | Título | Descripción |
+| :--- | :--- | :--- |
+| **EP01** | Página web y captación de usuarios | Como visitante, quiero entender la propuesta de valor de PetStock para tiendas de mascotas y acceder fácilmente al formulario de registro para decidir si la plataforma se adapta a mi negocio. |
+| **EP02** | Acceso, seguridad y gestión de perfil | Como dueño de negocio, quiero registrar mi cuenta, iniciar/cerrar sesión y actualizar mis datos personales para mantener la seguridad y la información de mi negocio al día. |
+| **EP03** | Gestión de productos e inventario | Como dueño de negocio, quiero registrar y administrar mis productos con sus precios y existencias para mantener un control organizado de mi stock disponible. |
+| **EP04** | Alertas de stock y reposición con proveedores | Como dueño de negocio, quiero identificar rápidamente los productos con stock crítico y contactar a los distribuidores para reponer inventario a tiempo y evitar desabastecimientos. |
+| **EP05** | Ventas y seguimiento de clientes | Como dueño de negocio, quiero registrar las ventas realizadas e identificar a mis clientes recurrentes para descontar el stock al instante y llevar su historial de compra. |
+| **EP06** | Reportes y análisis de rendimiento | Como dueño de negocio, quiero consultar gráficos de rendimiento semanal, días de mayores ingresos, productos más/menos vendidos y descargar reportes PDF para tomar mejores decisiones de compra. |
 
-| ID | Título | Descripción | Criterios de Aceptación | Epic |
-|---|---|---|---|---|
-| EP01 | Identity & Access | Agrupa las funcionalidades de creación de cuenta, inicio y cierre de sesión de los usuarios de la Web Application. | — | — |
-| US01 | Crear cuenta | Como administrador de tienda, quiero crear una cuenta en PetStock, para gestionar las operaciones de mi negocio desde la plataforma. | Escenario 1: Registro exitoso; Dado que el usuario completa el formulario con datos válidos y acepta los términos y condiciones; Cuando presiona "Registrarse"; Entonces el sistema crea la cuenta y lo redirige al Dashboard principal. Escenario 2: Correo ya registrado; Dado que el correo ingresado ya existe en el sistema; Cuando el usuario envía el formulario; Entonces el sistema retorna un error indicando que el correo ya está registrado. | EP01 |
-| US02 | Iniciar sesión | Como administrador de tienda, quiero iniciar sesión en mi cuenta, para acceder a las funcionalidades de gestión de mi negocio. | Escenario 1: Credenciales válidas; Dado que el usuario ingresa correo y contraseña correctos; Cuando presiona "Iniciar sesión"; Entonces el sistema valida las credenciales y lo redirige al Dashboard. Escenario 2: Credenciales inválidas; Dado que el usuario ingresa credenciales incorrectas; Cuando presiona "Iniciar sesión"; Entonces el sistema retorna un error sin especificar el campo incorrecto. | EP01 |
-| US03 | Cerrar sesión | Como administrador de tienda, quiero cerrar sesión en mi cuenta desde el menú de perfil, para proteger la información de mi negocio cuando no esté utilizando la aplicación. | Escenario 1: Cierre exitoso; Dado que el usuario está autenticado; Cuando presiona "Cerrar sesión" en la vista de Mi Perfil; Entonces el sistema invalida la sesión activa y lo redirige a la pantalla de inicio de sesión. | EP01 |
-| EP02 | Product & Inventory Management | Agrupa las funcionalidades de registro, edición, consulta de productos y control de existencias en el inventario. | — | — |
-| US04 | Registrar producto | Como administrador de tienda, quiero registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. | Escenario 1: Registro exitoso; Dado que el administrador proporciona datos válidos del producto, incluyendo proveedor y stock mínimo; Cuando presiona "Guardar producto"; Entonces el sistema agrega el producto al catálogo y actualiza el Dashboard. Escenario 2: Datos incompletos; Dado que el administrador omite campos obligatorios; Cuando envía la solicitud; Entonces el sistema retorna un error indicando los campos faltantes. | EP02 |
-| US05 | Editar producto | Como administrador de tienda, quiero editar la información de un producto existente, para mantener actualizados sus datos. | Escenario 1: Edición exitosa; Dado que el administrador modifica datos válidos de un producto existente; Cuando confirma los cambios; Entonces el sistema actualiza la información y confirma la operación. Escenario 2: Producto no encontrado; Dado que el administrador intenta editar un producto inexistente; Cuando envía la solicitud; Entonces el sistema retorna un error indicando que el recurso no existe. | EP02 |
-| US06 | Consultar inventario | Como administrador de tienda, quiero consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. | Escenario 1: Consulta con resultados; Dado que existen productos registrados con stock; Cuando el administrador solicita la consulta; Entonces el sistema retorna la cantidad disponible de cada producto. Escenario 2: Inventario vacío; Dado que la tienda no tiene productos registrados; Cuando el administrador solicita la consulta; Entonces el sistema retorna una respuesta vacía. | EP02 |
-| US07 | Recibir alerta de stock mínimo | Como administrador de tienda, quiero recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. | Escenario 1: Umbral alcanzado; Dado que la cantidad disponible de un producto es igual o menor al stock mínimo configurado; Cuando el sistema actualiza el inventario; Entonces el sistema genera una alerta visible en el Dashboard. Escenario 2: Stock repuesto; Dado que un producto en alerta recibe una nueva entrada de stock que supera el umbral; Cuando el sistema actualiza el inventario; Entonces el sistema retira la alerta. | EP02 |
-| EP03 | Sales & Purchases | Agrupa las funcionalidades de registro de ventas, compras y solicitud de reposición a proveedores. | — | — |
-| US08 | Registrar venta | Como administrador de tienda, quiero registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. | Escenario 1: Venta exitosa; Dado que el administrador selecciona productos con stock disponible e ingresa el nombre del cliente; Cuando confirma la venta; Entonces el sistema descuenta las cantidades del inventario y la registra en el historial. Escenario 2: Stock insuficiente; Dado que la cantidad solicitada supera el stock disponible; Cuando el administrador intenta confirmar la venta; Entonces el sistema retorna un error indicando stock insuficiente. | EP03 |
-| US09 | Registrar compra a proveedor | Como administrador de tienda, quiero registrar una compra realizada a un proveedor, para actualizar mi inventario con la mercadería reabastecida. | Escenario 1: Compra exitosa; Dado que el administrador registra una compra con productos y cantidades válidas; Cuando confirma la operación; Entonces el sistema incrementa las cantidades correspondientes en el inventario. Escenario 2: Proveedor no registrado; Dado que el proveedor indicado no existe en el sistema; Cuando el administrador envía la solicitud; Entonces el sistema retorna un error indicando que el proveedor no está registrado. | EP03 |
-| US10 | Solicitar reposición a proveedor | Como administrador de tienda, quiero solicitar la reposición de un producto en alerta directamente a un proveedor sugerido por el sistema, para asegurar un reabastecimiento oportuno sin buscar manualmente su información de contacto. | Escenario 1: Solicitud generada; Dado que el administrador selecciona un producto en alerta crítica y un proveedor de la lista sugerida; Cuando presiona "Contactar proveedor"; Entonces el sistema genera la solicitud con la cantidad sugerida y la envía por el canal de contacto configurado. Escenario 2: Sin proveedor asociado; Dado que el producto en alerta no tiene un proveedor asignado; Cuando el administrador intenta solicitar reposición; Entonces el sistema retorna un mensaje indicando que debe asignar un proveedor primero. | EP03 |
-| EP04 | Customer & Supplier Management | Agrupa las funcionalidades de registro y consulta de clientes y proveedores de la tienda. | — | — |
-| US11 | Registrar proveedor | Como administrador de tienda, quiero registrar la información de mis proveedores, para facilitar el proceso de reposición. | Escenario 1: Registro exitoso; Dado que el administrador proporciona datos válidos del proveedor; Cuando envía la solicitud; Entonces el sistema registra al proveedor y confirma la operación. | EP04 |
-| US12 | Consultar historial de cliente | Como administrador de tienda, quiero consultar el historial de compras de un cliente, para dar un mejor seguimiento a mis compradores frecuentes. | Escenario 1: Historial disponible; Dado que el cliente seleccionado tiene compras registradas; Cuando el administrador consulta su perfil; Entonces el sistema retorna el historial de compras asociado. Escenario 2: Cliente sin historial; Dado que el cliente no tiene compras registradas; Cuando el administrador consulta su perfil; Entonces el sistema retorna una respuesta vacía. | EP04 |
-| EP05 | Reporting & Dashboard | Agrupa las funcionalidades de generación, consulta y exportación de reportes, y visualización general del negocio. | — | — |
-| US13 | Visualizar panel de control | Como administrador de tienda, quiero ver un resumen general del estado de mi negocio al ingresar al sistema, para conocer rápidamente mi situación diaria. | Escenario 1: Panel disponible; Dado que el administrador inicia sesión en el sistema; Cuando accede al Dashboard; Entonces el sistema muestra un resumen de ventas, inventario y alertas activas. | EP05 |
-| US14 | Consultar reportes | Como administrador de tienda, quiero consultar reportes de ventas por día, productos con mayor y menor rotación, para tomar mejores decisiones comerciales. | Escenario 1: Reporte generado; Dado que existen datos registrados en el periodo solicitado; Cuando el administrador solicita el reporte; Entonces el sistema retorna la información correspondiente al periodo indicado. Escenario 2: Sin datos en el periodo; Dado que no existen registros en el periodo solicitado; Cuando el administrador solicita el reporte; Entonces el sistema retorna una respuesta vacía. | EP05 |
-| US15 | Descargar reporte en PDF | Como administrador de tienda, quiero descargar mis reportes en formato PDF, para respaldar la información de mi negocio. | Escenario 1: Descarga exitosa; Dado que el administrador visualiza un reporte generado; Cuando presiona "Descargar reporte en PDF"; Entonces el sistema genera el archivo y lo descarga correctamente. Escenario 2: Error en la generación; Dado que ocurre un fallo al generar el archivo; Cuando el administrador solicita la descarga; Entonces el sistema retorna un mensaje indicando que la operación no pudo completarse. | EP05 |
-| EP06 | Profile & Configuration | Agrupa las funcionalidades de gestión del perfil del usuario y los datos del negocio. | — | — |
-| US16 | Actualizar datos del negocio | Como administrador de tienda, quiero editar mi nombre, apellido, correo y contraseña, para mantener actualizada la información de mi perfil y la seguridad de mi cuenta. | Escenario 1: Actualización exitosa; Dado que el administrador proporciona datos válidos; Cuando presiona "Guardar cambios"; Entonces el sistema aplica los cambios y confirma la operación. Escenario 2: Datos inválidos; Dado que el administrador ingresa información con formato incorrecto; Cuando envía la solicitud; Entonces el sistema retorna un error indicando los campos con formato inválido. | EP06 |
-| EP07 | Landing Page | Agrupa las funcionalidades del sitio web estático que comunica la propuesta de valor de PetStock a los visitantes de cada segmento objetivo. | — | — |
-| US17 | Conocer la propuesta de valor | Como visitante, quiero conocer la propuesta de valor de PetStock, para evaluar si la plataforma se ajusta a las necesidades de mi tienda. | Escenario 1: Contenido disponible; Dado que el visitante accede al Landing Page; Cuando el sistema entrega el contenido principal; Entonces el sistema muestra la información del propósito y beneficio central de la plataforma. | EP07 |
-| US18 | Conocer beneficios por segmento | Como visitante del segmento de tiendas de alta rotación, quiero conocer los beneficios específicos de PetStock, para comprender cómo se adapta al control de productos de alto movimiento. | Escenario 1: Contenido por segmento; Dado que el visitante solicita el contenido dirigido a su segmento; Cuando el sistema procesa la solicitud; Entonces el sistema retorna información orientada al control de inventario de alta rotación. | EP07 |
-| US19 | Acceder al registro desde el Landing Page | Como visitante, quiero acceder directamente a la Web Application desde el Landing Page, para comenzar a usar PetStock. | Escenario 1: Redirección exitosa; Dado que el visitante hace clic en el call-to-action correspondiente; Cuando el sistema procesa la solicitud; Entonces el sistema redirige al visitante a la vista de creación de cuenta de la Web Application. | EP07 |
-| EP08 | Technical Stories | Agrupa los requerimientos técnicos del RESTful API que sustentan la operación del sistema. | — | — |
-| US20 | Autenticar usuario | Como developer, quiero implementar un endpoint de autenticación, para que los usuarios accedan de forma segura al sistema. | Escenario 1: Credenciales válidas; Dado que se envía una solicitud POST con credenciales válidas; Cuando el servidor valida los datos; Entonces responde con un token de acceso y código 200. Escenario 2: Credenciales inválidas; Dado que las credenciales enviadas son incorrectas; Cuando el servidor procesa la solicitud; Entonces responde con código 401. | EP08 |
-| US21 | Exponer endpoint de inventario | Como developer, quiero implementar un endpoint que devuelva el estado del inventario, para que la Web Application pueda mostrarlo. | Escenario 1: Consulta exitosa; Dado que se envía una solicitud GET con un token válido; Cuando el servidor procesa la solicitud; Entonces responde con la lista de productos y cantidades en formato JSON y código 200. Escenario 2: Token inválido; Dado que el token enviado no es válido; Cuando el servidor procesa la solicitud; Entonces responde con código 401. | EP08 |
-| EP09 | Cash Management | Agrupa las funcionalidades de cierre de turno y cuadre de caja diario, permitiendo verificar que el efectivo disponible coincida con el total de ventas registradas durante la jornada. | — | — |
-| US22 | Cerrar turno de caja | Como administrador de tienda, quiero cerrar mi turno de caja al final del día, para cuadrar el efectivo con las ventas registradas. | Escenario 1: Cierre exitoso; Dado que el administrador confirma el cierre del turno; Cuando presiona "Cerrar caja"; Entonces el sistema calcula el total esperado en base a las ventas registradas y registra el cierre. | EP09 |
-| US23 | Consultar resumen de cuadre | Como administrador de tienda, quiero ver un resumen del cuadre de caja diario, para verificar que el efectivo coincida con las ventas del día. | Escenario 1: Cuadre correcto; Dado que el efectivo contado coincide con el monto calculado por el sistema; Cuando el administrador confirma el cuadre; Entonces el sistema registra el cierre como conforme. Escenario 2: Diferencia detectada; Dado que el efectivo contado no coincide con el monto calculado; Cuando el administrador confirma el cuadre; Entonces el sistema registra la diferencia y la marca para revisión. | EP09 |
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **US01** | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. | **Scenario 01: Visualización de propuesta de valor principal**<br>- **Given** que el visitante ingresa a la página de inicio del sitio web estático<br>- **When** la página completa su carga<br>- **Then** el sistema presenta la propuesta de valor enfocada en el control de stock y prevención de pérdidas. | EP01 |
+| **US02** | Conocer los beneficios de PetStock | Como visitante del segmento de alimentos para mascotas, quiero conocer los beneficios de la plataforma, para comprender cómo optimiza el control de productos de alta rotación. | **Scenario 01: Consulta de beneficios para alta rotación**<br>- **Given** que el visitante explora la sección de beneficios en el sitio estático<br>- **When** consulta la información sobre productos de alta rotación<br>- **Then** el sistema presenta los beneficios del monitoreo en tiempo real y alertas preventivas. | EP01 |
+| **US03** | Conocer cómo funciona PetStock | Como visitante, quiero conocer el paso a paso del uso de la plataforma, para entender cómo incorporar el registro de productos y ventas en mi rutina diaria. | **Scenario 01: Visualización del flujo paso a paso**<br>- **Given** que el visitante accede a la sección de funcionamiento<br>- **When** navega por el diagrama del flujo operativo<br>- **Then** el sistema muestra los pasos ordenados desde el alta de productos hasta el registro de ventas. | EP01 |
+| **US04** | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer los precios y características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. | **Scenario 01: Despliegue de tarifas y periodo de prueba**<br>- **Given** que el visitante ingresa a la sección de precios<br>- **When** consulta el detalle de la oferta comercial<br>- **Then** el sistema exhibe el costo del servicio, funcionalidades incluidas y días de prueba gratuita.<br><br>**Scenario 02: Selección de plan para registro directo**<br>- **Given** que el visitante revisa la tabla de tarifas<br>- **When** selecciona el botón de contratar o iniciar prueba<br>- **Then** el sistema redirige al usuario al registro vinculando el plan seleccionado. | EP01 |
+| **US05** | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar demostraciones del sistema, para conocer de forma concreta el Dashboard y los módulos de gestión antes de registrarme. | N/A | EP01 |
+| **US06** | Consultar preguntas frecuentes | Como visitante con dudas sobre la plataforma, quiero consultar preguntas frecuentes, para resolver inquietudes técnicas y operativas antes de crear una cuenta. | **Scenario 01: Despliegue de respuesta a duda común**<br>- **Given** que el visitante ingresa al módulo de preguntas frecuentes<br>- **When** selecciona una pregunta sobre el control de inventario<br>- **Then** el sistema expande el texto aclaratorio con la respuesta correspondiente. | EP01 |
+| **US07** | Acceder a información adicional y pie de página | Como visitante, quiero disponer de enlaces institucionales en el pie de página, para identificar datos de contacto y términos legales de PetStock. | **Scenario 01: Consulta de términos legales**<br>- **Given** que el visitante navega en el pie de página del sitio estático<br>- **When** selecciona el enlace de términos y condiciones<br>- **Then** el sistema despliega el documento con las políticas de uso de la plataforma. | EP01 |
+| **US08** | Navegar en diferentes dispositivos | Como visitante que navega desde dispositivo móvil o escritorio, quiero una experiencia adaptable, para consultar el contenido y llamados a la acción sin restricciones de formato. | N/A | EP01 |
+| **US09** | Registro de cuenta con términos y condiciones | Como dueño de negocio, quiero registrar una cuenta con mis datos personales e identificación del negocio, para acceder al entorno de gestión de PetStock. | **Scenario 01: Registro exitoso completando campos y términos**<br>- **Given** que el usuario ingresa datos válidos y marca la casilla de términos y condiciones<br>- **When** ejecuta la solicitud de registro<br>- **Then** el sistema crea la cuenta activa y redirige automáticamente al Dashboard principal.<br><br>**Scenario 02: Intento de registro omitiendo términos y condiciones**<br>- **Given** que el usuario completa todos sus datos de registro pero deja sin marcar la casilla de términos<br>- **When** procesa la creación de la cuenta<br>- **Then** el sistema detiene el registro, mantiene al usuario en el formulario y notifica la falta de aceptación de términos.<br><br>**Scenario 03: Intento de registro con correo ya existente**<br>- **Given** un correo electrónico previamente registrado en el sistema<br>- **When** un nuevo usuario intenta registrarse utilizando dicho correo<br>- **Then** el sistema rechaza la solicitud e indica que la cuenta ya se encuentra registrada. | EP02 |
+| **US10** | Iniciar sesión | Como dueño de negocio, quiero ingresar mis credenciales de acceso, para autenticarme e ingresar a la plataforma de administración. | **Scenario 01: Autenticación exitosa con credenciales correctas**<br>- **Given** un usuario previamente registrado en el sistema<br>- **When** ingresa su correo y contraseña correctos y procesa el ingreso<br>- **Then** el sistema valida la identidad y redirige al usuario hacia el Dashboard principal.<br><br>**Scenario 02: Rechazo de ingreso por contraseña incorrecta**<br>- **Given** un usuario registrado con correo válido<br>- **When** ingresa una contraseña errónea al solicitar el inicio de sesión<br>- **Then** el sistema deniega el acceso y emite un mensaje de credenciales no válidas. | EP02 |
+| **US11** | Modificar perfil de negocio | Como dueña de tienda boutique, quiero actualizar mis datos de contacto o contraseña desde la configuración, para mantener mi información comercial actualizada y segura. | **Scenario 01: Guardado exitoso de cambios en el perfil**<br>- **Given** que el usuario accede al formulario de edición de perfil con sesión activa<br>- **When** modifica datos válidos como nombre, correo o clave y confirma los cambios<br>- **Then** el sistema persiste las actualizaciones y despliega una confirmación de éxito.<br><br>**Scenario 02: Fallo al intentar borrar campos obligatorios**<br>- **Given** que el usuario borra un campo obligatorio en el formulario de edición de perfil<br>- **When** intenta guardar las modificaciones<br>- **Then** el sistema bloquea la actualización y solicita completar los datos requeridos. | EP02 |
+| **US12** | Cerrar sesión de forma segura | Como dueño de negocio, quiero cerrar sesión desde el menú de perfil, para proteger la información del negocio al finalizar la jornada. | **Scenario 01: Salida del sistema e invalidación de sesión**<br>- **Given** que el usuario mantiene una sesión activa en la plataforma<br>- **When** ejecuta la acción de cerrar sesión desde su perfil<br>- **Then** el sistema invalida el token de acceso activo y redirige a la pantalla de inicio de sesión.<br><br>**Scenario 02: Intento de navegación posterior al cierre de sesión**<br>- **Given** que el usuario ha cerrado sesión exitosamente<br>- **When** intenta acceder a una ruta protegida del sistema<br>- **Then** el sistema deniega el acceso y exige una autenticación válida. | EP02 |
+| **US13** | Registrar nuevo producto en inventario | Como dueño de tienda de alimentos, quiero registrar un producto especificando nombre, categoría, precio, stock inicial y stock mínimo, para controlar las existencias disponibles. | **Scenario 01: Alta de producto exitosa con datos completos**<br>- **Given** que el usuario ingresa nombre, categoría, precio, stock y stock mínimo válidos<br>- **When** guarda la información del nuevo ítem<br>- **Then** el sistema almacena el producto, actualiza el indicador total de stock y registra la actividad en el Dashboard.<br><br>**Scenario 02: Rechazo de registro por datos obligatorios vacíos**<br>- **Given** que el usuario omite campos requeridos marcados con asterisco como precio o stock<br>- **When** intenta guardar el producto<br>- **Then** el sistema interrumpe el proceso, resalta los campos faltantes e impide el guardado.<br><br>**Scenario 03: Validación de valores numéricos no negativos**<br>- **Given** que el usuario ingresa un valor negativo en el stock o precio del producto<br>- **When** procesa la creación del ítem<br>- **Then** el sistema emite una alerta de validación y exige ingresar montos mayores o iguales a cero. | EP03 |
+| **US14** | Editar datos de producto | Como dueño de negocio, quiero modificar el precio o existencias de un producto existente, para mantener actualizado el catálogo ante variaciones del mercado. | **Scenario 01: Edición correcta de precio y stock**<br>- **Given** un producto previamente registrado en el inventario<br>- **When** el usuario modifica su precio de venta o stock mínimo y confirma la edición<br>- **Then** el sistema actualiza la ficha del ítem con los nuevos datos en el catálogo.<br><br>**Scenario 02: Intento de modificar producto no existente**<br>- **Given** una solicitud de edición sobre un identificador de producto eliminado o inválido<br>- **When** el sistema procesa la actualización<br>- **Then** el sistema notifica que el producto no se encuentra disponible. | EP03 |
+| **US15** | Desactivar producto del catálogo | Como dueño de negocio, quiero cambiar el estado de un producto a inactivo, para impedir que se comercialice temporalmente sin eliminar su historial. | **Scenario 01: Deshabilitación de producto para venta**<br>- **Given** un producto activo registrado en el inventario<br>- **When** el usuario cambia el estado del ítem a inactivo<br>- **Then** el sistema deshabilita el producto impidiendo su selección en el módulo de ventas.<br><br>**Scenario 02: Reactivación de producto inactivo**<br>- **Given** un producto con estado inactivo<br>- **When** el usuario modifica su disponibilidad a activo<br>- **Then** el sistema lo habilita nuevamente para el registro de ventas directas. | EP03 |
+| **US16** | Identificación de productos con stock bajo | Como dueño de tienda de alimentos, quiero ver el contador de alertas en el Dashboard y la lista de ítems en estado crítico, para identificar desabastecimientos antes de quedar sin stock. | **Scenario 01: Activación automática de alerta por stock crítico**<br>- **Given** un producto con stock actual igual o menor a su umbral mínimo configurado<br>- **When** la plataforma evalúa los niveles de existencias<br>- **Then** el sistema clasifica el producto en "Alerta Crítica" e incrementa el contador de bajo stock en el Dashboard.<br><br>**Scenario 02: Desactivación de alerta tras reabastecimiento**<br>- **Given** un producto en estado de "Alerta Crítica"<br>- **When** el nivel de stock del producto se incrementa superando el umbral mínimo<br>- **Then** el sistema remueve la alerta crítica del ítem y descuenta el contador del Dashboard. | EP04 |
+| **US17** | Contactar proveedor para reposición | Como dueño de negocio, quiero seleccionar un proveedor de la lista sugerida y la cantidad de reabastecimiento, para iniciar la solicitud por llamada o WhatsApp. | **Scenario 01: Generación de enlace de contacto a proveedor**<br>- **Given** un producto en alerta crítica y un proveedor seleccionado de la lista de distribuidores<br>- **When** el usuario confirma la acción de contactar al proveedor<br>- **Then** el sistema abre la aplicación externa de comunicación (WhatsApp/Teléfono) con el mensaje de pedido pre completado.<br><br>**Scenario 02: Bloqueo de contacto sin seleccionar proveedor**<br>- **Given** un producto en alerta crítica dentro de la pantalla de reposición<br>- **When** el usuario intenta proceder sin haber seleccionado un proveedor de la lista<br>- **Then** el sistema detiene la operación y exige la selección de un distribuidor. | EP04 |
+| **US18** | Registrar venta directa | Como dueña de tienda boutique, quiero registrar los productos y la cantidad vendida en mostrador, para descontar automáticamente las existencias del inventario general. | **Scenario 01: Venta exitosa y descuento automático de existencias**<br>- **Given** un producto con 10 unidades de stock disponible<br>- **When** el usuario registra la venta de 2 unidades de dicho producto<br>- **Then** el sistema procesa la transacción, reduce el stock a 8 unidades y guarda el movimiento.<br><br>**Scenario 02: Rechazo de venta por stock insuficiente**<br>- **Given** un producto con 1 unidad disponible en inventario<br>- **When** el usuario intenta registrar una venta por una cantidad de 3 unidades<br>- **Then** el sistema rechaza la transacción y advierte sobre la falta de unidades suficientes. | EP05 |
+| **US19** | Asignar cliente recurrente a la venta | Como dueña de tienda boutique, quiero ingresar el nombre del cliente durante el registro de la venta, para vincular la transacción a su historial de consumo. | **Scenario 01: Vinculación exitosa de venta a cliente**<br>- **Given** el formulario de registro de venta directa<br>- **When** el usuario ingresa el nombre de un cliente e ingresa la transacción<br>- **Then** el sistema almacena la venta asociando el consumo a la ficha del cliente especificado.<br><br>**Scenario 02: Venta registrada sin asignación de cliente**<br>- **Given** el registro de una venta directa<br>- **When** el usuario procesa la transacción dejando en blanco la asignación de cliente<br>- **Then** el sistema guarda la venta bajo la categoría de cliente genérico o público general. | EP05 |
+| **US20** | Consultar historial de transacciones de clientes | Como dueña de negocio, quiero consultar la lista cronológica de ventas pasadas por cliente, para conocer sus hábitos de compra y recomendar productos. | **Scenario 01: Despliegue de compras pasadas del cliente**<br>- **Given** un cliente con transacciones previamente registradas<br>- **When** el usuario consulta la sección de historial de compras del cliente<br>- **Then** el sistema presenta el detalle cronológico de las fechas, ítems y montos consumidos.<br><br>**Scenario 02: Consulta de historial en cliente sin compras previas**<br>- **Given** un cliente recientemente registrado que no ha realizado compras<br>- **When** el usuario accede a su historial<br>- **Then** el sistema notifica la ausencia de registros de venta para dicho cliente. | EP05 |
+| **US21** | Visualizar gráfico de rendimiento semanal | Como dueña de tienda boutique, quiero revisar el gráfico de ingresos por día y los rankings de rotación, para conocer qué días vendo más y qué productos debo mantener. | **Scenario 01: Generación de métricas e ingresos por día**<br>- **Given** la existencia de ventas registradas en los últimos 7 días<br>- **When** el usuario ingresa al módulo de reportes semanales<br>- **Then** el sistema despliega el gráfico de ingresos por día identificando el día de mayor venta.<br><br>**Scenario 02: Identificación de productos con mayor y menor rotación**<br>- **Given** datos de ventas acumulados durante la semana<br>- **When** el usuario revisa el informe de rendimiento<br>- **Then** el sistema lista los productos con mayor número de salidas y los ítems sin movimiento. | EP06 |
+| **US22** | Descargar reporte operativo en PDF | Como dueño de negocio, quiero descargar un documento PDF con los indicadores del periodo, para guardar un archivo físico o digital del estado de mi tienda. | **Scenario 01: Exportación exitosa de archivo PDF**<br>- **Given** datos de reportes generados para el periodo seleccionado<br>- **When** el usuario solicita la acción de descargar reporte en PDF<br>- **Then** el sistema genera el archivo estructurado y desencadena la descarga directa en el dispositivo.<br><br>**Scenario 02: Notificación de error en la compilación del reporte**<br>- **Given** una interrupción temporal durante la generación del informe<br>- **When** la exportación no logra completarse<br>- **Then** el sistema notifica el inconveniente e invita a reintentar la descarga. | EP06 |
+
+| Technical Stories ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **TS01** | API Contenido de Landing Page | Como developer, quiero implementar un endpoint `GET /api/v1/public/landing-content` para obtener la información de beneficios, planes y preguntas frecuentes en el sitio web. | **Scenario: Consulta exitosa de contenido**<br>- **Given** que existen datos configurados para el sitio público<br>- **When** realizo una solicitud `GET` a `/api/v1/public/landing-content`<br>- **Then** la respuesta debe ser `200 OK` y retornar un JSON con las secciones de la landing page.<br><br>**Scenario: Error en el servidor al obtener contenido**<br>- **Given** que ocurre un fallo en la base de datos de contenido público<br>- **When** realizo la solicitud `GET` a `/api/v1/public/landing-content`<br>- **Then** la respuesta debe ser `500 Internal Server Error` con el mensaje de error correspondiente. | EP01 |
+| **TS02** | API Registro de Usuarios | Como developer, quiero implementar un endpoint `POST /api/v1/auth/register` para registrar nuevos usuarios aceptando términos y condiciones. | **Scenario: Registro exitoso**<br>- **Given** que envío un JSON válido con los campos requeridos y `acceptedTerms: true`<br>- **When** realizo una solicitud `POST` a `/api/v1/auth/register`<br>- **Then** la respuesta debe ser `201 Created` y retornar el objeto de usuario creado con su ID.<br><br>**Scenario: Términos y condiciones no aceptados**<br>- **Given** que envío un JSON con `acceptedTerms: false`<br>- **When** realizo la solicitud `POST` a `/api/v1/auth/register`<br>- **Then** la respuesta debe ser `400 Bad Request` indicando que los términos deben ser aceptados.<br><br>**Scenario: Correo duplicado**<br>- **Given** que envío un JSON con un correo previamente registrado<br>- **When** realizo la solicitud `POST` a `/api/v1/auth/register`<br>- **Then** la respuesta debe ser `400 Bad Request` notificando el conflicto de usuario existente. | EP02 |
+| **TS03** | API Autenticación e Inicio de Sesión | Como developer, quiero implementar un endpoint `POST /api/v1/auth/login` para autenticar usuarios y generar el token de acceso. | **Scenario: Inicio de sesión exitoso**<br>- **Given** que envío credenciales válidas de correo y contraseña<br>- **When** realizo una solicitud `POST` a `/api/v1/auth/login`<br>- **Then** la respuesta debe ser `200 OK` y retornar el token JWT con su tiempo de expiración.<br><br>**Scenario: Credenciales inválidas**<br>- **Given** que envío una contraseña incorrecta<br>- **When** realizo la solicitud `POST` a `/api/v1/auth/login`<br>- **Then** la respuesta debe ser `401 Unauthorized` indicando credenciales erróneas. | EP02 |
+| **TS04** | API Modificación de Perfil | Como developer, quiero implementar un endpoint `PUT /api/v1/users/profile` para actualizar los datos comerciales o contraseña del usuario. | **Scenario: Actualización exitosa**<br>- **Given** que envío un JSON con los campos de perfil actualizados y el token de autorización<br>- **When** realizo una solicitud `PUT` a `/api/v1/users/profile`<br>- **Then** la respuesta debe ser `200 OK` y retornar la información actualizada.<br><br>**Scenario: Campos obligatorios vacíos**<br>- **Given** que envío un JSON dejando en blanco el campo nombre o correo<br>- **When** realizo la solicitud `PUT` a `/api/v1/users/profile`<br>- **Then** la respuesta debe ser `400 Bad Request` detallando los campos requeridos. | EP02 |
+| **TS05** | API Registro de Productos | Como developer, quiero implementar un endpoint `POST /api/v1/products` para registrar nuevos productos en la base de datos con stock inicial y mínimo. | **Scenario: Registro exitoso**<br>- **Given** que envío un JSON válido con nombre, precio, stock y stock mínimo<br>- **When** realizo una solicitud `POST` a `/api/v1/products`<br>- **Then** la respuesta debe tener código `201 Created` y retornar el objeto creado.<br><br>**Scenario: Campos obligatorios faltantes**<br>- **Given** que envío un JSON sin el campo requerido precio o stock<br>- **When** realizo la solicitud `POST` a `/api/v1/products`<br>- **Then** la respuesta debe ser `400 Bad Request` con el detalle de los errores de validación. | EP03 |
+| **TS06** | API Consulta y Edición de Catálogo | Como developer, quiero implementar los endpoints `GET /api/v1/products` y `PUT /api/v1/products/{id}` para consultar y editar el inventario. | **Scenario: Consulta exitosa de catálogo**<br>- **Given** que existen productos registrados<br>- **When** realizo una solicitud `GET` a `/api/v1/products`<br>- **Then** la respuesta debe ser `200 OK` y retornar la lista completa de productos.<br><br>**Scenario: Edición exitosa de producto**<br>- **Given** que envío un JSON con los nuevos datos para un ID de producto existente<br>- **When** realizo una solicitud `PUT` a `/api/v1/products/{id}`<br>- **Then** la respuesta debe ser `200 OK` y retornar el producto modificado.<br><br>**Scenario: Producto no encontrado**<br>- **Given** que realizo una solicitud a un ID de producto que no existe<br>- **When** realizo la solicitud `PUT` a `/api/v1/products/{id}`<br>- **Then** la respuesta debe ser `404 Not Found`. | EP03 |
+| **TS07** | API Alertas de Stock Bajo | Como developer, quiero implementar un endpoint `GET /api/v1/products/low-stock` para obtener el listado filtrado de productos con existencias en o por debajo del umbral mínimo. | **Scenario: Consulta exitosa de alertas**<br>- **Given** que existen productos cuya cantidad de stock es menor o igual al stock mínimo<br>- **When** realizo una solicitud `GET` a `/api/v1/products/low-stock`<br>- **Then** la respuesta debe ser `200 OK` y retornar la lista de productos en alerta crítica.<br><br>**Scenario: Sin productos en alerta**<br>- **Given** que ningún producto está por debajo de su stock mínimo<br>- **When** realizo una solicitud `GET` a `/api/v1/products/low-stock`<br>- **Then** la respuesta debe ser `200 OK` y retornar una lista vacía. | EP04 |
+| **TS08** | API Datos para Contacto de Proveedores | Como developer, quiero implementar un endpoint `GET /api/v1/suppliers` para listar proveedores y generar los enlaces directos de reposición. | **Scenario: Obtención exitosa de proveedores**<br>- **Given** que existen proveedores registrados en el sistema<br>- **When** realizo una solicitud `GET` a `/api/v1/suppliers`<br>- **Then** la respuesta debe ser `200 OK` y retornar la lista de proveedores con sus números de contacto y canales directos. | EP04 |
+| **TS09** | API Registro de Ventas Directas | Como developer, quiero implementar un endpoint `POST /api/v1/sales` para procesar la venta y descontar automáticamente las unidades del inventario. | **Scenario: Registro de venta exitoso**<br>- **Given** que envío un JSON válido con el ID del producto, cantidad vendida y nombre del cliente<br>- **When** realizo una solicitud `POST` a `/api/v1/sales`<br>- **Then** la respuesta debe ser `201 Created`, descontar el stock en base de datos y retornar el comprobante de venta.<br><br>**Scenario: Stock insuficiente**<br>- **Given** que envío una cantidad de venta superior a las existencias disponibles<br>- **When** realizo la solicitud `POST` a `/api/v1/sales`<br>- **Then** la respuesta debe ser `400 Bad Request` indicando la falta de unidades en stock. | EP05 |
+| **TS10** | API Historial de Compras y Clientes | Como developer, quiero implementar un endpoint `GET /api/v1/sales/history` para obtener las transacciones anteriores ordenadas por fecha y cliente. | **Scenario: Consulta exitosa del historial**<br>- **Given** que existen ventas registradas previamente<br>- **When** realizo una solicitud `GET` a `/api/v1/sales/history`<br>- **Then** la respuesta debe ser `200 OK` y retornar el listado paginado de ventas pasadas con los nombres de clientes asociados. | EP05 |
+| **TS11** | API Métricas y Reporte Semanal | Como developer, quiero implementar un endpoint `GET /api/v1/reports/weekly` para consolidar los ingresos diarios y el ranking de productos más y menos vendidos. | **Scenario: Consulta exitosa de métricas**<br>- **Given** que hay registros de ventas dentro de los últimos 7 días<br>- **When** realizo una solicitud `GET` a `/api/v1/reports/weekly`<br>- **Then** la respuesta debe ser `200 OK` y retornar el acumulado de ingresos por día, el día de mayor venta y los listados de rotación de productos. | EP06 |
+| **TS12** | API Descarga de Reporte PDF | Como developer, quiero implementar un endpoint `GET /api/v1/reports/weekly/pdf` para generar el documento estructurado en formato PDF. | **Scenario: Generación exitosa del PDF**<br>- **Given** que se solicitan las métricas semanales consolidables<br>- **When** realizo una solicitud `GET` a `/api/v1/reports/weekly/pdf`<br>- **Then** la respuesta debe ser `200 OK`, incluir la cabecera `Content-Type: application/pdf` y transmitir el archivo descargable. | EP06 |
 
 ## 3.2. Impact Mapping
 
@@ -1039,23 +1115,30 @@ Este objetivo se relaciona con centralizar las operaciones del negocio en una so
 
 El Product Backlog reúne y ordena los User Stories de PetStock según el valor que aportan al negocio y la necesidad de los segmentos objetivo. La priorización inicia con la propuesta de valor y las funcionalidades que permiten administrar productos e inventario, debido a que estas se relacionan directamente con la reducción de quiebres de stock.
 
-| **# Orden** | **ID** | **Epic** | **Título de la User Story** | **Descripción de la User Story** |
-|---:|---|---|---|---|
-| 1 | US24 | EP07 Landing Page | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. |
-| 2 | US25 | EP07 Landing Page | Conocer los beneficios de PetStock | Como visitante de una tienda de mascotas, quiero conocer los beneficios principales de PetStock, para comprender cómo puede mejorar el control de productos, ventas e inventario de mi negocio. |
-| 3 | US26 | EP07 Landing Page | Conocer cómo funciona PetStock | Como visitante, quiero conocer los pasos principales para usar PetStock, para entender cómo podría incorporar la plataforma en la gestión diaria de mi tienda. |
-| 4 | US27 | EP07 Landing Page | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer el precio y las características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. |
-| 5 | US28 | EP07 Landing Page | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar vistas previas de PetStock, para conocer de forma concreta cómo se verán el Dashboard y los módulos principales antes de registrarme. |
-| 6 | US29 | EP07 Landing Page | Consultar preguntas frecuentes | Como visitante con dudas sobre PetStock, quiero consultar preguntas frecuentes, para resolver inquietudes antes de decidir si deseo registrarme o probar la plataforma. |
-| 7 | US30 | EP07 Landing Page | Acceder a información adicional | Como visitante, quiero visualizar el pie de página con información complementaria y enlaces de navegación, para identificar datos adicionales de PetStock y moverme fácilmente por el sitio. |
-| 8 | US31 | EP07 Landing Page | Visualizar la Landing Page en diferentes dispositivos | Como visitante que navega desde una computadora, tablet o celular, quiero visualizar correctamente el Landing Page de PetStock, para acceder a su contenido y call-to-action sin dificultades según mi dispositivo. |
-| 9 | US01 | EP01 Identity & Access | Crear cuenta | Como administrador de tienda, quiero crear una cuenta en PetStock, para gestionar las operaciones de mi negocio desde la plataforma. |
-| 10 | US02 | EP01 Identity & Access | Iniciar sesión | Como administrador de tienda, quiero iniciar sesión en mi cuenta, para acceder a las funcionalidades de gestión de mi negocio. |
-| 11 | US04 | EP02 Product & Inventory Management | Registrar producto | Como administrador de tienda, quiero registrar un nuevo producto en el catálogo, para mantener organizada mi oferta de venta. |
-| 12 | US06 | EP02 Product & Inventory Management | Consultar inventario | Como administrador de tienda, quiero consultar las cantidades disponibles de mis productos, para conocer el estado actual de mi stock. |
-| 13 | US07 | EP02 Product & Inventory Management | Recibir alerta de stock mínimo | Como administrador de tienda, quiero recibir una alerta cuando un producto llegue a su stock mínimo, para reponerlo a tiempo. |
-| 14 | US08 | EP03 Sales & Purchases | Registrar venta | Como administrador de tienda, quiero registrar una venta indicando los productos y el cliente, para actualizar automáticamente mi inventario. |
-| 15 | US11 | EP04 Customer & Supplier Management | Registrar proveedor | Como administrador de tienda, quiero registrar la información de mis proveedores, para facilitar el proceso de reposición. |
+| Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| **1** | **US01** | Conocer la propuesta de valor | Como visitante de una pequeña tienda de mascotas, quiero identificar rápidamente qué problema resuelve PetStock, para evaluar si la plataforma puede ayudarme a controlar mejor mi negocio. | **1** |
+| **2** | **US02** | Conocer los beneficios de PetStock | Como visitante del segmento de alimentos para mascotas, quiero conocer los beneficios de la plataforma, para comprender cómo optimiza el control de productos de alta rotación. | **1** |
+| **3** | **US03** | Conocer cómo funciona PetStock | Como visitante, quiero conocer el paso a paso del uso de la plataforma, para entender cómo incorporar el registro de productos y ventas en mi rutina diaria. | **1** |
+| **4** | **US04** | Conocer el plan de suscripción | Como visitante interesado en PetStock, quiero conocer los precios y características del plan de suscripción, para decidir si la plataforma se ajusta al presupuesto de mi tienda. | **2** |
+| **5** | **US05** | Visualizar las funcionalidades de la plataforma | Como visitante, quiero visualizar demostraciones del sistema, para conocer de forma concreta el Dashboard y los módulos de gestión antes de registrarme. | **1** |
+| **6** | **US06** | Consultar preguntas frecuentes | Como visitante con dudas sobre la plataforma, quiero consultar preguntas frecuentes, para resolver inquietudes técnicas y operativas antes de crear una cuenta. | **1** |
+| **7** | **US07** | Acceder a información adicional y pie de página | Como visitante, quiero disponer de enlaces institucionales en el pie de página, para identificar datos de contacto y términos legales de PetStock. | **1** |
+| **8** | **US08** | Navegar en diferentes dispositivos | Como visitante que navega desde dispositivo móvil o escritorio, quiero una experiencia adaptable, para consultar el contenido y llamados a la acción sin restricciones de formato. | **2** |
+| **9** | **US09** | Registro de cuenta con términos y condiciones | Como dueño de negocio, quiero registrar una cuenta con mis datos personales e identificación del negocio, para acceder al entorno de gestión de PetStock. | **3** |
+| **10** | **US10** | Iniciar sesión | Como dueño de negocio, quiero ingresar mis credenciales de acceso, para autenticarme e ingresar a la plataforma de administración. | **2** |
+| **11** | **US11** | Modificar perfil de negocio | Como dueña de tienda boutique, quiero actualizar mis datos de contacto o contraseña desde la configuración, para mantener mi información comercial actualizada y segura. | **2** |
+| **12** | **US12** | Cerrar sesión de forma segura | Como dueño de negocio, quiero cerrar sesión desde el menú de perfil, para proteger la información del negocio al finalizar la jornada. | **1** |
+| **13** | **US13** | Registrar nuevo producto en inventario | Como dueño de tienda de alimentos, quiero registrar un producto especificando nombre, categoría, precio, stock inicial y stock mínimo, para controlar las existencias disponibles. | **3** |
+| **14** | **US14** | Editar datos de producto | Como dueño de negocio, quiero modificar el precio o existencias de un producto existente, para mantener actualizado el catálogo ante variaciones del mercado. | **2** |
+| **15** | **US15** | Desactivar producto del catálogo | Como dueño de negocio, quiero cambiar el estado de un producto a inactivo, para impedir que se comercialice temporalmente sin eliminar su historial. | **2** |
+| **16** | **US16** | Identificación de productos con stock bajo | Como dueño de tienda de alimentos, quiero ver el contador de alertas en el Dashboard y la lista de ítems en estado crítico, para identificar desabastecimientos antes de quedar sin stock. | **5** |
+| **17** | **US17** | Contactar proveedor para reposición | Como dueño de negocio, quiero seleccionar un proveedor de la lista sugerida y la cantidad de reabastecimiento, para iniciar la solicitud por llamada o WhatsApp. | **3** |
+| **18** | **US18** | Registrar venta directa | Como dueña de tienda boutique, quiero registrar los productos y la cantidad vendida en mostrador, para descontar automáticamente las existencias del inventario general. | **5** |
+| **19** | **US19** | Asignar cliente recurrente a la venta | Como dueña de tienda boutique, quiero ingresar el nombre del cliente durante el registro de la venta, para vincular la transacción a su historial de consumo. | **2** |
+| **20** | **US20** | Consultar historial de transacciones de clientes | Como dueña de negocio, quiero consultar la lista cronológica de ventas pasadas por cliente, para conocer sus hábitos de compra y recomendar productos. | **3** |
+| **21** | **US21** | Visualizar gráfico de rendimiento semanal | Como dueña de tienda boutique, quiero revisar el gráfico de ingresos por día y los rankings de rotación, para conocer qué días vendo más y qué productos debo mantener. | **5** |
+| **22** | **US22** | Descargar reporte operativo en PDF | Como dueño de negocio, quiero descargar un documento PDF con los indicadores del periodo, para guardar un archivo físico o digital del estado de mi tienda. | **2** |
 
 ![Product Backlog de PetStock en Jira](assets/product-backlog/product-backlog-petstock.png)
 
@@ -1885,21 +1968,23 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 
 [PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
 
-![Sprint 1](assets/sprint/sprint%201.PNG)
+<p align="center">
+  <img src="assets/sprint/sprint1.PNG" alt="Descripción de la imagen" width="600">
+</p>
 
 | Sprint # | Sprint 1 | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / InProcess / ToReview / Done)** |
-| US24 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
-| US24 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
-| US25 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
-| US26 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
-| US27 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
-| US28 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
-| US29 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
-| US30 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
-| US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US01 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US01 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US02 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
+| US03 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US04 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US05 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US06 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US07 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US08 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
@@ -1989,13 +2074,314 @@ Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión
 
 Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
 
+### 5.2.2. Sprint 2
+En esta sección se presenta el progreso alcanzado durante el Sprint 2 del proyecto PetStock, considerando tanto los avances del producto como el trabajo realizado de manera colaborativa por el equipo. A lo largo de este sprint, se priorizó el desarrollo de la primera versión de la Web Application, enfocada en establecer las funcionalidades principales que permitirán gestionar de manera centralizada las operaciones de las tiendas de mascotas.
+
+#### 5.2.2.1. Sprint Planning 2
+
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 2, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-25 |
+| **Time** | 7:00PM - 9:00PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 1, el equipo culminó la implementación de la Landing Page de PetStock, completando las actividades y metas planificadas para esta etapa del proyecto. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del sprint, el equipo definió nuevas acciones para optimizar el trabajo colaborativo, entre ellas mantener un mejor control de los cambios realizados, actualizar la información técnica del proyecto y ordenar el proceso de desarrollo de la Web Application. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to establish the first functional version of the PetStock Web Application, focusing on the main features required to support pet store management. The implementation includes product and inventory management, sales registration, customer information, and relevant business data. The sprint will be considered successful once these core processes are working properly and users can interact with the main components of the application. |
+| **Sprint n Velocity** | 32 |
+| **Sum of Story Points** | 32 |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+A lo largo del Sprint 2, el equipo estableció las funcionalidades que formarían parte de la primera versión de la Web Application de PetStock, definiendo los procesos principales que serían desarrollados para atender las necesidades de gestión de las tiendas de mascotas. 
+
+| Team Member (Last Name, First Name) | GitHub Username | Login & Register | Catalog & Inventory | Profile | Analytics | Sales & Customer |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Mendoza Moreano, Mariel Lucero** | MarielLucero | **L** | C | C | C | C |
+| **Quispe Palomino, Tony Jhunior** | GonzJunior18p | C | C | C | C | **L** |
+| **Valladolid Jiménez, Arturo Fernando** | artuvall | C | C | **L** | C | C |
+| **Mendoza Boluarte, Pierre Alessandro** | pierreale2302 | C | C | C | **L** | C |
+| **Gutierrez Tume, Stanley Jeremy** | Stan-gt213891 | C | **L** | C | C | C |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El Sprint 2 tuvo como propósito desarrollar una primera versión operativa de la Web Application, incorporando las funcionalidades iniciales necesarias para su funcionamiento.
+
+**Tablero de Trello:** [Sprint 2](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+<p align="center">
+  <img src="assets/sprint/sprint2.PNG" alt="Descripción de la imagen" width="600">
+</p>
+
+| Sprint # | Sprint 2 |
+|---|---|
+| User Story | Work-Item / Task |
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US09 | Registro de cuenta con términos y condiciones | T01 | UI Formulario de Registro | Diseñar e implementar el formulario de registro con validaciones visuales y casilla de términos. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US09 | Registro de cuenta con términos y condiciones | T02 | Endpoint POST Registro | Desarrollar endpoint /api/v1/auth/register con validación de correo duplicado y términos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US09 | Registro de cuenta con términos y condiciones | T03 | Pruebas Unitarias e Integración | Validar flujos de registro exitoso, omisión de términos y correos repetidos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US10 | Iniciar sesión | T01 | UI Pantalla de Login | Construir la interfaz de login y manejo del estado de autenticación en el cliente. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US10 | Iniciar sesión | T02 | Endpoint POST Login | Implementar endpoint con autenticación. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US10 | Iniciar sesión | T03 | Pruebas de Autenticación | Probar credenciales válidas e inválidas. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US11 | Modificar perfil de negocio | T01 | Interfaz visual de "Mi Perfil" | Implementar la vista principal Mi Perfil con los datos del usuario (Avatar, Nombre, Rol, Correo) y el menú de configuración. Conectar el botón interactivo "Editar perfil" para navegar o abrir el formulario de edición. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US11 | Modificar perfil de negocio | T02 | Formulario de edición y validaciones en cliente | Construcción del formulario con campos para nombres, apellidos, correo y opción de ingresar una nueva contraseña. Incluye la lógica del lado del cliente para validar que los campos obligatorios no queden vacíos. | 4 | Valladolid Jiménez, Arturo Fernando | Done |
+| US11 | Modificar perfil de negocio | T03 | Endpoint PUT Perfil | Crear el servicio web /api/v1/users/profile para procesar las actualizaciones en la base de datos. | 3 | Valladolid Jiménez, Arturo Fernando | Done |
+| US12 | Cerrar sesión de forma segura | T01 | Control de Cierre de Sesión y Redirección | Al hacer clic en "Cerrar sesión", el sistema invalida el token activo y redirige al login. Esto fuerza al usuario a volver a ingresar sus credenciales si intenta acceder nuevamente. | 1 | Valladolid Jiménez, Arturo Fernando | Done |
+| US13 | Registrar nuevo producto en inventario | T01 | Formulario de Registro de Producto | Construir la pantalla e interfaz del formulario con todos los campos (nombre, categoría, descripción, precio, stock disponible, stock mínimo y proveedor), además del conmutador "Disponible para venta en caja" y los botones de acción. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US13 | Registrar nuevo producto en inventario | T02 | Validaciones de Datos Obligatorios y Valores Numéricos | Implementar las reglas de negocio en el cliente y servidor para impedir el guardado si faltan campos obligatorios o se ingresan valores negativos, mostrando los mensajes de error correspondientes. | 4 | Gutierrez Tume, Stanley Jeremy | Done |
+| US13 | Registrar nuevo producto en inventario | T03 | Endpoint POST Producto y Actualización de Inventario | Desarrollar el servicio backend (/api/v1/products) para procesar el guardado en la base de datos, registrar la actividad y actualizar los indicadores de stock total en el Dashboard. | 5 | Gutierrez Tume, Stanley Jeremy | Done |
+| US16 | Identificación de productos con stock bajo | T01 | Carga Dinámica de Alertas e Integración de Búsqueda | Conectar la vista con la API para listar dinámicamente los productos cuyo stock actual sea igual o menor al mínimo. Implementar también la búsqueda para filtrar las tarjetas en tiempo real y actualizar los contadores de "Alerta crítica". | 4 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| US16 | Identificación de productos con stock bajo | T02 | Acciones Interactivas de "+ Reponer" y "Editar" | Implementar la funcionalidad de los botones en las tarjetas: "+ Reponer" abre un modal para incrementar las unidades y "Editar" redirecciona al formulario de modificación del producto. | 5 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| US18 | Registrar venta directa | T01 | Formulario e Interactividad de UI de Venta | Implementar la interactividad del formulario visual: selección dinámica de producto, ajuste de cantidad, selección de cliente, fecha, método de pago (Efectivo/Tarjeta/Yape) y actualización en tiempo real del panel "Resumen" y monto total. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T02 | Validaciones de Stock en Cliente y Servidor | Implementar las reglas de control para verificar las existencias antes de vender. Si la cantidad ingresada supera el stock disponible, el sistema bloquea el proceso y muestra una advertencia. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T03 | Endpoint POST Venta y Descuento Automático de Inventario | Desarrollar la lógica backend (/api/v1/sales) para procesar la transacción, guardar el registro en el historial de ventas y descontar automáticamente las unidades vendidas del stock. | 5 | Quispe Palomino, Tony Jhunior | Done |
+| US19 | Asignar cliente recurrente a la venta | T01 | Asignación y Vinculación de Cliente en Venta | Permitir seleccionar o buscar a un cliente recurrente para asociar la transacción directamente a su historial de consumo. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US20 | Consultar historial de transacciones de clientes | T01 | UI del Historial de Ventas | Implementar la vista cronológica de transacciones pasadas, mostrando tarjetas por venta con las iniciales/avatar del cliente, nombre, fecha/hora, número de unidades y monto total. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US20 | Consultar historial de transacciones de clientes | T02 | Modal "Detalle de Venta" e Integración Backend | Desarrollar el modal "Detalle de Venta", mostrando ID de venta, cliente, fecha/hora, método de pago, productos comprados y total pagado. Integrar el endpoint backend correspondiente. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T01 | Componente de Gráfico de Ventas Semanales y Métricas de Ingreso | Implementar el panel "Ventas por día" mediante barras verticales para representar el monto vendido de lunes a domingo. Incluir el acumulado "Total sem." y la identificación del día de mayor ingreso. | 4 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T02 | Listados de Rotación de Inventario | Desarrollar los componentes visuales para mostrar el ranking de productos. | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T03 | API Backend para Métricas y Agregación de Reporte Semanal | Crear el endpoint backend (ej. GET /api/v1/reports/weekly) para consultar las transacciones de los últimos 7 días, calcular los ingresos diarios, identificar los productos más y menos vendidos y totalizar los indicadores de inventario. | 6 | Mendoza Boluarte, Pierre Alessandro | In Progress |
+| US22 | Descargar reporte operativo en PDF | T01 | Implementación de botón para descargar | Diseñar e implementar la sección del reporte con el botón "Descargar reporte en PDF", agregando el mensaje contextual "Usa la opción de impresión del navegador para guardar el reporte como PDF". | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US22 | Descargar reporte operativo en PDF | T02 | Visualización previa | Validar la visualización y maquetación correcta de los gráficos de ventas por día y las tarjetas de "Productos más vendidos" y "Menos movimiento" en la vista previa de impresión del navegador. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Frontend | fix/login-session-storage | 36627bf | fix(iam): use sessionStorage so the app starts on the login screen | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | 2626ffc | feat(dashboard): display dynamic weekly sales chart | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 5bf4c56 | fix: corrige endpoints y mapeo de campos en catalogo e inventario, agrega wrapper de layout | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 5136390 | feat: conectar botones Registrar Producto y Bajo Stock a sus rutas | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 9c37a18 | feat(profile): adapt profile views to shared layout and update session name | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 2111d78 | feat(sales): decrease inventory stock when a sale is registered | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | cb424b6 | fix(catalog): connect catalog and inventory to english api collections | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 0cfbc69 | refactor: move module views into shared layout and translate remaining texts | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 3a20dea | feat(shared): add shared layout with sidebar and protected nested routes | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 60d187a | feat(i18n): add layout and dashboard translations and remember selected language | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | cccf034 | fix(iam): use users collection for login and register | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/integration-layout-profile | 4dc8e19 | fix(fake-api): unify users collection and set Eduardo Salazar as main account | Valladolid Jiménez, Arturo Fernando | 07/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | b057ef9 | fix: adaptar catalog/inventory a nueva estructura del db.json y reubicar selector de idioma | Gutierrez Tume, Stanley Jeremy | 07/10/2026 |
+| Frontend | feature/sales-customer-tony-quispe | c038ac8 | feat: modulo de ventas final con css separado y metodos de pago | Quispe Palomino, Tony Jhunior | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | b9433b6 | feat(frontend):add missing components | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 768e1c7 | feat: enhance responsive design, mobile hamburger menu, and i18n support in sales module | Quispe Palomino, Tony Jhunior | 07/10/2026 |
+| Frontend | feature/analytic-pierre-mendoza | 93bed64 | feat(analytics): implement analytics bounded context to the frontend | Mendoza Boluarte, Pierre Alessandro | 07/10/2026 |
+| Frontend | feature/dashboard-mendoza | 03c4c19 | feat: add dashboard interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | develop | a837c14 | feat: run fake api inside frontend with a single npm start | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | c391200 | chore: add development environment variables | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 0f34077 | chore: add npm scripts to run fake api and web app together | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 1fc3233 | chore: add npm scripts to run fake api and web app together | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 2fad644 | feat: add fake api database inside frontend project | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | develop | 4a18d6e | chore: add json-server and concurrently as dev dependencies | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | a0c9be2 | feat: integrate catalog and inventory modules with i18n and merge develop changes | Gutierrez Tume, Stanley Jeremy | 06/10/2026 |
+| Frontend | feature/registro-mendoza | 5944144 | feat: add registration interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 9b62bc8 | chore: add primeicons and petstock orange theme preset | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 9a03ddb | feat(profile): connect profile with iam session and add responsive petstock layout | Valladolid Jiménez, Arturo Fernando | 06/10/2026 |
+| Frontend | feature/iam-mariel-mendoza | 3e55f2b | feat: add form interface | Mendoza Moreano, Mariel Lucero | 06/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b9d094c | feat(profile): add sign out option to profile view | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | e20ea38 | feat(profile): add profile nested routes | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b7dabfb | feat(profile): add my profile and edit profile views | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 90a1cc8 | feat(profile): add edit profile form with validation | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | a3e3679 | feat(profile): add english and spanish translations | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | b5bd8f6 | feat(profile): add profile store | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | ee2b10d | feat(profile): add profile api and assembler | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/profile-arturo-valladolid | 99bd5af | feat(profile): add profile entity | Valladolid Jiménez, Arturo Fernando | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 2678a40 | feat: polish product form and stock dashboard UI with provider creation, matching Figma mockups | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 97bcbf0 | feat: match product registration form and stock alerts view to approved wireframes | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | e733711 | feat: implement inventory module (entities, api, store, view) connected to FakeApi | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/catalog-inventory-Stanley | 4005672 | feat: implement catalog module (entities, api, store, view) connected to FakeApi | Gutierrez Tume, Stanley Jeremy | 05/10/2026 |
+| Frontend | feature/iam-mariel-mendoza | 20563fa | feat: add BaseEndpoint service and setup Axios configuration | Mendoza Moreano, Mariel Lucero | 05/10/2026 |
+| Frontend | develop | 52ffe99 | fix: resolve broken base setup (App.vue import, PrimeVue component names, missing vue-router) | Gutierrez Tume, Stanley Jeremy | 04/10/2026 |
+| Frontend | develop | e3e08f8 | Initial commit | Mendoza Moreano, Mariel Lucero | 02/10/2026 |
+| Frontend | develop | a4b8059 | refactor: remove purchasing context | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 13f0637 | feat: add shared domain utilities | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 3d59297 | feat: configure components and Vite setup | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | 8a1030f | feat: configure vue-i18n | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | b38340c | chore: add PrimeVue and i18n dependencies | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+| Frontend | develop | c53f3be | chore: add project structure by bounded contexts | Mendoza Moreano, Mariel Lucero | 21/09/2026 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2 se implementó la primera versión de la Web Application de PetStock, desarrollada con Vue 3, PrimeVue, Pinia y Vue Router. La aplicación está organizada por bounded contexts (IAM, Profile, Catalog, Inventory, Sales, Customer y Analytics) y consume los datos desde una Fake API (json-server) mediante Axios.
+
+Además de las vistas de cada módulo, se integró un layout compartido con barra lateral, rutas protegidas por sesión y soporte de idiomas español e inglés. Las vistas son responsive y, en dispositivos móviles, el menú lateral se convierte en un menú hamburguesa.
+
+
+##### Inicio de sesión
+
+Pantalla de acceso con correo y contraseña, y selector de idioma. Al autenticarse, el usuario es redirigido al dashboard. Las rutas internas están protegidas: si no hay sesión activa, la aplicación devuelve al usuario al login.
+
+![Vista de inicio de sesión](./assets/sprint-2/execution/01-login.png)
+
+##### Registro de cuenta
+
+Formulario de registro con validaciones visuales y casilla de aceptación de términos y condiciones.
+
+![Vista de registro de cuenta](./assets/sprint-2/execution/02-register.png)
+
+##### Dashboard
+
+Resumen operativo del negocio con el stock total, las ventas del día, el ingreso mensual, un gráfico semanal, los productos con stock bajo y la actividad reciente. Desde la barra lateral se accede a los demás módulos.
+
+![Vista del dashboard](./assets/sprint-2/execution/03-dashboard.png)
+
+##### Registro de producto
+
+Formulario para registrar un producto con nombre, categoría, descripción, precio, stock disponible, stock mínimo y proveedor, además del interruptor "Disponible para venta en caja". Valida los campos obligatorios antes de guardar.
+
+![Vista de registro de producto](./assets/sprint-2/execution/04-catalog.png)
+
+##### Productos con stock bajo
+
+Listado de alertas de los productos cuyo stock actual es igual o menor al mínimo. Cada tarjeta indica el nivel de alerta, el stock actual, el stock mínimo requerido y el porcentaje de cobertura. Incluye un buscador para filtrar los productos.
+
+![Vista de productos con stock bajo](./assets/sprint-2/execution/05-inventory.png)
+
+##### Registro de venta e historial
+
+Formulario de venta con selección de producto y cantidad (mostrando el stock disponible), cliente, fecha y método de pago (Efectivo, Tarjeta o Yape). El panel de resumen se actualiza con el total de la venta. Al registrarla, el stock del producto se descuenta automáticamente. La pestaña "Historial" lista las ventas realizadas y permite ver el detalle de cada una.
+
+![Vista de registro de venta](./assets/sprint-2/execution/06-sales.png)
+
+##### Reportes
+
+Vista de análisis con el gráfico de ventas por día, los productos más vendidos, los productos de baja rotación y el resumen del inventario general. Permite descargar el reporte en PDF.
+
+![Vista de reportes](./assets/sprint-2/execution/07-analytics.png)
+
+##### Mi perfil y edición de perfil
+
+Vista del perfil del usuario con sus datos y el menú de configuración. Desde esta vista se accede al formulario de edición, que valida los campos obligatorios y el formato del correo, y a la opción de cerrar sesión, que invalida la sesión activa y redirige al login.
+
+![Vista de mi perfil](./assets/sprint-2/execution/08-profile.png)
+
+![Vista de edición de perfil](./assets/sprint-2/execution/09-profile-edit.png)
+
+##### Versión responsive
+
+En dispositivos móviles, el menú lateral se oculta y se muestra mediante un botón de menú (hamburguesa).
+
+![Vista móvil del dashboard](./assets/sprint-2/execution/10-mobile-dashboard.png)
+
+##### Video de navegación
+
+El siguiente video muestra el recorrido por la aplicación: inicio de sesión, dashboard, registro de producto, registro de venta e historial, stock bajo, reportes, perfil y cierre de sesión.
+
+| Dato | Detalle |
+|---|---|
+| Archivo | `upc-pre-202620-1asi0730-8074-nexora-product-navigation-sprint-2.mp4` |
+| Duración | `<04:11>` |
+| Enlace | `<https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQD4ZczoQfgYRbbHXJ8M_tKzATJ_onSKkXU2CktineGGYIk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=XAD2ga>` |
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+En el Sprint 2 aún no se desarrolló el backend de PetStock. Para poder probar la Web Application completa, el equipo levantó una Fake API con json-server (`server/db.json`) que simula los endpoints REST que la aplicación consume. Cada endpoint se definió con el nombre y la estructura que tendrá en el backend real, de modo que luego solo cambie la URL base.
+
+La Fake API se ejecuta junto con la aplicación con `npm start` y responde en `http://localhost:3000`.
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+|---|---|---|---|---|
+| `/users` | Listar usuarios (login) | `GET /users` | — | 200, lista de usuarios |
+| `/users` | Registrar usuario | `POST /users` | Body: `firstName`, `lastName`, `email`, `password`, `role`, `status` | 201, usuario creado con su `id` |
+| `/users/{id}` | Obtener perfil | `GET /users/1` | `id` en la ruta | 200, usuario |
+| `/users/{id}` | Editar perfil | `PATCH /users/1` | `id` en la ruta. Body: campos a cambiar | 200, usuario actualizado |
+| `/products` | Listar / registrar producto | `GET /products` · `POST /products` | Body: `name`, `description`, `price`, `categoryId`, `supplierId`, `active` | 200 lista · 201 producto creado |
+| `/categories` | Listar categorías | `GET /categories` | — | 200, lista de categorías |
+| `/suppliers` | Listar / registrar proveedor | `GET /suppliers` · `POST /suppliers` | Body: `companyName`, `contactName`, `phone`, `email` | 200 lista · 201 proveedor creado |
+| `/inventories` | Listar / registrar stock | `GET /inventories` · `POST /inventories` | Body: `productId`, `currentStock`, `minimumStock`, `lastUpdated` | 200 lista · 201 inventario creado |
+| `/inventories/{id}` | Descontar stock tras una venta | `PATCH /inventories/2` | `id` en la ruta. Body: `currentStock` | 200, inventario actualizado |
+| `/customers` | Listar / registrar cliente | `GET /customers` · `POST /customers` | Body: `name`, `email`, `phone`, `address` | 200 lista · 201 cliente creado |
+| `/sales` | Listar / registrar venta | `GET /sales` · `POST /sales` | Body: `userId`, `customerId`, `customerName`, `items`, `total`, `paymentMethod`, `date` | 200 lista · 201 venta creada |
+
+El reporte semanal se calcula en la aplicación a partir de `/sales`, `/products`, `/categories` e `/inventories`. Si un `id` no existe, la Fake API responde 404.
+
+**Ejemplos de response**
+
+`GET /products/102` → 200
+```json
+{
+  "id": "102",
+  "name": "RicoCat Salmón 10kg",
+  "description": "Alimento completo para gatos adultos",
+  "price": 95,
+  "categoryId": 2,
+  "supplierId": 1,
+  "active": true
+}
+```
+
+`POST /sales` → 201. Registra la venta y devuelve el recurso con el `id` generado.
+```json
+{
+  "id": "VNdebtTpgo0",
+  "userId": 2,
+  "customerId": "1",
+  "customerName": "Ana Torres",
+  "items": [{ "productId": "103", "quantity": 5, "unitPrice": 45 }],
+  "total": 225,
+  "paymentMethod": "yape",
+  "date": "2026-10-07"
+}
+```
+
+**Evidencia de interacción**
+
+![GET /products desde el navegador o Postman](assets/sprint-2/services/get-products.png)
+
+![POST /sales desde Postman](assets/sprint-2/services/post-sales.png)
+
+![PATCH /users/1 desde Postman](assets/sprint-2/services/patch-users.png)
+
+**Repositorio:** https://github.com/1ASI0730-2620-8074-PetStock/Frontend (carpeta `server/`)
+
+**Commits relacionados con la Fake API en este sprint**
+
+| Commit | Mensaje | Fecha |
+|---|---|---|
+| `4a18d6e` | chore: add json-server and concurrently as dev dependencies | 2026-10-06 |
+| `2fad644` | feat: add fake api database inside frontend project | 2026-10-06 |
+| `0f34077` | chore: add npm scripts to run fake api and web app together | 2026-10-06 |
+| `1fc3233` | chore: add npm scripts to run fake api and web app together | 2026-10-06 |
+| `c391200` | chore: add development environment variables | 2026-10-06 |
+| `a837c14` | feat: run fake api inside frontend with a single npm start | 2026-10-06 |
+| `4dc8e19` | fix(fake-api): unify users collection and set Eduardo Salazar as main account | 2026-10-07 |
+
+Los endpoints `/api/v1/...` mencionados en el Sprint Backlog 2 corresponden a los endpoints simulados con esta Fake API. El backend real se desarrollará en un sprint posterior.*
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo avanzó con el despliegue de los productos desarrollados hasta el momento. Se creó una cuenta en **Render** como cloud provider para alojar la aplicación web (Web Application), y se configuró un Web Service conectado directamente al repositorio de GitHub del frontend, de modo que cada actualización en la rama principal del proyecto se refleje automáticamente en el entorno desplegado.
+
+- **Landing Page:** desplegada previamente durante el Sprint 1 (ver evidencia en el informe AV1).
+- **Web Application (Frontend):** desplegada en Render durante este sprint, integrando los módulos de Catálogo, Inventario y Ventas desarrollados hasta la fecha
+
+**Link de acceso (Web Application):** [https://petstock-frontend.onrender.com](https://petstock-frontend.onrender.com)
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+Durante el Sprint 2, el equipo organizó el trabajo por bounded context, para cada funcionalidad de la Web Application: Login & Register, Catalog & Inventory, Profile, Analytics y Sales & Customer. Esta distribución, definida en conjunto durante el Sprint Planning, permitió que cada integrante liderara un área específica mientras colaboraba activamente en el resto de los módulos, aportando revisiones y apoyo técnico a sus compañeros.
+
+El desarrollo se realizó mediante ramas independientes (feature branches) por integrante, integradas posteriormente a la rama develop a través de Pull Requests, siguiendo la convención de Conventional Commits establecida desde el Sprint 1. Este flujo de trabajo no significó un desarrollo aislado: durante la integración se realizaron pruebas conjuntas entre módulos relacionados , lo que permitió identificar y corregir en equipo inconsistencias en el mapeo de datos antes del cierre del sprint.
+
+A continuación, se presenta evidencia de los Pull Requests y commits realizados por los integrantes del equipo durante este sprint:
+
+![Pull Requests Sprint 2](PR_TB1.png)
+
+
 # Conclusiones
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
+- El desarrollo del Frontend para el sistema PetStock logró consolidar un ecosistema visual integral, moderno e intuitivo, orientado a optimizar la gestión operativa de tiendas de mascotas. A través de la maquetación y dinamización de sus pantallas principales, se construyó un flujo de usuario homogéneo y fluido que abarca todo el ciclo de negocio
 
 # Recomendaciones
 
 - Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
+- Se recomienda continuar con la evolución del sistema PetStock implementando un plan de pruebas de integración continua (CI/CD) para garantizar la estabilidad de las comunicaciones entre las pantallas del Frontend y la API del Backend. Asimismo, se aconseja optimizar el módulo de almacenamiento de imágenes e inventarios mediante servicios en la nube (como AWS S3 o Cloudinary) para acelerar la carga de los catálogos de productos y reportes, escalando la infraestructura hacia una PWA (Progressive Web App) que permita al personal operar el sistema de ventas desde dispositivos móviles en el punto de venta.
 
 # Bibliografia
 
