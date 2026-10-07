@@ -242,6 +242,9 @@ Apoye en la definicion de los User persona para entender mejor los segmentos obj
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (Ubiquitous Language, User Stories, Design-Level EventStorming y diagramas C4), validando cada decisión técnica en coordinación con el equipo para asegurar su coherencia con los artefactos previamente definidos.
+
+tp:<br>
+Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, implementando el formulario de registro de productos con sus validaciones y la vista de alertas de stock bajo. Verifiqué de forma integral el funcionamiento de la Web Application junto con la Fake API embebida por el equipo, identificando y corrigiendo inconsistencias en el mapeo de datos entre los endpoints y las entidades del dominio (catálogo, inventario y proveedores). Coordiné con mis compañeros la integración de mis módulos con el dashboard y el resto de la aplicación, asegurando que la navegación y el diseño fueran consistentes con lo desarrollado por el equipo.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
@@ -279,8 +282,10 @@ Participé activamente en la planificación de las actividades para el informe y
 <br><br>
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
-Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.
-    
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
+tp:<br>
+Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas por feature, Pull Requests y Conventional Commits) para integrar mis correcciones al catálogo e inventario, cumpliendo con los entregables asignados dentro del plazo establecido para esta entrega. Validé exhaustivamente el funcionamiento end-to-end de mi módulo (registro de productos, proveedores, alertas de stock) antes de integrarlo, y documenté los hallazgos para mantener informado al equipo sobre el estado real de la aplicación. 
+<br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Participé en la planificación y desarrollo de actividades relacionadas con la investigación del usuario, el análisis competitivo y la construcción de la Landing Page. El Lean UX Canvas y el diseño de entrevistas ayudaron al equipo a establecer objetivos comunes y organizar la información que debíamos validar. También contribuí con los puntos de análisis competitivo, estrategias y tácticas, así como con los apartados 4.7.1 y 4.8.1, siguiendo la distribución de tareas acordada. En la parte visual, apoyé en la elaboración de la Navbar y el Hero, revisando con el equipo que estos elementos fueran coherentes con la estructura y el mensaje principal de la Landing Page. Cumplí con las actividades asignadas y coordiné la integración de mis aportes con los demás entregables del proyecto.
@@ -2211,6 +2216,13 @@ El siguiente video muestra el recorrido por la aplicación: inicio de sesión, d
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
+Durante el Sprint 2, el equipo organizó el trabajo por bounded context, para cada funcionalidad de la Web Application: Login & Register, Catalog & Inventory, Profile, Analytics y Sales & Customer. Esta distribución, definida en conjunto durante el Sprint Planning, permitió que cada integrante liderara un área específica mientras colaboraba activamente en el resto de los módulos, aportando revisiones y apoyo técnico a sus compañeros.
+
+El desarrollo se realizó mediante ramas independientes (feature branches) por integrante, integradas posteriormente a la rama develop a través de Pull Requests, siguiendo la convención de Conventional Commits establecida desde el Sprint 1. Este flujo de trabajo no significó un desarrollo aislado: durante la integración se realizaron pruebas conjuntas entre módulos relacionados , lo que permitió identificar y corregir en equipo inconsistencias en el mapeo de datos antes del cierre del sprint.
+
+A continuación, se presenta evidencia de los Pull Requests y commits realizados por los integrantes del equipo durante este sprint:
+
+
 
 
 # Conclusiones
