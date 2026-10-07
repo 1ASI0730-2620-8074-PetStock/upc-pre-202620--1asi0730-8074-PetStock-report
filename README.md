@@ -2049,8 +2049,28 @@ Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión
 Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
 
 ### 5.2.2. Sprint 2
+En esta sección se presenta el progreso alcanzado durante el Sprint 2 del proyecto PetStock, considerando tanto los avances del producto como el trabajo realizado de manera colaborativa por el equipo. A lo largo de este sprint, se priorizó el desarrollo de la primera versión de la Web Application, enfocada en establecer las funcionalidades principales que permitirán gestionar de manera centralizada las operaciones de las tiendas de mascotas.
 
 #### 5.2.2.1. Sprint Planning 2
+
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 2, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-25 |
+| **Time** | 7:00PM - 9:00PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 1, el equipo culminó la implementación de la Landing Page de PetStock, completando las actividades y metas planificadas para esta etapa del proyecto. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del sprint, el equipo definió nuevas acciones para optimizar el trabajo colaborativo, entre ellas mantener un mejor control de los cambios realizados, actualizar la información técnica del proyecto y ordenar el proceso de desarrollo de la Web Application. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to establish the first functional version of the PetStock Web Application, focusing on the main features required to support pet store management. The implementation includes product and inventory management, sales registration, customer information, and relevant business data. The sprint will be considered successful once these core processes are working properly and users can interact with the main components of the application. |
+| **Sprint n Velocity** | 32 |
+| **Sum of Story Points** | 32 |
+
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
