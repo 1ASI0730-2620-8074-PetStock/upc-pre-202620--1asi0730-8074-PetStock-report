@@ -1944,7 +1944,9 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 
 [PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
 
-![Sprint 1](assets/sprint/sprint%201.PNG)
+<p align="center">
+  <img src="assets/sprint/sprint1.PNG" alt="Descripción de la imagen" width="600">
+</p>
 
 | Sprint # | Sprint 1 | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2083,6 +2085,44 @@ A lo largo del Sprint 2, el equipo estableció las funcionalidades que formaría
 | **Gutierrez Tume, Stanley Jeremy** | Stan-gt213891 | C | **L** | C | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2
+
+El Sprint 2 tuvo como propósito desarrollar una primera versión operativa de la Web Application, incorporando las funcionalidades iniciales necesarias para su funcionamiento.
+
+**Tablero de Trello:** [Sprint 2](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+<p align="center">
+  <img src="assets/sprint/sprint2.PNG" alt="Descripción de la imagen" width="600">
+</p>
+
+| Sprint # | User Story | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| **Sprint 2** | **US09** - Registro de cuenta con términos y condiciones | **T01** | UI Formulario de Registro | Diseñar e implementar el formulario de registro con validaciones visuales y casilla de términos. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| | | **T02** | Endpoint POST Registro | Desarrollar endpoint `/api/v1/auth/register` con validación de correo duplicado y términos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| | | **T03** | Pruebas Unitarias e Integración | Validar flujos de registro exitoso, omisión de términos y correos repetidos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| | **US10** - Iniciar sesión | **T01** | UI Pantalla de Login | Construir la interfaz de login y manejo del estado de autenticación en el cliente. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| | | **T02** | Endpoint POST Login | Implementar endpoint con autenticación. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| | | **T03** | Pruebas de Autenticación | Probar credenciales válidas e inválidas. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| | **US11** - Modificar perfil de negocio | **T01** | Interfaz visual de "Mi Perfil" | Implementar la vista principal Mi perfil con los datos del usuario (Avatar, Nombre, Rol, Correo) y el menú de configuración. Conectar el botón interactivo "Editar perfil" para navegar/abrir el formulario de edición. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| | | **T02** | Formulario de edición y validaciones en cliente | Consiste en la construcción del formulario con las casillas de entrada para nombres, apellidos, correo y la opción de ingresar una nueva contraseña. Incluye la lógica del lado del cliente para validar que los campos obligatorios no se queden en blanco. | 4 | Valladolid Jiménez, Arturo Fernando | Done |
+| | | **T03** | Endpoint PUT Perfil | Es la tarea del lado del servidor que se encarga de crear el servicio web `/api/v1/users/profile` para procesar las actualizaciones en la base de datos. | 3 | Valladolid Jiménez, Arturo Fernando | Done |
+| | **US12** - Cerrar sesión de forma segura | **T01** | Control de Cierre de Sesión y Redirección | Al hacer clic en "Cerrar sesión", el sistema invalida el token activo y redirige al login. Esto fuerza al usuario a volver a ingresar sus credenciales si intenta acceder nuevamente. | 1 | Valladolid Jiménez, Arturo Fernando | Done |
+| | **US13** - Registrar nuevo producto en inventario | **T01** | Formulario de Registro de Producto | Comprende la construcción de la pantalla e interfaz del formulario con todos los campos (nombre, categoría, descripción, precio, stock disponible, stock mínimo y proveedor), además del conmutador "Disponible para venta en caja" y los botones de acción. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| | | **T02** | Validaciones de Datos Obligatorios y Valores Numéricos | Implementa las reglas de negocio en el cliente y servidor para impedir el guardado si faltan campos obligatorios marcados con asterisco (como precio o stock) o si se ingresan valores negativos, mostrando los mensajes de error correspondientes. | 4 | Gutierrez Tume, Stanley Jeremy | Done |
+| | | **T03** | Endpoint POST Producto y Actualización de Inventario | Desarrollar el servicio en el backend (`/api/v1/products`) para procesar el guardado en la base de datos, confirmar el registro de la actividad y actualizar los indicadores de stock total en el Dashboard. | 5 | Gutierrez Tume, Stanley Jeremy | Done |
+| | **US16** - Identificación de productos con stock bajo | **T01** | Carga Dinámica de Alertas e Integración de Búsqueda | Consiste en conectar la vista con la API para listar dinámicamente los productos cuyo stock actual sea igual o menor al mínimo. Además, implementa la interactividad del buscador para filtrar las tarjetas en tiempo real y actualiza automáticamente los contadores de "Alerta crítica". | 4 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| | | **T02** | Acciones Interactivas de "+ Reponer" y "Editar" | Implementa la funcionalidad de los botones en las tarjetas: la acción del botón "+ Reponer" abre un modal para incrementar las unidades y la acción del botón "Editar" redirecciona al formulario de modificación del producto. | 5 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| | **US18** - Registrar venta directa | **T01** | Formulario e Interactivas de UI de Venta | Comprende la interactividad del formulario visual: la selección dinámica de producto, ajuste de cantidad, selección de cliente, fecha, conmutador de método de pago (Efectivo/Tarjeta/Yape) y la actualización en tiempo real del panel "Resumen" y monto Total. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| | | **T02** | Validaciones de Stock en Cliente y Servidor | Implementa las reglas de control para verificar las existencias antes de vender. Si la cantidad ingresada supera el stock disponible en inventario, el sistema bloquea el proceso, muestra un mensaje de advertencia sobre stock insuficiente e impide habilitar la transacción. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| | | **T03** | Endpoint POST Venta y Descuento Automático de Inventario | Desarrolla la lógica backend (`/api/v1/sales`) para que al presionar el botón "Registrar venta", se procese la transacción, guarde el registro en el historial de ventas y descuente automáticamente las unidades vendidas del stock general del producto. | 5 | Quispe Palomino, Tony Jhunior | Done |
+| | **US19** - Asignar cliente recurrente a la venta | **T01** | Asignación y Vinculación de Cliente en Venta | Permite seleccionar o buscar a un cliente recurrente para asociar la transacción directamente a su historial de consumo. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| | **US20** - Consultar historial de transacciones de clientes | **T01** | UI del Historial de Ventas | Implementa la vista cronológica de transacciones pasadas, mostrando tarjetas por venta con las iniciales/avatar del cliente, nombre, fecha/hora, número de unidades y el monto total. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| | | **T02** | Modal "Detalle de Venta" e Integración Backend | Desarrolla la ventana emergente/modal "Detalle de Venta" que se activa al presionar "Ver detalle" en cualquier tarjeta. Esta vista muestra el ID de venta, cliente, fecha/hora, método de pago, la lista de productos comprados y el total pagado. Incluye el consumo del endpoint backend (GET `/api/v1/sales/{id}` o filtrado por cliente) para traer la información actualizada. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| | **US21** - Visualizar gráfico de rendimiento semanal | **T01** | Componente de Gráfico de Ventas Semanales y Métricas de Ingreso | Implementa el panel visual "Ventas por día" mediante barras verticales para representar el monto vendido por día de la semana (Lun a Dom). Incluye el cálculo del acumulado "Total sem." (ej. S/ 365) y la identificación destacada del "Día de mayor ingreso". | 4 | Mendoza Boluarte, Pierre Alessandro | Done |
+| | | **T02** | Listados de Rotación de Inventario | Desarrolla los componentes visuales para mostrar el ranking de productos. | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| | | **T03** | API Backend para Métricas y Agregación de Reporte Semanal | Crea el endpoint backend (ej. GET `/api/v1/reports/weekly`) encargado de consultar las transacciones registradas de los últimos 7 días, calcular los ingresos diarios, identificar los productos más/menos vendidos y totalizar los contadores de inventario general para consumirlos en la vista. | 6 | Mendoza Boluarte, Pierre Alessandro | In Progress |
+| | **US22** - Descargar reporte operativo en PDF | **T01** | Implementación de un botón para descargar | Diseñar e implementar la sección del reporte con el botón de descarga ("Descargar reporte en PDF"), agregando el mensaje explicativo contextual *"Usa la opción de impresión del navegador para guardar el reporte como PDF"* debajo del botón. | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| | | **T02** | Visualización previa | Validar la visualización y maquetación correcta de los gráficos de ventas por día, las tarjetas de "Productos más vendidos" y "Menos movimiento" en la vista previa del diálogo de impresión nativo del navegador antes de exportar a PDF. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
