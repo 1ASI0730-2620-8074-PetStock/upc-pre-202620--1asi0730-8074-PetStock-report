@@ -1948,21 +1948,23 @@ A continuación, se presenta una captura del board de seguimiento utilizado dura
 
 [PetStock - Trello Board](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
 
-![Sprint 1](assets/sprint/sprint%201.PNG)
+<p align="center">
+  <img src="assets/sprint/sprint1.PNG" alt="Descripción de la imagen" width="600">
+</p>
 
 | Sprint # | Sprint 1 | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / InProcess / ToReview / Done)** |
-| US24 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
-| US24 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
-| US25 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
-| US26 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
-| US27 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
-| US28 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
-| US29 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
-| US30 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
-| US31 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US01 | Conocer la propuesta de valor | T01 | Implement Navbar | Implementar la barra de navegación con logo, enlaces a las secciones y selector de idioma Español/English. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US01 | Conocer la propuesta de valor | T02 | Implement Hero Section | Implementar la sección principal con propuesta de valor, descripción y llamado a la acción. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US02 | Conocer los beneficios de PetStock | T03 | Implement Benefits Section | Implementar la sección de beneficios de PetStock para los segmentos objetivo. | 1 | Mendoza Moreano, Mariel Lucero | Done |
+| US03 | Conocer cómo funciona PetStock | T04 | Implement How It Works | Implementar la sección que explica los pasos principales para utilizar PetStock. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US04 | Conocer el plan de suscripción | T05 | Implement Pricing Section | Implementar la sección del plan de suscripción mensual y sus principales características. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US05 | Visualizar las funcionalidades de la plataforma | T06 | Implement System Preview | Implementar la sección con vistas previas del dashboard, stock y proveedores. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US06 | Consultar preguntas frecuentes | T07 | Implement FAQ Section | Implementar la sección de preguntas frecuentes sobre PetStock. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US07 | Acceder a información adicional | T08 | Implement Footer | Implementar el pie de página con información adicional y enlaces de navegación. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US08 | Visualizar la Landing Page en diferentes dispositivos | T09 | Apply Responsive Styles | Adaptar la Landing Page para diferentes tamaños de pantalla. | 2 | Mendoza Moreano, Mariel Lucero | Done |
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
@@ -2053,12 +2055,81 @@ Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión
 Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
 
 ### 5.2.2. Sprint 2
+En esta sección se presenta el progreso alcanzado durante el Sprint 2 del proyecto PetStock, considerando tanto los avances del producto como el trabajo realizado de manera colaborativa por el equipo. A lo largo de este sprint, se priorizó el desarrollo de la primera versión de la Web Application, enfocada en establecer las funcionalidades principales que permitirán gestionar de manera centralizada las operaciones de las tiendas de mascotas.
 
 #### 5.2.2.1. Sprint Planning 2
 
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 2, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 2 |
+| **Sprint Planning Background** | |
+| **Date** | 2026-09-25 |
+| **Time** | 7:00PM - 9:00PM |
+| **Location** | Discord |
+| **Prepared By** | Mendoza Moreano, Mariel Lucero |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 1, el equipo culminó la implementación de la Landing Page de PetStock, completando las actividades y metas planificadas para esta etapa del proyecto. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del sprint, el equipo definió nuevas acciones para optimizar el trabajo colaborativo, entre ellas mantener un mejor control de los cambios realizados, actualizar la información técnica del proyecto y ordenar el proceso de desarrollo de la Web Application. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to establish the first functional version of the PetStock Web Application, focusing on the main features required to support pet store management. The implementation includes product and inventory management, sales registration, customer information, and relevant business data. The sprint will be considered successful once these core processes are working properly and users can interact with the main components of the application. |
+| **Sprint n Velocity** | 32 |
+| **Sum of Story Points** | 32 |
+
 #### 5.2.2.2. Aspect Leaders and Collaborators
+A lo largo del Sprint 2, el equipo estableció las funcionalidades que formarían parte de la primera versión de la Web Application de PetStock, definiendo los procesos principales que serían desarrollados para atender las necesidades de gestión de las tiendas de mascotas. 
+
+| Team Member (Last Name, First Name) | GitHub Username | Login & Register | Catalog & Inventory | Profile | Analytics | Sales & Customer |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Mendoza Moreano, Mariel Lucero** | MarielLucero | **L** | C | C | C | C |
+| **Quispe Palomino, Tony Jhunior** | GonzJunior18p | C | C | C | C | **L** |
+| **Valladolid Jiménez, Arturo Fernando** | artuvall | C | C | **L** | C | C |
+| **Mendoza Boluarte, Pierre Alessandro** | pierreale2302 | C | C | C | **L** | C |
+| **Gutierrez Tume, Stanley Jeremy** | Stan-gt213891 | C | **L** | C | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2
+
+El Sprint 2 tuvo como propósito desarrollar una primera versión operativa de la Web Application, incorporando las funcionalidades iniciales necesarias para su funcionamiento.
+
+**Tablero de Trello:** [Sprint 2](https://trello.com/invite/b/6aaca42ac82240adfcf7dc68/ATTI277556f456eaf3cba779b95f380128b5EC41FD67/petstock)
+
+<p align="center">
+  <img src="assets/sprint/sprint2.PNG" alt="Descripción de la imagen" width="600">
+</p>
+
+| Sprint # | Sprint 2 |
+|---|---|
+| User Story | Work-Item / Task |
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US09 | Registro de cuenta con términos y condiciones | T01 | UI Formulario de Registro | Diseñar e implementar el formulario de registro con validaciones visuales y casilla de términos. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US09 | Registro de cuenta con términos y condiciones | T02 | Endpoint POST Registro | Desarrollar endpoint /api/v1/auth/register con validación de correo duplicado y términos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US09 | Registro de cuenta con términos y condiciones | T03 | Pruebas Unitarias e Integración | Validar flujos de registro exitoso, omisión de términos y correos repetidos. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US10 | Iniciar sesión | T01 | UI Pantalla de Login | Construir la interfaz de login y manejo del estado de autenticación en el cliente. | 2 | Mendoza Moreano, Mariel Lucero | Done |
+| US10 | Iniciar sesión | T02 | Endpoint POST Login | Implementar endpoint con autenticación. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US10 | Iniciar sesión | T03 | Pruebas de Autenticación | Probar credenciales válidas e inválidas. | 3 | Mendoza Moreano, Mariel Lucero | Done |
+| US11 | Modificar perfil de negocio | T01 | Interfaz visual de "Mi Perfil" | Implementar la vista principal Mi Perfil con los datos del usuario (Avatar, Nombre, Rol, Correo) y el menú de configuración. Conectar el botón interactivo "Editar perfil" para navegar o abrir el formulario de edición. | 2 | Valladolid Jiménez, Arturo Fernando | Done |
+| US11 | Modificar perfil de negocio | T02 | Formulario de edición y validaciones en cliente | Construcción del formulario con campos para nombres, apellidos, correo y opción de ingresar una nueva contraseña. Incluye la lógica del lado del cliente para validar que los campos obligatorios no queden vacíos. | 4 | Valladolid Jiménez, Arturo Fernando | Done |
+| US11 | Modificar perfil de negocio | T03 | Endpoint PUT Perfil | Crear el servicio web /api/v1/users/profile para procesar las actualizaciones en la base de datos. | 3 | Valladolid Jiménez, Arturo Fernando | Done |
+| US12 | Cerrar sesión de forma segura | T01 | Control de Cierre de Sesión y Redirección | Al hacer clic en "Cerrar sesión", el sistema invalida el token activo y redirige al login. Esto fuerza al usuario a volver a ingresar sus credenciales si intenta acceder nuevamente. | 1 | Valladolid Jiménez, Arturo Fernando | Done |
+| US13 | Registrar nuevo producto en inventario | T01 | Formulario de Registro de Producto | Construir la pantalla e interfaz del formulario con todos los campos (nombre, categoría, descripción, precio, stock disponible, stock mínimo y proveedor), además del conmutador "Disponible para venta en caja" y los botones de acción. | 2 | Gutierrez Tume, Stanley Jeremy | Done |
+| US13 | Registrar nuevo producto en inventario | T02 | Validaciones de Datos Obligatorios y Valores Numéricos | Implementar las reglas de negocio en el cliente y servidor para impedir el guardado si faltan campos obligatorios o se ingresan valores negativos, mostrando los mensajes de error correspondientes. | 4 | Gutierrez Tume, Stanley Jeremy | Done |
+| US13 | Registrar nuevo producto en inventario | T03 | Endpoint POST Producto y Actualización de Inventario | Desarrollar el servicio backend (/api/v1/products) para procesar el guardado en la base de datos, registrar la actividad y actualizar los indicadores de stock total en el Dashboard. | 5 | Gutierrez Tume, Stanley Jeremy | Done |
+| US16 | Identificación de productos con stock bajo | T01 | Carga Dinámica de Alertas e Integración de Búsqueda | Conectar la vista con la API para listar dinámicamente los productos cuyo stock actual sea igual o menor al mínimo. Implementar también la búsqueda para filtrar las tarjetas en tiempo real y actualizar los contadores de "Alerta crítica". | 4 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| US16 | Identificación de productos con stock bajo | T02 | Acciones Interactivas de "+ Reponer" y "Editar" | Implementar la funcionalidad de los botones en las tarjetas: "+ Reponer" abre un modal para incrementar las unidades y "Editar" redirecciona al formulario de modificación del producto. | 5 | Gutierrez Tume, Stanley Jeremy | In Progress |
+| US18 | Registrar venta directa | T01 | Formulario e Interactividad de UI de Venta | Implementar la interactividad del formulario visual: selección dinámica de producto, ajuste de cantidad, selección de cliente, fecha, método de pago (Efectivo/Tarjeta/Yape) y actualización en tiempo real del panel "Resumen" y monto total. | 2 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T02 | Validaciones de Stock en Cliente y Servidor | Implementar las reglas de control para verificar las existencias antes de vender. Si la cantidad ingresada supera el stock disponible, el sistema bloquea el proceso y muestra una advertencia. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T03 | Endpoint POST Venta y Descuento Automático de Inventario | Desarrollar la lógica backend (/api/v1/sales) para procesar la transacción, guardar el registro en el historial de ventas y descontar automáticamente las unidades vendidas del stock. | 5 | Quispe Palomino, Tony Jhunior | Done |
+| US19 | Asignar cliente recurrente a la venta | T01 | Asignación y Vinculación de Cliente en Venta | Permitir seleccionar o buscar a un cliente recurrente para asociar la transacción directamente a su historial de consumo. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US20 | Consultar historial de transacciones de clientes | T01 | UI del Historial de Ventas | Implementar la vista cronológica de transacciones pasadas, mostrando tarjetas por venta con las iniciales/avatar del cliente, nombre, fecha/hora, número de unidades y monto total. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US20 | Consultar historial de transacciones de clientes | T02 | Modal "Detalle de Venta" e Integración Backend | Desarrollar el modal "Detalle de Venta", mostrando ID de venta, cliente, fecha/hora, método de pago, productos comprados y total pagado. Integrar el endpoint backend correspondiente. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T01 | Componente de Gráfico de Ventas Semanales y Métricas de Ingreso | Implementar el panel "Ventas por día" mediante barras verticales para representar el monto vendido de lunes a domingo. Incluir el acumulado "Total sem." y la identificación del día de mayor ingreso. | 4 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T02 | Listados de Rotación de Inventario | Desarrollar los componentes visuales para mostrar el ranking de productos. | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US21 | Visualizar gráfico de rendimiento semanal | T03 | API Backend para Métricas y Agregación de Reporte Semanal | Crear el endpoint backend (ej. GET /api/v1/reports/weekly) para consultar las transacciones de los últimos 7 días, calcular los ingresos diarios, identificar los productos más y menos vendidos y totalizar los indicadores de inventario. | 6 | Mendoza Boluarte, Pierre Alessandro | In Progress |
+| US22 | Descargar reporte operativo en PDF | T01 | Implementación de botón para descargar | Diseñar e implementar la sección del reporte con el botón "Descargar reporte en PDF", agregando el mensaje contextual "Usa la opción de impresión del navegador para guardar el reporte como PDF". | 3 | Mendoza Boluarte, Pierre Alessandro | Done |
+| US22 | Descargar reporte operativo en PDF | T02 | Visualización previa | Validar la visualización y maquetación correcta de los gráficos de ventas por día y las tarjetas de "Productos más vendidos" y "Menos movimiento" en la vista previa de impresión del navegador. | 2 | Mendoza Boluarte, Pierre Alessandro | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
