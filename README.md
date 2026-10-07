@@ -253,6 +253,9 @@ Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, im
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema, los segmentos objetivo, las hipótesis y los resultados que esperábamos validar con el proyecto. También participé en el análisis competitivo, comparando las características y propuestas de otras alternativas relacionadas con la gestión de tiendas de mascotas. A partir de este análisis, aporté en la definición de estrategias y tácticas para orientar la propuesta del equipo y diferenciar la solución frente a las opciones existentes. Asimismo, colaboré en el diseño de las entrevistas, organizando las preguntas y criterios necesarios para obtener información relevante de los usuarios. Finalmente, desarrollé los puntos 4.7.1 y 4.8.1, además de participar en la elaboración de la Navbar y el Hero de la Landing Page, procurando que estos elementos mantuvieran relación con los objetivos del producto y la propuesta definida por el equipo.
+<br>
+tb1:<br>
+Lidere la revisión y corrección del modelo de base de datos orientado al módulo de ventas, dirigiendo técnicamente la implementación de las funcionalidades clave del Sprint 2, las cuales abarcan el registro de ventas directas (US18), la asignación de clientes recurrentes al proceso de compra (US19) y la consulta detallada del historial transaccional (US20).
 </th>
 <th>
 av1:<br>
@@ -292,12 +295,15 @@ Trabaje de acuerdo a las tareas que se nos asignaron en el Sprint 2 , asi mismo 
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
-tp:<br>
+tb1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas por feature, Pull Requests y Conventional Commits) para integrar mis correcciones al catálogo e inventario, cumpliendo con los entregables asignados dentro del plazo establecido para esta entrega. Validé exhaustivamente el funcionamiento end-to-end de mi módulo (registro de productos, proveedores, alertas de stock) antes de integrarlo, y documenté los hallazgos para mantener informado al equipo sobre el estado real de la aplicación. 
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Participé en la planificación y desarrollo de actividades relacionadas con la investigación del usuario, el análisis competitivo y la construcción de la Landing Page. El Lean UX Canvas y el diseño de entrevistas ayudaron al equipo a establecer objetivos comunes y organizar la información que debíamos validar. También contribuí con los puntos de análisis competitivo, estrategias y tácticas, así como con los apartados 4.7.1 y 4.8.1, siguiendo la distribución de tareas acordada. En la parte visual, apoyé en la elaboración de la Navbar y el Hero, revisando con el equipo que estos elementos fueran coherentes con la estructura y el mensaje principal de la Landing Page. Cumplí con las actividades asignadas y coordiné la integración de mis aportes con los demás entregables del proyecto.
+
+tb1:<br>
+Fomente un entorno colaborativo al planificar y coordinar con el equipo la corrección de la base de datos y la división de tareas para el módulo de ventas, asegurando el cumplimiento de las entregas de interfaz de venta, asignación de clientes e historial transaccional.
 </th>
 <th>
 av1:<br>
