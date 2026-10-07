@@ -47,7 +47,7 @@ Gutierrez Tume Stanley Jeremy - U202118152
 
 <tr class="c7">
 <td class="c5" style="border: 1px solid black;">TB1</td>
-<td class="c5" style="border: 1px solid black;">24/04/2025</td>
+<td class="c5" style="border: 1px solid black;">24/09/2026</td>
 <td class="c5" style="border: 1px solid black;">
 Mariel Lucero Mendoza Moreano<br><br>
 Tony Jhunior Quispe Palomino<br><br>
@@ -61,6 +61,24 @@ Gutierrez Tume Stanley Jeremy
 - Capítulo II: Requirements Elicitation & Analysis
 - Capítulo III: Requirements Specification
 - Capítulo IV: Product Design
+- Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.2.8
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+<tr class="c7">
+
+</tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">TP</td>
+<td class="c5" style="border: 1px solid black;">7/10/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
@@ -159,13 +177,22 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
 - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
         - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-        - [5.2.1.2. Aspect_Leaders_and_Collaborators](#5212-aspect-leaders-and-collaborators)
+        - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
         - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
         - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
         - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
         - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
         - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
         - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+        - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+        - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+        - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+        - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+        - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+        - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+        - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+        - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 
 ### [Conclusion](#conclusiones)
 
@@ -199,6 +226,9 @@ Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Durante el desarrollo de PetStock, participé activamente en las actividades del equipo, aportando ideas y asumiendo responsabilidades en las tareas asignadas. También apoyé a mis compañeros cuando fue necesario y coordiné con ellos para tomar decisiones y avanzar de manera conjunta en el proyecto.
 <br><br>
+tp:<br>
+Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
+<br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
@@ -218,6 +248,9 @@ Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema,
 <th>
 av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
+
+tp:<br>
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
 </th>
 </tr>
 <tr>
@@ -229,6 +262,9 @@ objetivos.</th>
 Mendoza Moreano, Mariel Lucero<br>
 av1:<br>
 Contribuí a mantener una comunicación constante con mi equipo para organizar las tareas y cumplir con los objetivos establecidos. Para trabajar de manera ordenada, utilicé GitHub mediante ramas y commits para desarrollar mis actividades y posteriormente integrarlas al proyecto. Además, participé en la planificación y seguimiento de las tareas, procurando cumplir con los entregables dentro de los tiempos establecidos.
+<br><br>
+tp:<br>
+Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -248,6 +284,9 @@ Participé en la planificación y desarrollo de actividades relacionadas con la 
 <th>
 av1:<br>
 Como equipo, concluimos que la comunicación y organización fueron fundamentales para desarrollar el proyecto de manera ordenada. Establecimos metas, distribuimos tareas y realizamos seguimiento de nuestros avances, utilizando herramientas como GitHub para coordinar nuestro trabajo. Esto nos permitió integrar los aportes de cada integrante y cumplir progresivamente con los entregables establecidos.
+
+tp:<br>
+Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
 </tr>
 </tbody>
 </table>
@@ -2009,13 +2048,34 @@ Para el desarrollo utilizamos GitHub con ramas por funcionalidad. Esta decisión
 
 Como aprendizaje del sprint, comprobamos que dividir el trabajo por secciones facilita el avance inicial de una Landing Page, pero también requiere una revisión conjunta antes de publicar. Cada sección puede estar terminada por separado y aun así presentar diferencias de tipografía, espaciados, colores o comportamiento responsive al integrarse. Para los siguientes sprints mantendremos la asignación de líderes por aspecto, pero programaremos una revisión final de integración antes del despliegue, con el objetivo de comprobar la consistencia visual y funcional de toda la aplicación.
 
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+#### 5.2.2.3. Sprint Backlog 2
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+
 # Conclusiones
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
+- El desarrollo del Frontend para el sistema PetStock logró consolidar un ecosistema visual integral, moderno e intuitivo, orientado a optimizar la gestión operativa de tiendas de mascotas. A través de la maquetación y dinamización de sus pantallas principales, se construyó un flujo de usuario homogéneo y fluido que abarca todo el ciclo de negocio
 
 # Recomendaciones
 
 - Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
+- Se recomienda continuar con la evolución del sistema PetStock implementando un plan de pruebas de integración continua (CI/CD) para garantizar la estabilidad de las comunicaciones entre las pantallas del Frontend y la API del Backend. Asimismo, se aconseja optimizar el módulo de almacenamiento de imágenes e inventarios mediante servicios en la nube (como AWS S3 o Cloudinary) para acelerar la carga de los catálogos de productos y reportes, escalando la infraestructura hacia una PWA (Progressive Web App) que permita al personal operar el sistema de ventas desde dispositivos móviles en el punto de venta.
 
 # Bibliografia
 
