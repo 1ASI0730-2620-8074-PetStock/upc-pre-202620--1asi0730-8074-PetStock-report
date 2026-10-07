@@ -2222,7 +2222,7 @@ El desarrollo se realizó mediante ramas independientes (feature branches) por i
 
 A continuación, se presenta evidencia de los Pull Requests y commits realizados por los integrantes del equipo durante este sprint:
 
-
+![Pull Requests Sprint 2](PR_TB1.png)
 
 
 # Conclusiones
