@@ -1836,13 +1836,23 @@ Administra los datos personales del perfil del usuario, las preferencias del sis
 ### 4.8.1. Database Diagrams
 El diseño de la base de datos de PetStock se ha estructurado de forma relacional y normalizada, reflejando de manera directa las entidades, atributos y relaciones definidos en el modelado por dominios (DDD) y los diagramas de clases del sistema. La arquitectura relacional integra 19 tablas principales que permiten gestionar de forma centralizada la seguridad, el catálogo de productos, el inventario en tiempo real, el punto de venta (POS), la gestión de clientes (CRM), las órdenes de compra a proveedores, las operaciones de caja y los reportes analíticos del negocio.
 
-A continuación, se presenta el diagrama completo de la base de datos dividido en tres secciones para una mejor visualización y detalle de todas sus tablas y llaves foráneas:
+El esquema de la base de datos es generado automáticamente por Entity Framework Core a partir del modelo de dominio definido en el código, mediante la migración `InitialSchema`. Todos los nombres de tablas siguen la convención snake_case en plural (por ejemplo, `products`, `stock_alerts`, `purchase_orders`), y cada tabla incluye los campos de auditoría `created_at` y `updated_at`, los cuales son completados automáticamente por el sistema en cada operación de creación o actualización.
 
-![Database Diagram Parte 1](assets/Database-Diagrams/DataBase1.png)
+A continuación, se presenta el diagrama completo de la base de datos con las 19 tablas y sus llaves foráneas, organizado a partir de los bounded contexts del sistema:
 
-![Database Diagram Parte 2](assets/Database-Diagrams/DataBase2.png)
+| Bounded Context | Tablas |
+|---|---|
+| IAM | users, sessions |
+| Profiles | user_preferences |
+| Catalog | categories, suppliers, products |
+| Inventory | product_stocks, stock_alerts |
+| Sales | sales, sale_items, payments |
+| Customers | customers, purchase_history_entries |
+| Purchasing | purchase_orders, purchase_order_items, goods_receipts |
+| Cash Shifts | cash_shifts, cash_reconciliations |
+| Analytics | reports |
 
-![Database Diagram Parte 3](assets/Database-Diagrams/DataBase3.png)
+![Database Diagram](assets/Database-Diagrams/petstock-database-part-1.png)
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
