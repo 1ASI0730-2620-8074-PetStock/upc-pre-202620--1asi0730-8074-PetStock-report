@@ -250,6 +250,9 @@ Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (
 tb1:<br>
 Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, implementando el formulario de registro de productos con sus validaciones y la vista de alertas de stock bajo. Verifiqué de forma integral el funcionamiento de la Web Application junto con la Fake API embebida por el equipo, identificando y corrigiendo inconsistencias en el mapeo de datos entre los endpoints y las entidades del dominio (catálogo, inventario y proveedores). Coordiné con mis compañeros la integración de mis módulos con el dashboard y el resto de la aplicación, asegurando que la navegación y el diseño fueran consistentes con lo desarrollado por el equipo.
 <br><br>
+av2:<br>
+Durante el Sprint 3, lideré la implementación del backend REST de los bounded contexts de Catalog e Inventory (proveedores, productos, inventario y alertas de stock), coordinando con el equipo la definición de los contratos de API para mantener compatibilidad con el frontend construido en sprints anteriores. Apoyé además en la verificación de la integración de mis endpoints con el resto del sistema, validando de forma conjunta que el flujo completo (frontend, backend y base de datos) funcionara correctamente.
+<br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
 Contribuí al desarrollo del Lean UX Canvas, donde ayudé a definir el problema, los segmentos objetivo, las hipótesis y los resultados que esperábamos validar con el proyecto. También participé en el análisis competitivo, comparando las características y propuestas de otras alternativas relacionadas con la gestión de tiendas de mascotas. A partir de este análisis, aporté en la definición de estrategias y tácticas para orientar la propuesta del equipo y diferenciar la solución frente a las opciones existentes. Asimismo, colaboré en el diseño de las entrevistas, organizando las preguntas y criterios necesarios para obtener información relevante de los usuarios. Finalmente, desarrollé los puntos 4.7.1 y 4.8.1, además de participar en la elaboración de la Navbar y el Hero de la Landing Page, procurando que estos elementos mantuvieran relación con los objetivos del producto y la propuesta definida por el equipo.
@@ -297,6 +300,9 @@ av1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
 tb1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas por feature, Pull Requests y Conventional Commits) para integrar mis correcciones al catálogo e inventario, cumpliendo con los entregables asignados dentro del plazo establecido para esta entrega. Validé exhaustivamente el funcionamiento end-to-end de mi módulo (registro de productos, proveedores, alertas de stock) antes de integrarlo, y documenté los hallazgos para mantener informado al equipo sobre el estado real de la aplicación. 
+<br><br>
+av2:<br>
+Planifiqué y completé dentro del plazo establecido el desarrollo de los 13 endpoints asignados a mi bounded context, siguiendo el flujo de trabajo del equipo (ramas feature, Pull Requests y Conventional Commits), y validé exhaustivamente cada endpoint mediante pruebas manuales (.http) antes de integrarlo a develop. Conecté el frontend de Catalog e Inventory a la API real, reemplazando la Fake API utilizada hasta el Sprint 2, y documenté el diagrama de base de datos actualizado (sección 4.8.1) con las 19 tablas generadas por el esquema real.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
