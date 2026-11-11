@@ -2485,7 +2485,75 @@ A lo largo del Sprint 3, el equipo estableció los Web Services que formarían p
 
 ## 5.3. Validation Interviews
 
+A continuación, se presenta la estructura e instrumental de validación utilizado para evaluar la propuesta de valor y las funcionalidades clave de la primera versión desplegada de PetStock. Mediante entrevistas de validación interactivas y pruebas de usabilidad guiadas, se busca recoger retroalimentación directa de los usuarios finales sobre la claridad de la Landing Page, la navegación en la Web Application integrada con el backend RESTful y la efectividad con la que el sistema resuelve las necesidades operativas.
+
+
 ### 5.3.1. Diseño de Entrevistas
+
+El diseño del guion de entrevista se estructura diferenciando a los dos segmentos objetivo del proyecto, garantizando que cada participante ponga a prueba las funcionalidades
+
+#### Segmento 1: Tiendas de alimentos y consumo frecuente
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 1 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Claridad en la propuesta de valor sobre el control centralizado de inventario y rotación.
+  * Comprensión y transparencia de la sección de planes y precios.
+  * Visibilidad y correcto funcionamiento del botón de inicio de sesión que redirige a la aplicación web.
+* **User Flows de la Web Application a validar:**
+  1. Registro de usuario e inicio de sesión en la plataforma.
+  2. Registro de un nuevo producto de consumo frecuente configurando su stock mínimo.
+  3. Consulta del módulo de inventario y revisión de alertas de stock bajo.
+  4. Registro de una venta directa rápida.
+  5. Consulta del gráfico de rendimiento semanal en el dashboard.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Ingrese a la página web, revise la propuesta de valor, consulte los planes disponibles y acceda al botón para ingresar a la aplicación." | Facilidad para ubicar los precios y el botón de acceso; claridad del propósito del sistema. |
+| **2. Autenticación** | "Cree una cuenta nueva e inicie sesión con sus credenciales." | Fluidez en el formulario de registro e ingreso correcto al dashboard. |
+| **3. Registro de Producto e Inventario** | "Registre un nuevo alimento de consumo frecuente especificando sus datos generales y un límite de stock mínimo." | Comprensión de los campos y asignación precisa del umbral de stock bajo. |
+| **4. Control de Alertas** | "Diríjase al módulo de inventario e identifique qué productos cuentan con alertas activas." | Interpretación inmediata de las señales de desabastecimiento. |
+| **5. Registro de Venta Directa** | "Simule una venta rápida seleccionando el producto registrado y complete la transacción." | Agilidad del proceso de cobro y facilidad de uso del punto de venta. |
+| **6. Monitoreo en Dashboard** | "Ingrese al dashboard principal y consulte el gráfico de rendimiento semanal." | Claridad al interpretar la información gráfica del negocio. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué pasos o módulos del sistema le parecieron más sencillos e intuitivos de utilizar?
+2. ¿Encontró algún término, botón o sección que le resultara confuso durante el proceso?
+3. ¿Qué funcionalidad adicional considera que le falta al sistema para adaptarse mejor al día a día de su negocio?
+4. ¿Estaría dispuesto a implementar PetStock en su tienda de mascotas para reemplazar sus métodos actuales (cuadernos o Excel)?
+
+#### Segmento 2: Tiendas especializadas en productos premium y de cuidado
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 2 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Relevancia y atractivo comercial de los beneficios presentados en la propuesta de valor.
+  * Claridad de los planes para boutiques especializadas.
+  * Acceso directo al sistema mediante el botón de inicio de sesión.
+* **User Flows de la Web Application a validar:**
+  1. Inicio de sesión en la plataforma.
+  2. Registro de un nuevo proveedor y un producto especializado en el catálogo.
+  3. Registro de una orden de compra para reabastecimiento con el proveedor.
+  4. Búsqueda y consulta del historial de compras de un cliente registrado.
+  5. Generación y descarga del reporte operativo en formato PDF.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Navegue por la página de inicio, revise las características principales y acceda a la aplicación mediante el botón de login." | Comprensión de las características clave e identificación del botón de acceso. |
+| **2. Registro de Proveedor y Producto** | "Registre un proveedor de artículos premium y luego agregue un producto especial asociándolo a dicho proveedor." | Facilidad para vincular proveedores con ítems del catálogo. |
+| **3. Registro de Compra** | "Ingrese al módulo de compras y registre una orden de pedido al proveedor creado." | Fluidez al ingresar cantidades y costos unitarios de compra. |
+| **4. Consulta de Historial de Cliente** | "Acceda al módulo de clientes, seleccione un cliente y revise sus transacciones anteriores." | Rapidez para obtener el historial de compras recurrentes. |
+| **5. Generación de Reportes** | "Ingrese a la sección de reportes y descargue el reporte operativo en PDF." | Claridad en los filtros de reporte y descarga exitosa del archivo. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué herramientas o secciones de la aplicación consideró más fáciles y rápidas de usar?
+2. ¿Hubo alguna parte del flujo de compras o clientes que le haya resultado confusa o difícil de entender?
+3. ¿Qué característica o reporte específico siente que le falta a la plataforma para gestionar mejor sus artículos especializados?
+4. ¿Considera que PetStock le aporta el valor suficiente como para ser utilizada en la operación diaria de su boutique de mascotas?
 
 ### 5.3.2. Registro de Entrevistas
 
