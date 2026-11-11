@@ -2461,6 +2461,16 @@ A continuación, se presenta el resumen de la reunión de Sprint Planning del Sp
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
+A lo largo del Sprint 3, el equipo estableció los Web Services que formarían parte de la primera versión del Backend de PetStock, definiendo los endpoints RESTful y la persistencia en MySQL que serían desarrollados para conectar la Web Application y atender las necesidades del negocio 
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Cash Shifts | Catalog & Inventory | Sales & Customers | Purchasing & Analytics | Profiles |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | L | C | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | C | C | L | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | C | L |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | L | C |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | L | C | C | C |
+
 #### 5.2.3.3. Sprint Backlog 3
 
 #### 5.2.3.4. Development Evidence for Sprint Review
