@@ -82,6 +82,26 @@ Gutierrez Tume Stanley Jeremy
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">AV2</td>
+<td class="c5" style="border: 1px solid black;">12/11/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Corrección de 4.6.1 (9 Bounded Contexts) y actualización de 4.8.1 (diagrama de base de datos)
+- Avance del Capítulo V: Product Implementation, Validation & Deployment hasta el punto 5.2.3.8
+- 5.3. Validation Interviews
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+
+
 </table>
 
 # Project Report Collaboration Insights
@@ -193,7 +213,21 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
         - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
         - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
         - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-
+    - [5.2.3. Sprint 3](#523-sprint-3)
+        - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+        - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+        - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+        - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+        - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+        - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+        - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+        - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+- [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+- [5.4. Video About-the-Product](#54-video-about-the-product)
+    
 ### [Conclusion](#conclusiones)
 
 ### [Recomendacion](#recomendaciones)
@@ -229,6 +263,10 @@ Durante el desarrollo de PetStock, participé activamente en las actividades del
 tb1:<br>
 Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
 <br><br>
+av2:<br>
+En el marco del liderazgo compartido del equipo, asumí la responsabilidad de guiar el desarrollo de IAM y Cash Shifts. Aporté a la dirección organizativa definiendo los endpoints y la estructura del guion de entrevistas para el informe. Además, coordiné con mis compañeros para liberar a tiempo la autenticación de usuarios, destrabando el avance de los demás módulos hacia los objetivos del sprint.
+<br>
+<br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
@@ -265,7 +303,10 @@ av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
 
 tp:<br>
-Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales. 
+
+av2:<br>
+Como equipo, ejercimos un liderazgo conjunto y coordinado para dirigir el desarrollo técnico del backend y la integración con la aplicación web. Nos articulamos para tomar decisiones clave sobre la arquitectura por bounded contexts y la estandarización del código, asegurando que los módulos más interdependientes estuvieran disponibles a tiempo. A través de esta dirección compartida, logramos alinear el trabajo de todos los integrantes y cumplir con éxito los objetivos de la iteración.
 </th>
 </tr>
 <tr>
@@ -280,6 +321,9 @@ Contribuí a mantener una comunicación constante con mi equipo para organizar l
 <br><br>
 tb1:<br>
 Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
+<br><br>
+av2:<br>
+Promoví un entorno colaborativo e inclusivo en el Sprint 3 al disponibilizar anticipadamente los endpoints de autenticación (IAM) para que mis compañeros pudieran avanzar e integrar sus módulos sin bloqueos. Establecí metas claras al priorizar las User Stories de usuarios y cajas, planifiqué las tareas estructurando cada endpoint con sus respectivas validaciones y pruebas, y cumplí los objetivos acordados al entregar el backend funcional y su integración frontend dentro de los plazos establecidos
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -317,6 +361,9 @@ Como equipo, concluimos que la comunicación y organización fueron fundamentale
 
 tb1:<br>
 Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
+
+av2:<br>
+Como equipo, promovimos un entorno de trabajo colaborativo e inclusivo mediante la división clara de responsabilidades por bounded contexts y el soporte mutuo durante la integración de los módulos. Establecimos metas ambiciosas para el Sprint 3 centradas en el desarrollo de la primera versión del backend RESTful y su despliegue junto con la aplicación web y la landing page. Planificamos metódicamente las tareas adoptando estándares estrictos de desarrollo, como Conventional Commits en inglés y revisiones mediante pull requests hacia develop. Como resultado de esta gestión articulada y el liderazgo distribuido, logramos cumplir con la totalidad de los objetivos técnicos y académicos en los plazos fijados.
 </tr>
 </tbody>
 </table>
