@@ -82,6 +82,26 @@ Gutierrez Tume Stanley Jeremy
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">AV2</td>
+<td class="c5" style="border: 1px solid black;">12/11/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Corrección de 4.6.1 (9 Bounded Contexts) y actualización de 4.8.1 (diagrama de base de datos)
+- Avance del Capítulo V: Product Implementation, Validation & Deployment hasta el punto 5.2.3.8
+- 5.3. Validation Interviews
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+
+
 </table>
 
 # Project Report Collaboration Insights
@@ -193,7 +213,21 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
         - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
         - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
         - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-
+    - [5.2.3. Sprint 3](#523-sprint-3)
+        - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+        - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+        - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+        - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+        - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+        - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+        - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+        - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+- [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+- [5.4. Video About-the-Product](#54-video-about-the-product)
+    
 ### [Conclusion](#conclusiones)
 
 ### [Recomendacion](#recomendaciones)
@@ -229,6 +263,10 @@ Durante el desarrollo de PetStock, participé activamente en las actividades del
 tb1:<br>
 Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
 <br><br>
+av2:<br>
+En el marco del liderazgo compartido del equipo, asumí la responsabilidad de guiar el desarrollo de IAM y Cash Shifts. Aporté a la dirección organizativa definiendo los endpoints y la estructura del guion de entrevistas para el informe. Además, coordiné con mis compañeros para liberar a tiempo la autenticación de usuarios, destrabando el avance de los demás módulos hacia los objetivos del sprint.
+<br>
+<br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
@@ -265,7 +303,10 @@ av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
 
 tp:<br>
-Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales. 
+
+av2:<br>
+Como equipo, ejercimos un liderazgo conjunto y coordinado para dirigir el desarrollo técnico del backend y la integración con la aplicación web. Nos articulamos para tomar decisiones clave sobre la arquitectura por bounded contexts y la estandarización del código, asegurando que los módulos más interdependientes estuvieran disponibles a tiempo. A través de esta dirección compartida, logramos alinear el trabajo de todos los integrantes y cumplir con éxito los objetivos de la iteración.
 </th>
 </tr>
 <tr>
@@ -280,6 +321,9 @@ Contribuí a mantener una comunicación constante con mi equipo para organizar l
 <br><br>
 tb1:<br>
 Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
+<br><br>
+av2:<br>
+Promoví un entorno colaborativo e inclusivo en el Sprint 3 al disponibilizar anticipadamente los endpoints de autenticación (IAM) para que mis compañeros pudieran avanzar e integrar sus módulos sin bloqueos. Establecí metas claras al priorizar las User Stories de usuarios y cajas, planifiqué las tareas estructurando cada endpoint con sus respectivas validaciones y pruebas, y cumplí los objetivos acordados al entregar el backend funcional y su integración frontend dentro de los plazos establecidos
 <br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
@@ -317,6 +361,9 @@ Como equipo, concluimos que la comunicación y organización fueron fundamentale
 
 tb1:<br>
 Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
+
+av2:<br>
+Como equipo, promovimos un entorno de trabajo colaborativo e inclusivo mediante la división clara de responsabilidades por bounded contexts y el soporte mutuo durante la integración de los módulos. Establecimos metas ambiciosas para el Sprint 3 centradas en el desarrollo de la primera versión del backend RESTful y su despliegue junto con la aplicación web y la landing page. Planificamos metódicamente las tareas adoptando estándares estrictos de desarrollo, como Conventional Commits en inglés y revisiones mediante pull requests hacia develop. Como resultado de esta gestión articulada y el liderazgo distribuido, logramos cumplir con la totalidad de los objetivos técnicos y académicos en los plazos fijados.
 </tr>
 </tbody>
 </table>
@@ -1750,7 +1797,7 @@ La pantalla Editar perfil permite modificar nombres, apellidos, correo electrón
 ### 4.6.1. Design-Level Event Storming
 
 El equipo realizó una sesión de Design-Level EventStorming, partiendo de los hallazgos obtenidos en el Big Picture EventStorming . El objetivo de la sesión fue profundizar el modelado del dominio del problema, identificando con mayor nivel de detalle los Commands, Domain Events y Aggregates asociados a cada proceso de negocio de PetStock.
-Como resultado de la sesión, se identificaron 8 Bounded Contexts de negocio a partir de los dominios pivotales detectados: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. A estos se sumó un noveno Bounded Context de soporte técnico, Identity & Access Management, necesario para el control de acceso al sistema.
+Como resultado de la sesión, se identificaron 9 Bounded Contexts. Siete corresponden a los dominios de negocio detectados como pivotales: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. Los otros dos son de soporte: Identity & Access Management, necesario para el control de acceso al sistema, y Profile & Configuration Management, que administra los datos del perfil del usuario y sus preferencias.
 
 
 <img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
@@ -2388,6 +2435,131 @@ A continuación, se presenta evidencia de los Pull Requests y commits realizados
 
 ![Pull Requests Sprint 2](PR_TB1.png)
 
+### 5.2.3. Sprint 3
+
+En esta sección se presenta el progreso alcanzado durante el Sprint 3 del proyecto PetStock, considerando tanto los avances tecnológicos como el trabajo realizado de manera colaborativa por el equipo. A lo largo de este sprint, se priorizó la construcción y el despliegue de la primera versión del Backend (RESTful Web Services) desarrollada en ASP.NET Core y C# con persistencia en MySQL, logrando integrar la Web Application directamente con los Web Services y consolidando el despliegue funcional de los tres productos del proyecto. 
+
+
+#### 5.2.3.1. Sprint Planning 3
+
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 3, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-11-02 |
+| **Time** | 5:00 PM - 7:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Valladolid Jiménez, Arturo Fernando |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 2, el equipo desarrolló la primera versión funcional de la Web Application utilizando una Fake API (json-server) para simular la gestión de datos. En esta iteración se priorizó la maquetación de las vistas e interacciones del cliente, validando los flujos clave de la interfaz como base previa al desarrollo del backend real. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del Sprint 2, el equipo identificó fortalezas en el diseño de la interfaz y la comunicación, pero detectó la necesidad de reemplazar la Fake API por una persistencia de datos real. Ante esto, se acordó definir un contrato de API RESTful estricto para asegurar una integración fluida entre el backend y el frontend durante el Sprint 3. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to deliver the first version of the PetStock Web Services, exposing RESTful endpoints for the bounded contexts with persistence in MySQL, documented via OpenAPI, and to integrate the Web Application with them. The sprint will be considered successful once the Web Services, the Web Application, and the Landing Page are fully deployed and the main end-to-end flows are verified. |
+| **Sprint n Velocity** | 43 |
+| **Sum of Story Points** | 43 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+A lo largo del Sprint 3, el equipo estableció los Web Services que formarían parte de la primera versión del Backend de PetStock, definiendo los endpoints RESTful y la persistencia en MySQL que serían desarrollados para conectar la Web Application y atender las necesidades del negocio 
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Cash Shifts | Catalog & Inventory | Sales & Customers | Purchasing & Analytics | Profiles |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | L | C | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | C | C | L | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | C | L |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | L | C |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | L | C | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+## 5.3. Validation Interviews
+
+A continuación, se presenta la estructura e instrumental de validación utilizado para evaluar la propuesta de valor y las funcionalidades clave de la primera versión desplegada de PetStock. Mediante entrevistas de validación interactivas y pruebas de usabilidad guiadas, se busca recoger retroalimentación directa de los usuarios finales sobre la claridad de la Landing Page, la navegación en la Web Application integrada con el backend RESTful y la efectividad con la que el sistema resuelve las necesidades operativas.
+
+
+### 5.3.1. Diseño de Entrevistas
+
+El diseño del guion de entrevista se estructura diferenciando a los dos segmentos objetivo del proyecto, garantizando que cada participante ponga a prueba las funcionalidades
+
+#### Segmento 1: Tiendas de alimentos y consumo frecuente
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 1 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Claridad en la propuesta de valor sobre el control centralizado de inventario y rotación.
+  * Comprensión y transparencia de la sección de planes y precios.
+  * Visibilidad y correcto funcionamiento del botón de inicio de sesión que redirige a la aplicación web.
+* **User Flows de la Web Application a validar:**
+  1. Registro de usuario e inicio de sesión en la plataforma.
+  2. Registro de un nuevo producto de consumo frecuente configurando su stock mínimo.
+  3. Consulta del módulo de inventario y revisión de alertas de stock bajo.
+  4. Registro de una venta directa rápida.
+  5. Consulta del gráfico de rendimiento semanal en el dashboard.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Ingrese a la página web, revise la propuesta de valor, consulte los planes disponibles y acceda al botón para ingresar a la aplicación." | Facilidad para ubicar los precios y el botón de acceso; claridad del propósito del sistema. |
+| **2. Autenticación** | "Cree una cuenta nueva e inicie sesión con sus credenciales." | Fluidez en el formulario de registro e ingreso correcto al dashboard. |
+| **3. Registro de Producto e Inventario** | "Registre un nuevo alimento de consumo frecuente especificando sus datos generales y un límite de stock mínimo." | Comprensión de los campos y asignación precisa del umbral de stock bajo. |
+| **4. Control de Alertas** | "Diríjase al módulo de inventario e identifique qué productos cuentan con alertas activas." | Interpretación inmediata de las señales de desabastecimiento. |
+| **5. Registro de Venta Directa** | "Simule una venta rápida seleccionando el producto registrado y complete la transacción." | Agilidad del proceso de cobro y facilidad de uso del punto de venta. |
+| **6. Monitoreo en Dashboard** | "Ingrese al dashboard principal y consulte el gráfico de rendimiento semanal." | Claridad al interpretar la información gráfica del negocio. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué pasos o módulos del sistema le parecieron más sencillos e intuitivos de utilizar?
+2. ¿Encontró algún término, botón o sección que le resultara confuso durante el proceso?
+3. ¿Qué funcionalidad adicional considera que le falta al sistema para adaptarse mejor al día a día de su negocio?
+4. ¿Estaría dispuesto a implementar PetStock en su tienda de mascotas para reemplazar sus métodos actuales (cuadernos o Excel)?
+
+#### Segmento 2: Tiendas especializadas en productos premium y de cuidado
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 2 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Relevancia y atractivo comercial de los beneficios presentados en la propuesta de valor.
+  * Claridad de los planes para boutiques especializadas.
+  * Acceso directo al sistema mediante el botón de inicio de sesión.
+* **User Flows de la Web Application a validar:**
+  1. Inicio de sesión en la plataforma.
+  2. Registro de un nuevo proveedor y un producto especializado en el catálogo.
+  3. Registro de una orden de compra para reabastecimiento con el proveedor.
+  4. Búsqueda y consulta del historial de compras de un cliente registrado.
+  5. Generación y descarga del reporte operativo en formato PDF.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Navegue por la página de inicio, revise las características principales y acceda a la aplicación mediante el botón de login." | Comprensión de las características clave e identificación del botón de acceso. |
+| **2. Registro de Proveedor y Producto** | "Registre un proveedor de artículos premium y luego agregue un producto especial asociándolo a dicho proveedor." | Facilidad para vincular proveedores con ítems del catálogo. |
+| **3. Registro de Compra** | "Ingrese al módulo de compras y registre una orden de pedido al proveedor creado." | Fluidez al ingresar cantidades y costos unitarios de compra. |
+| **4. Consulta de Historial de Cliente** | "Acceda al módulo de clientes, seleccione un cliente y revise sus transacciones anteriores." | Rapidez para obtener el historial de compras recurrentes. |
+| **5. Generación de Reportes** | "Ingrese a la sección de reportes y descargue el reporte operativo en PDF." | Claridad en los filtros de reporte y descarga exitosa del archivo. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué herramientas o secciones de la aplicación consideró más fáciles y rápidas de usar?
+2. ¿Hubo alguna parte del flujo de compras o clientes que le haya resultado confusa o difícil de entender?
+3. ¿Qué característica o reporte específico siente que le falta a la plataforma para gestionar mejor sus artículos especializados?
+4. ¿Considera que PetStock le aporta el valor suficiente como para ser utilizada en la operación diaria de su boutique de mascotas?
+
+### 5.3.2. Registro de Entrevistas
+
+### 5.3.3. Evaluaciones según heurísticas
+
+## 5.4. Video About-the-Product
 
 # Conclusiones
 
