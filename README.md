@@ -2442,6 +2442,23 @@ En esta sección se presenta el progreso alcanzado durante el Sprint 3 del proye
 
 #### 5.2.3.1. Sprint Planning 3
 
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 3, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-11-02 |
+| **Time** | 5:00 PM - 7:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Valladolid Jiménez, Arturo Fernando |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 2, el equipo desarrolló la primera versión funcional de la Web Application utilizando una Fake API (json-server) para simular la gestión de datos. En esta iteración se priorizó la maquetación de las vistas e interacciones del cliente, validando los flujos clave de la interfaz como base previa al desarrollo del backend real. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del Sprint 2, el equipo identificó fortalezas en el diseño de la interfaz y la comunicación, pero detectó la necesidad de reemplazar la Fake API por una persistencia de datos real. Ante esto, se acordó definir un contrato de API RESTful estricto para asegurar una integración fluida entre el backend y el frontend durante el Sprint 3. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to deliver the first version of the PetStock Web Services, exposing RESTful endpoints for the bounded contexts with persistence in MySQL, documented via OpenAPI, and to integrate the Web Application with them. The sprint will be considered successful once the Web Services, the Web Application, and the Landing Page are fully deployed and the main end-to-end flows are verified. |
+| **Sprint n Velocity** | 43 |
+| **Sum of Story Points** | 43 |
+
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 #### 5.2.3.3. Sprint Backlog 3
