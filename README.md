@@ -1797,7 +1797,8 @@ La pantalla Editar perfil permite modificar nombres, apellidos, correo electrón
 ### 4.6.1. Design-Level Event Storming
 
 El equipo realizó una sesión de Design-Level EventStorming, partiendo de los hallazgos obtenidos en el Big Picture EventStorming . El objetivo de la sesión fue profundizar el modelado del dominio del problema, identificando con mayor nivel de detalle los Commands, Domain Events y Aggregates asociados a cada proceso de negocio de PetStock.
-Como resultado de la sesión, se identificaron 8 Bounded Contexts de negocio a partir de los dominios pivotales detectados: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. A estos se sumó un noveno Bounded Context de soporte técnico, Identity & Access Management, necesario para el control de acceso al sistema.
+Como resultado de la sesión, se identificaron 9 Bounded Contexts. Siete corresponden a los dominios de negocio detectados como pivotales: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. Los otros dos son de soporte: Identity & Access Management, necesario para el control de acceso al sistema, y Profile & Configuration Management, que administra los datos del perfil del usuario y sus preferencias.
+
 
 
 <img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
