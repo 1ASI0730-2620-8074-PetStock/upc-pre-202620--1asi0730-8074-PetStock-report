@@ -1800,7 +1800,6 @@ El equipo realizó una sesión de Design-Level EventStorming, partiendo de los h
 Como resultado de la sesión, se identificaron 9 Bounded Contexts. Siete corresponden a los dominios de negocio detectados como pivotales: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. Los otros dos son de soporte: Identity & Access Management, necesario para el control de acceso al sistema, y Profile & Configuration Management, que administra los datos del perfil del usuario y sus preferencias.
 
 
-
 <img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
 
 
