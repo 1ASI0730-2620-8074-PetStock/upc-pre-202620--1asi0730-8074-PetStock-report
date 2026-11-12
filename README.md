@@ -2476,6 +2476,77 @@ A lo largo del Sprint 3, el equipo estableció los Web Services que formarían p
 #### 5.2.3.4. Development Evidence for Sprint Review
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
+En el Sprint 3, la Web Application dejó de utilizar la Fake API (json-server) y pasó a consumir los Web Services reales de PetStock, desarrollados con ASP.NET Core y persistencia en MySQL, ya desplegados. Los ocho bounded contexts del sistema —IAM, Profile, Catalog, Inventory, Sales, Customers, Purchasing y Analytics— están conectados a los endpoints reales del backend desplegado.
+
+A continuación, se presenta evidencia de ejecución de la Web Application consumiendo el API real, incluyendo una captura de la pestaña Network que confirma que las peticiones se dirigen al servidor desplegado y no a una Fake API.
+
+##### Inicio de sesión
+
+Pantalla de acceso con correo y contraseña, consumiendo el endpoint real de autenticación (IAM) desplegado en producción.
+
+![Vista de inicio de sesión](./assets/sprint-3/execution/01-login.png)
+
+##### Registro de cuenta
+
+Formulario de registro de cuenta, conectado al endpoint real de creación de usuarios.
+
+![Vista de registro de cuenta](./assets/sprint-3/execution/02-register.png)
+
+##### Dashboard
+
+Resumen operativo del negocio, con los datos obtenidos en tiempo real desde el backend desplegado.
+
+![Vista del dashboard](./assets/sprint-3/execution/03-dashboard.png)
+
+##### Registro de producto
+
+Formulario de registro de producto del bounded context Catalog, consumiendo los endpoints reales de productos, categorías y proveedores.
+
+![Vista de registro de producto](./assets/sprint-3/execution/04-catalog.png)
+
+##### Productos con stock bajo
+
+Listado de alertas de stock del bounded context Inventory, calculado en tiempo real a partir de los datos del API desplegado.
+
+![Vista de productos con stock bajo](./assets/sprint-3/execution/05-inventory.png)
+
+A continuación, se muestra la pestaña Network del navegador con una petición real al API desplegado (`https://petstock-web-services.onrender.com/api/v1/inventories`), confirmando que la aplicación ya no utiliza la Fake API.
+
+![Evidencia de petición al API real](./assets/sprint-3/execution/network-evidence.png)
+
+##### Registro de venta e historial
+
+Formulario de registro de venta del bounded context Sales, con selección de producto, cliente y método de pago. Al registrarla, el stock del producto se descuenta automáticamente y la venta queda reflejada en los reportes del negocio.
+
+![Vista de registro de venta](./assets/sprint-3/execution/06-sales.png)
+
+##### Clientes
+
+Registro de un nuevo cliente del bounded context Customers desde el flujo de venta, verificando que el cliente creado queda correctamente vinculado a la transacción registrada.
+
+![Vista de clientes](./assets/sprint-3/execution/07-customers.png)
+
+##### Compras
+
+Formulario de registro de compra a proveedores del bounded context Purchasing. Al registrar la compra, el stock del producto se actualiza automáticamente con las unidades recibidas.
+
+![Vista de registro de compra](./assets/sprint-3/execution/08-purchases.png)
+
+##### Reportes
+
+Vista de análisis del bounded context Analytics, con el gráfico de ventas por día, los productos más vendidos, los productos de baja rotación y el resumen general del inventario, calculados en tiempo real a partir de los datos registrados.
+
+![Vista de reportes](./assets/sprint-3/execution/09-analytics.png)
+
+##### Mi perfil
+
+Vista del perfil del usuario, con los datos obtenidos del endpoint real de perfil/preferencias.
+
+![Vista de mi perfil](./assets/sprint-3/execution/10-profile.png)
+
+##### Video de navegación
+
+
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
