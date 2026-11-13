@@ -3110,6 +3110,20 @@ La Landing Page se mantiene publicada en GitHub Pages desde la rama `main` (vers
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
+Durante el Sprint 3, cada integrante asumió sus bounded contexts de punta a punta: implementó los endpoints en el backend (dominio, servicios de aplicación, repositorios y controladores REST con sus mensajes en inglés y español) y conectó el módulo correspondiente de la Web Application. Mendoza Moreano, Mariel Lucero trabajó IAM y Cash Shifts; Quispe Palomino, Tony Jhunior, Sales y Customers; Gutierrez Tume, Stanley Jeremy, Catalog e Inventory; Mendoza Boluarte, Pierre Alessandro, Purchasing y Analytics; y Valladolid Jiménez, Arturo Fernando, Profiles, la preparación de la base del backend y el despliegue.
+
+Para trabajar en paralelo sin bloquearse, la rama `develop` se preparó al inicio del sprint con el modelo completo, el Shared Kernel y un bloque por bounded context en los archivos compartidos (`Program.cs`, los recursos de localización y el archivo `.http`). Cada integrante creó su rama `feature/*` desde `develop`, usó Conventional Commits en inglés e integró su trabajo mediante Pull Requests hacia `develop`. Las versiones desplegadas se publicaron en `main` a través de ramas `release/*`, identificadas con tags.
+
+A continuación, se presentan las analíticas de contribución de los repositorios de Backend y Frontend, y los Pull Requests cerrados durante el sprint:
+
+![Backend contributors](assets/sprint-3/backend-contributors.png)
+
+![Frontend contributors](assets/sprint-3/frontend-contributors.png)
+
+![Backend pull requests](assets/sprint-3/backend-pull-requests.png)
+
+![Frontend pull requests](assets/sprint-3/frontend-pull-requests.png)
+
 ## 5.3. Validation Interviews
 
 A continuación, se presenta la estructura e instrumental de validación utilizado para evaluar la propuesta de valor y las funcionalidades clave de la primera versión desplegada de PetStock. Mediante entrevistas de validación interactivas y pruebas de usabilidad guiadas, se busca recoger retroalimentación directa de los usuarios finales sobre la claridad de la Landing Page, la navegación en la Web Application integrada con el backend RESTful y la efectividad con la que el sistema resuelve las necesidades operativas.
