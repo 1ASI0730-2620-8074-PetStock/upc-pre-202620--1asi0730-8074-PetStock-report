@@ -2934,20 +2934,89 @@ El diseño del guion de entrevista se estructura diferenciando a los dos segment
 3. ¿Qué característica o reporte específico siente que le falta a la plataforma para gestionar mejor sus artículos especializados?
 4. ¿Considera que PetStock le aporta el valor suficiente como para ser utilizada en la operación diaria de su boutique de mascotas?
 
+
 ### 5.3.2. Registro de Entrevistas
 
-**Segmento objetivo 2**
+En esta sección se presenta el registro de las entrevistas de validación realizadas a los usuarios de los dos segmentos objetivo de PetStock. Durante estas sesiones se mostró la aplicación web y se evaluó la experiencia de los participantes al interactuar con las funcionalidades desarrolladas.
+
+Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la navegación, la comprensión de los módulos y las posibles mejoras de la plataforma. Se mantiene el mismo orden de entrevistados establecido en la sección 2.2.2 del informe.
+
+**Segmento objetivo 1: Tiendas de alimentos y consumo frecuente para mascotas**
 
 **Entrevista N° 1**
+
+<!-- Registro de Aracelli Peña.
+     El integrante responsable debe agregar aquí su tabla
+     de validación, captura, enlace y resumen. -->
+
+
+**Entrevista N° 2**
+
 <table>
   <tr>
     <td colspan="2" align="center">
-      <img width="588" height="167" alt="image" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0" />
+      <img src="assets/Images-videovalidacion/VideoValidacion2.jpeg" alt="Entrevista de validación 2 - Mateo Escudero" width="588">
     </td>
   </tr>
   <tr>
     <td><b>Nombre y apellido</b></td>
-    <td>Gabriela Diaz</td>
+    <td>Mateo Piero Escudero Sánchez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>20 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Callao</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:22 min</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://drive.google.com/file/d/10AkUzpRR6KSoCKg3zXPRFx3SjsxH0YxS/view?usp=sharing">
+        Entrevista de validación 2 - Segmento 1
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+      Durante la entrevista de validación se presentó a Mateo Piero Escudero Sánchez el frontend de PetStock, una aplicación web orientada a la gestión de tiendas de mascotas. El recorrido incluyó la presentación de la plataforma, el proceso de acceso mediante una cuenta de usuario y la explicación de sus principales herramientas de administración. La evaluación se enfocó en la facilidad de uso del registro de productos, el control de inventario, las alertas de stock, las ventas y la consulta de información desde el dashboard. Estas funcionalidades están relacionadas con las necesidades identificadas en la primera entrevista, cuando Mateo explicó que su familia utiliza cuadernos y Excel para controlar las operaciones de su tienda. La sesión permitió plantear preguntas sobre la claridad de la interfaz, las funciones que deberían mejorarse y la disposición a utilizar una herramienta digital para reemplazar los registros manuales.
+      <br><br>
+      <b>Resultados de la validación:</b> [Completar con las respuestas reales de Mateo: funcionalidad que le resultó más sencilla, dificultad encontrada, mejora sugerida y disposición a utilizar PetStock].
+    </td>
+  </tr>
+</table>
+
+
+**Entrevista N° 3**
+
+<!-- Registro de Dayan Ramos.
+     El integrante responsable debe agregar aquí su tabla
+     de validación, captura, enlace y resumen. -->
+
+
+**Segmento objetivo 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Entrevista N° 4**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img width="588" height="167" alt="Entrevista de validación 4 - Gabriela Díaz" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Gabriela Díaz</td>
   </tr>
   <tr>
     <td><b>Edad</b></td>
@@ -2967,13 +3036,78 @@ El diseño del guion de entrevista se estructura diferenciando a los dos segment
   </tr>
   <tr>
     <td><b>Enlace</b></td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCfa1cXQMayRZlma0rwut3jATu8DmIyxMsKDz_Nyl3Dnzk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=t8yB6o">Entrevista - Segmento 2</a></td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCfa1cXQMayRZlma0rwut3jATu8DmIyxMsKDz_Nyl3Dnzk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJycmFsQXBwUGxhdGZvcm0iOiJXZWIifX0&e=t8yB6o">
+        Entrevista de validación 4 - Segmento 2
+      </a>
+    </td>
   </tr>
   <tr>
     <td><b>Resumen</b></td>
-    <td>La entrevistada, Gabriela Díaz, valoró sobre todo el registro de órdenes de compra. Le parece tan sencillo como hacer un pedido por WhatsApp, con la ventaja de que el historial queda guardado. Como punto confuso, señaló que no hay un campo para la marca al registrar productos (solo categoría y nombre), y para productos premium la marca es clave. También pidió poder marcar productos como “edición limitada”, porque eso cambia cómo los ofrece a sus clientas. Por último, dijo que sí implementaría PetStock: hoy lleva todo en cuaderno y Excel y le cuesta relacionar clientes con compras, así que el sistema le parece mucho más ordenado.</td>
+    <td>
+      La entrevistada, Gabriela Díaz, valoró sobre todo el registro de órdenes de compra. Le parece tan sencillo como hacer un pedido por WhatsApp, con la ventaja de que el historial queda guardado. Como punto confuso, señaló que no hay un campo para la marca al registrar productos, solamente categoría y nombre, y para productos premium la marca es clave. También pidió poder marcar productos como edición limitada, porque eso cambia cómo los ofrece a sus clientas. Por último, dijo que sí implementaría PetStock: hoy lleva todo en cuaderno y Excel y le cuesta relacionar clientes con compras, así que el sistema le parece mucho más ordenado.
+    </td>
   </tr>
 </table>
+
+
+**Entrevista N° 5**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/Images-videovalidacion/VideoValidacion5.jpeg" alt="Entrevista de validación 5 - Leonardo Castilla" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Leonardo Castilla Ruiz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>9:46 min </td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://drive.google.com/file/d/1XLwf_I1YUTB4Md4tIbfMFWL8gftB7ifT/view?usp=sharing">
+        Entrevista de validación 5 - Segmento 2
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+      Durante la entrevista de validación se presentó a Leonardo Castilla Ruiz, administrador de Wow Closet, el frontend de PetStock y las funcionalidades relacionadas con la administración de una tienda especializada en productos para mascotas. La demostración se orientó a la gestión de productos, el inventario, las compras, las ventas y los reportes disponibles en la plataforma. La validación se relacionó con las dificultades que Leonardo había mencionado durante la primera entrevista, especialmente la organización de un catálogo variado, el seguimiento de proveedores, los productos de baja rotación y la información de clientes frecuentes. A partir del recorrido por la aplicación, se plantearon preguntas destinadas a evaluar qué módulos resultaban más fáciles de utilizar, qué elementos podían generar confusión y qué funcionalidades adicionales serían necesarias para atender las particularidades de una boutique especializada.
+      <br><br>
+      <b>Resultados de la validación:</b> [Completar con las respuestas reales de Leonardo: funcionalidades mejor valoradas, dificultades encontradas, mejoras propuestas para productos especializados y disposición a implementar PetStock].
+    </td>
+  </tr>
+</table>
+
+
+**Entrevista N° 6**
+
+<!-- Registro de Lia.
+     El integrante responsable debe agregar aquí su tabla
+     de validación, captura, enlace y resumen. -->
+
+
+
+
+
 ### 5.3.3. Evaluaciones según heurísticas
 
 ## 5.4. Video About-the-Product
