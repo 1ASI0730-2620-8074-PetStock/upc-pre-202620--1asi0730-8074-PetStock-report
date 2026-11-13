@@ -2676,6 +2676,44 @@ El diseño del guion de entrevista se estructura diferenciando a los dos segment
 
 ### 5.3.2. Registro de Entrevistas
 
+**Segmento objetivo 2**
+
+**Entrevista N° 1**
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img width="588" height="167" alt="image" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Gabriela Diaz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:24</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCfa1cXQMayRZlma0rwut3jATu8DmIyxMsKDz_Nyl3Dnzk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=t8yB6o">Entrevista - Segmento 2</a></td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>La entrevistada, Gabriela Díaz, valoró sobre todo el registro de órdenes de compra. Le parece tan sencillo como hacer un pedido por WhatsApp, con la ventaja de que el historial queda guardado. Como punto confuso, señaló que no hay un campo para la marca al registrar productos (solo categoría y nombre), y para productos premium la marca es clave. También pidió poder marcar productos como “edición limitada”, porque eso cambia cómo los ofrece a sus clientas. Por último, dijo que sí implementaría PetStock: hoy lleva todo en cuaderno y Excel y le cuesta relacionar clientes con compras, así que el sistema le parece mucho más ordenado.</td>
+  </tr>
+</table>
 ### 5.3.3. Evaluaciones según heurísticas
 
 ## 5.4. Video About-the-Product
