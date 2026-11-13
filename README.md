@@ -272,6 +272,8 @@ av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
 tb1:<br>
 Asumí el desarrollo del aspecto profile en la Web Application, encargándome de las vistas Mi perfil, Editar perfil y Cerrar sesión, con un formulario validado y una salida segura de la sesión hacia el login. Conecté mi módulo con la sesión de IAM y, integré el frontend en un layout compartido con rutas protegidas. Documenté la evidencia de ejecución del Sprint 2 (punto 5.2.2.5) con capturas de las vistas implementadas y el video de navegación.<br><br>
+av2:<br>
+Lideré la preparación técnica del Sprint 3: construí el Shared Kernel, el modelo de dominio de los 9 bounded contexts y la migración inicial de las 19 tablas, y dejé lista la rama develop con un bloque por bounded context para que todos pudieran implementar sus endpoints en paralelo. Desarrollé los endpoints de preferencias (/preferences), conecté la edición de perfil al API y me encargué del despliegue: la base de datos en TiDB Cloud, la API en Render con Docker y los releases de los Web Services y la Web Application.<br><br>
 
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
@@ -333,6 +335,8 @@ av1:<br>
 Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
 tb1:<br>
 Planifiqué mis tareas del Sprint 2 según el Sprint Backlog y las completé dentro del sprint (US11 y US12). Trabajé con ramas feature, pull requests hacia develop y commits convencionales, lo que permitió integrar mi módulo con los de mis compañeros sin perder su trabajo. Para facilitar el trabajo del equipo, dejé el frontend ejecutable con un solo comando (npm start) junto con la Fake API, y registré la evidencia del sprint para que todos pudieran revisarla.<br><br>
+av2:<br>
+Planifiqué el trabajo del sprint para que cada integrante avanzara sin depender de los demás, con guías por bounded context, convenciones comunes de ramas, commits y nombres de campos alineados con el frontend. Integré los aportes del equipo en develop, verifiqué que el backend y el frontend compilaran antes de cada release y registré la evidencia de desarrollo, despliegue y colaboración del sprint (5.2.3.4, 5.2.3.7 y 5.2.3.8).<br><br>
 
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
