@@ -2600,196 +2600,155 @@ Vista del perfil del usuario, con los datos obtenidos del endpoint real de perfi
 
 ##### Video de navegación
 
-#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+#### 5.3.3.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 3 se implementaron y documentaron los servicios Web de PetStock mediante una Web API REST. El backend fue organizado mediante bounded contexts, separando las responsabilidades de IAM, Profiles, Catalog, Inventory, Sales, Customers, Cash Shifts, Purchasing y Analytics.
+Durante el Sprint 3 se implementaron y documentaron los servicios Web de PetStock mediante una Web API REST desarrollada con ASP.NET Core y Entity Framework Core sobre MySQL. El backend fue organizado mediante bounded contexts, separando las responsabilidades de IAM, Profiles, Catalog, Inventory, Sales, Customers, Cash Shifts, Purchasing y Analytics.
 
-Los servicios utilizan el prefijo /api/v1/ para sus endpoints y fueron implementados mediante controladores REST, recursos de entrada y salida, servicios de aplicación, repositorios y persistencia con Entity Framework Core.
+Los servicios utilizan el prefijo /api/v1/ para sus endpoints y fueron implementados mediante controladores REST, recursos de entrada y salida, servicios de aplicación, repositorios y persistencia con Entity Framework Core. La documentación de los Web Services se generó mediante OpenAPI y se explora mediante Scalar.
 
-Las pruebas permitieron verificar operaciones exitosas y escenarios de error mediante códigos HTTP como 200 OK, 201 Created, 400 Bad Request, 404 Not Found y 409 Conflict.
-
-
-## IAM
-El bounded context IAM administra los usuarios y las sesiones de autenticación de PetStock.
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/users` | Registrar usuario | `POST /api/v1/users` | Body: `firstName`, `lastName`, `email`, `password`, `phone`, `role` | `201`, usuario creado |
-| `/api/v1/users` | Listar usuarios | `GET /api/v1/users` | — | `200`, lista de usuarios |
-| `/api/v1/users/{id}` | Obtener usuario | `GET /api/v1/users/1` | `id` en la ruta | `200`, usuario |
-| `/api/v1/users/{id}` | Actualizar usuario | `PUT /api/v1/users/1` | `id` en la ruta. Body: `firstName`, `lastName`, `email`, `phone` | `200`, usuario actualizado |
-| `/api/v1/sessions` | Iniciar sesión | `POST /api/v1/sessions` | Body: `email`, `password` | `201`, sesión creada |
-| `/api/v1/sessions/{id}` | Obtener sesión | `GET /api/v1/sessions/1` | `id` en la ruta | `200`, sesión |
-
-Las solicitudes de usuarios incluyen validaciones para campos obligatorios, formato de correo electrónico y longitud de los datos. El servicio de sesiones también valida las credenciales proporcionadas.
+![alt text](assets/sprint-3/execution/evidence/image.png)
 
 
+### IAM
 
-## Profiles
-El bounded context Profiles administra las preferencias de configuración de los usuarios.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/users` | `POST` | `POST /api/v1/users` | Body JSON con `firstName`, `lastName`, `email`, `password`, `phone`, `role` | Registra un nuevo usuario | `{"id": 2, "firstName": "Juan", "lastName": "Perez", "email": "juan.perez.demo@example.com", "phone": "999888777", "role": "Admin"}` |
+| `/api/v1/users` | `GET` | `GET /api/v1/users` | — | Retorna todos los usuarios registrados | `[{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}]` |
+| `/api/v1/users/{id}` | `GET` | `GET /api/v1/users/1` | `id` (path, requerido) | Retorna un usuario específico | `{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}` |
+| `/api/v1/users/{id}` | `PUT` | `PUT /api/v1/users/1` | `id` (path, requerido). Body: `firstName`, `lastName`, `email`, `phone` | Actualiza los datos de un usuario | `{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}` |
+| `/api/v1/sessions` | `POST` | `POST /api/v1/sessions` | Body JSON con `email`, `password` | Inicia sesión validando las credenciales del usuario | `{"id": 1, "userId": 1, "token": "sample-token", "expiresAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/sessions/{id}` | `GET` | `GET /api/v1/sessions/1` | `id` (path, requerido) | Retorna una sesión específica | `{"id": 1, "userId": 1, "token": "sample-token", "expiresAt": "2026-11-13T15:00:00+00:00"}` |
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/preferences` | Registrar preferencias | `POST /api/v1/preferences` | Body: `userId`, `notificationsEnabled`, `darkMode`, `language` | `201`, preferencias creadas |
-| `/api/v1/preferences` | Listar preferencias | `GET /api/v1/preferences` | — | `200`, lista de preferencias |
-| `/api/v1/preferences/{id}` | Obtener preferencias | `GET /api/v1/preferences/1` | `id` en la ruta | `200`, preferencias |
-| `/api/v1/preferences/{id}` | Actualizar preferencias | `PUT /api/v1/preferences/1` | `id` en la ruta. Body: `notificationsEnabled`, `darkMode`, `language` | `200`, preferencias actualizadas |
+### Profiles
 
-El atributo `language` acepta los valores `en` y `es`, mientras que las preferencias de notificaciones y modo oscuro se manejan mediante valores booleanos.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/preferences` | `POST` | `POST /api/v1/preferences` | Body JSON con `userId`, `notificationsEnabled`, `darkMode`, `language` | Registra las preferencias de un usuario | `{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}` |
+| `/api/v1/preferences` | `GET` | `GET /api/v1/preferences` | — | Retorna todas las preferencias registradas | `[{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}]` |
+| `/api/v1/preferences/{id}` | `GET` | `GET /api/v1/preferences/1` | `id` (path, requerido) | Retorna las preferencias de un usuario | `{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}` |
+| `/api/v1/preferences/{id}` | `PUT` | `PUT /api/v1/preferences/1` | `id` (path, requerido). Body: `notificationsEnabled`, `darkMode`, `language` | Actualiza las preferencias existentes | `{"id": 1, "userId": 1, "notificationsEnabled": false, "darkMode": true, "language": "en"}` |
 
+### Catalog — Categories
 
-## Catalog
-El bounded context Catalog administra las categorías, productos y proveedores de PetStock.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/categories` | `POST` | `POST /api/v1/categories` | Body JSON con `name`, `description` | Registra una nueva categoría | `{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}` |
+| `/api/v1/categories` | `GET` | `GET /api/v1/categories` | — | Retorna todas las categorías | `[{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}]` |
+| `/api/v1/categories/{id}` | `GET` | `GET /api/v1/categories/1` | `id` (path, requerido) | Retorna una categoría específica | `{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}` |
 
-### Categories
+### Catalog — Products
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/categories` | Registrar categoría | `POST /api/v1/categories` | Body: `name`, `description` | `201`, categoría creada |
-| `/api/v1/categories` | Listar categorías | `GET /api/v1/categories` | — | `200`, lista de categorías |
-| `/api/v1/categories/{id}` | Obtener categoría | `GET /api/v1/categories/1` | `id` en la ruta | `200`, categoría |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/products` | `POST` | `POST /api/v1/products` | Body JSON con `name`, `description`, `price`, `categoryId`, `supplierId` | Registra un nuevo producto | `{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}` |
+| `/api/v1/products` | `GET` | `GET /api/v1/products` | — | Retorna todos los productos registrados | `[{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}]` |
+| `/api/v1/products/{id}` | `GET` | `GET /api/v1/products/1` | `id` (path, requerido) | Retorna un producto específico | `{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}` |
 
-### Products
+### Catalog — Suppliers
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/products` | Registrar producto | `POST /api/v1/products` | Body: `name`, `description`, `price`, `categoryId`, `supplierId` | `201`, producto creado |
-| `/api/v1/products` | Listar productos | `GET /api/v1/products` | — | `200`, lista de productos |
-| `/api/v1/products/{id}` | Obtener producto | `GET /api/v1/products/1` | `id` en la ruta | `200`, producto |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/suppliers` | `POST` | `POST /api/v1/suppliers` | Body JSON con `companyName`, `contactName`, `phone`, `email` | Registra un nuevo proveedor | `{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}` |
+| `/api/v1/suppliers` | `GET` | `GET /api/v1/suppliers` | — | Retorna todos los proveedores | `[{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}]` |
+| `/api/v1/suppliers/{id}` | `GET` | `GET /api/v1/suppliers/1` | `id` (path, requerido) | Retorna un proveedor específico | `{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}` |
 
-### Suppliers
+### Inventory — Inventories
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/suppliers` | Registrar proveedor | `POST /api/v1/suppliers` | Body: `companyName`, `contactName`, `phone`, `email` | `201`, proveedor creado |
-| `/api/v1/suppliers` | Listar proveedores | `GET /api/v1/suppliers` | — | `200`, lista de proveedores |
-| `/api/v1/suppliers/{id}` | Obtener proveedor | `GET /api/v1/suppliers/1` | `id` en la ruta | `200`, proveedor |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/inventories` | `POST` | `POST /api/v1/inventories` | Body JSON con `productId`, `currentStock`, `minimumStock` | Registra el stock de un producto | `{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/inventories` | `GET` | `GET /api/v1/inventories` | — | Retorna todos los inventarios | `[{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/inventories/{id}` | `GET` | `GET /api/v1/inventories/1` | `id` (path, requerido) | Retorna un inventario específico | `{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/inventories/{id}` | `PUT` | `PUT /api/v1/inventories/1` | `id` (path, requerido). Body: `currentStock`, `minimumStock` | Actualiza el stock y el stock mínimo | `{"id": 1, "productId": 1, "currentStock": 45, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
 
-Los productos requieren una categoría y un proveedor existentes mediante `categoryId` y `supplierId`.
+### Inventory — Stock Alerts
 
-
-## Inventory
-El bounded context Inventory administra el stock de los productos y las alertas de inventario.
-
-### Inventories
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/inventories` | Registrar inventario | `POST /api/v1/inventories` | Body: `productId`, `currentStock`, `minimumStock` | `201`, inventario creado |
-| `/api/v1/inventories` | Listar inventarios | `GET /api/v1/inventories` | — | `200`, lista de inventarios |
-| `/api/v1/inventories/{id}` | Obtener inventario | `GET /api/v1/inventories/1` | `id` en la ruta | `200`, inventario |
-| `/api/v1/inventories/{id}` | Actualizar stock | `PUT /api/v1/inventories/1` | `id` en la ruta. Body: `currentStock`, `minimumStock` | `200`, inventario actualizado |
-
-### Stock Alerts
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/stock-alerts` | Registrar alerta | `POST /api/v1/stock-alerts` | Body: `productId`, `level` | `201`, alerta creada |
-| `/api/v1/stock-alerts` | Listar alertas | `GET /api/v1/stock-alerts` | — | `200`, lista de alertas |
-| `/api/v1/stock-alerts/{id}` | Obtener alerta | `GET /api/v1/stock-alerts/1` | `id` en la ruta | `200`, alerta |
-
-El nivel de alerta se valida mediante los valores `low` o `critical`.
-
-
-## Sales
-El bounded context Sales administra las ventas y los pagos asociados.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/stock-alerts` | `POST` | `POST /api/v1/stock-alerts` | Body JSON con `productId`, `level` | Registra una alerta de stock | `{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/stock-alerts` | `GET` | `GET /api/v1/stock-alerts` | — | Retorna las alertas de stock | `[{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/stock-alerts/{id}` | `GET` | `GET /api/v1/stock-alerts/1` | `id` (path, requerido) | Retorna una alerta específica | `{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}` |
 
 ### Sales
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/sales` | Registrar venta | `POST /api/v1/sales` | Body: `userId`, `customerId`, `paymentMethod`, `items` | `201`, venta creada |
-| `/api/v1/sales` | Listar ventas | `GET /api/v1/sales` | — | `200`, lista de ventas |
-| `/api/v1/sales/{id}` | Obtener venta | `GET /api/v1/sales/1` | `id` en la ruta | `200`, venta |
-| `/api/v1/sales/{id}` | Eliminar venta | `DELETE /api/v1/sales/1` | `id` en la ruta | `204`, venta eliminada |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/sales` | `POST` | `POST /api/v1/sales` | Body JSON con `userId`, `customerId`, `paymentMethod`, `items` | Registra una nueva venta | `{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}` |
+| `/api/v1/sales` | `GET` | `GET /api/v1/sales` | — | Retorna todas las ventas registradas | `[{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}]` |
+| `/api/v1/sales/{id}` | `GET` | `GET /api/v1/sales/1` | `id` (path, requerido) | Retorna una venta específica | `{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}` |
+| `/api/v1/sales/{id}` | `DELETE` | `DELETE /api/v1/sales/1` | `id` (path, requerido) | Elimina una venta existente | `204 No Content` |
 
+### Sales — Payments
 
-### Payments
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/payments` | Registrar pago | `POST /api/v1/payments` | Body: `saleId`, `amount`, `paymentMethod` | `201`, pago creado |
-| `/api/v1/payments` | Listar pagos | `GET /api/v1/payments` | — | `200`, lista de pagos |
-| `/api/v1/payments/{id}` | Obtener pago | `GET /api/v1/payments/1` | `id` en la ruta | `200`, pago |
-
----
-
-## Customers
-El bounded context Customers administra los clientes y su historial de compras.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/payments` | `POST` | `POST /api/v1/payments` | Body JSON con `saleId`, `amount`, `paymentMethod` | Registra el pago de una venta | `{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/payments` | `GET` | `GET /api/v1/payments` | — | Retorna todos los pagos registrados | `[{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/payments/{id}` | `GET` | `GET /api/v1/payments/1` | `id` (path, requerido) | Retorna un pago específico | `{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}` |
 
 ### Customers
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/customers` | Registrar cliente | `POST /api/v1/customers` | Body: `name`, `email`, `phone`, `address` | `201`, cliente creado |
-| `/api/v1/customers` | Listar clientes | `GET /api/v1/customers` | — | `200`, lista de clientes |
-| `/api/v1/customers/{id}` | Obtener cliente | `GET /api/v1/customers/1` | `id` en la ruta | `200`, cliente |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/customers` | `POST` | `POST /api/v1/customers` | Body JSON con `name`, `email`, `phone`, `address` | Registra un nuevo cliente | `{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}` |
+| `/api/v1/customers` | `GET` | `GET /api/v1/customers` | — | Retorna todos los clientes registrados | `[{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}]` |
+| `/api/v1/customers/{id}` | `GET` | `GET /api/v1/customers/1` | `id` (path, requerido) | Retorna un cliente específico | `{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}` |
 
-### Purchase History Entries
+### Customers — Purchase History Entries
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/purchase-history-entries` | Registrar historial de compra | `POST /api/v1/purchase-history-entries` | Body: `customerId`, `saleId`, `total` | `201`, entrada creada |
-| `/api/v1/purchase-history-entries` | Listar historial | `GET /api/v1/purchase-history-entries` | — | `200`, lista de entradas |
-| `/api/v1/purchase-history-entries/{id}` | Obtener entrada | `GET /api/v1/purchase-history-entries/1` | `id` en la ruta | `200`, entrada |
-
----
-
-## Cash Shifts
-El bounded context Cash Shifts administra la apertura, consulta, cierre y conciliación de las cajas.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchase-history-entries` | `POST` | `POST /api/v1/purchase-history-entries` | Body JSON con `customerId`, `saleId`, `total` | Registra una entrada en el historial de compras | `{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/purchase-history-entries` | `GET` | `GET /api/v1/purchase-history-entries` | — | Retorna todas las entradas del historial | `[{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/purchase-history-entries/{id}` | `GET` | `GET /api/v1/purchase-history-entries/1` | `id` (path, requerido) | Retorna una entrada específica del historial | `{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}` |
 
 ### Cash Shifts
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/cash-shifts` | Abrir caja | `POST /api/v1/cash-shifts` | Body: `userId`, `openingAmount` | `201`, caja creada |
-| `/api/v1/cash-shifts` | Listar cajas | `GET /api/v1/cash-shifts` | — | `200`, lista de cajas |
-| `/api/v1/cash-shifts/{id}` | Obtener caja | `GET /api/v1/cash-shifts/1` | `id` en la ruta | `200`, caja |
-| `/api/v1/cash-shifts/{id}` | Cerrar caja | `PUT /api/v1/cash-shifts/1` | `id` en la ruta. Body: `closingAmount` | `200`, caja cerrada |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-shifts` | `POST` | `POST /api/v1/cash-shifts` | Body JSON con `userId`, `openingAmount` | Abre una nueva caja | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}` |
+| `/api/v1/cash-shifts` | `GET` | `GET /api/v1/cash-shifts` | — | Retorna todas las cajas registradas | `[{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}]` |
+| `/api/v1/cash-shifts/{id}` | `GET` | `GET /api/v1/cash-shifts/1` | `id` (path, requerido) | Retorna una caja específica | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}` |
+| `/api/v1/cash-shifts/{id}` | `PUT` | `PUT /api/v1/cash-shifts/1` | `id` (path, requerido). Body: `closingAmount` | Cierra una caja existente | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 725, "status": "Closed", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": "2026-11-13T20:00:00+00:00"}` |
 
 ### Cash Reconciliations
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/cash-reconciliations` | Registrar conciliación | `POST /api/v1/cash-reconciliations` | Body: `cashShiftId`, `expectedAmount`, `actualAmount` | `201`, conciliación creada |
-| `/api/v1/cash-reconciliations` | Listar conciliaciones | `GET /api/v1/cash-reconciliations` | — | `200`, lista de conciliaciones |
-| `/api/v1/cash-reconciliations/{id}` | Obtener conciliación | `GET /api/v1/cash-reconciliations/1` | `id` en la ruta | `200`, conciliación |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-reconciliations` | `POST` | `POST /api/v1/cash-reconciliations` | Body JSON con `cashShiftId`, `expectedAmount`, `actualAmount` | Registra la conciliación de una caja | `{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}` |
+| `/api/v1/cash-reconciliations` | `GET` | `GET /api/v1/cash-reconciliations` | — | Retorna todas las conciliaciones | `[{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}]` |
+| `/api/v1/cash-reconciliations/{id}` | `GET` | `GET /api/v1/cash-reconciliations/1` | `id` (path, requerido) | Retorna una conciliación específica | `{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}` |
 
----
+### Purchasing — Purchases
 
-## Purchasing
-El bounded context Purchasing administra las órdenes de compra y la recepción de productos.
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchases` | `POST` | `POST /api/v1/purchases` | Body JSON con `supplierId`, `productId`, `quantity`, `unitCost` | Registra una nueva orden de compra | `{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}` |
+| `/api/v1/purchases` | `GET` | `GET /api/v1/purchases` | — | Retorna todas las compras registradas | `[{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}]` |
+| `/api/v1/purchases/{id}` | `GET` | `GET /api/v1/purchases/2` | `id` (path, requerido) | Retorna una orden de compra específica | `{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}` |
+| `/api/v1/purchases/{id}` | `DELETE` | `DELETE /api/v1/purchases/2` | `id` (path, requerido) | Elimina una orden de compra | `204 No Content` |
 
-### Purchases
+### Purchasing — Goods Receipts
 
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/purchases` | Registrar compra | `POST /api/v1/purchases` | Body: `supplierId`, `productId`, `quantity`, `unitCost` | `201`, compra creada |
-| `/api/v1/purchases` | Listar compras | `GET /api/v1/purchases` | — | `200`, lista de compras |
-| `/api/v1/purchases/{id}` | Obtener compra | `GET /api/v1/purchases/1` | `id` en la ruta | `200`, compra |
-| `/api/v1/purchases/{id}` | Eliminar compra | `DELETE /api/v1/purchases/1` | `id` en la ruta | `204`, compra eliminada |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/goods-receipts` | `POST` | `POST /api/v1/goods-receipts` | Body JSON con `purchaseId`, `notes` | Registra la recepción de los productos de una compra | `{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/goods-receipts` | `GET` | `GET /api/v1/goods-receipts` | — | Retorna todas las recepciones registradas | `[{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/goods-receipts/{id}` | `GET` | `GET /api/v1/goods-receipts/1` | `id` (path, requerido) | Retorna una recepción específica | `{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}` |
 
+### Analytics
 
-### Goods Receipts
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/goods-receipts` | Registrar recepción | `POST /api/v1/goods-receipts` | Body: `purchaseId`, `notes` | `201`, recepción creada |
-| `/api/v1/goods-receipts` | Listar recepciones | `GET /api/v1/goods-receipts` | — | `200`, lista de recepciones |
-| `/api/v1/goods-receipts/{id}` | Obtener recepción | `GET /api/v1/goods-receipts/1` | `id` en la ruta | `200`, recepción |
-
-
-## Analytics
-El bounded context Analytics administra la generación y consulta de reportes.
-
-| Endpoint | Acción | Llamada | Parámetros | Response |
-| :--- | :--- | :--- | :--- | :--- |
-| `/api/v1/reports` | Registrar reporte | `POST /api/v1/reports` | Body: `userId`, `reportType`, `fileFormat` | `201`, reporte creado |
-| `/api/v1/reports` | Listar reportes | `GET /api/v1/reports` | — | `200`, lista de reportes |
-| `/api/v1/reports/{id}` | Obtener reporte | `GET /api/v1/reports/1` | `id` en la ruta | `200`, reporte |
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/reports` | `POST` | `POST /api/v1/reports` | Body JSON con `userId`, `reportType`, `fileFormat` | Registra la generación de un reporte | `{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/reports` | `GET` | `GET /api/v1/reports` | — | Retorna todos los reportes registrados | `[{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/reports/{id}` | `GET` | `GET /api/v1/reports/1` | `id` (path, requerido) | Retorna un reporte específico | `{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}` |
 
 
-## Ejemplos de interacción con los servicios
+## Evidencia de interaccion
+
+Para la evidencia , usamos el backend de forma local y hacemos HTTP Request en PetStock.API.http
 
 ### 1. Registro de usuario
 Se verificó el registro de usuarios mediante `POST /api/v1/users`.La solicitud fue procesada correctamente y el backend devolvió una respuesta `201 Created` junto con el identificador generado para el nuevo usuario.
@@ -2852,22 +2811,6 @@ También se verificó el comportamiento del backend cuando se solicita un recurs
 En este escenario, el servicio devuelve una respuesta `404 Not Found`, indicando que el recurso solicitado no pudo ser encontrado.
 
 ![alt text](assets/sprint-3/execution/evidence/evidencia12.png)
-
----
-
-## Evidencia de pruebas mediante Rider
-Las solicitudes HTTP fueron ejecutadas desde el archivo `PetStock.API.http` utilizando Rider. Esto permitió comprobar directamente la comunicación entre el cliente HTTP y el backend ASP.NET Core ejecutado localmente.
-
-Cada ejecución muestra:
-- Método HTTP utilizado.
-- URL del endpoint.
-- Código de respuesta HTTP.
-- Tiempo de respuesta.
-- Cuerpo de la respuesta.
-- Datos generados o recuperados por el servicio.
-
-De esta manera, las evidencias corresponden a la ejecución real de los servicios implementados en el backend.
-
 
 ## Repositorio de Web Services
 El código fuente de los Web Services se encuentra disponible en el siguiente repositorio:
