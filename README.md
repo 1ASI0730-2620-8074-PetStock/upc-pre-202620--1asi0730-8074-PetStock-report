@@ -280,6 +280,9 @@ Apoye en la definicion de los User persona para entender mejor los segmentos obj
 tb1:<br>
 Realice el desarrollo del bounded context de Analytics para el Web Application-Frontend,la creacion del reporte para PetStock con grafico de barras e informacion que se actualiza gracias a otros modulos, luego conecte este a la parte principal de la aplicacion,tambien documente el historial de commits para el Frontend.<br><br>
 
+av2:<br>
+Para el sprint 3 desarrolle los bounded contexts de Purchasing y Analytics para la Web Application , asimismo documente la web service realize pruebas para comprobar los endpoints de este.<br><br>
+
 
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
@@ -337,6 +340,9 @@ Participé activamente en la planificación de las actividades para el informe y
 
 tb1:<br>
 Trabaje de acuerdo a las tareas que se nos asignaron en el Sprint 2 , asi mismo segui el flujo de trabajo de branches para tener mayor control sobre el proyeto, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
+
+tb1:<br>
+Cumpli con mis responsabilidades de acuerdo a las tareas que se nos asignaron en el Sprint 3 ,siguiendo el flujo de trabajo de branches para tener mayor control sobre el proyeto y poder comprobar que mi parte se acoplaba a la reazalida por mi equipo, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
 
 
 Gutierrez Tume,Stanley Jeremy<br>
@@ -2594,9 +2600,320 @@ Vista del perfil del usuario, con los datos obtenidos del endpoint real de perfi
 
 ##### Video de navegación
 
-
-
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y documentaron los servicios Web de PetStock mediante una Web API REST. El backend fue organizado mediante bounded contexts, separando las responsabilidades de IAM, Profiles, Catalog, Inventory, Sales, Customers, Cash Shifts, Purchasing y Analytics.
+
+Los servicios utilizan el prefijo /api/v1/ para sus endpoints y fueron implementados mediante controladores REST, recursos de entrada y salida, servicios de aplicación, repositorios y persistencia con Entity Framework Core.
+
+Las pruebas permitieron verificar operaciones exitosas y escenarios de error mediante códigos HTTP como 200 OK, 201 Created, 400 Bad Request, 404 Not Found y 409 Conflict.
+
+
+## IAM
+El bounded context IAM administra los usuarios y las sesiones de autenticación de PetStock.
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/users` | Registrar usuario | `POST /api/v1/users` | Body: `firstName`, `lastName`, `email`, `password`, `phone`, `role` | `201`, usuario creado |
+| `/api/v1/users` | Listar usuarios | `GET /api/v1/users` | — | `200`, lista de usuarios |
+| `/api/v1/users/{id}` | Obtener usuario | `GET /api/v1/users/1` | `id` en la ruta | `200`, usuario |
+| `/api/v1/users/{id}` | Actualizar usuario | `PUT /api/v1/users/1` | `id` en la ruta. Body: `firstName`, `lastName`, `email`, `phone` | `200`, usuario actualizado |
+| `/api/v1/sessions` | Iniciar sesión | `POST /api/v1/sessions` | Body: `email`, `password` | `201`, sesión creada |
+| `/api/v1/sessions/{id}` | Obtener sesión | `GET /api/v1/sessions/1` | `id` en la ruta | `200`, sesión |
+
+Las solicitudes de usuarios incluyen validaciones para campos obligatorios, formato de correo electrónico y longitud de los datos. El servicio de sesiones también valida las credenciales proporcionadas.
+
+
+
+## Profiles
+El bounded context Profiles administra las preferencias de configuración de los usuarios.
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/preferences` | Registrar preferencias | `POST /api/v1/preferences` | Body: `userId`, `notificationsEnabled`, `darkMode`, `language` | `201`, preferencias creadas |
+| `/api/v1/preferences` | Listar preferencias | `GET /api/v1/preferences` | — | `200`, lista de preferencias |
+| `/api/v1/preferences/{id}` | Obtener preferencias | `GET /api/v1/preferences/1` | `id` en la ruta | `200`, preferencias |
+| `/api/v1/preferences/{id}` | Actualizar preferencias | `PUT /api/v1/preferences/1` | `id` en la ruta. Body: `notificationsEnabled`, `darkMode`, `language` | `200`, preferencias actualizadas |
+
+El atributo `language` acepta los valores `en` y `es`, mientras que las preferencias de notificaciones y modo oscuro se manejan mediante valores booleanos.
+
+
+## Catalog
+El bounded context Catalog administra las categorías, productos y proveedores de PetStock.
+
+### Categories
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/categories` | Registrar categoría | `POST /api/v1/categories` | Body: `name`, `description` | `201`, categoría creada |
+| `/api/v1/categories` | Listar categorías | `GET /api/v1/categories` | — | `200`, lista de categorías |
+| `/api/v1/categories/{id}` | Obtener categoría | `GET /api/v1/categories/1` | `id` en la ruta | `200`, categoría |
+
+### Products
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/products` | Registrar producto | `POST /api/v1/products` | Body: `name`, `description`, `price`, `categoryId`, `supplierId` | `201`, producto creado |
+| `/api/v1/products` | Listar productos | `GET /api/v1/products` | — | `200`, lista de productos |
+| `/api/v1/products/{id}` | Obtener producto | `GET /api/v1/products/1` | `id` en la ruta | `200`, producto |
+
+### Suppliers
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/suppliers` | Registrar proveedor | `POST /api/v1/suppliers` | Body: `companyName`, `contactName`, `phone`, `email` | `201`, proveedor creado |
+| `/api/v1/suppliers` | Listar proveedores | `GET /api/v1/suppliers` | — | `200`, lista de proveedores |
+| `/api/v1/suppliers/{id}` | Obtener proveedor | `GET /api/v1/suppliers/1` | `id` en la ruta | `200`, proveedor |
+
+Los productos requieren una categoría y un proveedor existentes mediante `categoryId` y `supplierId`.
+
+
+## Inventory
+El bounded context Inventory administra el stock de los productos y las alertas de inventario.
+
+### Inventories
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/inventories` | Registrar inventario | `POST /api/v1/inventories` | Body: `productId`, `currentStock`, `minimumStock` | `201`, inventario creado |
+| `/api/v1/inventories` | Listar inventarios | `GET /api/v1/inventories` | — | `200`, lista de inventarios |
+| `/api/v1/inventories/{id}` | Obtener inventario | `GET /api/v1/inventories/1` | `id` en la ruta | `200`, inventario |
+| `/api/v1/inventories/{id}` | Actualizar stock | `PUT /api/v1/inventories/1` | `id` en la ruta. Body: `currentStock`, `minimumStock` | `200`, inventario actualizado |
+
+### Stock Alerts
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/stock-alerts` | Registrar alerta | `POST /api/v1/stock-alerts` | Body: `productId`, `level` | `201`, alerta creada |
+| `/api/v1/stock-alerts` | Listar alertas | `GET /api/v1/stock-alerts` | — | `200`, lista de alertas |
+| `/api/v1/stock-alerts/{id}` | Obtener alerta | `GET /api/v1/stock-alerts/1` | `id` en la ruta | `200`, alerta |
+
+El nivel de alerta se valida mediante los valores `low` o `critical`.
+
+
+## Sales
+El bounded context Sales administra las ventas y los pagos asociados.
+
+### Sales
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/sales` | Registrar venta | `POST /api/v1/sales` | Body: `userId`, `customerId`, `paymentMethod`, `items` | `201`, venta creada |
+| `/api/v1/sales` | Listar ventas | `GET /api/v1/sales` | — | `200`, lista de ventas |
+| `/api/v1/sales/{id}` | Obtener venta | `GET /api/v1/sales/1` | `id` en la ruta | `200`, venta |
+| `/api/v1/sales/{id}` | Eliminar venta | `DELETE /api/v1/sales/1` | `id` en la ruta | `204`, venta eliminada |
+
+
+### Payments
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/payments` | Registrar pago | `POST /api/v1/payments` | Body: `saleId`, `amount`, `paymentMethod` | `201`, pago creado |
+| `/api/v1/payments` | Listar pagos | `GET /api/v1/payments` | — | `200`, lista de pagos |
+| `/api/v1/payments/{id}` | Obtener pago | `GET /api/v1/payments/1` | `id` en la ruta | `200`, pago |
+
+---
+
+## Customers
+El bounded context Customers administra los clientes y su historial de compras.
+
+### Customers
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/customers` | Registrar cliente | `POST /api/v1/customers` | Body: `name`, `email`, `phone`, `address` | `201`, cliente creado |
+| `/api/v1/customers` | Listar clientes | `GET /api/v1/customers` | — | `200`, lista de clientes |
+| `/api/v1/customers/{id}` | Obtener cliente | `GET /api/v1/customers/1` | `id` en la ruta | `200`, cliente |
+
+### Purchase History Entries
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchase-history-entries` | Registrar historial de compra | `POST /api/v1/purchase-history-entries` | Body: `customerId`, `saleId`, `total` | `201`, entrada creada |
+| `/api/v1/purchase-history-entries` | Listar historial | `GET /api/v1/purchase-history-entries` | — | `200`, lista de entradas |
+| `/api/v1/purchase-history-entries/{id}` | Obtener entrada | `GET /api/v1/purchase-history-entries/1` | `id` en la ruta | `200`, entrada |
+
+---
+
+## Cash Shifts
+El bounded context Cash Shifts administra la apertura, consulta, cierre y conciliación de las cajas.
+
+### Cash Shifts
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-shifts` | Abrir caja | `POST /api/v1/cash-shifts` | Body: `userId`, `openingAmount` | `201`, caja creada |
+| `/api/v1/cash-shifts` | Listar cajas | `GET /api/v1/cash-shifts` | — | `200`, lista de cajas |
+| `/api/v1/cash-shifts/{id}` | Obtener caja | `GET /api/v1/cash-shifts/1` | `id` en la ruta | `200`, caja |
+| `/api/v1/cash-shifts/{id}` | Cerrar caja | `PUT /api/v1/cash-shifts/1` | `id` en la ruta. Body: `closingAmount` | `200`, caja cerrada |
+
+### Cash Reconciliations
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-reconciliations` | Registrar conciliación | `POST /api/v1/cash-reconciliations` | Body: `cashShiftId`, `expectedAmount`, `actualAmount` | `201`, conciliación creada |
+| `/api/v1/cash-reconciliations` | Listar conciliaciones | `GET /api/v1/cash-reconciliations` | — | `200`, lista de conciliaciones |
+| `/api/v1/cash-reconciliations/{id}` | Obtener conciliación | `GET /api/v1/cash-reconciliations/1` | `id` en la ruta | `200`, conciliación |
+
+---
+
+## Purchasing
+El bounded context Purchasing administra las órdenes de compra y la recepción de productos.
+
+### Purchases
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchases` | Registrar compra | `POST /api/v1/purchases` | Body: `supplierId`, `productId`, `quantity`, `unitCost` | `201`, compra creada |
+| `/api/v1/purchases` | Listar compras | `GET /api/v1/purchases` | — | `200`, lista de compras |
+| `/api/v1/purchases/{id}` | Obtener compra | `GET /api/v1/purchases/1` | `id` en la ruta | `200`, compra |
+| `/api/v1/purchases/{id}` | Eliminar compra | `DELETE /api/v1/purchases/1` | `id` en la ruta | `204`, compra eliminada |
+
+
+### Goods Receipts
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/goods-receipts` | Registrar recepción | `POST /api/v1/goods-receipts` | Body: `purchaseId`, `notes` | `201`, recepción creada |
+| `/api/v1/goods-receipts` | Listar recepciones | `GET /api/v1/goods-receipts` | — | `200`, lista de recepciones |
+| `/api/v1/goods-receipts/{id}` | Obtener recepción | `GET /api/v1/goods-receipts/1` | `id` en la ruta | `200`, recepción |
+
+
+## Analytics
+El bounded context Analytics administra la generación y consulta de reportes.
+
+| Endpoint | Acción | Llamada | Parámetros | Response |
+| :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/reports` | Registrar reporte | `POST /api/v1/reports` | Body: `userId`, `reportType`, `fileFormat` | `201`, reporte creado |
+| `/api/v1/reports` | Listar reportes | `GET /api/v1/reports` | — | `200`, lista de reportes |
+| `/api/v1/reports/{id}` | Obtener reporte | `GET /api/v1/reports/1` | `id` en la ruta | `200`, reporte |
+
+
+## Ejemplos de interacción con los servicios
+
+### 1. Registro de usuario
+Se verificó el registro de usuarios mediante `POST /api/v1/users`.La solicitud fue procesada correctamente y el backend devolvió una respuesta `201 Created` junto con el identificador generado para el nuevo usuario.
+
+![alt text](assets/sprint-3/execution/evidence/Evidencia1.png)
+
+### 2. Consulta de usuarios
+Se verificó la recuperación de los usuarios mediante `GET /api/v1/users`, obteniendo una respuesta `200 OK` con la colección de usuarios registrados.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia2.png)
+
+### 3. Registro de producto
+Se verificó la creación de productos mediante `POST /api/v1/products`. El servicio recibe la información del producto y sus relaciones con categoría y proveedor, retornando el recurso creado mediante una respuesta `201 Created`.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia3.png)
+
+### 4. Consulta de inventario
+Se verificó la consulta del inventario mediante `GET /api/v1/inventories`, obteniendo una respuesta `200 OK` con los productos y sus cantidades de stock registradas.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia4.png)
+
+### 5. Registro de venta
+Se verificó el registro de una venta mediante `POST /api/v1/sales`. La solicitud contiene el usuario responsable, el cliente cuando corresponde, el método de pago y los productos incluidos en la venta.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia5.png)
+
+### 6. Registro de cliente
+Se verificó el registro de clientes mediante `POST /api/v1/customers`, obteniendo una respuesta `201 Created` con el recurso generado.
+
+![alt text](<assets/sprint-3/execution/evidence/evidencia 6.png>)
+
+### 7. Registro de compra
+Se verificó el registro de órdenes de compra mediante `POST /api/v1/purchases`. La solicitud incluye el proveedor, producto, cantidad y costo unitario. El servicio calcula el total y devuelve información adicional como el estado y la fecha de la compra.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia7.png)
+
+### 8. Registro de recepción de productos
+Se verificó la recepción de una orden de compra mediante `POST /api/v1/goods-receipts`. La solicitud utiliza el identificador de una compra existente y permite agregar observaciones opcionales.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia8.png)
+
+### 9. Generación de reporte
+Se verificó la generación de reportes mediante `POST /api/v1/reports`. La solicitud incluye el usuario responsable, el tipo de reporte y el formato del archivo.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia9.png)
+
+### 10. Consulta de reportes
+Se verificó la recuperación de los reportes registrados mediante `GET /api/v1/reports`, obteniendo una respuesta `200 OK`.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia10.png)
+
+### 11. Validación de datos
+Además de las operaciones exitosas, se realizaron pruebas con datos inválidos para comprobar las validaciones implementadas en los servicios.  
+En estas pruebas, el backend devuelve una respuesta `400 Bad Request` cuando los datos enviados no cumplen con las reglas de validación establecidas.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia11.png)
+
+### 12. Recurso inexistente
+También se verificó el comportamiento del backend cuando se solicita un recurso que no existe.  
+En este escenario, el servicio devuelve una respuesta `404 Not Found`, indicando que el recurso solicitado no pudo ser encontrado.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia12.png)
+
+---
+
+## Evidencia de pruebas mediante Rider
+Las solicitudes HTTP fueron ejecutadas desde el archivo `PetStock.API.http` utilizando Rider. Esto permitió comprobar directamente la comunicación entre el cliente HTTP y el backend ASP.NET Core ejecutado localmente.
+
+Cada ejecución muestra:
+- Método HTTP utilizado.
+- URL del endpoint.
+- Código de respuesta HTTP.
+- Tiempo de respuesta.
+- Cuerpo de la respuesta.
+- Datos generados o recuperados por el servicio.
+
+De esta manera, las evidencias corresponden a la ejecución real de los servicios implementados en el backend.
+
+
+## Repositorio de Web Services
+El código fuente de los Web Services se encuentra disponible en el siguiente repositorio:
+
+- **Repositorio Backend:** [https://github.com/1ASI0730-2620-8074-PetStock/Backend](https://github.com/1ASI0730-2620-8074-PetStock/Backend)
+- **Web Services:** https://petstock-web-services.onrender.com/scalar
+
+El repositorio contiene la implementación de los bounded contexts, controladores REST, recursos, servicios de aplicación, repositorios, persistencia, configuración de la aplicación y las pruebas HTTP utilizadas para validar los endpoints.
+
+---
+
+## Commits relacionados con los Web Services
+Los principales commits relacionados con la implementación, configuración y pruebas de los servicios Web durante el Sprint se encuentran organizados por bounded context.
+
+| Bounded Context | Commit | Mensaje |
+| :--- | :--- | :--- |
+| Catalog | `9138517` | `feat(catalog): add categories controller, resources and assemblers` |
+| Catalog | `44d20a1` | `chore(catalog): add categories messages` |
+| Catalog | `f868fce` | `chore(catalog): register category services` |
+| Catalog | `1bc49e6` | `test(catalog): add http requests to verify categories endpoints` |
+| Catalog | `bff219c` | `feat(catalog): add suppliers controller, resources and assemblers` |
+| Catalog | `78355af` | `feat(catalog): add products controller, resources and assemblers` |
+| Catalog | `6f8016c` | `test(catalog): add http requests to verify supplier and product endpoints` |
+| Inventory | `50dfbe3` | `feat(inventory): add stock resources, assemblers and controller` |
+| Inventory | `ad75810` | `feat(inventory): add alerts controller, resources and assemblers` |
+| Inventory | `369ec65` | `test(inventory): add http requests to verify inventories and stock alerts endpoints` |
+| Profiles | `1ea7f08` | `feat(profiles): add preferences controller, resources and assemblers` |
+| Profiles | `9df0f6e` | `test(profiles): add http requests to verify preferences endpoints` |
+| IAM | `fe1c0d0` | `feat(iam): add users and sessions controllers, resources and assemblers` |
+| IAM | `b761ac4` | `test(iam): add http requests to verify users and sessions endpoints` |
+| Sales / Customers | `a56d20a` | `feat(sales-customers): implement REST endpoints and persistence` |
+| Customers | `8e3943d` | `refactor(customers): fix query services structure` |
+| Cash Shifts | `006221a` | `feat(cash-shifts): add controllers, resources and assemblers` |
+| Cash Shifts | `dba056f` | `test(cash-shifts): add http requests to verify cash shifts endpoints` |
+| Purchasing | `33d0d5a` | `feat(purchasing): add purchases controller, resources and assemblers` |
+| Purchasing | `e28a5a1` | `feat(purchasing): add goods receipts controller, resources and assemblers` |
+| Purchasing / Analytics | `b614949` | `test: add purchasing and analytics endpoint tests` |
+| Analytics | `a224e71` | `feat(analytics): add report queries, repository and services` |
+| Analytics | `4ef2577` | `feat(analytics): add reports controller, resources and assemblers` |
+| Backend | `afb33cd` | `chore: configure program with localization, openapi, cors and migrations` |
+| Backend | `dc99654` | Configuración de dependency injection por bounded context |
+| Backend | `9073281` | Preparación de las secciones de recursos por bounded context |
+| Backend | `7c9fced` | Organización de las solicitudes HTTP por bounded context |
+
+Estos commits representan las principales modificaciones relacionadas con la implementación y verificación de los servicios REST de los diferentes bounded contexts. Los commits de integración y merge se mantienen en el historial del repositorio como evidencia de la integración de las funcionalidades desarrolladas por el equipo.
+
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
