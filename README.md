@@ -2471,7 +2471,55 @@ A lo largo del Sprint 3, el equipo estableció los Web Services que formarían p
 | Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | L | C |
 | Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | L | C | C | C |
 
+
+
 #### 5.2.3.3. Sprint Backlog 3
+
+El Sprint 3 tuvo como objetivo desarrollar la primera versión funcional de los Web Services de PetStock e integrar la Web Application con los servicios del backend. Durante esta iteración, el equipo implementó endpoints RESTful utilizando ASP.NET Core y C#, junto con Entity Framework Core y MySQL para la persistencia de datos.
+
+Las actividades se organizaron de acuerdo con los bounded contexts asignados a cada integrante, considerando el desarrollo de servicios, repositorios, controladores, integración con el frontend y pruebas de funcionamiento. Para el seguimiento se utilizó el tablero de Trello del proyecto, donde se registraron las tareas y se clasificaron según su estado de avance.
+
+**Tablero de Trello:** [Sprint 3 - PetStock](https://trello.com/b/r8Xj83fB/petstock)
+
+<p align="center">
+  <img src="assets/sprint-3/execution/TablaTrello-3.jpeg" alt="Tablero de Trello del Sprint 3 de PetStock" width="850">
+</p>
+
+<p align="center">
+  <em>Figura. Tablero de Trello correspondiente al Sprint Backlog 3 de PetStock.</em>
+</p>
+
+| Sprint # | Sprint 3 |
+|---|---|
+| User Story | Work-Item / Task |
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US09 | Registro de cuenta con términos y condiciones | T01 | Endpoints de usuarios | Implementar los endpoints REST para registrar y consultar usuarios mediante POST, GET y GET por identificador, utilizando persistencia en MySQL. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US10 | Iniciar sesión | T01 | Endpoints de sesiones | Desarrollar los servicios REST para iniciar sesión y consultar sesiones registradas, validando las credenciales del usuario. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US10 | Iniciar sesión | T02 | Integración de login y registro | Conectar los formularios de inicio de sesión y registro de la Web Application con los Web Services del backend. | 3 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US11 | Modificar perfil de negocio | T01 | Actualización del perfil de usuario | Implementar el servicio para actualizar los datos del usuario, aplicando validaciones y persistiendo los cambios en la base de datos. | 3 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US18 | Registrar venta directa | T04 | Turnos y conciliaciones de caja | Implementar los endpoints de turnos de caja y conciliaciones para registrar y consultar las operaciones de caja vinculadas al proceso de ventas. | 5 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US11 | Modificar perfil de negocio | T02 | Endpoints de preferencias | Desarrollar los servicios REST para registrar y consultar las preferencias de configuración asociadas al usuario. | 4 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| US11 | Modificar perfil de negocio | T03 | Integración del módulo de perfil | Conectar las vistas de perfil y configuración de la Web Application con los Web Services correspondientes. | 3 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| — | Configuración y despliegue | T01 | Configuración y despliegue | Organizar los bounded contexts del backend, configurar los servicios y preparar el despliegue de los Web Services, la base de datos y la Web Application. | 6 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| US13 | Registrar nuevo producto en inventario | T01 | Endpoints de productos | Implementar los servicios REST para registrar y consultar productos, incluyendo sus datos comerciales y su relación con categorías y proveedores. | 5 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US13 | Registrar nuevo producto en inventario | T02 | Integración del catálogo | Conectar las funcionalidades del catálogo y el formulario de productos con los endpoints reales del backend. | 4 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US17 | Contactar proveedor para reposición | T01 | Endpoints de proveedores | Desarrollar servicios REST para registrar y consultar proveedores utilizados en el abastecimiento de productos. | 3 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US16 | Identificación de productos con stock bajo | T01 | Endpoints de inventario y alertas de stock | Implementar los servicios REST para gestionar existencias y consultar alertas relacionadas con niveles mínimos de inventario. | 5 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US16 | Identificación de productos con stock bajo | T02 | Integración del inventario | Conectar las pantallas de inventario y alertas con los Web Services, mostrando las existencias y los productos con stock bajo. | 4 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US18 | Registrar venta directa | T01 | Endpoints de ventas | Implementar POST, GET, GET por identificador y DELETE de /api/v1/sales, incluyendo los productos vendidos, las cantidades y el cálculo del monto total. | 5 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T02 | Endpoints de pagos | Implementar POST, GET y GET por identificador de /api/v1/payments, registrando el monto y el método de pago asociado a cada venta. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T03 | Integración del punto de venta | Conectar el módulo de ventas del frontend con los Web Services reales, permitiendo registrar, consultar y eliminar ventas, así como visualizar sus detalles. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US19 | Asignar cliente recurrente a la venta | T01 | Endpoints de clientes | Implementar POST, GET y GET por identificador de /api/v1/customers para registrar y consultar clientes con persistencia en MySQL. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US20 | Consultar historial de transacciones de clientes | T01 | Historial de compras de clientes | Implementar POST, GET y GET por identificador de /api/v1/purchase-history-entries para registrar y consultar las transacciones asociadas a los clientes. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| US17 | Contactar proveedor para reposición | T02 | Endpoints de compras y recepciones | Desarrollar los servicios REST para registrar y consultar órdenes de compra y recepciones de mercadería mediante los bounded contexts correspondientes. | 6 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| US17 | Contactar proveedor para reposición | T03 | Integración del módulo de compras | Conectar las funcionalidades de compras y recepción de mercadería de la Web Application con los Web Services reales. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| US21 | Visualizar gráfico de rendimiento semanal | T01 | Endpoints de reportes | Implementar los servicios REST para consultar información de ventas y generar métricas utilizadas en los reportes del negocio. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| US21 | Visualizar gráfico de rendimiento semanal | T02 | Integración del dashboard de analítica | Conectar el módulo de reportes y los gráficos del frontend con los datos proporcionados por los Web Services. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+
+El Sprint Backlog 3 permitió organizar el trabajo de los cinco integrantes del equipo, considerando las responsabilidades asignadas a los bounded contexts de PetStock. El tablero de Trello se utilizó como herramienta para registrar las actividades, sus responsables y el progreso de implementación durante la integración de la Web Application con los Web Services.
+
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
