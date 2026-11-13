@@ -3056,6 +3056,58 @@ Estos commits representan las principales modificaciones relacionadas con la imp
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 3 se desplegó por primera vez la RESTful API de PetStock y se actualizaron la Web Application y la Landing Page para trabajar con ella. El despliegue de los Web Services utiliza tres piezas: una base de datos MySQL en la nube, una imagen Docker de la API y un Web Service en Render que la ejecuta. Las versiones publicadas en `main` se identifican con los tags `v0.1.0` y `v1.0.0` en cada repositorio.
+
+**Web Services (RESTful API)**
+
+1. **Base de datos en la nube.** Se creó un clúster en **TiDB Cloud**, compatible con MySQL, para alojar la base de datos `petstock_db`. La conexión utiliza SSL obligatorio (`SslMode=Required`).
+
+![TiDB Cloud cluster](assets/sprint-3/cloud-database-service.png)
+
+2. **Imagen Docker.** Se agregó un `Dockerfile` en la raíz del repositorio Backend que compila y publica la API con el SDK de .NET 10 y la ejecuta en el puerto 8080 sobre la imagen `aspnet:10.0`.
+
+3. **Web Service en Render.** Se creó un Web Service conectado al repositorio Backend, con runtime Docker y plan gratuito, que despliega desde la rama `main`.
+
+![Render web service settings](assets/sprint-3/render-api-settings.png)
+
+4. **Variables de entorno.** `appsettings.Production.json` lee la conexión desde las variables `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_USER`, `DATABASE_PASSWORD` y `DATABASE_NAME`, configuradas en Render junto con `ASPNETCORE_ENVIRONMENT=Production`. La contraseña se mantiene oculta.
+
+![Render environment variables](assets/sprint-3/render-api-environment.png)
+
+5. **Despliegue y migración.** Al iniciar, la API aplica la migración `InitialSchema` y queda escuchando en el puerto 8080.
+
+![Render deploy logs](assets/sprint-3/render-api-logs.png)
+
+6. **Documentación publicada.** La documentación OpenAPI queda disponible en Scalar, en la ruta `/scalar` del servicio desplegado.
+
+![Scalar deployed](assets/sprint-3/render-api-scalar.png)
+
+7. **Tablas creadas.** La base de datos en la nube contiene las 19 tablas del modelo y la tabla `__EFMigrationsHistory`.
+
+![Cloud database tables](assets/sprint-3/cloud-database-tables.png)
+
+**Web Application**
+
+La variable `VITE_API_BASE_URL` del archivo `.env.production` apunta a la API desplegada (`https://petstock-web-services.onrender.com/api/v1`). Vite la lee al momento del build, por lo que el servicio de Render del frontend se volvió a desplegar desde `main` después del release `v1.0.0`. La aplicación desplegada consume los datos de la API real.
+
+![Render frontend deploy](assets/sprint-3/render-frontend-deploy.png)
+
+![Web application using the deployed API](assets/sprint-3/web-application-network.png)
+
+**Landing Page**
+
+La Landing Page se mantiene publicada en GitHub Pages desde la rama `main` (versión `v0.1.0`). Su botón de inicio de sesión abre la Web Application desplegada.
+
+![Landing page login button](assets/sprint-3/landing-page-login.png)
+
+**Links de acceso**
+
+| Producto | URL |
+|---|---|
+| Web Services (Scalar) | [https://petstock-web-services.onrender.com/scalar](https://petstock-web-services.onrender.com/scalar) |
+| Web Application | [https://petstock-frontend.onrender.com](https://petstock-frontend.onrender.com) |
+| Landing Page | [https://1asi0730-2620-8074-petstock.github.io/LandingPage/](https://1asi0730-2620-8074-petstock.github.io/LandingPage/) |
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
 ## 5.3. Validation Interviews
