@@ -2529,6 +2529,145 @@ El Sprint Backlog 3 permitió organizar el trabajo de los cinco integrantes del 
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
+Durante el Sprint 3, el equipo desarrolló la primera versión de los Web Services de PetStock, una RESTful API construida con ASP.NET Core (.NET 10), Entity Framework Core y MySQL. El backend se organizó en los 9 bounded contexts del sistema (IAM, Profiles, Catalog, Inventory, Sales, Customers, Purchasing, Cash Shifts y Analytics), siguiendo una arquitectura por capas (Domain, Application, Infrastructure e Interfaces) y un Shared Kernel común con el patrón Result, el repositorio base, la Unit of Work y la auditoría automática de las tablas. La base de datos (19 tablas) se genera desde el modelo mediante la migración `InitialSchema`, que se aplica al iniciar la aplicación.
+
+En paralelo, la Web Application dejó de usar la Fake API (json-server) y cada integrante conectó su módulo a los endpoints reales. Todo el trabajo se realizó en ramas `feature/*` creadas desde `develop`, integradas mediante Pull Requests y publicadas en `main` a través de las ramas `release/0.1.0` y `release/1.0.0`.
+
+A continuación, se presentan los commits realizados durante el sprint en cada repositorio (sin incluir los commits de merge).
+
+**Web Services (Backend)**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Backend | release/1.0.0 | a2ad40b | docs: add changelog for version 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Backend | release/1.0.0 | 19a5392 | chore(release): bump web services version to 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Backend | feature/sales-customers-endpoints | 8e3943d | refactor(customers): fix query services structure | Quispe Palomino, Tony Jhunior | 12/11/2026 |
+| Backend | feature/sales-customers-endpoints | a56d20a | feat(sales-customers): implement REST endpoints and persistence | Quispe Palomino, Tony Jhunior | 12/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | b614949 | test: add purchasing and analytics endpoint tests | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | f37aba9 | chore: register purchasing and analytics services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 4ef2577 | feat(analytics): add reports controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | a224e71 | feat(analytics): add report queries, repository and services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | e28a5a1 | feat(purchasing): add goods receipts controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 5f89187 | feat(purchasing): add goods receipt queries, repository and services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | release/0.1.0 | ce25f14 | docs: add mit license | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | e011149 | docs: add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 11293be | docs: add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 41e7e8b | docs: update readme with architecture, setup and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 41d21bf | chore(release): bump web services version to 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 33d0d5a | feat(purchasing): add purchases controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 8710efc | feat(purchasing): add purchase order command and query services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | dee83b9 | feat(purchasing): add purchase order error | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 8923c8d | feat(purchasing): add purchase order command and query services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 5b9a92d | feat(purchasing): add product line data to purchase order command | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/deployment-configuration | 30d0b0c | chore: require ssl for the cloud database connection | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/deployment-configuration | 9ea120a | chore: add dockerfile for the web services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 9df0f6e | test(profiles): add http requests to verify preferences endpoints | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 600ab7f | chore: register profiles services in program | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | ffb3ad4 | feat(profiles): add english and spanish messages for preferences | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 1ea7f08 | feat(profiles): add preferences controller, resources and assemblers | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 99da51b | feat(profiles): add user preference command and query services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | e5125e5 | feat(profiles): add user preference repository | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 49964e3 | feat(profiles): add user preference queries, update command and repository | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | dba056f | test(cash-shifts): add http requests to verify cash shifts endpoints | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | cd5db7f | chore: register cash shifts services in program | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 77a3b8e | feat(cash-shifts): add english and spanish messages for cash shifts | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 006221a | feat(cash-shifts): add cash shifts and reconciliations controllers, resources and assemblers | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | d0b4491 | feat(cash-shifts): add cash shift and cash reconciliation command and query services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | c6616ae | feat(cash-shifts): add cash shift and cash reconciliation repositories | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 7a33b97 | feat(cash-shifts): add cash shift commands, queries and closing rules | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | b761ac4 | test(iam): add http requests to verify users and sessions endpoints | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 4ebaae7 | chore: register iam services in program | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 797e4b7 | feat(iam): add english and spanish messages for users and sessions | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | fe1c0d0 | feat(iam): add users and sessions controllers, resources and assemblers | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | ecf1383 | feat(iam): add user and session command and query services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 71cb88b | feat(iam): add user and session repositories | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 317ad85 |    feat(iam): add user and session commands and queries | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 369ec65 | test(inventory): add http requests to verify inventories and stock alerts endpoints | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 3d97594 | chore: register inventory services in program | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | df4c29c | feat(inventory): add english and spanish messages for inventories and stock alerts | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 267008d | feat(inventory): add english and spanish messages for inventories and stock alerts | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | ad75810 | feat(inventory): add stock alerts controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 607968a | feat(inventory): add stock alert repository and services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 50dfbe3 | feat(inventory): add product stock resources, assemblers and controller | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 54096da | feat(inventory): add product stock command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 1bb3eb6 | feat(inventory): add product stock queries, update command and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 6f8016c | test(catalog): add http requests to verify supplier and product endpoints | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | c6c6a40 | chore: register catalog product and supplier services in program | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | b885e12 | feat(catalog): add english and spanish messages for suppliers and products | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 78355af | feat(catalog): add products controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 9db54c4 | feat(catalog): add product command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 00efb20 | feat(catalog): add product queries and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | bff219c | feat(catalog): add suppliers controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 0da6c62 | feat(catalog): add supplier command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 094ffad | feat(catalog): add supplier queries and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | chore/prepare-context-sections | 7c9fced | test: group http requests by bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | chore/prepare-context-sections | 9073281 | chore: prepare resource sections per bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | chore/prepare-context-sections | dc99654 | chore: prepare dependency injection sections per bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 1bc49e6 | test(catalog): add http requests to verify categories endpoints | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | f868fce | chore: register catalog category services in program | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 44d20a1 | feat(catalog): add english and spanish messages for categories | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 9138517 | feat(catalog): add categories controller, resources and assemblers | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | ab17db4 | feat(catalog): add category command and query services | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | cab6e24 | feat(catalog): add category queries and repository | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 658cd8d | feat: add initial schema migration for 19 tables | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | afb33cd | chore: configure program with localization, openapi, cors and migrations | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | d240465 | feat(shared): register bounded context configurations in app db context | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | a58bfa9 | feat: add entity framework configuration for all bounded contexts | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 8fc676f | feat(analytics): add report aggregate | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 6694d2f | feat(cash-shifts): add cash shift and cash reconciliation aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | f2e11b7 | feat(purchasing): add purchase order, order item and goods receipt model | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | d23dc71 | feat(customers): add customer and purchase history entry aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 1911354 | feat(sales): add sale, sale item and payment model | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 3dd3321 | feat(inventory): add product stock and stock alert aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 3d52124 | feat(catalog): add category, supplier and product aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | ee9b1a2 | feat(profiles): add user preference aggregate | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | c721c45 | feat(iam): add user and session aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | e9c1eb6 | feat(shared): add english and spanish localization resources | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | f969a18 | feat(shared): add kebab case route naming convention | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | 1899693 | feat(shared): add ef core persistence infrastructure with audit interceptor | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | e635b30 | feat(shared): add result pattern for application services | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | 5a1d4e9 | feat(shared): add auditable entity and repository contracts | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | 228bb75 | chore: add database connection strings to app settings | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | c4ed9e6 | chore: add entity framework core, mysql, scalar and humanizer packages | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | 15742cd | chore: create petstock solution and web api project | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | bdc3652 | chore: move readme to repository root | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | develop | c2ae7be | chore: initial commit with readme and gitignore | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+
+**Web Application (Frontend)**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Frontend | release/1.0.0 | 81b5e42 | docs: add changelog for version 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Frontend | release/1.0.0 | 20a6ff5 | chore(release): bump web application version to 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Frontend | feature/sales-customers-api-integration | 4361ff6 | feat(sales): connect sales module to the web services | Quispe Palomino, Tony Jhunior | 11/11/2026 |
+| Frontend | feature/purchases-analytics-api-integration | 9a12006 | feat(analytics): register downloaded reports in the web services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Frontend | feature/purchases-analytics-api-integration | 3db35a1 | feat(purchases): connect purchases module to the web services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Frontend | fix/inventory-stock-caption-translation | b9c0569 | fix(inventory): add missing translation key for stock caption | Gutierrez Tume, Stanley Jeremy | 10/11/2026 |
+| Frontend | release/0.1.0 | 6bc97aa | docs: add mit license | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b334462 | docs: add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | 4418d2e | docs: add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b76919c | docs: update readme with structure, setup and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b666a71 | chore(release): bump web application version to 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | feature/profile-api-integration | 3d9f7b5 | feat(profile): update profile with put users endpoint | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | feature/profile-api-integration | 5529767 | feat(profile): add phone to profile entity and resource | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Frontend | chore/production-api-url | c71ec04 | chore: point production build to the deployed web services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Frontend | feature/iam-api-integration | 87e2bdc | feat(iam): connect sign in and sign up to the web services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Frontend | feature/iam-api-integration | 640d9c6 | fix(iam): map session fields returned by the web services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Frontend | feature/catalog-inventory-api-integration | c9aba39 | feat(catalog): require supplier when registering a product | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Frontend | chore/web-services-base-url | 740c717 | chore: update environment example with the web services url | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Frontend | chore/web-services-base-url | 87b636c | chore: point development environment to the web services | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | a9ca174 | feat(sales): update sale registration section | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 6050aba | feat(inventory): improve low-stock alerts and actions | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 3b79749 | feat(sales): update product registration and add purchase registration | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+
+**Landing Page**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Landing Page | release/0.1.0 | 1d8403f | docs(landing): add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Landing Page | release/0.1.0 | 723a915 | docs(landing): add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Landing Page | release/0.1.0 | 896ffe1 | docs(landing): update readme with structure and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+
 #### 5.2.3.5. Execution Evidence for Sprint Review
 En el Sprint 3, la Web Application dejó de utilizar la Fake API (json-server) y pasó a consumir los Web Services reales de PetStock, desarrollados con ASP.NET Core y persistencia en MySQL, ya desplegados. Los ocho bounded contexts del sistema —IAM, Profile, Catalog, Inventory, Sales, Customers, Purchasing y Analytics— están conectados a los endpoints reales del backend desplegado.
 
