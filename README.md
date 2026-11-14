@@ -3362,6 +3362,155 @@ Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la 
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+# 5.3.3. Evaluaciones según heurísticas
+## UX Heuristics & Principles Evaluation
+
+* **Carrera:** Ingeniería de Software
+* **Curso:** Aplicaciones Web
+* **Sección:** 8074
+* **Profesor:** Alex Sanchez Ponce
+* **Auditor:** Nexora
+* **Cliente(s):** Personas entrevistadas durante las sesiones de validación
+* **Site / App a evaluar:** PetStock — Landing Page y Web Application
+
+---
+
+### Tareas evaluadas
+La evaluación heurística se realizó sobre los principales flujos de la Web Application de PetStock, considerando las tareas utilizadas durante las entrevistas de validación:
+
+* Registro e inicio de sesión.
+* Registro de proveedor y producto.
+* Registro de compra a proveedor.
+* Consulta del historial de compras de un cliente.
+* Revisión de inventario y alertas de stock.
+* Consulta del dashboard.
+* Generación y descarga de reportes.
+
+
+### Escala de severidad
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | Problema superficial o cosmético que no afecta significativamente la realización de la tarea. |
+| **2** | Problema de usabilidad leve que puede generar cierta confusión, pero permite completar la tarea. |
+| **3** | Problema de usabilidad importante que dificulta una tarea frecuente y debería corregirse. |
+| **4** | Problema de usabilidad grave que impide o compromete significativamente la realización de una tarea. |
+
+
+
+### Tabla resumen de problemas encontrados
+
+| # | Problema | Severidad | Heurística / Principio violado |
+| :---: | :--- | :---: | :--- |
+| **1** | El registro de productos especializados no permite especificar la marca. | **3** | Relación entre el sistema y el mundo real |
+| **2** | No existe una opción para identificar productos como edición limitada. | **2** | Relación entre el sistema y el mundo real |
+| **3** | La información de alertas de stock puede requerir interpretación adicional para determinar qué acción realizar. | **2** | Visibilidad del estado del sistema |
+| **4** | El flujo de compras no permite resolver desde la misma pantalla la necesidad de registrar un proveedor nuevo. | **2** |Libertad y control por parte del usuario |
+| **5** | El sistema no incorpora alertas de fechas de vencimiento para productos delicados. | **2** |Visibilidad del estado del sistema |
+| **6** | La organización de la información de productos especializados puede resultar limitada al depender principalmente de nombre y categoría. | **2** | Information Architecture: Is it findable? |
+| **7** | El sistema podría ofrecer mayor orientación contextual en algunos campos de registro para usuarios nuevos. | **2** | Ayuda y documentación |
+
+---
+
+### Detalle de los problemas encontrados
+
+#### Problema #1: Falta de campo para la marca del producto
+* **Severidad:** 3
+* **Heurística violada:** *Usability: Match between system and the real world — Relación entre el sistema y el mundo real.*
+* **Problema:** Durante la entrevista de validación con Gabriela Díaz, se identificó que el registro de productos solamente permite especificar información como nombre y categoría, pero no incluye un campo específico para registrar la marca. Este aspecto es importante para las tiendas especializadas en productos premium, ya que la marca puede ser un atributo relevante para diferenciar productos y facilitar su gestión dentro del catálogo. La entrevistada indicó que para productos premium la marca es un dato clave. Esto evidencia una diferencia entre la información que el sistema permite registrar y la información que forma parte del modelo mental de este tipo de usuario.
+* **Recomendación:** Agregar un campo Marca dentro del formulario de registro y edición de productos. Este campo debería permitir identificar claramente la marca comercial del producto y posteriormente utilizarla en búsquedas, filtros y visualización del catálogo.
+
+![alt text](assets/heuristicas/image.png)
+
+
+
+#### Problema #2: No se puede identificar un producto como edición limitada
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Match between system and the real world — Relación entre el sistema y el mundo real.*
+* **Problema:** Durante la entrevista de validación, Gabriela Díaz también indicó que sería útil poder identificar determinados productos como edición limitada, debido a que esta característica influye en la forma en que se ofrecen a los clientes. Actualmente el sistema no proporciona un atributo específico para representar esta característica del producto, lo que limita la capacidad del sistema para representar completamente las particularidades de una tienda especializada.
+* **Recomendación:** Incorporar un atributo opcional como “Edición limitada”, mediante un checkbox o selector dentro del formulario de productos. Posteriormente, este atributo podría utilizarse para identificar estos productos dentro del catálogo.
+
+![alt text](assets/heuristicas/image-1.png)
+
+---
+
+#### Problema #3: Las alertas de stock podrían comunicar mejor la acción requerida
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Visibility of system status — Visibilidad del estado del sistema.*
+* **Problema:** El módulo de inventario muestra productos con bajo stock y proporciona información como el stock actual y una acción de reposición. Aunque el sistema comunica correctamente que existe una situación de stock bajo, la información podría complementarse con una explicación más clara de la condición que originó la alerta, por ejemplo indicando explícitamente el stock mínimo configurado. En una tienda con múltiples productos, mostrar solamente el stock actual puede obligar al usuario a interpretar si realmente necesita reponer el producto.
+* **Recomendación:** Mostrar junto al stock actual información explícita como:
+  * **Stock actual:** 3 unidades
+  * **Stock mínimo:** 10 unidades
+  * **Estado:** Stock bajo
+  
+  Esto permitiría comprender inmediatamente por qué se genera la alerta y qué acción debe realizar el usuario.
+
+![alt text](assets/heuristicas/image-2.png)
+
+---
+
+#### Problema #4: El flujo de compras depende de proveedores previamente registrados
+* **Severidad:** 2
+* **Heurística violada:** *Usability: User control and freedom — Libertad y control por parte del usuario.*
+* **Problema:** En el formulario de registro de compras, el usuario debe seleccionar un proveedor existente desde un campo desplegable. Cuando el proveedor todavía no está registrado, el usuario no dispone desde esta pantalla de una acción directa para incorporarlo y continuar con la compra. Esto puede generar una interrupción del flujo, especialmente cuando el usuario está intentando registrar una compra de un proveedor nuevo.
+* **Recomendación:** Mantener la selección de proveedores existentes, pero incorporar una alternativa como **“Registrar nuevo proveedor”** o un acceso directo al módulo de proveedores. Después de registrar el proveedor, el usuario debería poder regresar al flujo de compra y seleccionarlo.
+
+![alt text](assets/heuristicas/image-3.png)
+
+
+---
+
+#### Problema #5: No existen alertas para fechas de vencimiento
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Visibility of system status — Visibilidad del estado del sistema.*
+* **Problema:** Se identificó como mejora futura la incorporación de alertas relacionadas con fechas de vencimiento para productos delicados, como snacks o suplementos naturales. Actualmente PetStock permite controlar el stock, pero no comunica este tipo de condición temporal del producto. Para una boutique especializada, esta información podría ser relevante para tomar decisiones sobre reposición, promoción o retiro de determinados productos.
+* **Recomendación:** Incorporar un campo de fecha de vencimiento para los productos que lo requieran y generar alertas cuando se aproxime su fecha de expiración. Por ejemplo:
+  * **Producto:** Snacks
+  * **Vencimiento:** 20/12/2026
+  * **Estado:** Próximo a vencer
+
+![alt text](assets/heuristicas/image-4.png)
+
+
+#### Problema #6: Información limitada para diferenciar productos especializados
+* **Severidad:** 2
+* **Heurística violada:** *Information Architecture: Is it findable?*
+* **Problema:** La estructura actual del catálogo se basa principalmente en información general del producto, como nombre y categoría. Para tiendas especializadas, algunos atributos adicionales —como marca, edición limitada o características específicas— pueden ser relevantes para encontrar y diferenciar rápidamente un producto. Esta situación fue identificada durante la validación con Gabriela, quien señaló la importancia de la marca para productos premium.
+* **Recomendación:** Ampliar la información disponible para organizar el catálogo mediante atributos relevantes para cada segmento. Además de nombre y categoría, podrían incorporarse:
+  * Marca.
+  * Tipo de producto.
+  * Edición limitada.
+  * Fecha de vencimiento (cuando corresponda).
+  * Características especiales.
+  
+  Esto permitiría mejorar la búsqueda y diferenciación de productos.
+
+![alt text](assets/heuristicas/image-5.png)
+---
+
+#### Problema #7: Falta de orientación contextual en algunos formularios
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Help and documentation — Ayuda y documentación.*
+* **Problema:** Los formularios utilizan etiquetas para identificar los campos, pero algunos usuarios nuevos podrían necesitar información adicional sobre qué datos deben ingresar o qué formato se espera. Este tipo de orientación es especialmente importante en operaciones como el registro de productos, compras y configuración de inventario, donde existen diferentes tipos de datos. La heurística de ayuda y documentación recomienda que la asistencia necesaria sea fácil de localizar y esté enfocada en la tarea que el usuario está realizando.
+* **Recomendación:** Agregar textos de ayuda breves debajo de campos que puedan generar dudas. Por ejemplo:
+  * **Costo por unidad (S/):** *Ingrese el costo de adquisición del producto.*
+  * **Stock mínimo:** *Cantidad mínima que debe mantenerse antes de generar una alerta.*
+  
+  Esto reduciría la necesidad de que el usuario tenga que recordar información externa para completar el formulario.
+
+![alt text](assets/heuristicas/image-6.png)
+
+---
+
+### Conclusiones de la evaluación
+
+La evaluación heurística permitió identificar oportunidades de mejora principalmente relacionadas con la adaptación de PetStock a las necesidades específicas de las tiendas especializadas.
+
+Los problemas de mayor prioridad se relacionan con la información que el sistema permite registrar sobre los productos, particularmente la ausencia de atributos como marca y edición limitada. Estos aspectos fueron señalados directamente durante las entrevistas de validación. También se identificaron oportunidades relacionadas con la comunicación del estado del inventario y la incorporación futura de alertas de vencimiento.
+
+En general, PetStock presenta una estructura que permite realizar los principales flujos de gestión de una tienda, pero puede mejorar su adaptación a diferentes perfiles de negocio mediante una mayor personalización de la información del catálogo y alertas más específicas.
+
+
 ## 5.4. Video About-the-Product
 
 # Conclusiones
