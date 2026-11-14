@@ -3551,4 +3551,4 @@ Salazar Herrada, E. (2026, 29 de junio). *Perú ejecuta su primer censo nacional
 
 **Link:** [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8074-PetStock/LandingPage.git)
 
-**Link :** [Video de exposición AV 2]()
+**Link :** [Video de exposición AV 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQBGkODshoksQJPYlrAA15JXAT2nXy_i-eBmMtkhEKoOqW8?e=NpteRs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
