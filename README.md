@@ -30,7 +30,7 @@ Mendoza Boluarte, Pierre Alessandro - u202320973
 
 Gutierrez Tume Stanley Jeremy - U202118152
 
-**Agosto, 2026**
+**Noviembre, 2026**
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -229,6 +229,8 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
 - [5.4. Video About-the-Product](#54-video-about-the-product)
     
 ### [Conclusion](#conclusiones)
+
+### [Video About-the-Team](#video-about-the-team)
 
 ### [Recomendacion](#recomendaciones)
 
@@ -3310,10 +3312,47 @@ Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la 
 
 **Entrevista N° 6**
 
-<!-- Registro de Lia.
-     El integrante responsable debe agregar aquí su tabla
-     de validación, captura, enlace y resumen. -->
-
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/entrevista-lia.png" alt="Entrevista de validación 6 - Lia" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Lia Nuñez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>25 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:33 min </td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQDsVfp8SlT4Rb_v99ws7N-oAUZGLQKXY0asa6o5Pd_8zH0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=grwZKz">
+        Entrevista de validación 6 - Segmento 2
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+    Lia es propietaria de una boutique especializada en productos premium para mascotas. Durante la entrevista destacó que las herramientas más fáciles y rápidas de usar son la creación y asociación instantánea de proveedores con productos, así como la consulta ágil del historial de compras de los clientes. Señaló que todo el flujo de navegación le resultó claro, natural y sin confusiones, adaptándose bien a la dinámica diaria de su tienda. Aunque consideró que la plataforma ya cuenta con todo lo necesario para operar, sugirió como mejora futura incluir alertas de fechas de vencimiento para productos delicados como snacks o suplementos naturales. Finalmente, afirmó que PetStock le aporta un gran valor para reemplazar su control manual en Excel y notas, centralizando pedidos a proveedores, historial de clientes y reportes en PDF en su operación diaria.
+    </td>
+  </tr>
+</table>
 
 
 
@@ -3326,6 +3365,8 @@ Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la 
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
 - El desarrollo del Frontend para el sistema PetStock logró consolidar un ecosistema visual integral, moderno e intuitivo, orientado a optimizar la gestión operativa de tiendas de mascotas. A través de la maquetación y dinamización de sus pantallas principales, se construyó un flujo de usuario homogéneo y fluido que abarca todo el ciclo de negocio
+
+# Video About-the-Team
 
 # Recomendaciones
 
@@ -3345,3 +3386,5 @@ Salazar Herrada, E. (2026, 29 de junio). *Perú ejecuta su primer censo nacional
 **Link :** [Video de exposición AV 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQDfy8O8fQcXT7tPTdZ9Q7MVAaYAWVEP2djFOZJK5r0Y_54?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6Ik1yRmlsZXNMaW5rQ29weSJ9fQ&e=QssXfS)
 
 **Link:** [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8074-PetStock/LandingPage.git)
+
+**Link :** [Video de exposición AV 2]()
