@@ -3214,9 +3214,47 @@ Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la 
 
 **Entrevista N° 3**
 
-<!-- Registro de Dayan Ramos.
-     El integrante responsable debe agregar aquí su tabla
-     de validación, captura, enlace y resumen. -->
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/Images-videovalidacion/VideoValidacion3.png" alt="Entrevista de validación 6 - Lia" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Danitza Curi Pianto</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>27 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>11:551 min </td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202320973_upc_edu_pe/IQAC-3YTCCX0RqIQ7jVVgkSuAWfaEb7fC0i1Z06J4E9tm7g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=QSaXYH">
+        Entrevista de validación 3 - Segmento 1
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+    Danitza Curi Pianto es propietaria de una tienda tradicional de mascotas. Durante la entrevista destacó que los módulos más fáciles e intuitivos de usar son el registro de productos y el de ventas, señalando que ambos flujos se sienten muy bien correlacionados entre sí. No obstante, mencionó que la sección de alertas de stock le resultó algo complicada al momento de gestionar la reposición de mercadería (restock), por lo que sugirió como mejora incorporar imágenes referenciales de cada producto para contar con una mejor guía visual durante esa tarea. Finalmente, afirmó que sí estaría dispuesta a adoptar PetStock para reemplazar sus registros manuales en cuadernos y Excel, logrando llevar un control operativo mucho más ordenado de su negocio.
+    </td>
+  </tr>
+</table>
 
 
 **Segmento objetivo 2: Tiendas especializadas en productos premium y de cuidado**
