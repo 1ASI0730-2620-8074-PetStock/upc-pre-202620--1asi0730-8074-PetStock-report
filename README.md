@@ -3513,6 +3513,12 @@ En general, PetStock presenta una estructura que permite realizar los principale
 
 ## 5.4. Video About-the-Product
 
+<p align="center">
+  <img src="assets/sprint-3/video-the-product.PNG" alt="Video About-the-Product" width="600"/>
+  <br>
+</p>
+  <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQAIWzXKkI2SQ67QW7etgeX6Aaj8xtMGIOUzF5YW8Nvvtz4?e=W2cV8y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Video About-the-Product</a>
+
 # Conclusiones
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
