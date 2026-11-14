@@ -2741,7 +2741,8 @@ Vista del perfil del usuario, con los datos obtenidos del endpoint real de perfi
 
 ![Vista de mi perfil](./assets/sprint-3/execution/10-profile.png)
 
-##### Video de navegación
+##### Video de navegación  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCyIjinjzhLT5bW7iKh0T3vAQuN9ifpNqgi3doZvYRL8OU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7K85tB
 
 #### 5.3.3.6. Services Documentation Evidence for Sprint Review
 
