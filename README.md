@@ -3520,6 +3520,12 @@ En general, PetStock presenta una estructura que permite realizar los principale
 
 # Video About-the-Team
 
+<p align="center">
+  <img src="assets/sprint-3/video-the-team.PNG" alt="Video About-the-Team" width="600"/>
+  <br>
+</p>
+  <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQB6QKRWKCnKRZr502EL98cbAfdCWmvOct7FX3OEsbp0NmU?e=Ktq1Is&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Video About-the-Team</a>
+
 # Recomendaciones
 
 - Se recomienda mantener una constante recolección de feedback directo de los administradores y personal de las tiendas de mascotas durante sus primeras semanas de uso. Esto permitirá realizar ajustes rápidos en la interfaz, simplificar aún más los pasos del Dashboard y garantizar que la plataforma se adapte perfectamente al ritmo de trabajo diario de las MYPEs.
