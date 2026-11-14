@@ -30,7 +30,7 @@ Mendoza Boluarte, Pierre Alessandro - u202320973
 
 Gutierrez Tume Stanley Jeremy - U202118152
 
-**Agosto, 2026**
+**Noviembre, 2026**
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -82,6 +82,26 @@ Gutierrez Tume Stanley Jeremy
 - Avance del Capítulo V: Product Implementation, - Validation & Deployment hasta el punto 5.2.1.8
 - Avance de Conclusiones, Bibliografía y Anexos</td>
 </tr>
+
+<tr class="c7">
+<td class="c5" style="border: 1px solid black;">AV2</td>
+<td class="c5" style="border: 1px solid black;">12/11/2026</td>
+<td class="c5" style="border: 1px solid black;">
+Mariel Lucero Mendoza Moreano<br><br>
+Tony Jhunior Quispe Palomino<br><br>
+Arturo Fernando Valladolid Jiménez<br><br>
+Pierre Alessandro Mendoza Boluarte<br><br>
+Gutierrez Tume Stanley Jeremy
+</td>
+<td class="c5" style="border: 1px solid black;">Se han incluído los siguientes capítulos:
+
+- Corrección de 4.6.1 (9 Bounded Contexts) y actualización de 4.8.1 (diagrama de base de datos)
+- Avance del Capítulo V: Product Implementation, Validation & Deployment hasta el punto 5.2.3.8
+- 5.3. Validation Interviews
+- Avance de Conclusiones, Bibliografía y Anexos</td>
+</tr>
+
+
 </table>
 
 # Project Report Collaboration Insights
@@ -193,8 +213,24 @@ Para la elaboración de este informe, primero utilizamos un documento de google 
         - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
         - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
         - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-
+    - [5.2.3. Sprint 3](#523-sprint-3)
+        - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+        - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+        - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+        - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+        - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+        - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+        - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+        - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+- [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+- [5.4. Video About-the-Product](#54-video-about-the-product)
+    
 ### [Conclusion](#conclusiones)
+
+### [Video About-the-Team](#video-about-the-team)
 
 ### [Recomendacion](#recomendaciones)
 
@@ -229,11 +265,17 @@ Durante el desarrollo de PetStock, participé activamente en las actividades del
 tb1:<br>
 Asumí la responsabilidad de organizar y estructurar el flujo de trabajo para el desarrollo de la interfaz de usuario (Frontend), asegurando una entrega eficiente y alineada con el equipo. Diseñé e implementé la arquitectura visual y prototipos de las pantallas de Inicio de Sesión (Login), Registro y el Panel Principal (Dashboard). Asimismo, ejercí un rol activo de soporte técnico y guía dentro del equipo, manteniendo una comunicación fluida y oportuna para resolver dudas.
 <br><br>
+av2:<br>
+En el marco del liderazgo compartido del equipo, asumí la responsabilidad de guiar el desarrollo de IAM y Cash Shifts. Aporté a la dirección organizativa definiendo los endpoints y la estructura del guion de entrevistas para el informe. Además, coordiné con mis compañeros para liberar a tiempo la autenticación de usuarios, destrabando el avance de los demás módulos hacia los objetivos del sprint.
+<br>
+<br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Contribuí a orientar el trabajo del equipo desde la definición del problema hasta la propuesta de la Landing Page. Elaboré los Lean UX Problem Statements, el Impact Mapping y el Product Backlog, artefactos que nos permitieron relacionar las necesidades identificadas con los objetivos del producto y las funcionalidades que debíamos priorizar. También desarrollé los sistemas de búsqueda y navegación, además de los wireframes, mockups y vistas previas de la Landing Page.<br><br>
 tb1:<br>
 Asumí el desarrollo del aspecto profile en la Web Application, encargándome de las vistas Mi perfil, Editar perfil y Cerrar sesión, con un formulario validado y una salida segura de la sesión hacia el login. Conecté mi módulo con la sesión de IAM y, integré el frontend en un layout compartido con rutas protegidas. Documenté la evidencia de ejecución del Sprint 2 (punto 5.2.2.5) con capturas de las vistas implementadas y el video de navegación.<br><br>
+av2:<br>
+Lideré la preparación técnica del Sprint 3: construí el Shared Kernel, el modelo de dominio de los 9 bounded contexts y la migración inicial de las 19 tablas, y dejé lista la rama develop con un bloque por bounded context para que todos pudieran implementar sus endpoints en paralelo. Desarrollé los endpoints de preferencias (/preferences), conecté la edición de perfil al API y me encargué del despliegue: la base de datos en TiDB Cloud, la API en Render con Docker y los releases de los Web Services y la Web Application.<br><br>
 
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
@@ -242,6 +284,9 @@ Apoye en la definicion de los User persona para entender mejor los segmentos obj
 tb1:<br>
 Realice el desarrollo del bounded context de Analytics para el Web Application-Frontend,la creacion del reporte para PetStock con grafico de barras e informacion que se actualiza gracias a otros modulos, luego conecte este a la parte principal de la aplicacion,tambien documente el historial de commits para el Frontend.<br><br>
 
+av2:<br>
+Para el sprint 3 desarrolle los bounded contexts de Purchasing y Analytics para la Web Application , asimismo documente la web service realize pruebas para comprobar los endpoints de este.<br><br>
+
 
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
@@ -249,6 +294,9 @@ Contribuí al desarrollo del modelado de dominio y la arquitectura del sistema (
 
 tb1:<br>
 Contribuí en  el bounded context de Catalog & Inventory dentro del Sprint 2, implementando el formulario de registro de productos con sus validaciones y la vista de alertas de stock bajo. Verifiqué de forma integral el funcionamiento de la Web Application junto con la Fake API embebida por el equipo, identificando y corrigiendo inconsistencias en el mapeo de datos entre los endpoints y las entidades del dominio (catálogo, inventario y proveedores). Coordiné con mis compañeros la integración de mis módulos con el dashboard y el resto de la aplicación, asegurando que la navegación y el diseño fueran consistentes con lo desarrollado por el equipo.
+<br><br>
+av2:<br>
+Durante el Sprint 3, lideré la implementación del backend REST de los bounded contexts de Catalog e Inventory (proveedores, productos, inventario y alertas de stock), coordinando con el equipo la definición de los contratos de API para mantener compatibilidad con el frontend construido en sprints anteriores. Apoyé además en la verificación de la integración de mis endpoints con el resto del sistema, validando de forma conjunta que el flujo completo (frontend, backend y base de datos) funcionara correctamente.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
@@ -262,7 +310,10 @@ av1:<br>
 Como equipo, concluimos que logramos trabajar de manera coordinada, compartiendo responsabilidades, ideas y decisiones durante el desarrollo del proyecto. Cada integrante asumió un rol y aportó desde sus conocimientos y habilidades, permitiéndonos apoyarnos mutuamente y avanzar hacia los objetivos del proyecto. 
 
 tp:<br>
-Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales.. 
+Como equipo, concluimos que demostramos un verdadero trabajo en equipo y un liderazgo compartido al coordinar e integrar con éxito cada uno de los módulos clave del sistema: gestión de productos, catálogo/inventario con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanales. 
+
+av2:<br>
+Como equipo, ejercimos un liderazgo conjunto y coordinado para dirigir el desarrollo técnico del backend y la integración con la aplicación web. Nos articulamos para tomar decisiones clave sobre la arquitectura por bounded contexts y la estandarización del código, asegurando que los módulos más interdependientes estuvieran disponibles a tiempo. A través de esta dirección compartida, logramos alinear el trabajo de todos los integrantes y cumplir con éxito los objetivos de la iteración.
 </th>
 </tr>
 <tr>
@@ -278,11 +329,16 @@ Contribuí a mantener una comunicación constante con mi equipo para organizar l
 tb1:<br>
 Fomenté un entorno de trabajo colaborativo e inclusivo en el equipo, facilitando una comunicación abierta para integrar las ideas de todos los miembros y brindar asistencia constante ante dudas técnicas en el desarrollo de la interfaz. Lideré la planificación de tareas para el frontend mediante la estructuración del diseño y maquetación de las pantallas clave (Login, Registro y Dashboard).
 <br><br>
+av2:<br>
+Promoví un entorno colaborativo e inclusivo en el Sprint 3 al disponibilizar anticipadamente los endpoints de autenticación (IAM) para que mis compañeros pudieran avanzar e integrar sus módulos sin bloqueos. Establecí metas claras al priorizar las User Stories de usuarios y cajas, planifiqué las tareas estructurando cada endpoint con sus respectivas validaciones y pruebas, y cumplí los objetivos acordados al entregar el backend funcional y su integración frontend dentro de los plazos establecidos
+<br><br>
 Arturo Fernando Valladolid Jiménez<br>
 av1:<br>
 Participé en la organización de los entregables relacionados con la experiencia del usuario, la Landing Page y la documentación técnica del proyecto. A través del Product Backlog, estructuré las funcionalidades y tareas según su prioridad, lo que facilitó que el equipo identificara qué actividades debían completarse para cada avance. Los Lean UX Problem Statements y el Impact Mapping nos ayudaron a mantener una meta compartida al momento de tomar decisiones sobre la navegación, los contenidos y el diseño de la Landing Page. Asimismo, preparé los wireframes, mockups y vistas previas para que mis compañeros pudieran revisar la propuesta antes de su implementación.<br><br>
 tb1:<br>
 Planifiqué mis tareas del Sprint 2 según el Sprint Backlog y las completé dentro del sprint (US11 y US12). Trabajé con ramas feature, pull requests hacia develop y commits convencionales, lo que permitió integrar mi módulo con los de mis compañeros sin perder su trabajo. Para facilitar el trabajo del equipo, dejé el frontend ejecutable con un solo comando (npm start) junto con la Fake API, y registré la evidencia del sprint para que todos pudieran revisarla.<br><br>
+av2:<br>
+Planifiqué el trabajo del sprint para que cada integrante avanzara sin depender de los demás, con guías por bounded context, convenciones comunes de ramas, commits y nombres de campos alineados con el frontend. Integré los aportes del equipo en develop, verifiqué que el backend y el frontend compilaran antes de cada release y registré la evidencia de desarrollo, despliegue y colaboración del sprint (5.2.3.4, 5.2.3.7 y 5.2.3.8).<br><br>
 
 Mendoza Boluarte , Pierre Alessandro<br>
 av1:<br>
@@ -291,12 +347,18 @@ Participé activamente en la planificación de las actividades para el informe y
 tb1:<br>
 Trabaje de acuerdo a las tareas que se nos asignaron en el Sprint 2 , asi mismo segui el flujo de trabajo de branches para tener mayor control sobre el proyeto, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
 
+tb1:<br>
+Cumpli con mis responsabilidades de acuerdo a las tareas que se nos asignaron en el Sprint 3 ,siguiendo el flujo de trabajo de branches para tener mayor control sobre el proyeto y poder comprobar que mi parte se acoplaba a la reazalida por mi equipo, para luego solicitar los pull request una vez acabada la tarea,de esta forma pude concluir mis tareas y que se integrara con los demas , validando siempre si habia algun error y corrigiendolo a tiempo.<br><br>
+
 
 Gutierrez Tume,Stanley Jeremy<br>
 av1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas, Pull Requests y Conventional Commits) tanto en el repositorio del informe como en el del Landing Page, cumpliendo con los entregables asignados dentro de los plazos establecidos para esta entrega.<br><br>
 tb1:<br>
 Apliqué el flujo de trabajo colaborativo establecido por el equipo (ramas por feature, Pull Requests y Conventional Commits) para integrar mis correcciones al catálogo e inventario, cumpliendo con los entregables asignados dentro del plazo establecido para esta entrega. Validé exhaustivamente el funcionamiento end-to-end de mi módulo (registro de productos, proveedores, alertas de stock) antes de integrarlo, y documenté los hallazgos para mantener informado al equipo sobre el estado real de la aplicación. 
+<br><br>
+av2:<br>
+Planifiqué y completé dentro del plazo establecido el desarrollo de los 13 endpoints asignados a mi bounded context, siguiendo el flujo de trabajo del equipo (ramas feature, Pull Requests y Conventional Commits), y validé exhaustivamente cada endpoint mediante pruebas manuales (.http) antes de integrarlo a develop. Conecté el frontend de Catalog e Inventory a la API real, reemplazando la Fake API utilizada hasta el Sprint 2, y documenté el diagrama de base de datos actualizado (sección 4.8.1) con las 19 tablas generadas por el esquema real.
 <br><br>
 Quispe Palomino, Tony Jhunior<br>
 av1:<br>
@@ -311,6 +373,9 @@ Como equipo, concluimos que la comunicación y organización fueron fundamentale
 
 tb1:<br>
 Como equipo, logramos consolidar un entorno de trabajo altamente colaborativo e inclusivo, donde la comunicación fluida y la participación activa de cada integrante fueron clave para el éxito del proyecto. Desde el inicio, establecimos metas claras y planificamos de manera estructurada las tareas necesarias para desarrollar e integrar todos los módulos del sistema: autenticación (Login/Registro), dashboard, catálogo de productos con alertas de bajo stock, perfil de usuario, registro de ventas directas, historial de transacciones por cliente y el módulo dinámico de reportes semanal.
+
+av2:<br>
+Como equipo, promovimos un entorno de trabajo colaborativo e inclusivo mediante la división clara de responsabilidades por bounded contexts y el soporte mutuo durante la integración de los módulos. Establecimos metas ambiciosas para el Sprint 3 centradas en el desarrollo de la primera versión del backend RESTful y su despliegue junto con la aplicación web y la landing page. Planificamos metódicamente las tareas adoptando estándares estrictos de desarrollo, como Conventional Commits en inglés y revisiones mediante pull requests hacia develop. Como resultado de esta gestión articulada y el liderazgo distribuido, logramos cumplir con la totalidad de los objetivos técnicos y académicos en los plazos fijados.
 </tr>
 </tbody>
 </table>
@@ -1744,7 +1809,7 @@ La pantalla Editar perfil permite modificar nombres, apellidos, correo electrón
 ### 4.6.1. Design-Level Event Storming
 
 El equipo realizó una sesión de Design-Level EventStorming, partiendo de los hallazgos obtenidos en el Big Picture EventStorming . El objetivo de la sesión fue profundizar el modelado del dominio del problema, identificando con mayor nivel de detalle los Commands, Domain Events y Aggregates asociados a cada proceso de negocio de PetStock.
-Como resultado de la sesión, se identificaron 8 Bounded Contexts de negocio a partir de los dominios pivotales detectados: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. A estos se sumó un noveno Bounded Context de soporte técnico, Identity & Access Management, necesario para el control de acceso al sistema.
+Como resultado de la sesión, se identificaron 9 Bounded Contexts. Siete corresponden a los dominios de negocio detectados como pivotales: Catalog & Supplier Management, Purchasing & Receiving, Inventory & Stock Monitoring, Sales & Checkout, Customer Relationship Management, Cash Management y Business Analytics & Reporting. Los otros dos son de soporte: Identity & Access Management, necesario para el control de acceso al sistema, y Profile & Configuration Management, que administra los datos del perfil del usuario y sus preferencias.
 
 
 <img width="940" height="646" alt="image" src="https://github.com/user-attachments/assets/968e7041-0ff5-48ba-a8b5-261a0d58beef" />
@@ -1836,13 +1901,23 @@ Administra los datos personales del perfil del usuario, las preferencias del sis
 ### 4.8.1. Database Diagrams
 El diseño de la base de datos de PetStock se ha estructurado de forma relacional y normalizada, reflejando de manera directa las entidades, atributos y relaciones definidos en el modelado por dominios (DDD) y los diagramas de clases del sistema. La arquitectura relacional integra 19 tablas principales que permiten gestionar de forma centralizada la seguridad, el catálogo de productos, el inventario en tiempo real, el punto de venta (POS), la gestión de clientes (CRM), las órdenes de compra a proveedores, las operaciones de caja y los reportes analíticos del negocio.
 
-A continuación, se presenta el diagrama completo de la base de datos dividido en tres secciones para una mejor visualización y detalle de todas sus tablas y llaves foráneas:
+El esquema de la base de datos es generado automáticamente por Entity Framework Core a partir del modelo de dominio definido en el código, mediante la migración `InitialSchema`. Todos los nombres de tablas siguen la convención snake_case en plural (por ejemplo, `products`, `stock_alerts`, `purchase_orders`), y cada tabla incluye los campos de auditoría `created_at` y `updated_at`, los cuales son completados automáticamente por el sistema en cada operación de creación o actualización.
 
-![Database Diagram Parte 1](assets/Database-Diagrams/DataBase1.png)
+A continuación, se presenta el diagrama completo de la base de datos con las 19 tablas y sus llaves foráneas, organizado a partir de los bounded contexts del sistema:
 
-![Database Diagram Parte 2](assets/Database-Diagrams/DataBase2.png)
+| Bounded Context | Tablas |
+|---|---|
+| IAM | users, sessions |
+| Profiles | user_preferences |
+| Catalog | categories, suppliers, products |
+| Inventory | product_stocks, stock_alerts |
+| Sales | sales, sale_items, payments |
+| Customers | customers, purchase_history_entries |
+| Purchasing | purchase_orders, purchase_order_items, goods_receipts |
+| Cash Shifts | cash_shifts, cash_reconciliations |
+| Analytics | reports |
 
-![Database Diagram Parte 3](assets/Database-Diagrams/DataBase3.png)
+![Database Diagram](assets/Database-Diagrams/petstock-database-part-1.png)
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
@@ -2372,11 +2447,1090 @@ A continuación, se presenta evidencia de los Pull Requests y commits realizados
 
 ![Pull Requests Sprint 2](PR_TB1.png)
 
+### 5.2.3. Sprint 3
+
+En esta sección se presenta el progreso alcanzado durante el Sprint 3 del proyecto PetStock, considerando tanto los avances tecnológicos como el trabajo realizado de manera colaborativa por el equipo. A lo largo de este sprint, se priorizó la construcción y el despliegue de la primera versión del Backend (RESTful Web Services) desarrollada en ASP.NET Core y C# con persistencia en MySQL, logrando integrar la Web Application directamente con los Web Services y consolidando el despliegue funcional de los tres productos del proyecto. 
+
+
+#### 5.2.3.1. Sprint Planning 3
+
+A continuación, se presenta el resumen de la reunión de Sprint Planning del Sprint 3, realizada de manera virtual a través de Discord. Durante la reunión, el equipo estableció el Sprint Goal, determinó la velocidad estimada para el sprint y seleccionó las User Stories que serían desarrolladas durante esta iteración. 
+
+| **Sprint #** | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | |
+| **Date** | 2026-11-02 |
+| **Time** | 5:00 PM - 7:00 PM |
+| **Location** | Discord |
+| **Prepared By** | Valladolid Jiménez, Arturo Fernando |
+| **Attendees (to planning meeting)** | Mendoza Moreano, Mariel Lucero<br>Quispe Palomino, Tony Jhunior<br>Valladolid Jiménez, Arturo Fernando<br>Mendoza Boluarte, Pierre Alessandro<br>Gutierrez Tume, Stanley Jeremy |
+| **Sprint n – 1 Review Summary** | Durante el Sprint 2, el equipo desarrolló la primera versión funcional de la Web Application utilizando una Fake API (json-server) para simular la gestión de datos. En esta iteración se priorizó la maquetación de las vistas e interacciones del cliente, validando los flujos clave de la interfaz como base previa al desarrollo del backend real. |
+| **Sprint n – 1 Retrospective Summary** | Como resultado de la revisión del Sprint 2, el equipo identificó fortalezas en el diseño de la interfaz y la comunicación, pero detectó la necesidad de reemplazar la Fake API por una persistencia de datos real. Ante esto, se acordó definir un contrato de API RESTful estricto para asegurar una integración fluida entre el backend y el frontend durante el Sprint 3. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | During this sprint, the team aims to deliver the first version of the PetStock Web Services, exposing RESTful endpoints for the bounded contexts with persistence in MySQL, documented via OpenAPI, and to integrate the Web Application with them. The sprint will be considered successful once the Web Services, the Web Application, and the Landing Page are fully deployed and the main end-to-end flows are verified. |
+| **Sprint n Velocity** | 43 |
+| **Sum of Story Points** | 43 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+A lo largo del Sprint 3, el equipo estableció los Web Services que formarían parte de la primera versión del Backend de PetStock, definiendo los endpoints RESTful y la persistencia en MySQL que serían desarrollados para conectar la Web Application y atender las necesidades del negocio 
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Cash Shifts | Catalog & Inventory | Sales & Customers | Purchasing & Analytics | Profiles |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Mendoza Moreano, Mariel Lucero | MarielLucero | L | C | C | C | C |
+| Quispe Palomino, Tony Jhunior | GonzJunior18p | C | C | L | C | C |
+| Valladolid Jiménez, Arturo Fernando | artuvall | C | C | C | C | L |
+| Mendoza Boluarte, Pierre Alessandro | pierreale2302 | C | C | C | L | C |
+| Gutierrez Tume, Stanley Jeremy | Stan-gt213891 | C | L | C | C | C |
+
+
+
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El Sprint 3 tuvo como objetivo implementar los Web Services de PetStock con ASP.NET Core, Entity Framework Core y MySQL, y conectar la Web Application con los servicios reales. De acuerdo con el Sprint Planning 3, se estableció una planificación de **43 story points**, distribuida entre los bounded contexts asignados a los cinco integrantes.
+
+Para organizar el trabajo se consideraron tanto las **User Stories (US)** como las **Technical Stories (TS)** definidas en la sección 3.1 del informe. Las historias de usuario representan las funcionalidades esperadas por los administradores de las tiendas, mientras que las historias técnicas describen los servicios necesarios para implementarlas. Las actividades de soporte que no cuentan con una historia técnica propia se registran como tareas complementarias, sin asignarles identificadores `TS` inexistentes.
+
+**Tablero de Trello:** [Sprint 3 - PetStock](https://trello.com/b/r8Xj83fB/petstock)
+
+<p align="center">
+  <img src="assets/sprint-3/execution/TablaTrello-3.jpeg" alt="Tablero de Trello del Sprint 3 de PetStock" width="850">
+</p>
+
+<p align="center">
+  <em>Figura. Tablero de Trello correspondiente al Sprint Backlog 3 de PetStock.</em>
+</p>
+
+| Sprint # | Sprint 3 |
+|---|---|
+| User Stories / Technical Stories | Work-Item / Task |
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| TS02 (US09) | API Registro de Usuarios | T01 | Endpoints de usuarios | Desarrollar los servicios de registro y consulta de usuarios del bounded context IAM, con persistencia en MySQL. Relacionado con el registro de cuentas de US09. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| TS03 (US10) | API Autenticación e Inicio de Sesión | T01 | Endpoints de sesiones | Implementar los servicios de autenticación y gestión de sesiones. Relacionado con el inicio de sesión de US10. | 4 | Mendoza Moreano, Mariel Lucero | InProcess |
+| US10 | Iniciar sesión | T02 | Integración de login y registro | Conectar los formularios de registro e inicio de sesión de la Web Application con los Web Services del bounded context IAM. | 3 | Mendoza Moreano, Mariel Lucero | InProcess |
+| TS04 (US11) | API Modificación de Perfil | T01 | Actualización del perfil de usuario | Implementar las operaciones de actualización de los datos del usuario, según la gestión de perfil contemplada en US11. | 3 | Mendoza Moreano, Mariel Lucero | InProcess |
+| — | Tarea técnica complementaria: Cash Shifts | T04 | Turnos y conciliaciones de caja | Desarrollar los servicios de apertura, cierre y conciliación de caja. Esta funcionalidad no cuenta con una TS específica en la sección 3.1. | 5 | Mendoza Moreano, Mariel Lucero | InProcess |
+| — (US11) | Tarea técnica complementaria: Profiles | T02 | Endpoints de preferencias | Implementar los servicios de gestión de preferencias del usuario dentro del bounded context Profiles, relacionados con la configuración del perfil. | 4 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| US11 | Modificar perfil de negocio | T03 | Integración del módulo de perfil | Conectar las vistas de perfil y preferencias con los Web Services correspondientes. | 3 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| — | Tarea técnica transversal: infraestructura y despliegue | T01 | Configuración y despliegue | Configurar los servicios, la base de datos y los entornos necesarios para el despliegue e integración del Backend, Web Application y Landing Page. | 6 | Valladolid Jiménez, Arturo Fernando | InProcess |
+| TS05 / TS06 (US13 / US14) | API Registro de Productos / API Consulta y Edición de Catálogo | T01 | Endpoints de productos | Desarrollar los servicios REST de registro, consulta y edición de productos del bounded context Catalog, relacionados con US13 y US14. | 5 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US13 / US14 | Registrar nuevo producto en inventario / Editar datos de producto | T02 | Integración del catálogo | Conectar el formulario y la consulta de productos con los servicios reales de Catalog, de acuerdo con las funciones disponibles en la aplicación. | 4 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| TS08 (US17) | API Datos para Contacto de Proveedores | T01 | Endpoints de proveedores | Implementar los servicios de consulta de proveedores de Catalog para facilitar el abastecimiento de productos, en relación con US17. | 3 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| TS07 (US16) | API Alertas de Stock Bajo | T01 | Endpoints de inventario y alertas de stock | Implementar los servicios de inventario y consulta de alertas de stock bajo, relacionados con la detección de productos críticos de US16. | 5 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| US16 | Identificación de productos con stock bajo | T02 | Integración del inventario | Conectar las pantallas de inventario y bajo stock con los Web Services para mostrar existencias y alertas. | 4 | Gutierrez Tume, Stanley Jeremy | InProcess |
+| TS09 (US18) | API Registro de Ventas Directas | T01 | Endpoints de ventas | Implementar los servicios REST para registrar, consultar y eliminar ventas, incluyendo productos, cantidades, métodos de pago y monto total. Relacionado con US18. | 5 | Quispe Palomino, Tony Jhunior | Done |
+| — (US18) | Tarea técnica complementaria: Payments | T02 | Endpoints de pagos | Desarrollar servicios REST para registrar y consultar pagos asociados a las ventas. El catálogo de la sección 3.1 no define una TS independiente para pagos. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US18 | Registrar venta directa | T03 | Integración del punto de venta | Conectar el frontend de ventas con los servicios reales y validar el registro, consulta, detalle y eliminación de ventas. | 3 | Quispe Palomino, Tony Jhunior | Done |
+| US19 | Asignar cliente recurrente a la venta | T01 | Endpoints de clientes | Implementar los servicios de registro y consulta de clientes que permiten asociar clientes a las ventas. No hay una TS de CRUD de clientes independiente en la sección 3.1. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| TS10 (US20) | API Historial de Compras y Clientes | T01 | Historial de compras de clientes | Desarrollar los servicios de registro y consulta del historial de compras de clientes, vinculados a la necesidad de seguimiento de transacciones de US20. | 4 | Quispe Palomino, Tony Jhunior | Done |
+| — | Tarea técnica complementaria: Purchasing | T02 | Endpoints de compras y recepciones | Implementar los servicios REST de órdenes de compra y recepción de mercadería del bounded context Purchasing. No existe una TS específica para estos servicios en la sección 3.1. | 6 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| — | Tarea de integración complementaria: Purchasing | T03 | Integración del módulo de compras | Conectar la sección de compras y recepción de mercadería de la Web Application con los servicios reales del backend. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| TS11 (US21) | API Métricas y Reporte Semanal | T01 | Endpoints de reportes | Implementar servicios de consulta de métricas comerciales y reportes relacionados con los indicadores semanales de US21. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+| US21 | Visualizar gráfico de rendimiento semanal | T02 | Integración del dashboard de analítica | Conectar los reportes y gráficos del frontend con las métricas proporcionadas por los servicios de Analytics. | 4 | Mendoza Boluarte, Pierre Alessandro | InProcess |
+
+**Relación con las historias del capítulo 3.1:** Las historias técnicas **TS02–TS11** se relacionan con las actividades de servicios del Sprint 3, según su alcance funcional; **TS05 y TS06** se agrupan en una misma tarea del catálogo. Las historias **TS01** (contenido de la Landing Page) y **TS12** (descarga de reporte PDF mediante API) no tienen una tarea específica entre las 22 tarjetas registradas en el tablero mostrado, por lo que no se presentan como implementadas dentro de este backlog. Las tareas complementarias de pagos, caja, preferencias, compras e infraestructura tampoco poseen una TS individual en el listado del capítulo 3.1.
+
+El tablero mostrado refleja **22 tareas: cinco en Hecho y diecisiete en En proceso**. Las horas corresponden a estimaciones de planificación y los estados a la organización registrada en Trello al momento de tomar la captura. Deben actualizarse si el equipo confirma otras estimaciones o un avance posterior. Los **43 story points** del Sprint Planning no equivalen a la suma de las horas de las tareas.
+
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3, el equipo desarrolló la primera versión de los Web Services de PetStock, una RESTful API construida con ASP.NET Core (.NET 10), Entity Framework Core y MySQL. El backend se organizó en los 9 bounded contexts del sistema (IAM, Profiles, Catalog, Inventory, Sales, Customers, Purchasing, Cash Shifts y Analytics), siguiendo una arquitectura por capas (Domain, Application, Infrastructure e Interfaces) y un Shared Kernel común con el patrón Result, el repositorio base, la Unit of Work y la auditoría automática de las tablas. La base de datos (19 tablas) se genera desde el modelo mediante la migración `InitialSchema`, que se aplica al iniciar la aplicación.
+
+En paralelo, la Web Application dejó de usar la Fake API (json-server) y cada integrante conectó su módulo a los endpoints reales. Todo el trabajo se realizó en ramas `feature/*` creadas desde `develop`, integradas mediante Pull Requests y publicadas en `main` a través de las ramas `release/0.1.0` y `release/1.0.0`.
+
+A continuación, se presentan los commits realizados durante el sprint en cada repositorio (sin incluir los commits de merge).
+
+**Web Services (Backend)**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Backend | release/1.0.0 | a2ad40b | docs: add changelog for version 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Backend | release/1.0.0 | 19a5392 | chore(release): bump web services version to 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Backend | feature/sales-customers-endpoints | 8e3943d | refactor(customers): fix query services structure | Quispe Palomino, Tony Jhunior | 12/11/2026 |
+| Backend | feature/sales-customers-endpoints | a56d20a | feat(sales-customers): implement REST endpoints and persistence | Quispe Palomino, Tony Jhunior | 12/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | b614949 | test: add purchasing and analytics endpoint tests | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | f37aba9 | chore: register purchasing and analytics services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 4ef2577 | feat(analytics): add reports controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | a224e71 | feat(analytics): add report queries, repository and services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | e28a5a1 | feat(purchasing): add goods receipts controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 5f89187 | feat(purchasing): add goods receipt queries, repository and services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | release/0.1.0 | ce25f14 | docs: add mit license | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | e011149 | docs: add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 11293be | docs: add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 41e7e8b | docs: update readme with architecture, setup and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | release/0.1.0 | 41d21bf | chore(release): bump web services version to 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 33d0d5a | feat(purchasing): add purchases controller, resources and assemblers | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 8710efc | feat(purchasing): add purchase order command and query services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | dee83b9 | feat(purchasing): add purchase order error | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 8923c8d | feat(purchasing): add purchase order command and query services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/purchasing-analytics-endpoints | 5b9a92d | feat(purchasing): add product line data to purchase order command | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Backend | feature/deployment-configuration | 30d0b0c | chore: require ssl for the cloud database connection | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/deployment-configuration | 9ea120a | chore: add dockerfile for the web services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 9df0f6e | test(profiles): add http requests to verify preferences endpoints | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 600ab7f | chore: register profiles services in program | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | ffb3ad4 | feat(profiles): add english and spanish messages for preferences | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 1ea7f08 | feat(profiles): add preferences controller, resources and assemblers | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 99da51b | feat(profiles): add user preference command and query services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | e5125e5 | feat(profiles): add user preference repository | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/profiles-endpoints | 49964e3 | feat(profiles): add user preference queries, update command and repository | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | dba056f | test(cash-shifts): add http requests to verify cash shifts endpoints | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | cd5db7f | chore: register cash shifts services in program | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 77a3b8e | feat(cash-shifts): add english and spanish messages for cash shifts | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 006221a | feat(cash-shifts): add cash shifts and reconciliations controllers, resources and assemblers | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | d0b4491 | feat(cash-shifts): add cash shift and cash reconciliation command and query services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | c6616ae | feat(cash-shifts): add cash shift and cash reconciliation repositories | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 7a33b97 | feat(cash-shifts): add cash shift commands, queries and closing rules | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | b761ac4 | test(iam): add http requests to verify users and sessions endpoints | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 4ebaae7 | chore: register iam services in program | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 797e4b7 | feat(iam): add english and spanish messages for users and sessions | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | fe1c0d0 | feat(iam): add users and sessions controllers, resources and assemblers | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | ecf1383 | feat(iam): add user and session command and query services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 71cb88b | feat(iam): add user and session repositories | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/iam-cash-shifts-endpoints | 317ad85 |    feat(iam): add user and session commands and queries | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 369ec65 | test(inventory): add http requests to verify inventories and stock alerts endpoints | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 3d97594 | chore: register inventory services in program | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | df4c29c | feat(inventory): add english and spanish messages for inventories and stock alerts | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 267008d | feat(inventory): add english and spanish messages for inventories and stock alerts | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | ad75810 | feat(inventory): add stock alerts controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 607968a | feat(inventory): add stock alert repository and services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 50dfbe3 | feat(inventory): add product stock resources, assemblers and controller | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 54096da | feat(inventory): add product stock command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 1bb3eb6 | feat(inventory): add product stock queries, update command and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 6f8016c | test(catalog): add http requests to verify supplier and product endpoints | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | c6c6a40 | chore: register catalog product and supplier services in program | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | b885e12 | feat(catalog): add english and spanish messages for suppliers and products | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 78355af | feat(catalog): add products controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 9db54c4 | feat(catalog): add product command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 00efb20 | feat(catalog): add product queries and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | bff219c | feat(catalog): add suppliers controller, resources and assemblers | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 0da6c62 | feat(catalog): add supplier command and query services | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | feature/catalog-inventory-endpoints | 094ffad | feat(catalog): add supplier queries and repository | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Backend | chore/prepare-context-sections | 7c9fced | test: group http requests by bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | chore/prepare-context-sections | 9073281 | chore: prepare resource sections per bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | chore/prepare-context-sections | dc99654 | chore: prepare dependency injection sections per bounded context | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 1bc49e6 | test(catalog): add http requests to verify categories endpoints | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | f868fce | chore: register catalog category services in program | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 44d20a1 | feat(catalog): add english and spanish messages for categories | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | 9138517 | feat(catalog): add categories controller, resources and assemblers | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | ab17db4 | feat(catalog): add category command and query services | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/catalog-categories-endpoints | cab6e24 | feat(catalog): add category queries and repository | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 658cd8d | feat: add initial schema migration for 19 tables | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | afb33cd | chore: configure program with localization, openapi, cors and migrations | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | d240465 | feat(shared): register bounded context configurations in app db context | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | a58bfa9 | feat: add entity framework configuration for all bounded contexts | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 8fc676f | feat(analytics): add report aggregate | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 6694d2f | feat(cash-shifts): add cash shift and cash reconciliation aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | f2e11b7 | feat(purchasing): add purchase order, order item and goods receipt model | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | d23dc71 | feat(customers): add customer and purchase history entry aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 1911354 | feat(sales): add sale, sale item and payment model | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 3dd3321 | feat(inventory): add product stock and stock alert aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | 3d52124 | feat(catalog): add category, supplier and product aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | ee9b1a2 | feat(profiles): add user preference aggregate | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/domain-model | c721c45 | feat(iam): add user and session aggregates | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | e9c1eb6 | feat(shared): add english and spanish localization resources | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | f969a18 | feat(shared): add kebab case route naming convention | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | 1899693 | feat(shared): add ef core persistence infrastructure with audit interceptor | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | e635b30 | feat(shared): add result pattern for application services | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/shared-bounded-context | 5a1d4e9 | feat(shared): add auditable entity and repository contracts | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | 228bb75 | chore: add database connection strings to app settings | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | c4ed9e6 | chore: add entity framework core, mysql, scalar and humanizer packages | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | 15742cd | chore: create petstock solution and web api project | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | feature/project-setup | bdc3652 | chore: move readme to repository root | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+| Backend | develop | c2ae7be | chore: initial commit with readme and gitignore | Valladolid Jiménez, Arturo Fernando | 04/11/2026 |
+
+**Web Application (Frontend)**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Frontend | release/1.0.0 | 81b5e42 | docs: add changelog for version 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Frontend | release/1.0.0 | 20a6ff5 | chore(release): bump web application version to 1.0.0 | Valladolid Jiménez, Arturo Fernando | 13/11/2026 |
+| Frontend | feature/sales-customers-api-integration | 4361ff6 | feat(sales): connect sales module to the web services | Quispe Palomino, Tony Jhunior | 11/11/2026 |
+| Frontend | feature/purchases-analytics-api-integration | 9a12006 | feat(analytics): register downloaded reports in the web services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Frontend | feature/purchases-analytics-api-integration | 3db35a1 | feat(purchases): connect purchases module to the web services | Mendoza Boluarte, Pierre Alessandro | 10/11/2026 |
+| Frontend | fix/inventory-stock-caption-translation | b9c0569 | fix(inventory): add missing translation key for stock caption | Gutierrez Tume, Stanley Jeremy | 10/11/2026 |
+| Frontend | release/0.1.0 | 6bc97aa | docs: add mit license | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b334462 | docs: add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | 4418d2e | docs: add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b76919c | docs: update readme with structure, setup and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | release/0.1.0 | b666a71 | chore(release): bump web application version to 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | feature/profile-api-integration | 3d9f7b5 | feat(profile): update profile with put users endpoint | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Frontend | feature/profile-api-integration | 5529767 | feat(profile): add phone to profile entity and resource | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Frontend | chore/production-api-url | c71ec04 | chore: point production build to the deployed web services | Valladolid Jiménez, Arturo Fernando | 09/11/2026 |
+| Frontend | feature/iam-api-integration | 87e2bdc | feat(iam): connect sign in and sign up to the web services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Frontend | feature/iam-api-integration | 640d9c6 | fix(iam): map session fields returned by the web services | Mendoza Moreano, Mariel Lucero | 09/11/2026 |
+| Frontend | feature/catalog-inventory-api-integration | c9aba39 | feat(catalog): require supplier when registering a product | Gutierrez Tume, Stanley Jeremy | 09/11/2026 |
+| Frontend | chore/web-services-base-url | 740c717 | chore: update environment example with the web services url | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Frontend | chore/web-services-base-url | 87b636c | chore: point development environment to the web services | Valladolid Jiménez, Arturo Fernando | 08/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | a9ca174 | feat(sales): update sale registration section | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 6050aba | feat(inventory): improve low-stock alerts and actions | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+| Frontend | feature/sales-customer-tony-quispe | 3b79749 | feat(sales): update product registration and add purchase registration | Quispe Palomino, Tony Jhunior | 06/11/2026 |
+
+**Landing Page**
+
+| Repository | Branch | Commit Id | Commit Message | Autor | Committed on |
+|---|---|---|---|---|---|
+| Landing Page | release/0.1.0 | 1d8403f | docs(landing): add changelog for version 0.1.0 | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Landing Page | release/0.1.0 | 723a915 | docs(landing): add contributing guide | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+| Landing Page | release/0.1.0 | 896ffe1 | docs(landing): update readme with structure and deployment | Valladolid Jiménez, Arturo Fernando | 10/11/2026 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+En el Sprint 3, la Web Application dejó de utilizar la Fake API (json-server) y pasó a consumir los Web Services reales de PetStock, desarrollados con ASP.NET Core y persistencia en MySQL, ya desplegados. Los ocho bounded contexts del sistema —IAM, Profile, Catalog, Inventory, Sales, Customers, Purchasing y Analytics— están conectados a los endpoints reales del backend desplegado.
+
+A continuación, se presenta evidencia de ejecución de la Web Application consumiendo el API real, incluyendo una captura de la pestaña Network que confirma que las peticiones se dirigen al servidor desplegado y no a una Fake API.
+
+##### Inicio de sesión
+
+Pantalla de acceso con correo y contraseña, consumiendo el endpoint real de autenticación (IAM) desplegado en producción.
+
+![Vista de inicio de sesión](./assets/sprint-3/execution/01-login.png)
+
+##### Registro de cuenta
+
+Formulario de registro de cuenta, conectado al endpoint real de creación de usuarios.
+
+![Vista de registro de cuenta](./assets/sprint-3/execution/02-register.png)
+
+##### Dashboard
+
+Resumen operativo del negocio, con los datos obtenidos en tiempo real desde el backend desplegado.
+
+![Vista del dashboard](./assets/sprint-3/execution/03-dashboard.png)
+
+##### Registro de producto
+
+Formulario de registro de producto del bounded context Catalog, consumiendo los endpoints reales de productos, categorías y proveedores.
+
+![Vista de registro de producto](./assets/sprint-3/execution/04-catalog.png)
+
+##### Productos con stock bajo
+
+Listado de alertas de stock del bounded context Inventory, calculado en tiempo real a partir de los datos del API desplegado.
+
+![Vista de productos con stock bajo](./assets/sprint-3/execution/05-inventory.png)
+
+A continuación, se muestra la pestaña Network del navegador con una petición real al API desplegado (`https://petstock-web-services.onrender.com/api/v1/inventories`), confirmando que la aplicación ya no utiliza la Fake API.
+
+![Evidencia de petición al API real](./assets/sprint-3/execution/network-evidence.png)
+
+##### Registro de venta e historial
+
+Formulario de registro de venta del bounded context Sales, con selección de producto, cliente y método de pago. Al registrarla, el stock del producto se descuenta automáticamente y la venta queda reflejada en los reportes del negocio.
+
+![Vista de registro de venta](./assets/sprint-3/execution/06-sales.png)
+
+##### Clientes
+
+Registro de un nuevo cliente del bounded context Customers desde el flujo de venta, verificando que el cliente creado queda correctamente vinculado a la transacción registrada.
+
+![Vista de clientes](./assets/sprint-3/execution/07-customers.png)
+
+##### Compras
+
+Formulario de registro de compra a proveedores del bounded context Purchasing. Al registrar la compra, el stock del producto se actualiza automáticamente con las unidades recibidas.
+
+![Vista de registro de compra](./assets/sprint-3/execution/08-purchases.png)
+
+##### Reportes
+
+Vista de análisis del bounded context Analytics, con el gráfico de ventas por día, los productos más vendidos, los productos de baja rotación y el resumen general del inventario, calculados en tiempo real a partir de los datos registrados.
+
+![Vista de reportes](./assets/sprint-3/execution/09-analytics.png)
+
+##### Mi perfil
+
+Vista del perfil del usuario, con los datos obtenidos del endpoint real de perfil/preferencias.
+
+![Vista de mi perfil](./assets/sprint-3/execution/10-profile.png)
+
+##### Video de navegación  
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCyIjinjzhLT5bW7iKh0T3vAQuN9ifpNqgi3doZvYRL8OU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7K85tB
+
+#### 5.3.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 se implementaron y documentaron los servicios Web de PetStock mediante una Web API REST desarrollada con ASP.NET Core y Entity Framework Core sobre MySQL. El backend fue organizado mediante bounded contexts, separando las responsabilidades de IAM, Profiles, Catalog, Inventory, Sales, Customers, Cash Shifts, Purchasing y Analytics.
+
+Los servicios utilizan el prefijo /api/v1/ para sus endpoints y fueron implementados mediante controladores REST, recursos de entrada y salida, servicios de aplicación, repositorios y persistencia con Entity Framework Core. La documentación de los Web Services se generó mediante OpenAPI y se explora mediante Scalar.
+
+![alt text](assets/sprint-3/execution/evidence/image.png)
+
+
+### IAM
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/users` | `POST` | `POST /api/v1/users` | Body JSON con `firstName`, `lastName`, `email`, `password`, `phone`, `role` | Registra un nuevo usuario | `{"id": 2, "firstName": "Juan", "lastName": "Perez", "email": "juan.perez.demo@example.com", "phone": "999888777", "role": "Admin"}` |
+| `/api/v1/users` | `GET` | `GET /api/v1/users` | — | Retorna todos los usuarios registrados | `[{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}]` |
+| `/api/v1/users/{id}` | `GET` | `GET /api/v1/users/1` | `id` (path, requerido) | Retorna un usuario específico | `{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}` |
+| `/api/v1/users/{id}` | `PUT` | `PUT /api/v1/users/1` | `id` (path, requerido). Body: `firstName`, `lastName`, `email`, `phone` | Actualiza los datos de un usuario | `{"id": 1, "firstName": "Eduardo", "lastName": "Salazar", "email": "eduardo@petstock.pe", "phone": "+51999888777", "role": "Owner"}` |
+| `/api/v1/sessions` | `POST` | `POST /api/v1/sessions` | Body JSON con `email`, `password` | Inicia sesión validando las credenciales del usuario | `{"id": 1, "userId": 1, "token": "sample-token", "expiresAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/sessions/{id}` | `GET` | `GET /api/v1/sessions/1` | `id` (path, requerido) | Retorna una sesión específica | `{"id": 1, "userId": 1, "token": "sample-token", "expiresAt": "2026-11-13T15:00:00+00:00"}` |
+
+### Profiles
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/preferences` | `POST` | `POST /api/v1/preferences` | Body JSON con `userId`, `notificationsEnabled`, `darkMode`, `language` | Registra las preferencias de un usuario | `{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}` |
+| `/api/v1/preferences` | `GET` | `GET /api/v1/preferences` | — | Retorna todas las preferencias registradas | `[{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}]` |
+| `/api/v1/preferences/{id}` | `GET` | `GET /api/v1/preferences/1` | `id` (path, requerido) | Retorna las preferencias de un usuario | `{"id": 1, "userId": 1, "notificationsEnabled": true, "darkMode": false, "language": "es"}` |
+| `/api/v1/preferences/{id}` | `PUT` | `PUT /api/v1/preferences/1` | `id` (path, requerido). Body: `notificationsEnabled`, `darkMode`, `language` | Actualiza las preferencias existentes | `{"id": 1, "userId": 1, "notificationsEnabled": false, "darkMode": true, "language": "en"}` |
+
+### Catalog — Categories
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/categories` | `POST` | `POST /api/v1/categories` | Body JSON con `name`, `description` | Registra una nueva categoría | `{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}` |
+| `/api/v1/categories` | `GET` | `GET /api/v1/categories` | — | Retorna todas las categorías | `[{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}]` |
+| `/api/v1/categories/{id}` | `GET` | `GET /api/v1/categories/1` | `id` (path, requerido) | Retorna una categoría específica | `{"id": 1, "name": "Alimentos", "description": "Alimentos para mascotas"}` |
+
+### Catalog — Products
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/products` | `POST` | `POST /api/v1/products` | Body JSON con `name`, `description`, `price`, `categoryId`, `supplierId` | Registra un nuevo producto | `{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}` |
+| `/api/v1/products` | `GET` | `GET /api/v1/products` | — | Retorna todos los productos registrados | `[{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}]` |
+| `/api/v1/products/{id}` | `GET` | `GET /api/v1/products/1` | `id` (path, requerido) | Retorna un producto específico | `{"id": 1, "name": "RicoCat Salmón 10kg", "description": "Alimento completo para gatos adultos", "price": 95, "categoryId": 2, "supplierId": 1, "active": true}` |
+
+### Catalog — Suppliers
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/suppliers` | `POST` | `POST /api/v1/suppliers` | Body JSON con `companyName`, `contactName`, `phone`, `email` | Registra un nuevo proveedor | `{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}` |
+| `/api/v1/suppliers` | `GET` | `GET /api/v1/suppliers` | — | Retorna todos los proveedores | `[{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}]` |
+| `/api/v1/suppliers/{id}` | `GET` | `GET /api/v1/suppliers/1` | `id` (path, requerido) | Retorna un proveedor específico | `{"id": 1, "companyName": "PetFood Supplier SAC", "contactName": "Carlos Perez", "phone": "999888777", "email": "contacto@petfood.pe"}` |
+
+### Inventory — Inventories
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/inventories` | `POST` | `POST /api/v1/inventories` | Body JSON con `productId`, `currentStock`, `minimumStock` | Registra el stock de un producto | `{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/inventories` | `GET` | `GET /api/v1/inventories` | — | Retorna todos los inventarios | `[{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/inventories/{id}` | `GET` | `GET /api/v1/inventories/1` | `id` (path, requerido) | Retorna un inventario específico | `{"id": 1, "productId": 1, "currentStock": 50, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/inventories/{id}` | `PUT` | `PUT /api/v1/inventories/1` | `id` (path, requerido). Body: `currentStock`, `minimumStock` | Actualiza el stock y el stock mínimo | `{"id": 1, "productId": 1, "currentStock": 45, "minimumStock": 10, "lastUpdated": "2026-11-13T15:00:00+00:00"}` |
+
+### Inventory — Stock Alerts
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/stock-alerts` | `POST` | `POST /api/v1/stock-alerts` | Body JSON con `productId`, `level` | Registra una alerta de stock | `{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/stock-alerts` | `GET` | `GET /api/v1/stock-alerts` | — | Retorna las alertas de stock | `[{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/stock-alerts/{id}` | `GET` | `GET /api/v1/stock-alerts/1` | `id` (path, requerido) | Retorna una alerta específica | `{"id": 1, "productId": 1, "level": "Low", "active": true, "createdAt": "2026-11-13T15:00:00+00:00"}` |
+
+### Sales
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/sales` | `POST` | `POST /api/v1/sales` | Body JSON con `userId`, `customerId`, `paymentMethod`, `items` | Registra una nueva venta | `{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}` |
+| `/api/v1/sales` | `GET` | `GET /api/v1/sales` | — | Retorna todas las ventas registradas | `[{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}]` |
+| `/api/v1/sales/{id}` | `GET` | `GET /api/v1/sales/1` | `id` (path, requerido) | Retorna una venta específica | `{"id": 1, "userId": 2, "customerId": 1, "paymentMethod": "yape", "total": 225, "date": "2026-11-13", "items": [{"productId": 103, "quantity": 5, "unitPrice": 45}]}` |
+| `/api/v1/sales/{id}` | `DELETE` | `DELETE /api/v1/sales/1` | `id` (path, requerido) | Elimina una venta existente | `204 No Content` |
+
+### Sales — Payments
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/payments` | `POST` | `POST /api/v1/payments` | Body JSON con `saleId`, `amount`, `paymentMethod` | Registra el pago de una venta | `{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/payments` | `GET` | `GET /api/v1/payments` | — | Retorna todos los pagos registrados | `[{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/payments/{id}` | `GET` | `GET /api/v1/payments/1` | `id` (path, requerido) | Retorna un pago específico | `{"id": 1, "saleId": 1, "amount": 225, "paymentMethod": "yape", "paidAt": "2026-11-13T15:00:00+00:00"}` |
+
+### Customers
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/customers` | `POST` | `POST /api/v1/customers` | Body JSON con `name`, `email`, `phone`, `address` | Registra un nuevo cliente | `{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}` |
+| `/api/v1/customers` | `GET` | `GET /api/v1/customers` | — | Retorna todos los clientes registrados | `[{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}]` |
+| `/api/v1/customers/{id}` | `GET` | `GET /api/v1/customers/1` | `id` (path, requerido) | Retorna un cliente específico | `{"id": 1, "name": "Ana Torres", "email": "ana.torres@example.com", "phone": "999888777", "address": "Lima, Peru"}` |
+
+### Customers — Purchase History Entries
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchase-history-entries` | `POST` | `POST /api/v1/purchase-history-entries` | Body JSON con `customerId`, `saleId`, `total` | Registra una entrada en el historial de compras | `{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/purchase-history-entries` | `GET` | `GET /api/v1/purchase-history-entries` | — | Retorna todas las entradas del historial | `[{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/purchase-history-entries/{id}` | `GET` | `GET /api/v1/purchase-history-entries/1` | `id` (path, requerido) | Retorna una entrada específica del historial | `{"id": 1, "customerId": 1, "saleId": 1, "total": 225, "purchasedAt": "2026-11-13T15:00:00+00:00"}` |
+
+### Cash Shifts
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-shifts` | `POST` | `POST /api/v1/cash-shifts` | Body JSON con `userId`, `openingAmount` | Abre una nueva caja | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}` |
+| `/api/v1/cash-shifts` | `GET` | `GET /api/v1/cash-shifts` | — | Retorna todas las cajas registradas | `[{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}]` |
+| `/api/v1/cash-shifts/{id}` | `GET` | `GET /api/v1/cash-shifts/1` | `id` (path, requerido) | Retorna una caja específica | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 0, "status": "Open", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": null}` |
+| `/api/v1/cash-shifts/{id}` | `PUT` | `PUT /api/v1/cash-shifts/1` | `id` (path, requerido). Body: `closingAmount` | Cierra una caja existente | `{"id": 1, "userId": 1, "openingAmount": 500, "closingAmount": 725, "status": "Closed", "openedAt": "2026-11-13T15:00:00+00:00", "closedAt": "2026-11-13T20:00:00+00:00"}` |
+
+### Cash Reconciliations
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/cash-reconciliations` | `POST` | `POST /api/v1/cash-reconciliations` | Body JSON con `cashShiftId`, `expectedAmount`, `actualAmount` | Registra la conciliación de una caja | `{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}` |
+| `/api/v1/cash-reconciliations` | `GET` | `GET /api/v1/cash-reconciliations` | — | Retorna todas las conciliaciones | `[{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}]` |
+| `/api/v1/cash-reconciliations/{id}` | `GET` | `GET /api/v1/cash-reconciliations/1` | `id` (path, requerido) | Retorna una conciliación específica | `{"id": 1, "cashShiftId": 1, "expectedAmount": 725, "actualAmount": 720, "difference": -5}` |
+
+### Purchasing — Purchases
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/purchases` | `POST` | `POST /api/v1/purchases` | Body JSON con `supplierId`, `productId`, `quantity`, `unitCost` | Registra una nueva orden de compra | `{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}` |
+| `/api/v1/purchases` | `GET` | `GET /api/v1/purchases` | — | Retorna todas las compras registradas | `[{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}]` |
+| `/api/v1/purchases/{id}` | `GET` | `GET /api/v1/purchases/2` | `id` (path, requerido) | Retorna una orden de compra específica | `{"id": 2, "supplierId": 1, "productId": 1, "quantity": 10, "unitCost": 45.50, "total": 455.00, "status": "Pending", "date": "2026-11-11T01:24:56.2836316+00:00"}` |
+| `/api/v1/purchases/{id}` | `DELETE` | `DELETE /api/v1/purchases/2` | `id` (path, requerido) | Elimina una orden de compra | `204 No Content` |
+
+### Purchasing — Goods Receipts
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/goods-receipts` | `POST` | `POST /api/v1/goods-receipts` | Body JSON con `purchaseId`, `notes` | Registra la recepción de los productos de una compra | `{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/goods-receipts` | `GET` | `GET /api/v1/goods-receipts` | — | Retorna todas las recepciones registradas | `[{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/goods-receipts/{id}` | `GET` | `GET /api/v1/goods-receipts/1` | `id` (path, requerido) | Retorna una recepción específica | `{"id": 1, "purchaseId": 2, "notes": "Productos recibidos correctamente", "receivedAt": "2026-11-13T15:00:00+00:00"}` |
+
+### Analytics
+
+| Endpoint | Verbo HTTP | Sintaxis de llamada | Parámetros | Descripción | Ejemplo de Response |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `/api/v1/reports` | `POST` | `POST /api/v1/reports` | Body JSON con `userId`, `reportType`, `fileFormat` | Registra la generación de un reporte | `{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}` |
+| `/api/v1/reports` | `GET` | `GET /api/v1/reports` | — | Retorna todos los reportes registrados | `[{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}]` |
+| `/api/v1/reports/{id}` | `GET` | `GET /api/v1/reports/1` | `id` (path, requerido) | Retorna un reporte específico | `{"id": 1, "userId": 1, "reportType": "Weekly Sales", "fileFormat": "PDF", "generatedAt": "2026-11-13T15:00:00+00:00"}` |
+
+
+## Evidencia de interaccion
+
+Para la evidencia , usamos el backend de forma local y hacemos HTTP Request en PetStock.API.http
+
+### 1. Registro de usuario
+Se verificó el registro de usuarios mediante `POST /api/v1/users`.La solicitud fue procesada correctamente y el backend devolvió una respuesta `201 Created` junto con el identificador generado para el nuevo usuario.
+
+![alt text](assets/sprint-3/execution/evidence/Evidencia1.png)
+
+### 2. Consulta de usuarios
+Se verificó la recuperación de los usuarios mediante `GET /api/v1/users`, obteniendo una respuesta `200 OK` con la colección de usuarios registrados.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia2.png)
+
+### 3. Registro de producto
+Se verificó la creación de productos mediante `POST /api/v1/products`. El servicio recibe la información del producto y sus relaciones con categoría y proveedor, retornando el recurso creado mediante una respuesta `201 Created`.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia3.png)
+
+### 4. Consulta de inventario
+Se verificó la consulta del inventario mediante `GET /api/v1/inventories`, obteniendo una respuesta `200 OK` con los productos y sus cantidades de stock registradas.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia4.png)
+
+### 5. Registro de venta
+Se verificó el registro de una venta mediante `POST /api/v1/sales`. La solicitud contiene el usuario responsable, el cliente cuando corresponde, el método de pago y los productos incluidos en la venta.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia5.png)
+
+### 6. Registro de cliente
+Se verificó el registro de clientes mediante `POST /api/v1/customers`, obteniendo una respuesta `201 Created` con el recurso generado.
+
+![alt text](<assets/sprint-3/execution/evidence/evidencia 6.png>)
+
+### 7. Registro de compra
+Se verificó el registro de órdenes de compra mediante `POST /api/v1/purchases`. La solicitud incluye el proveedor, producto, cantidad y costo unitario. El servicio calcula el total y devuelve información adicional como el estado y la fecha de la compra.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia7.png)
+
+### 8. Registro de recepción de productos
+Se verificó la recepción de una orden de compra mediante `POST /api/v1/goods-receipts`. La solicitud utiliza el identificador de una compra existente y permite agregar observaciones opcionales.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia8.png)
+
+### 9. Generación de reporte
+Se verificó la generación de reportes mediante `POST /api/v1/reports`. La solicitud incluye el usuario responsable, el tipo de reporte y el formato del archivo.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia9.png)
+
+### 10. Consulta de reportes
+Se verificó la recuperación de los reportes registrados mediante `GET /api/v1/reports`, obteniendo una respuesta `200 OK`.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia10.png)
+
+### 11. Validación de datos
+Además de las operaciones exitosas, se realizaron pruebas con datos inválidos para comprobar las validaciones implementadas en los servicios.  
+En estas pruebas, el backend devuelve una respuesta `400 Bad Request` cuando los datos enviados no cumplen con las reglas de validación establecidas.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia11.png)
+
+### 12. Recurso inexistente
+También se verificó el comportamiento del backend cuando se solicita un recurso que no existe.  
+En este escenario, el servicio devuelve una respuesta `404 Not Found`, indicando que el recurso solicitado no pudo ser encontrado.
+
+![alt text](assets/sprint-3/execution/evidence/evidencia12.png)
+
+## Repositorio de Web Services
+El código fuente de los Web Services se encuentra disponible en el siguiente repositorio:
+
+- **Repositorio Backend:** [https://github.com/1ASI0730-2620-8074-PetStock/Backend](https://github.com/1ASI0730-2620-8074-PetStock/Backend)
+- **Web Services:** https://petstock-web-services.onrender.com/scalar
+
+El repositorio contiene la implementación de los bounded contexts, controladores REST, recursos, servicios de aplicación, repositorios, persistencia, configuración de la aplicación y las pruebas HTTP utilizadas para validar los endpoints.
+
+---
+
+## Commits relacionados con los Web Services
+Los principales commits relacionados con la implementación, configuración y pruebas de los servicios Web durante el Sprint se encuentran organizados por bounded context.
+
+| Bounded Context | Commit | Mensaje |
+| :--- | :--- | :--- |
+| Catalog | `9138517` | `feat(catalog): add categories controller, resources and assemblers` |
+| Catalog | `44d20a1` | `chore(catalog): add categories messages` |
+| Catalog | `f868fce` | `chore(catalog): register category services` |
+| Catalog | `1bc49e6` | `test(catalog): add http requests to verify categories endpoints` |
+| Catalog | `bff219c` | `feat(catalog): add suppliers controller, resources and assemblers` |
+| Catalog | `78355af` | `feat(catalog): add products controller, resources and assemblers` |
+| Catalog | `6f8016c` | `test(catalog): add http requests to verify supplier and product endpoints` |
+| Inventory | `50dfbe3` | `feat(inventory): add stock resources, assemblers and controller` |
+| Inventory | `ad75810` | `feat(inventory): add alerts controller, resources and assemblers` |
+| Inventory | `369ec65` | `test(inventory): add http requests to verify inventories and stock alerts endpoints` |
+| Profiles | `1ea7f08` | `feat(profiles): add preferences controller, resources and assemblers` |
+| Profiles | `9df0f6e` | `test(profiles): add http requests to verify preferences endpoints` |
+| IAM | `fe1c0d0` | `feat(iam): add users and sessions controllers, resources and assemblers` |
+| IAM | `b761ac4` | `test(iam): add http requests to verify users and sessions endpoints` |
+| Sales / Customers | `a56d20a` | `feat(sales-customers): implement REST endpoints and persistence` |
+| Customers | `8e3943d` | `refactor(customers): fix query services structure` |
+| Cash Shifts | `006221a` | `feat(cash-shifts): add controllers, resources and assemblers` |
+| Cash Shifts | `dba056f` | `test(cash-shifts): add http requests to verify cash shifts endpoints` |
+| Purchasing | `33d0d5a` | `feat(purchasing): add purchases controller, resources and assemblers` |
+| Purchasing | `e28a5a1` | `feat(purchasing): add goods receipts controller, resources and assemblers` |
+| Purchasing / Analytics | `b614949` | `test: add purchasing and analytics endpoint tests` |
+| Analytics | `a224e71` | `feat(analytics): add report queries, repository and services` |
+| Analytics | `4ef2577` | `feat(analytics): add reports controller, resources and assemblers` |
+| Backend | `afb33cd` | `chore: configure program with localization, openapi, cors and migrations` |
+| Backend | `dc99654` | Configuración de dependency injection por bounded context |
+| Backend | `9073281` | Preparación de las secciones de recursos por bounded context |
+| Backend | `7c9fced` | Organización de las solicitudes HTTP por bounded context |
+
+Estos commits representan las principales modificaciones relacionadas con la implementación y verificación de los servicios REST de los diferentes bounded contexts. Los commits de integración y merge se mantienen en el historial del repositorio como evidencia de la integración de las funcionalidades desarrolladas por el equipo.
+
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3 se desplegó por primera vez la RESTful API de PetStock y se actualizaron la Web Application y la Landing Page para trabajar con ella. El despliegue de los Web Services utiliza tres piezas: una base de datos MySQL en la nube, una imagen Docker de la API y un Web Service en Render que la ejecuta. Las versiones publicadas en `main` se identifican con los tags `v0.1.0` y `v1.0.0` en cada repositorio.
+
+**Web Services (RESTful API)**
+
+1. **Base de datos en la nube.** Se creó un clúster en **TiDB Cloud**, compatible con MySQL, para alojar la base de datos `petstock_db`. La conexión utiliza SSL obligatorio (`SslMode=Required`).
+
+![TiDB Cloud cluster](assets/sprint-3/cloud-database-service.png)
+
+2. **Imagen Docker.** Se agregó un `Dockerfile` en la raíz del repositorio Backend que compila y publica la API con el SDK de .NET 10 y la ejecuta en el puerto 8080 sobre la imagen `aspnet:10.0`.
+
+3. **Web Service en Render.** Se creó un Web Service conectado al repositorio Backend, con runtime Docker y plan gratuito, que despliega desde la rama `main`.
+
+![Render web service settings](assets/sprint-3/render-api-settings.png)
+
+4. **Variables de entorno.** `appsettings.Production.json` lee la conexión desde las variables `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_USER`, `DATABASE_PASSWORD` y `DATABASE_NAME`, configuradas en Render junto con `ASPNETCORE_ENVIRONMENT=Production`. La contraseña se mantiene oculta.
+
+![Render environment variables](assets/sprint-3/render-api-environment.png)
+
+5. **Despliegue y migración.** Al iniciar, la API aplica la migración `InitialSchema` y queda escuchando en el puerto 8080.
+
+![Render deploy logs](assets/sprint-3/render-api-logs.png)
+
+6. **Documentación publicada.** La documentación OpenAPI queda disponible en Scalar, en la ruta `/scalar` del servicio desplegado.
+
+![Scalar deployed](assets/sprint-3/render-api-scalar.png)
+
+7. **Tablas creadas.** La base de datos en la nube contiene las 19 tablas del modelo y la tabla `__EFMigrationsHistory`.
+
+![Cloud database tables](assets/sprint-3/cloud-database-tables.png)
+
+**Web Application**
+
+La variable `VITE_API_BASE_URL` del archivo `.env.production` apunta a la API desplegada (`https://petstock-web-services.onrender.com/api/v1`). Vite la lee al momento del build, por lo que el servicio de Render del frontend se volvió a desplegar desde `main` después del release `v1.0.0`. La aplicación desplegada consume los datos de la API real.
+
+![Render frontend deploy](assets/sprint-3/render-frontend-deploy.png)
+
+![Web application using the deployed API](assets/sprint-3/web-application-network.png)
+
+**Landing Page**
+
+La Landing Page se mantiene publicada en GitHub Pages desde la rama `main` (versión `v0.1.0`). Su botón de inicio de sesión abre la Web Application desplegada.
+
+![Landing page login button](assets/sprint-3/landing-page-login.png)
+
+**Links de acceso**
+
+| Producto | URL |
+|---|---|
+| Web Services (Scalar) | [https://petstock-web-services.onrender.com/scalar](https://petstock-web-services.onrender.com/scalar) |
+| Web Application | [https://petstock-frontend.onrender.com](https://petstock-frontend.onrender.com) |
+| Landing Page | [https://1asi0730-2620-8074-petstock.github.io/LandingPage/](https://1asi0730-2620-8074-petstock.github.io/LandingPage/) |
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, cada integrante asumió sus bounded contexts de punta a punta: implementó los endpoints en el backend (dominio, servicios de aplicación, repositorios y controladores REST con sus mensajes en inglés y español) y conectó el módulo correspondiente de la Web Application. Mendoza Moreano, Mariel Lucero trabajó IAM y Cash Shifts; Quispe Palomino, Tony Jhunior, Sales y Customers; Gutierrez Tume, Stanley Jeremy, Catalog e Inventory; Mendoza Boluarte, Pierre Alessandro, Purchasing y Analytics; y Valladolid Jiménez, Arturo Fernando, Profiles, la preparación de la base del backend y el despliegue.
+
+Para trabajar en paralelo sin bloquearse, la rama `develop` se preparó al inicio del sprint con el modelo completo, el Shared Kernel y un bloque por bounded context en los archivos compartidos (`Program.cs`, los recursos de localización y el archivo `.http`). Cada integrante creó su rama `feature/*` desde `develop`, usó Conventional Commits en inglés e integró su trabajo mediante Pull Requests hacia `develop`. Las versiones desplegadas se publicaron en `main` a través de ramas `release/*`, identificadas con tags.
+
+A continuación, se presentan las analíticas de contribución de los repositorios de Backend y Frontend, y los Pull Requests cerrados durante el sprint:
+
+![Backend contributors](assets/sprint-3/backend-contributors.png)
+
+![Frontend contributors](assets/sprint-3/frontend-contributors.png)
+
+![Backend pull requests](assets/sprint-3/backend-pull-requests.png)
+
+![Frontend pull requests](assets/sprint-3/frontend-pull-requests.png)
+
+## 5.3. Validation Interviews
+
+A continuación, se presenta la estructura e instrumental de validación utilizado para evaluar la propuesta de valor y las funcionalidades clave de la primera versión desplegada de PetStock. Mediante entrevistas de validación interactivas y pruebas de usabilidad guiadas, se busca recoger retroalimentación directa de los usuarios finales sobre la claridad de la Landing Page, la navegación en la Web Application integrada con el backend RESTful y la efectividad con la que el sistema resuelve las necesidades operativas.
+
+
+### 5.3.1. Diseño de Entrevistas
+
+El diseño del guion de entrevista se estructura diferenciando a los dos segmentos objetivo del proyecto, garantizando que cada participante ponga a prueba las funcionalidades
+
+#### Segmento 1: Tiendas de alimentos y consumo frecuente
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 1 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Claridad en la propuesta de valor sobre el control centralizado de inventario y rotación.
+  * Comprensión y transparencia de la sección de planes y precios.
+  * Visibilidad y correcto funcionamiento del botón de inicio de sesión que redirige a la aplicación web.
+* **User Flows de la Web Application a validar:**
+  1. Registro de usuario e inicio de sesión en la plataforma.
+  2. Registro de un nuevo producto de consumo frecuente configurando su stock mínimo.
+  3. Consulta del módulo de inventario y revisión de alertas de stock bajo.
+  4. Registro de una venta directa rápida.
+  5. Consulta del gráfico de rendimiento semanal en el dashboard.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Ingrese a la página web, revise la propuesta de valor, consulte los planes disponibles y acceda al botón para ingresar a la aplicación." | Facilidad para ubicar los precios y el botón de acceso; claridad del propósito del sistema. |
+| **2. Autenticación** | "Cree una cuenta nueva e inicie sesión con sus credenciales." | Fluidez en el formulario de registro e ingreso correcto al dashboard. |
+| **3. Registro de Producto e Inventario** | "Registre un nuevo alimento de consumo frecuente especificando sus datos generales y un límite de stock mínimo." | Comprensión de los campos y asignación precisa del umbral de stock bajo. |
+| **4. Control de Alertas** | "Diríjase al módulo de inventario e identifique qué productos cuentan con alertas activas." | Interpretación inmediata de las señales de desabastecimiento. |
+| **5. Registro de Venta Directa** | "Simule una venta rápida seleccionando el producto registrado y complete la transacción." | Agilidad del proceso de cobro y facilidad de uso del punto de venta. |
+| **6. Monitoreo en Dashboard** | "Ingrese al dashboard principal y consulte el gráfico de rendimiento semanal." | Claridad al interpretar la información gráfica del negocio. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué pasos o módulos del sistema le parecieron más sencillos e intuitivos de utilizar?
+2. ¿Encontró algún término, botón o sección que le resultara confuso durante el proceso?
+3. ¿Qué funcionalidad adicional considera que le falta al sistema para adaptarse mejor al día a día de su negocio?
+4. ¿Estaría dispuesto a implementar PetStock en su tienda de mascotas para reemplazar sus métodos actuales (cuadernos o Excel)?
+
+#### Segmento 2: Tiendas especializadas en productos premium y de cuidado
+
+* **A quién se entrevista:** Se entrevista a los mismos usuarios pertenecientes al Segmento 2 registrados previamente en la sección 2.2.2.
+* **Qué se valida en la Landing Page:**
+  * Relevancia y atractivo comercial de los beneficios presentados en la propuesta de valor.
+  * Claridad de los planes para boutiques especializadas.
+  * Acceso directo al sistema mediante el botón de inicio de sesión.
+* **User Flows de la Web Application a validar:**
+  1. Inicio de sesión en la plataforma.
+  2. Registro de un nuevo proveedor y un producto especializado en el catálogo.
+  3. Registro de una orden de compra para reabastecimiento con el proveedor.
+  4. Búsqueda y consulta del historial de compras de un cliente registrado.
+  5. Generación y descarga del reporte operativo en formato PDF.
+
+##### Tareas e Instrucciones de Prueba
+
+| Tarea | Instrucción al entrevistado | Qué se observa |
+|---|---|---|
+| **1. Exploración de Landing Page** | "Navegue por la página de inicio, revise las características principales y acceda a la aplicación mediante el botón de login." | Comprensión de las características clave e identificación del botón de acceso. |
+| **2. Registro de Proveedor y Producto** | "Registre un proveedor de artículos premium y luego agregue un producto especial asociándolo a dicho proveedor." | Facilidad para vincular proveedores con ítems del catálogo. |
+| **3. Registro de Compra** | "Ingrese al módulo de compras y registre una orden de pedido al proveedor creado." | Fluidez al ingresar cantidades y costos unitarios de compra. |
+| **4. Consulta de Historial de Cliente** | "Acceda al módulo de clientes, seleccione un cliente y revise sus transacciones anteriores." | Rapidez para obtener el historial de compras recurrentes. |
+| **5. Generación de Reportes** | "Ingrese a la sección de reportes y descargue el reporte operativo en PDF." | Claridad en los filtros de reporte y descarga exitosa del archivo. |
+
+##### Preguntas Abiertas de Cierre
+
+1. ¿Qué herramientas o secciones de la aplicación consideró más fáciles y rápidas de usar?
+2. ¿Hubo alguna parte del flujo de compras o clientes que le haya resultado confusa o difícil de entender?
+3. ¿Qué característica o reporte específico siente que le falta a la plataforma para gestionar mejor sus artículos especializados?
+4. ¿Considera que PetStock le aporta el valor suficiente como para ser utilizada en la operación diaria de su boutique de mascotas?
+
+
+### 5.3.2. Registro de Entrevistas
+
+En esta sección se presenta el registro de las entrevistas de validación realizadas a los usuarios de los dos segmentos objetivo de PetStock. Durante estas sesiones se mostró la aplicación web y se evaluó la experiencia de los participantes al interactuar con las funcionalidades desarrolladas.
+
+Las entrevistas permitieron recoger observaciones sobre la facilidad de uso, la navegación, la comprensión de los módulos y las posibles mejoras de la plataforma. Se mantiene el mismo orden de entrevistados establecido en la sección 2.2.2 del informe.
+
+**Segmento objetivo 1: Tiendas de alimentos y consumo frecuente para mascotas**
+
+**Entrevista N° 1**
+
+<!-- Registro de Aracelli Peña.
+     El integrante responsable debe agregar aquí su tabla
+     de validación, captura, enlace y resumen. -->
+
+
+**Entrevista N° 2**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/Images-videovalidacion/VideoValidacion2.jpeg" alt="Entrevista de validación 2 - Mateo Escudero" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Mateo Piero Escudero Sánchez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>20 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Callao</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:22 min</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://drive.google.com/file/d/10AkUzpRR6KSoCKg3zXPRFx3SjsxH0YxS/view?usp=sharing">
+        Entrevista de validación 2 - Segmento 1
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+      Durante la entrevista de validación se presentó a Mateo Piero Escudero Sánchez el frontend de PetStock, una aplicación web orientada a la gestión de tiendas de mascotas. El recorrido incluyó la presentación de la plataforma, el proceso de acceso mediante una cuenta de usuario y la explicación de sus principales herramientas de administración. La evaluación se enfocó en la facilidad de uso del registro de productos, el control de inventario, las alertas de stock, las ventas y la consulta de información desde el dashboard. Estas funcionalidades están relacionadas con las necesidades identificadas en la primera entrevista, cuando Mateo explicó que su familia utiliza cuadernos y Excel para controlar las operaciones de su tienda. La sesión permitió plantear preguntas sobre la claridad de la interfaz, las funciones que deberían mejorarse y la disposición a utilizar una herramienta digital para reemplazar los registros manuales.
+      <br><br>
+      <b>Resultados de la validación:</b> [Completar con las respuestas reales de Mateo: funcionalidad que le resultó más sencilla, dificultad encontrada, mejora sugerida y disposición a utilizar PetStock].
+    </td>
+  </tr>
+</table>
+
+
+**Entrevista N° 3**
+
+<!-- Registro de Dayan Ramos.
+     El integrante responsable debe agregar aquí su tabla
+     de validación, captura, enlace y resumen. -->
+
+
+**Segmento objetivo 2: Tiendas especializadas en productos premium y de cuidado**
+
+**Entrevista N° 4**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img width="588" height="167" alt="Entrevista de validación 4 - Gabriela Díaz" src="https://github.com/user-attachments/assets/593696a2-5d4d-42e4-b408-2efa65ed8da0">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Gabriela Díaz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:24</td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118152_upc_edu_pe/IQCfa1cXQMayRZlma0rwut3jATu8DmIyxMsKDz_Nyl3Dnzk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJycmFsQXBwUGxhdGZvcm0iOiJXZWIifX0&e=t8yB6o">
+        Entrevista de validación 4 - Segmento 2
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+      La entrevistada, Gabriela Díaz, valoró sobre todo el registro de órdenes de compra. Le parece tan sencillo como hacer un pedido por WhatsApp, con la ventaja de que el historial queda guardado. Como punto confuso, señaló que no hay un campo para la marca al registrar productos, solamente categoría y nombre, y para productos premium la marca es clave. También pidió poder marcar productos como edición limitada, porque eso cambia cómo los ofrece a sus clientas. Por último, dijo que sí implementaría PetStock: hoy lleva todo en cuaderno y Excel y le cuesta relacionar clientes con compras, así que el sistema le parece mucho más ordenado.
+    </td>
+  </tr>
+</table>
+
+
+**Entrevista N° 5**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/Images-videovalidacion/VideoValidacion5.jpeg" alt="Entrevista de validación 5 - Leonardo Castilla" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Leonardo Castilla Ruiz</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>9:46 min </td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://drive.google.com/file/d/1XLwf_I1YUTB4Md4tIbfMFWL8gftB7ifT/view?usp=sharing">
+        Entrevista de validación 5 - Segmento 2
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+      Durante la entrevista de validación se presentó a Leonardo Castilla Ruiz, administrador de Wow Closet, el frontend de PetStock y las funcionalidades relacionadas con la administración de una tienda especializada en productos para mascotas. La demostración se orientó a la gestión de productos, el inventario, las compras, las ventas y los reportes disponibles en la plataforma. La validación se relacionó con las dificultades que Leonardo había mencionado durante la primera entrevista, especialmente la organización de un catálogo variado, el seguimiento de proveedores, los productos de baja rotación y la información de clientes frecuentes. A partir del recorrido por la aplicación, se plantearon preguntas destinadas a evaluar qué módulos resultaban más fáciles de utilizar, qué elementos podían generar confusión y qué funcionalidades adicionales serían necesarias para atender las particularidades de una boutique especializada.
+      <br><br>
+      <b>Resultados de la validación:</b> [Completar con las respuestas reales de Leonardo: funcionalidades mejor valoradas, dificultades encontradas, mejoras propuestas para productos especializados y disposición a implementar PetStock].
+    </td>
+  </tr>
+</table>
+
+
+**Entrevista N° 6**
+
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="assets/interview-records/entrevista-lia.png" alt="Entrevista de validación 6 - Lia" width="588">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Nombre y apellido</b></td>
+    <td>Lia Nuñez</td>
+  </tr>
+  <tr>
+    <td><b>Edad</b></td>
+    <td>25 años</td>
+  </tr>
+  <tr>
+    <td><b>Ubicación</b></td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td><b>Inicio de la entrevista</b></td>
+    <td>0:00</td>
+  </tr>
+  <tr>
+    <td><b>Duración</b></td>
+    <td>8:33 min </td>
+  </tr>
+  <tr>
+    <td><b>Enlace</b></td>
+    <td>
+      <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQDsVfp8SlT4Rb_v99ws7N-oAUZGLQKXY0asa6o5Pd_8zH0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=grwZKz">
+        Entrevista de validación 6 - Segmento 2
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resumen</b></td>
+    <td>
+    Lia es propietaria de una boutique especializada en productos premium para mascotas. Durante la entrevista destacó que las herramientas más fáciles y rápidas de usar son la creación y asociación instantánea de proveedores con productos, así como la consulta ágil del historial de compras de los clientes. Señaló que todo el flujo de navegación le resultó claro, natural y sin confusiones, adaptándose bien a la dinámica diaria de su tienda. Aunque consideró que la plataforma ya cuenta con todo lo necesario para operar, sugirió como mejora futura incluir alertas de fechas de vencimiento para productos delicados como snacks o suplementos naturales. Finalmente, afirmó que PetStock le aporta un gran valor para reemplazar su control manual en Excel y notas, centralizando pedidos a proveedores, historial de clientes y reportes en PDF en su operación diaria.
+    </td>
+  </tr>
+</table>
+
+
+
+
+### 5.3.3. Evaluaciones según heurísticas
+
+# 5.3.3. Evaluaciones según heurísticas
+## UX Heuristics & Principles Evaluation
+
+* **Carrera:** Ingeniería de Software
+* **Curso:** Aplicaciones Web
+* **Sección:** 8074
+* **Profesor:** Alex Sanchez Ponce
+* **Auditor:** Nexora
+* **Cliente(s):** Personas entrevistadas durante las sesiones de validación
+* **Site / App a evaluar:** PetStock — Landing Page y Web Application
+
+---
+
+### Tareas evaluadas
+La evaluación heurística se realizó sobre los principales flujos de la Web Application de PetStock, considerando las tareas utilizadas durante las entrevistas de validación:
+
+* Registro e inicio de sesión.
+* Registro de proveedor y producto.
+* Registro de compra a proveedor.
+* Consulta del historial de compras de un cliente.
+* Revisión de inventario y alertas de stock.
+* Consulta del dashboard.
+* Generación y descarga de reportes.
+
+
+### Escala de severidad
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | Problema superficial o cosmético que no afecta significativamente la realización de la tarea. |
+| **2** | Problema de usabilidad leve que puede generar cierta confusión, pero permite completar la tarea. |
+| **3** | Problema de usabilidad importante que dificulta una tarea frecuente y debería corregirse. |
+| **4** | Problema de usabilidad grave que impide o compromete significativamente la realización de una tarea. |
+
+
+
+### Tabla resumen de problemas encontrados
+
+| # | Problema | Severidad | Heurística / Principio violado |
+| :---: | :--- | :---: | :--- |
+| **1** | El registro de productos especializados no permite especificar la marca. | **3** | Relación entre el sistema y el mundo real |
+| **2** | No existe una opción para identificar productos como edición limitada. | **2** | Relación entre el sistema y el mundo real |
+| **3** | La información de alertas de stock puede requerir interpretación adicional para determinar qué acción realizar. | **2** | Visibilidad del estado del sistema |
+| **4** | El flujo de compras no permite resolver desde la misma pantalla la necesidad de registrar un proveedor nuevo. | **2** |Libertad y control por parte del usuario |
+| **5** | El sistema no incorpora alertas de fechas de vencimiento para productos delicados. | **2** |Visibilidad del estado del sistema |
+| **6** | La organización de la información de productos especializados puede resultar limitada al depender principalmente de nombre y categoría. | **2** | Information Architecture: Is it findable? |
+| **7** | El sistema podría ofrecer mayor orientación contextual en algunos campos de registro para usuarios nuevos. | **2** | Ayuda y documentación |
+
+---
+
+### Detalle de los problemas encontrados
+
+#### Problema #1: Falta de campo para la marca del producto
+* **Severidad:** 3
+* **Heurística violada:** *Usability: Match between system and the real world — Relación entre el sistema y el mundo real.*
+* **Problema:** Durante la entrevista de validación con Gabriela Díaz, se identificó que el registro de productos solamente permite especificar información como nombre y categoría, pero no incluye un campo específico para registrar la marca. Este aspecto es importante para las tiendas especializadas en productos premium, ya que la marca puede ser un atributo relevante para diferenciar productos y facilitar su gestión dentro del catálogo. La entrevistada indicó que para productos premium la marca es un dato clave. Esto evidencia una diferencia entre la información que el sistema permite registrar y la información que forma parte del modelo mental de este tipo de usuario.
+* **Recomendación:** Agregar un campo Marca dentro del formulario de registro y edición de productos. Este campo debería permitir identificar claramente la marca comercial del producto y posteriormente utilizarla en búsquedas, filtros y visualización del catálogo.
+
+![alt text](assets/heuristicas/image.png)
+
+
+
+#### Problema #2: No se puede identificar un producto como edición limitada
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Match between system and the real world — Relación entre el sistema y el mundo real.*
+* **Problema:** Durante la entrevista de validación, Gabriela Díaz también indicó que sería útil poder identificar determinados productos como edición limitada, debido a que esta característica influye en la forma en que se ofrecen a los clientes. Actualmente el sistema no proporciona un atributo específico para representar esta característica del producto, lo que limita la capacidad del sistema para representar completamente las particularidades de una tienda especializada.
+* **Recomendación:** Incorporar un atributo opcional como “Edición limitada”, mediante un checkbox o selector dentro del formulario de productos. Posteriormente, este atributo podría utilizarse para identificar estos productos dentro del catálogo.
+
+![alt text](assets/heuristicas/image-1.png)
+
+---
+
+#### Problema #3: Las alertas de stock podrían comunicar mejor la acción requerida
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Visibility of system status — Visibilidad del estado del sistema.*
+* **Problema:** El módulo de inventario muestra productos con bajo stock y proporciona información como el stock actual y una acción de reposición. Aunque el sistema comunica correctamente que existe una situación de stock bajo, la información podría complementarse con una explicación más clara de la condición que originó la alerta, por ejemplo indicando explícitamente el stock mínimo configurado. En una tienda con múltiples productos, mostrar solamente el stock actual puede obligar al usuario a interpretar si realmente necesita reponer el producto.
+* **Recomendación:** Mostrar junto al stock actual información explícita como:
+  * **Stock actual:** 3 unidades
+  * **Stock mínimo:** 10 unidades
+  * **Estado:** Stock bajo
+  
+  Esto permitiría comprender inmediatamente por qué se genera la alerta y qué acción debe realizar el usuario.
+
+![alt text](assets/heuristicas/image-2.png)
+
+---
+
+#### Problema #4: El flujo de compras depende de proveedores previamente registrados
+* **Severidad:** 2
+* **Heurística violada:** *Usability: User control and freedom — Libertad y control por parte del usuario.*
+* **Problema:** En el formulario de registro de compras, el usuario debe seleccionar un proveedor existente desde un campo desplegable. Cuando el proveedor todavía no está registrado, el usuario no dispone desde esta pantalla de una acción directa para incorporarlo y continuar con la compra. Esto puede generar una interrupción del flujo, especialmente cuando el usuario está intentando registrar una compra de un proveedor nuevo.
+* **Recomendación:** Mantener la selección de proveedores existentes, pero incorporar una alternativa como **“Registrar nuevo proveedor”** o un acceso directo al módulo de proveedores. Después de registrar el proveedor, el usuario debería poder regresar al flujo de compra y seleccionarlo.
+
+![alt text](assets/heuristicas/image-3.png)
+
+
+---
+
+#### Problema #5: No existen alertas para fechas de vencimiento
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Visibility of system status — Visibilidad del estado del sistema.*
+* **Problema:** Se identificó como mejora futura la incorporación de alertas relacionadas con fechas de vencimiento para productos delicados, como snacks o suplementos naturales. Actualmente PetStock permite controlar el stock, pero no comunica este tipo de condición temporal del producto. Para una boutique especializada, esta información podría ser relevante para tomar decisiones sobre reposición, promoción o retiro de determinados productos.
+* **Recomendación:** Incorporar un campo de fecha de vencimiento para los productos que lo requieran y generar alertas cuando se aproxime su fecha de expiración. Por ejemplo:
+  * **Producto:** Snacks
+  * **Vencimiento:** 20/12/2026
+  * **Estado:** Próximo a vencer
+
+![alt text](assets/heuristicas/image-4.png)
+
+
+#### Problema #6: Información limitada para diferenciar productos especializados
+* **Severidad:** 2
+* **Heurística violada:** *Information Architecture: Is it findable?*
+* **Problema:** La estructura actual del catálogo se basa principalmente en información general del producto, como nombre y categoría. Para tiendas especializadas, algunos atributos adicionales —como marca, edición limitada o características específicas— pueden ser relevantes para encontrar y diferenciar rápidamente un producto. Esta situación fue identificada durante la validación con Gabriela, quien señaló la importancia de la marca para productos premium.
+* **Recomendación:** Ampliar la información disponible para organizar el catálogo mediante atributos relevantes para cada segmento. Además de nombre y categoría, podrían incorporarse:
+  * Marca.
+  * Tipo de producto.
+  * Edición limitada.
+  * Fecha de vencimiento (cuando corresponda).
+  * Características especiales.
+  
+  Esto permitiría mejorar la búsqueda y diferenciación de productos.
+
+![alt text](assets/heuristicas/image-5.png)
+---
+
+#### Problema #7: Falta de orientación contextual en algunos formularios
+* **Severidad:** 2
+* **Heurística violada:** *Usability: Help and documentation — Ayuda y documentación.*
+* **Problema:** Los formularios utilizan etiquetas para identificar los campos, pero algunos usuarios nuevos podrían necesitar información adicional sobre qué datos deben ingresar o qué formato se espera. Este tipo de orientación es especialmente importante en operaciones como el registro de productos, compras y configuración de inventario, donde existen diferentes tipos de datos. La heurística de ayuda y documentación recomienda que la asistencia necesaria sea fácil de localizar y esté enfocada en la tarea que el usuario está realizando.
+* **Recomendación:** Agregar textos de ayuda breves debajo de campos que puedan generar dudas. Por ejemplo:
+  * **Costo por unidad (S/):** *Ingrese el costo de adquisición del producto.*
+  * **Stock mínimo:** *Cantidad mínima que debe mantenerse antes de generar una alerta.*
+  
+  Esto reduciría la necesidad de que el usuario tenga que recordar información externa para completar el formulario.
+
+![alt text](assets/heuristicas/image-6.png)
+
+---
+
+### Conclusiones de la evaluación
+
+La evaluación heurística permitió identificar oportunidades de mejora principalmente relacionadas con la adaptación de PetStock a las necesidades específicas de las tiendas especializadas.
+
+Los problemas de mayor prioridad se relacionan con la información que el sistema permite registrar sobre los productos, particularmente la ausencia de atributos como marca y edición limitada. Estos aspectos fueron señalados directamente durante las entrevistas de validación. También se identificaron oportunidades relacionadas con la comunicación del estado del inventario y la incorporación futura de alertas de vencimiento.
+
+En general, PetStock presenta una estructura que permite realizar los principales flujos de gestión de una tienda, pero puede mejorar su adaptación a diferentes perfiles de negocio mediante una mayor personalización de la información del catálogo y alertas más específicas.
+
+
+## 5.4. Video About-the-Product
+
+<p align="center">
+  <img src="assets/sprint-3/video-the-product.PNG" alt="Video About-the-Product" width="600"/>
+  <br>
+</p>
+  <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQAIWzXKkI2SQ67QW7etgeX6Aaj8xtMGIOUzF5YW8Nvvtz4?e=W2cV8y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Video About-the-Product</a>
 
 # Conclusiones
 
 - El proyecto PetStock responde de forma efectiva a las brechas digitales y operativas de las MYPEs y tiendas boutique del sector de mascotas en el Perú. A través de un enfoque centrado en el usuario, la plataforma resuelve problemas críticos como el desabastecimiento, la falta de control de lotes y las ineficiencias de la gestión manual mediante una arquitectura ágil, accesible y optimizada para dispositivos móviles. La definición del diseño —sustentada en principios de usabilidad, patrones de escaneo visual y accesos directos desde el Dashboard— garantiza rutas cortas para tareas cotidianas como ventas, consulta de stock y reposición directa con proveedores. Además, la planificación por Sprints y la estructuración del repositorio bajo estándares de control de versiones aseguran una base técnica escalable, colaborativa y lista para la puesta en producción.
 - El desarrollo del Frontend para el sistema PetStock logró consolidar un ecosistema visual integral, moderno e intuitivo, orientado a optimizar la gestión operativa de tiendas de mascotas. A través de la maquetación y dinamización de sus pantallas principales, se construyó un flujo de usuario homogéneo y fluido que abarca todo el ciclo de negocio
+
+# Video About-the-Team
+
+<p align="center">
+  <img src="assets/sprint-3/video-the-team.PNG" alt="Video About-the-Team" width="600"/>
+  <br>
+</p>
+  <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQB6QKRWKCnKRZr502EL98cbAfdCWmvOct7FX3OEsbp0NmU?e=Ktq1Is&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Video About-the-Team</a>
 
 # Recomendaciones
 
@@ -2396,3 +3550,5 @@ Salazar Herrada, E. (2026, 29 de junio). *Perú ejecuta su primer censo nacional
 **Link :** [Video de exposición AV 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420147_upc_edu_pe/IQDfy8O8fQcXT7tPTdZ9Q7MVAaYAWVEP2djFOZJK5r0Y_54?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6Ik1yRmlsZXNMaW5rQ29weSJ9fQ&e=QssXfS)
 
 **Link:** [Repositorio de Landing Page](https://github.com/1ASI0730-2620-8074-PetStock/LandingPage.git)
+
+**Link :** [Video de exposición AV 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a418_upc_edu_pe/IQBGkODshoksQJPYlrAA15JXAT2nXy_i-eBmMtkhEKoOqW8?e=NpteRs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
